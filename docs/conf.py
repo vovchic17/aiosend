@@ -26,7 +26,8 @@ ogp_site_name = "aiocpa documentation"
 ogp_description_length = 0
 ogp_social_cards = {"image_mini": "_static/rtd.ico"}
 
-html_css_files = ["extra.css"]
+html_css_files = ["extra.css", "snow.css"]
+html_js_files = ["snow.js"]
 
 html_theme_options = {
     "light_css_variables": {

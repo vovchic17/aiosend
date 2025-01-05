@@ -1,0 +1,22 @@
+.snowflake {
+    z-index: 9999;
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    animation: fall linear infinite;
+    pointer-events: none;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateX(0) translateY(-10px) rotate(0deg);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateX(100px) translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
