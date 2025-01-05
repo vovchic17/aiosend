@@ -53,6 +53,7 @@ ignore = [
     "D107",   # undocumented-public-init
     "D203",   # one-blank-line-before-class
     "D212",   # multi-line-summary-first-line
+    "D403",   # first-word-uncapitalized
 ]
 select = ["ALL"]
 fixable = ["ALL"]
