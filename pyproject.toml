@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aiosend"
-version = "0.1.15"
+version = "1.0.0"
 description = "sync & async Crypto Pay API client."
 authors = ["VoVcHiC <tsvetkovvova17@gmail.com>"]
 license = "MIT"
