@@ -47,12 +47,12 @@
 
 .reference.external:not(dl .reference.external),
 .BB {
-    background: linear-gradient(#2d30bd -20%, #3fa3dd 100%) !important;
+    background: linear-gradient(150deg, #2d30bd -45%, #3fa3dd 100%) !important;
     color: transparent !important;
     background-clip: text !important;
     font-weight: bold;
 }
 
 .BB {
-    font-size: 1.2em;
+    font-size: 3em;
 }

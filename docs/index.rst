@@ -1,6 +1,6 @@
 .. raw:: html
 
-   <h1><span class="BB">A</span>sync<span class="BB">IOC</span>rypto<span class="BB">P</span>ay<span class="BB">A</span>PI</h1>
+   <h1 class="BB">aiosend</h1>
 
 Introduction
 ------------
