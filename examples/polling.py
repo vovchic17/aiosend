@@ -1,7 +1,7 @@
 import asyncio
 
-from aiocpa import CryptoPay
-from aiocpa.types import Invoice
+from aiosend import CryptoPay
+from aiosend.types import Invoice
 
 cp = CryptoPay("TOKEN")
 

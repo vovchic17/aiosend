@@ -1,8 +1,8 @@
 from telethon import TelegramClient, events
 from telethon.events.newmessage import NewMessage
 
-from aiocpa import CryptoPay
-from aiocpa.types import Invoice
+from aiosend import CryptoPay
+from aiosend.types import Invoice
 
 api_id = 12345678
 api_hash = "API HASH"

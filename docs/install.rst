@@ -4,20 +4,20 @@ Installation
 
 Via pip
 -------
-.. * From PyPI
+* From PyPI
 
-.. .. code-block:: bash
+.. code-block:: bash
 
-..     pip install -U aiocpa
+    pip install -U aiosend
 
 * From GitHub
 
 .. code-block:: bash
 
-    pip install https://github.com/vovchic17/aiocpa/archive/refs/heads/main.zip
+    pip install https://github.com/vovchic17/aiosend/archive/refs/heads/main.zip
 
-.. Via poetry
-.. ----------
-.. .. code-block:: bash
+Via poetry
+----------
+.. code-block:: bash
 
-..     poetry add aiocpa
+    poetry add aiosend

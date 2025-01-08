@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "aiocpa"
+name = "aiosend"
 version = "0.1.14"
 description = "sync & async Crypto Pay API client."
 authors = ["VoVcHiC <tsvetkovvova17@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/vovchic17/aiocpa"
-documentation = "https://aiocpa.readthedocs.io/en/latest/"
+repository = "https://github.com/vovchic17/"
+documentation = "https://aiosend.rtfd.io/en/latest/"
 keywords = ["crypto pay", "CryptoBot", "Crypto Pay API"]
 
 [tool.poetry.dependencies]

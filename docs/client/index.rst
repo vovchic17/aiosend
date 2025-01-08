@@ -2,7 +2,7 @@
 Client
 ======
 
-aiocpa is |python| python implementation for `Crypto Pay API <https://help.crypt.bot/crypto-pay-api>`_.
+aiosend is |python| python implementation for `Crypto Pay API <https://help.crypt.bot/crypto-pay-api>`_.
 
 * **Methods** - official Crypto Pay API methods.
 * **Tools** - additional functionality.

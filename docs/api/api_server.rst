@@ -6,11 +6,11 @@ APIServer is a class allows you to build a URL to the API endpoints for specific
 
 `Crypto Pay API <https://help.crypt.bot/crypto-pay-api>`_ has two networks:
 
-* .. autoclass:: aiocpa.MAINNET
+* .. autoclass:: aiosend.MAINNET
 
 The main network for transactions with real cryptocurrency.
 
-* .. autoclass:: aiocpa.TESTNET
+* .. autoclass:: aiosend.TESTNET
 
 The network for testing purposes in which currency has no real value.
 
@@ -21,5 +21,5 @@ You can create an instance of :class:`CryptoPay` client for both nets.
 
 .. literalinclude:: ../../examples/api_server.py
 
-.. automodule:: aiocpa.client.api_server
+.. automodule:: aiosend.client.api_server
     :members:

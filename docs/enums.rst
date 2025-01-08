@@ -2,7 +2,7 @@
 Enums
 =====
 
-.. automodule:: aiocpa.enums
+.. automodule:: aiosend.enums
    :members:
    :undoc-members:
    :show-inheritance:

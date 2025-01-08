@@ -3,8 +3,8 @@ import asyncio
 from aiogram import Bot, Dispatcher
 from aiogram.types import Message
 
-from aiocpa import CryptoPay
-from aiocpa.types import Invoice
+from aiosend import CryptoPay
+from aiosend.types import Invoice
 
 cp = CryptoPay("TOKEN")
 bot = Bot("TOKEN")

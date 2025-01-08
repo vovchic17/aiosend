@@ -2,6 +2,6 @@
 Errors
 ======
 
-.. automodule:: aiocpa.exceptions
+.. automodule:: aiosend.exceptions
     :members:
     :show-inheritance:

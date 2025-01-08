@@ -5,10 +5,10 @@
 Introduction
 ------------
 
-**aiocpa** is a syncronous & asynchronous `Crypto Pay API <https://help.crypt.bot/crypto-pay-api>`_ client.
+**aiosend** is a syncronous & asynchronous `Crypto Pay API <https://help.crypt.bot/crypto-pay-api>`_ client.
 
 .. seealso::
-   |telegram| **aiocpa** has `community chat on Telegram <https://aiocpa.t.me>`_
+   |telegram| **aiosend** has `community chat on Telegram <https://aiosend.t.me>`_
 
 .. |telegram| image:: https://raw.githubusercontent.com/vovchic17/static/2cae16d0c4289f9556dacc13322dd4a2fcca214f/src/telegram_logo.svg
    :width: 24px

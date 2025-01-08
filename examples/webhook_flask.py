@@ -2,9 +2,9 @@ import asyncio
 
 from flask import Flask
 
-from aiocpa import CryptoPay
-from aiocpa.webhook import FlaskManager
-from aiocpa.types import Invoice
+from aiosend import CryptoPay
+from aiosend.webhook import FlaskManager
+from aiosend.types import Invoice
 
 cp = CryptoPay("TOKEN", manager=FlaskManager())
 app = Flask(__name__)
