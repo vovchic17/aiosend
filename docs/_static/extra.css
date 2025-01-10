@@ -56,3 +56,8 @@
 .BB {
     font-size: 3em;
 }
+
+.highlight {
+    line-height: 1 !important;
+    font-size: 1.3rem;
+}
