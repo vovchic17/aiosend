@@ -3,6 +3,7 @@
     --code_color2: #dddddd;
     --code_color3: #00ffff;
     --text_color: #33bbff;
+    --snow-color: white;
 }
 
 [data-theme="light"] {
@@ -10,6 +11,7 @@
     --code_color2: #000000;
     --code_color3: #0033aa;
     --text_color: #005599;
+    --snow-color: skyblue;
 }
 
 @media (prefers-color-scheme: light) {
