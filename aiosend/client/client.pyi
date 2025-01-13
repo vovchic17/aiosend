@@ -193,7 +193,7 @@ class CryptoPay:
         body: dict[_str, Any],
         headers: dict[_str, _str],
     ) -> NoneType: ...
-    async def __process_invoice(
+    def __process_invoice(
         self,
         invoice: Invoice,
     ) -> NoneType: ...
@@ -210,3 +210,10 @@ class CryptoPay:
         self,
         invoice: int | Invoice,
     ) -> Invoice | NoneType: ...
+    def get_rates_image(
+        self,
+        base: Asset | LiteralAsset | Fiat | LiteralFiat | _str,
+        quote: Asset | LiteralAsset | Fiat | LiteralFiat | _str,
+        rate: float,
+        percent: float,
+    ) -> _str: ...
