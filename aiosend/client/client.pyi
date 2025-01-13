@@ -214,6 +214,6 @@ class CryptoPay:
         self,
         base: Asset | LiteralAsset | Fiat | LiteralFiat | _str,
         quote: Asset | LiteralAsset | Fiat | LiteralFiat | _str,
-        rate: float,
-        percent: float,
+        rate: _float,
+        percent: _float,
     ) -> _str: ...
