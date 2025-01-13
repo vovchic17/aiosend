@@ -25,7 +25,7 @@ class APIServer:
         """Return qr code link."""
         return f"https://qr.crypt.bot/?url={link}"
 
-    def get_image(
+    def get_check_image(
         self,
         asset: "Asset | str",
         asset_amount: float,
@@ -41,6 +41,22 @@ class APIServer:
             f"&fiat={fiat}"
             f"&fiat_amount={fiat_amount}"
             f"&main={main}"
+        )
+
+    def get_rates_image(
+        self,
+        base: "Asset | Fiat | str",
+        quote: "Asset | Fiat | str",
+        rate: float,
+        percent: float,
+    ) -> str:
+        """Return rates image url."""
+        return (
+            "https://imggen.send.tg/rates/image?"
+            f"base={base}"
+            f"&quote={quote}"
+            f"&rate={rate}"
+            f"&percent={percent}"
         )
 
 
