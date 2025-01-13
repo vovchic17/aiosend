@@ -3,6 +3,7 @@ from .delete_all_invoices import DeleteAllInvoices
 from .exchange import Exchange
 from .get_balance_by_asset import GetBalanceByAsset
 from .get_invoice import GetInvoice
+from .get_rates_image import GetRatesImage
 
 
 class Tools(
@@ -11,6 +12,7 @@ class Tools(
     Exchange,
     GetBalanceByAsset,
     GetInvoice,
+    GetRatesImage,
 ): ...
 
 
@@ -20,4 +22,5 @@ __all__ = (
     "Exchange",
     "GetBalanceByAsset",
     "GetInvoice",
+    "GetRatesImage",
 )
