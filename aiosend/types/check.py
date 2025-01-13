@@ -47,7 +47,7 @@ class Check(CryptoPayObject):
         """
         Get check qr code.
 
-        :return: check qr code.
+        :return: check qr code url.
         """
         return self._client.session.api_server.get_qr(self.bot_check_url)
 
@@ -55,14 +55,14 @@ class Check(CryptoPayObject):
         """
         Get check preview image.
 
-        :return: check image.
+        :return: check image url.
         """
         fiat_amount = await self._client.exchange(
             self.amount,
             self.asset,
             fiat,
         )
-        return self._client.session.api_server.get_image(
+        return self._client.session.api_server.get_check_image(
             asset=self.asset,
             asset_amount=self.amount,
             fiat=fiat,
