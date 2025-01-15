@@ -14,7 +14,7 @@ from .session import AiohttpSession
 if TYPE_CHECKING:
     from aiosend.client import APIServer
     from aiosend.methods import CryptoPayMethod
-    from aiosend.types import _CryptoPayType
+    from aiosend.types import App, _CryptoPayType
     from aiosend.webhook import _APP, WebhookManager
 
     from .session import BaseSession
@@ -62,7 +62,7 @@ class CryptoPay(Methods, Tools, RequestHandler, PollingManager):
 
     def __auth(self) -> None:
         try:
-            me = self.get_me()
+            me: App = self.get_me() # type: ignore[assignment]
             loggers.client.info(
                 "Authorized as '%s' id=%d on %s",
                 me.name,
@@ -75,7 +75,7 @@ class CryptoPay(Methods, Tools, RequestHandler, PollingManager):
                 self.session = self.session.__class__(TESTNET)
             else:
                 self.session = self.session.__class__(MAINNET)
-            self.get_me()
+            self.get_me()  # type: ignore[unused-coroutine]
             net = self.session.api_server
             msg = (
                 "Authorization failed. Token is served by the "
