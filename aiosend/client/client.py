@@ -57,9 +57,8 @@ class CryptoPay(Methods, Tools, RequestHandler, PollingManager):
         :param method: CryptoPayMethod object.
         :return: :class:`CryptoPayType` object.
         """
-        async with self.session as session:
-            loggers.client.debug("Requesting: %s", method.__method__)
-            return await session.request(self._token, self, method)
+        loggers.client.debug("Requesting: %s", method.__method__)
+        return await self.session.request(self._token, self, method)
 
     def __auth(self) -> None:
         try:

@@ -52,18 +52,3 @@ class AiohttpSession(BaseSession):
             )
             response = self._check_response(client, method, await resp.text())
         return cast("_CryptoPayType", response.result)
-
-    async def close(self) -> None:
-        """Close http session."""
-        if self._session is not None and not self._session.closed:
-            await self._session.close()
-
-    def __del__(self) -> None:
-        """Close session connector."""
-        if (
-            self._session is not None
-            and not self._session.closed
-            and self._session.connector is not None
-            and self._session.connector_owner
-        ):
-            self._session.connector.close()

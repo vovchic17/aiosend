@@ -1,5 +1,4 @@
 from abc import ABC, abstractmethod
-from types import TracebackType
 from typing import TYPE_CHECKING, cast
 
 from pydantic import ValidationError
@@ -40,10 +39,6 @@ class BaseSession(ABC):
     ) -> "_CryptoPayType":
         """Make http request."""
 
-    @abstractmethod
-    async def close(self) -> None:
-        """Close http session."""
-
     def _check_response(
         self,
         client: "aiosend.CryptoPay",
@@ -67,16 +62,3 @@ class BaseSession(ABC):
         if isinstance(response.result, ItemsList):
             response.result = response.result.items
         return response
-
-    async def __aenter__(self) -> "BaseSession":
-        """Enter async context manager."""
-        return self
-
-    async def __aexit__(
-        self,
-        exc_type: type[BaseException] | None,
-        exc_val: BaseException | None,
-        exc_tb: TracebackType | None,
-    ) -> None:
-        """Exit async context manager."""
-        await self.close()
