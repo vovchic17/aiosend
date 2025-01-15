@@ -57,12 +57,16 @@ class CryptoPay(Methods, Tools, RequestHandler, PollingManager):
         :param method: CryptoPayMethod object.
         :return: :class:`CryptoPayType` object.
         """
-        loggers.client.debug("Requesting: %s", method.__method__)
+        loggers.client.debug(
+            "Requesting: /%s with payload %s",
+            method.__method__,
+            method.model_dump_json(),
+        )
         return await self.session.request(self._token, self, method)
 
     def __auth(self) -> None:
         try:
-            me: App = self.get_me() # type: ignore[assignment]
+            me: App = self.get_me()  # type: ignore[assignment]
             loggers.client.info(
                 "Authorized as '%s' id=%d on %s",
                 me.name,
