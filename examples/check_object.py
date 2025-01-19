@@ -6,7 +6,7 @@ from aiosend import CryptoPay
 async def main() -> None:
     cp = CryptoPay("TOKEN")
 
-    check = cp.create_check(1, "USDT")
+    check = await cp.create_check(1, "USDT")
 
     # invoice preview image with fiat conversion
     print(await check.get_image("USD"))
