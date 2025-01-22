@@ -1,7 +1,8 @@
 from aiosend import __version__
+from datetime import datetime, UTC
 
 project = "aiosend"
-copyright = "2024, VoVcHiC"
+copyright = f"{datetime.now(UTC).year}, VoVcHiC"
 author = "VoVcHiC"
 release = __version__
 
