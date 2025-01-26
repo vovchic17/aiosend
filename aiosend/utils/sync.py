@@ -2,6 +2,7 @@ import asyncio
 import functools
 import inspect
 import sys
+from contextlib import suppress
 from typing import TYPE_CHECKING
 
 from aiosend.client import CryptoPay
@@ -36,10 +37,11 @@ def async_to_sync(obj: object, name: str) -> None:
 def syncify(obj: object) -> None:
     """Add decorators to all public methods of the object."""
     for name in dir(obj):
-        if not name.startswith("_") and inspect.iscoroutinefunction(
-            getattr(obj, name),
-        ):
-            async_to_sync(obj, name)
+        with suppress(AttributeError):
+            if not name.startswith("_") and inspect.iscoroutinefunction(
+                getattr(obj, name),
+            ):
+                async_to_sync(obj, name)
 
 
 if sys.platform == "win32":

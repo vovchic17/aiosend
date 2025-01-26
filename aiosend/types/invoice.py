@@ -1,6 +1,8 @@
 from datetime import datetime
 from typing import cast
 
+from pydantic import Field
+
 from aiosend.enums import (
     Asset,
     CurrencyType,
@@ -43,9 +45,12 @@ class Invoice(CryptoPayObject):
     """*Optional*. Asset of service fees charged when the invoice was paid. Available only if status is “paid”."""
     fee_amount: float | None = None
     """*Optional*. Amount of service fees charged when the invoice was paid. Available only if status is “paid”."""
-    fee: str | None = None  # deprecated
+    fee: str | None = Field(None, deprecated=True)
     """*Optional*. Amount of charged service fees. Available only in the payload of the webhook update (described here for reference)."""
-    pay_url: str | None = None  # deprecated
+    pay_url: str | None = Field(
+        None,
+        deprecated="pay_url field is deprecated, use bot_invoice_url instead.",
+    )
     """*Deprecated*. URL should be provided to the user to pay the invoice (described here for reference)."""
     bot_invoice_url: str
     """URL should be provided to the user to pay the invoice."""
@@ -61,7 +66,7 @@ class Invoice(CryptoPayObject):
     """Date the invoice was created in ISO 8601 format."""
     paid_usd_rate: float | None = None
     """*Optional*. Price of the asset in USD. Available only if status is “paid”."""
-    usd_rate: str | None = None  # deprecated
+    usd_rate: str | None = Field(None, deprecated=True)
     """*Optional*. Price of the asset in USD. Available only in the Webhook update payload."""
     allow_comments: bool
     """True, if the user can add comment to the payment."""
