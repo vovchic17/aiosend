@@ -14,6 +14,10 @@ class Update(CryptoPayObject):
     """
 
     update_id: int
+    """Non-unique update ID."""
     update_type: UpdateType
+    """Webhook update type. Supported update types: `invoice_paid` - the update sent when the invoice is paid."""
     request_date: datetime
+    """Date the request was sent in ISO 8601 format."""
     payload: Invoice
+    """Payload contains the class Invoice."""
