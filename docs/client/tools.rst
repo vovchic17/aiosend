@@ -24,5 +24,4 @@ Usage example
 
 .. automethod:: aiosend.CryptoPay.delete_all_checks
 .. automethod:: aiosend.CryptoPay.delete_all_invoices
-.. automethod:: aiosend.CryptoPay.get_invoice
 .. automethod:: aiosend.CryptoPay.get_rates_image
