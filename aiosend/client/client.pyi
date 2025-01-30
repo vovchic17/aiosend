@@ -7,6 +7,7 @@ from datetime import datetime
 from types import NoneType as _NoneType
 from typing import Any, TypeVar
 
+from magic_filter.magic import MagicFilter
 from typing_extensions import Self
 
 from aiosend.client import Network
@@ -26,7 +27,7 @@ from aiosend.enums import (
 )
 from aiosend.methods import CryptoPayMethod
 from aiosend.polling import PollingConfig
-from aiosend.polling.manager import Handler, PollingTask
+from aiosend.polling.base import Handler, HandlerObject, PollingTask
 from aiosend.types import (
     App,
     AppStats,
@@ -71,12 +72,15 @@ class NoneType(_NoneType):  # type: ignore[misc, valid-type]
 class CryptoPay:
     _token: _str
     session: BaseSession
+    _webhook_manager: WebhookManager
     _timeout: int
     _delay: int
-    _tasks: dict[int, PollingTask]
-    _handler: Handler | None
-    _exp_handler: Handler | None
-    _webhook_manager: WebhookManager
+    _check_tasks: dict[int, PollingTask[Check]]
+    _invoice_tasks: dict[int, PollingTask[Invoice]]
+    _check_handlers: list[HandlerObject]
+    _invoice_handlers: list[HandlerObject]
+    _exp_check_handlers: list[HandlerObject]
+    _exp_invoice_handlers: list[HandlerObject]
 
     def __init__(
         self,
@@ -177,8 +181,22 @@ class CryptoPay:
         self,
         asset: Asset | LiteralAsset | _str,
     ) -> float: ...
-    def polling_handler(self) -> Callable[[Handler], Handler]: ...
-    def expired_handler(self) -> Callable[[Handler], Handler]: ...
+    def invoice_polling(
+        self,
+        *filters: MagicFilter,
+    ) -> Callable[[Handler], Handler]: ...
+    def expired_invoice_polling(
+        self,
+        *filters: MagicFilter,
+    ) -> Callable[[Handler], Handler]: ...
+    def check_polling(
+        self,
+        *filters: MagicFilter,
+    ) -> Callable[[Handler], Handler]: ...
+    def expired_check_polling(
+        self,
+        *filters: MagicFilter,
+    ) -> Callable[[Handler], Handler]: ...
     def webhook_handler(
         self,
         app: _APP,
@@ -193,15 +211,20 @@ class CryptoPay:
         body: dict[_str, Any],
         headers: dict[_str, _str],
     ) -> NoneType: ...
-    def __process_invoice(
-        self,
-        invoice: Invoice,
-    ) -> NoneType: ...
-    def _add_invoice(
+    def _handle_invoice(self, invoice: Invoice) -> NoneType: ...
+    def _handle_check(self, invoice: Check) -> NoneType: ...
+    def _poll_invoice(
         self,
         invoice: Invoice,
         data: dict[_str, Any],
-    ) -> NoneType: ...
+    ) -> None: ...
+    def _poll_check(
+        self,
+        invoice: Check,
+        data: dict[_str, Any],
+    ) -> None: ...
+    def _start_invoice_polling(self) -> NoneType: ...
+    def _start_check_polling(self) -> NoneType: ...
     def start_polling(
         self,
         parallel: Callable[[], Any] | None = None,

@@ -42,6 +42,19 @@ class Check(CryptoPayObject):
         """
         return await self._client.delete_check(self.check_id)
 
+    def poll(self, **kwargs: object) -> None:
+        """
+        Send the check to the polling manager.
+
+        Use this method to check the status of
+        the check until the timeout expires.
+
+        :param kwargs: additional payload for the handler.
+
+        :return:
+        """
+        self._client._poll_check(self, kwargs)  # noqa: SLF001
+
     @property
     def qr(self) -> str:
         """

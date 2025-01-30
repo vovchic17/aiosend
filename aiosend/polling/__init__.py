@@ -1,4 +1,5 @@
-from .manager import PollingConfig, PollingManager, PollingTask
+from .base import PollingConfig, PollingTask
+from .manager import PollingManager
 
 __all__ = (
     "PollingConfig",

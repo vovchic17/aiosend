@@ -22,6 +22,7 @@ matplotlib = { version = "^3.9.2", optional = true }
 fastapi = { version = "^0.115.0", extras = ["standard"], optional = true }
 flask = { version = "^3.0.3", extras = ["async"], optional = true }
 certifi = "^2024.8.30"
+magic-filter = "^1.0.12"
 
 [tool.poetry.extras]
 docs = [

@@ -115,7 +115,7 @@ class Invoice(CryptoPayObject):
         invoice = cast(Invoice, await self._client.get_invoice(self))
         self.__dict__ = invoice.__dict__
 
-    def await_payment(self, **kwargs: object) -> None:
+    def poll(self, **kwargs: object) -> None:
         """
         Send the invoice to the polling manager.
 
@@ -126,7 +126,7 @@ class Invoice(CryptoPayObject):
 
         :return:
         """
-        self._client._add_invoice(self, kwargs)  # noqa: SLF001
+        self._client._poll_invoice(self, kwargs)  # noqa: SLF001
 
     @property
     def qr(self) -> str:
