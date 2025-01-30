@@ -23,8 +23,8 @@ class AiohttpSession(BaseSession):
     This class is a wrapper of `aiohttp.ClientSession`.
     """
 
-    def __init__(self, api_server: "Network") -> None:
-        super().__init__(api_server)
+    def __init__(self, network: "Network") -> None:
+        super().__init__(network)
         self._session: ClientSession | None = None
 
     async def request(
@@ -42,7 +42,7 @@ class AiohttpSession(BaseSession):
         )
         async with self._session as session:
             resp = await session.post(
-                url=self.api_server.url(method),
+                url=self.network.url(method),
                 data=method.model_dump_json(exclude_none=True),
                 headers={
                     "Crypto-Pay-API-Token": token,

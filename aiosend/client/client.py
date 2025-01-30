@@ -26,19 +26,19 @@ class CryptoPay(Methods, Tools, RequestHandler, PollingManager):
 
     :param token: Crypto Bot API token
     :param session: HTTP Session
-    :param api_server: Crypto Bot API server
+    :param network: Crypto Bot API server
     """
 
     def __init__(
         self,
         token: str,
-        api_server: "Network" = MAINNET,
+        network: "Network" = MAINNET,
         session: "type[BaseSession]" = AiohttpSession,
         manager: "WebhookManager[_APP] | None" = None,
         polling_config: "PollingConfig | None" = None,
     ) -> None:
         self._token = token
-        self.session = session(api_server)
+        self.session = session(network)
         RequestHandler.__init__(self, manager or AiohttpManager())
         PollingManager.__init__(self, polling_config or PollingConfig())
         thread = PropagatingThread(target=self.__auth)
@@ -71,16 +71,16 @@ class CryptoPay(Methods, Tools, RequestHandler, PollingManager):
                 "Authorized as '%s' id=%d on %s",
                 me.name,
                 me.app_id,
-                self.session.api_server.name,
+                self.session.network.name,
             )
         except APIError:
-            current_net = self.session.api_server
+            current_net = self.session.network
             if current_net == MAINNET:
                 self.session = self.session.__class__(TESTNET)
             else:
                 self.session = self.session.__class__(MAINNET)
             self.get_me()  # type: ignore[unused-coroutine]
-            net = self.session.api_server
+            net = self.session.network
             msg = (
                 "Authorization failed. Token is served by the "
                 f"{net.name}, you are using {current_net.name}"

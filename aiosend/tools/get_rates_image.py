@@ -24,7 +24,7 @@ class GetRatesImage:
 
         :return: rates image url.
         """
-        return self.session.api_server.get_rates_image(
+        return self.session.network.get_rates_image(
             base,
             quote,
             rate,

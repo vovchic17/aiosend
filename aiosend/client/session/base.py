@@ -27,8 +27,8 @@ class BaseSession(ABC):
     you should inherit this class.
     """
 
-    def __init__(self, api_server: "Network") -> None:
-        self.api_server = api_server
+    def __init__(self, network: "Network") -> None:
+        self.network = network
 
     @abstractmethod
     async def request(

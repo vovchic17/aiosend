@@ -81,7 +81,7 @@ class CryptoPay:
     def __init__(
         self,
         token: _str,
-        api_server: Network = ...,
+        network: Network = ...,
         session: type[BaseSession] = ...,
         manager: WebhookManager[_APP] | None = None,
         polling_config: PollingConfig | None = None,

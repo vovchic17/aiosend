@@ -135,4 +135,4 @@ class Invoice(CryptoPayObject):
 
         :return: invoice qr code.
         """
-        return self._client.session.api_server.get_qr(self.bot_invoice_url)
+        return self._client.session.network.get_qr(self.bot_invoice_url)

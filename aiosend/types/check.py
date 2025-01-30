@@ -49,7 +49,7 @@ class Check(CryptoPayObject):
 
         :return: check qr code url.
         """
-        return self._client.session.api_server.get_qr(self.bot_check_url)
+        return self._client.session.network.get_qr(self.bot_check_url)
 
     async def get_image(self, fiat: LiteralFiat | str) -> str:
         """
@@ -62,7 +62,7 @@ class Check(CryptoPayObject):
             self.asset,
             fiat,
         )
-        return self._client.session.api_server.get_check_image(
+        return self._client.session.network.get_check_image(
             asset=self.asset,
             asset_amount=self.amount,
             fiat=fiat,
