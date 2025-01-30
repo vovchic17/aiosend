@@ -15,7 +15,7 @@ from aiosend.types import (
 
 if TYPE_CHECKING:
     import aiosend
-    from aiosend.client import APIServer
+    from aiosend.client import Network
     from aiosend.types import Error
 
 
@@ -27,7 +27,7 @@ class BaseSession(ABC):
     you should inherit this class.
     """
 
-    def __init__(self, api_server: "APIServer") -> None:
+    def __init__(self, api_server: "Network") -> None:
         self.api_server = api_server
 
     @abstractmethod

@@ -9,7 +9,7 @@ if TYPE_CHECKING:
 
 
 @dataclass(frozen=True)
-class APIServer:
+class Network:
     """Configuration for endpoints."""
 
     name: str
@@ -60,11 +60,11 @@ class APIServer:
         )
 
 
-MAINNET = APIServer(
+MAINNET = Network(
     name="MAINNET",
     base="https://pay.crypt.bot/api/{method}",
 )
-TESTNET = APIServer(
+TESTNET = Network(
     name="TESTNET",
     base="https://testnet-pay.crypt.bot/api/{method}",
 )

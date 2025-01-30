@@ -1,8 +1,8 @@
 =========
-APIServer
+Network
 =========
 
-APIServer is a class allows you to build a URL to the API endpoints for specific network.
+Network is a class allows you to build a URL to the API endpoints for specific network.
 
 `Crypto Pay API <https://help.crypt.bot/crypto-pay-api>`_ has two networks:
 
@@ -19,7 +19,7 @@ Usage example
 
 You can create an instance of :class:`CryptoPay` client for both nets.
 
-.. literalinclude:: ../../examples/api_server.py
+.. literalinclude:: ../../examples/network.py
 
-.. automodule:: aiosend.client.api_server
+.. automodule:: aiosend.client.network
     :members:

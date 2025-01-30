@@ -11,7 +11,7 @@ from .base import BaseSession
 
 if TYPE_CHECKING:
     import aiosend
-    from aiosend.client import APIServer
+    from aiosend.client import Network
     from aiosend.methods import CryptoPayMethod
     from aiosend.types import _CryptoPayType
 
@@ -23,7 +23,7 @@ class AiohttpSession(BaseSession):
     This class is a wrapper of `aiohttp.ClientSession`.
     """
 
-    def __init__(self, api_server: "APIServer") -> None:
+    def __init__(self, api_server: "Network") -> None:
         super().__init__(api_server)
         self._session: ClientSession | None = None
 
