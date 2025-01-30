@@ -1,7 +1,7 @@
 from typing import TYPE_CHECKING
 
 from aiosend import loggers
-from aiosend.client import MAINNET, TESTNET
+from aiosend.client.network import MAINNET, TESTNET
 from aiosend.exceptions import APIError, WrongNetworkError
 from aiosend.methods import Methods
 from aiosend.polling import PollingConfig, PollingManager
