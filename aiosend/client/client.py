@@ -12,7 +12,7 @@ from aiosend.webhook import AiohttpManager, RequestHandler
 from .session import AiohttpSession
 
 if TYPE_CHECKING:
-    from aiosend.client import APIServer
+    from aiosend.client import Network
     from aiosend.methods import CryptoPayMethod
     from aiosend.types import App, _CryptoPayType
     from aiosend.webhook import _APP, WebhookManager
@@ -32,7 +32,7 @@ class CryptoPay(Methods, Tools, RequestHandler, PollingManager):
     def __init__(
         self,
         token: str,
-        api_server: "APIServer" = MAINNET,
+        api_server: "Network" = MAINNET,
         session: "type[BaseSession]" = AiohttpSession,
         manager: "WebhookManager[_APP] | None" = None,
         polling_config: "PollingConfig | None" = None,

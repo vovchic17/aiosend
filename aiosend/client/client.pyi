@@ -9,7 +9,7 @@ from typing import Any, TypeVar
 
 from typing_extensions import Self
 
-from aiosend.client import APIServer
+from aiosend.client import Network
 from aiosend.enums import (
     Asset,
     CheckStatus,
@@ -81,7 +81,7 @@ class CryptoPay:
     def __init__(
         self,
         token: _str,
-        api_server: APIServer = ...,
+        api_server: Network = ...,
         session: type[BaseSession] = ...,
         manager: WebhookManager[_APP] | None = None,
         polling_config: PollingConfig | None = None,

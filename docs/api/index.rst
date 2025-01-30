@@ -4,5 +4,5 @@ API
 
 .. toctree::
 
-    api_server
+    network
     session
