@@ -7,7 +7,7 @@ from aiosend.methods import Methods
 from aiosend.polling import PollingConfig, PollingManager
 from aiosend.tools import Tools
 from aiosend.utils import PropagatingThread
-from aiosend.webhook import AiohttpManager, RequestHandler
+from aiosend.webhook import RequestHandler
 
 from .session import AiohttpSession
 
@@ -34,12 +34,12 @@ class CryptoPay(Methods, Tools, RequestHandler, PollingManager):
         token: str,
         network: "Network" = MAINNET,
         session: "type[BaseSession]" = AiohttpSession,
-        manager: "WebhookManager[_APP] | None" = None,
+        webhook_manager: "WebhookManager[_APP] | None" = None,
         polling_config: "PollingConfig | None" = None,
     ) -> None:
         self._token = token
         self.session = session(network)
-        RequestHandler.__init__(self, manager or AiohttpManager())
+        RequestHandler.__init__(self, webhook_manager)
         PollingManager.__init__(self, polling_config or PollingConfig())
         thread = PropagatingThread(target=self.__auth)
         thread.start()

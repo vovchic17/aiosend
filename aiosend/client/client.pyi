@@ -2,7 +2,7 @@ from builtins import bool as _bool
 from builtins import float as _float
 from builtins import list as _list
 from builtins import str as _str
-from collections.abc import Awaitable, Callable, Generator
+from collections.abc import Callable, Generator
 from datetime import datetime
 from types import NoneType as _NoneType
 from typing import Any, TypeVar
@@ -25,9 +25,10 @@ from aiosend.enums import (
     LiteralPaidBtnName,
     PaidBtnName,
 )
+from aiosend.handler import Handler, HandlerObject
 from aiosend.methods import CryptoPayMethod
 from aiosend.polling import PollingConfig
-from aiosend.polling.base import Handler, HandlerObject, PollingTask
+from aiosend.polling.base import PollingTask
 from aiosend.types import (
     App,
     AppStats,
@@ -73,6 +74,7 @@ class CryptoPay:
     _token: _str
     session: BaseSession
     _webhook_manager: WebhookManager
+    _webhook_handlers: list[HandlerObject]
     _timeout: int
     _delay: int
     _check_tasks: dict[int, PollingTask[Check]]
@@ -87,7 +89,7 @@ class CryptoPay:
         token: _str,
         network: Network = ...,
         session: type[BaseSession] = ...,
-        manager: WebhookManager[_APP] | None = None,
+        webhook_manager: WebhookManager[_APP] | None = None,
         polling_config: PollingConfig | None = None,
     ) -> None: ...
     async def __call__(
@@ -197,17 +199,12 @@ class CryptoPay:
         self,
         *filters: MagicFilter,
     ) -> Callable[[Handler], Handler]: ...
-    def webhook_handler(
+    def webhook(
         self,
-        app: _APP,
-        path: _str,
-    ) -> Callable[
-        [Callable[[Invoice], Awaitable]],
-        Callable[[Invoice], Awaitable],
-    ]: ...
+        *filters: MagicFilter,
+    ) -> Callable[[Handler], Handler]: ...
     def feed_update(
         self,
-        handler: Callable[[Invoice], Awaitable],
         body: dict[_str, Any],
         headers: dict[_str, _str],
     ) -> NoneType: ...

@@ -1,21 +1,23 @@
-import functools
 import hashlib
 import json
 from abc import ABC, abstractmethod
 from hmac import HMAC
 from typing import TYPE_CHECKING, Any, Generic, TypeVar
 
+from magic_filter.magic import MagicFilter
+
 from aiosend import loggers
+from aiosend.exceptions import CryptoPayError
+from aiosend.handler import HandlerObject
 from aiosend.types import Update
 
 if TYPE_CHECKING:
     from collections.abc import Awaitable, Callable, Mapping
 
     import aiosend
-    from aiosend.types import Invoice
+    from aiosend.handler import Handler
 
-    InvoiceHandler = Callable[[Invoice], Awaitable]
-    Handler = Callable[[dict[str, Any], Mapping[str, str]], Awaitable]
+    WebServerHandler = Callable[[dict[str, Any], Mapping[str, str]], Awaitable]
 
 _APP = TypeVar("_APP")
 
@@ -28,35 +30,37 @@ class WebhookManager(Generic[_APP], ABC):
     manager, you must inherit from this class.
     """
 
+    def __init__(self, app: _APP, path: str) -> None:
+        self._app = app
+        self._path = path
+
     @abstractmethod
     def register_handler(
         self,
-        app: _APP,
-        path: str,
-        handler: "Handler",
+        feed_update: "Callable[[dict[str, Any], dict[str, str]], Awaitable]",
     ) -> None:
         """
         Register webhook handler.
 
         Override this method in your own webhook manager class.
         This method is used for registering webhook handler in your app.
-        You should call `handler` whenever an update arrives.
 
-        :param app: Web application.
-        :param path: Path to webhook route.
-        :param handler: Handler object.
+        :param handler: Web server handler object.
         :return:
         """
 
 
-class RequestHandler(Generic[_APP]):
+class RequestHandler:
     """Updates handler."""
 
     def __init__(
         self,
-        manager: WebhookManager[_APP],
+        manager: WebhookManager[_APP] | None,
     ) -> None:
+        if manager is not None:
+            manager.register_handler(self.feed_update)
         self._webhook_manager = manager
+        self._webhook_handlers: list[HandlerObject] = []
 
     def _check_signature(
         self: "aiosend.CryptoPay",
@@ -79,11 +83,10 @@ class RequestHandler(Generic[_APP]):
             ensure_ascii=False,
         )
         hmac = HMAC(secret, check_string.encode(), hashlib.sha256).hexdigest()
-        return hmac == headers.get("Crypto-Pay-Api-Signature")
+        return hmac == headers.get("crypto-pay-api-signature")
 
     async def feed_update(
         self,
-        handler: "InvoiceHandler",
         body: dict[str, Any],
         headers: dict[str, str],
     ) -> None:
@@ -94,38 +97,43 @@ class RequestHandler(Generic[_APP]):
         :param headers: request headers.
         """
         update = Update.model_validate(body, context={"client": self})
-        if self._check_signature(body, headers):
-            await handler(update.payload)
-            loggers.webhook.info(
-                "Webhook Update id=%d is handled.",
-                update.update_id,
-            )
-        else:
+        if not self._check_signature(body, headers):
             loggers.webhook.info(
                 "Webhook Update id=%d is not handled. Signature is invalid.",
                 update.update_id,
             )
+            return
+        for handler in self._webhook_handlers:
+            if handler.check(update.payload):
+                await handler.call(update.payload)
+                loggers.webhook.info(
+                    "Webhook Update id=%d is handled.",
+                    update.update_id,
+                )
+                break
+        else:
+            loggers.webhook.info(
+                "Webhook Update id=%d is not handled. No suitable handlers.",
+                update.update_id,
+            )
 
-    def webhook_handler(
+    def webhook(
         self,
-        app: _APP,
-        path: str,
-    ) -> "Callable[[InvoiceHandler], InvoiceHandler]":
+        *filters: MagicFilter,
+    ) -> "Callable[[Handler], Handler]":
         """
         Register a handler for webhook invoice updates.
 
-        :param app: web application.
-        :param path: webhook path.
+        Decorator for handler function.
 
         :return: handler function.
         """
 
-        def wrapper(handler: "InvoiceHandler") -> "InvoiceHandler":
-            self._webhook_manager.register_handler(
-                app,
-                path,
-                functools.partial(self.feed_update, handler),
-            )
+        def wrapper(handler: "Handler") -> "Handler":
+            if self._webhook_manager is None:
+                msg = "Webhook manager is not set."
+                raise CryptoPayError(msg)
+            self._webhook_handlers.append(HandlerObject(handler, filters))
             return handler
 
         return wrapper

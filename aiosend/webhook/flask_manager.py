@@ -3,9 +3,10 @@ from typing import TYPE_CHECKING
 from .base import WebhookManager
 
 if TYPE_CHECKING:
-    from flask import Flask
+    from collections.abc import Awaitable, Callable
+    from typing import Any
 
-    from .base import Handler
+    from flask import Flask  # noqa: F401
 
 
 class FlaskManager(WebhookManager["Flask"]):
@@ -17,21 +18,19 @@ class FlaskManager(WebhookManager["Flask"]):
 
     def register_handler(
         self,
-        app: "Flask",
-        path: str,
-        handler: "Handler",
+        feed_update: "Callable[[dict[str, Any], dict[str, str]], Awaitable]",
     ) -> None:
         """Register webhook handler."""
         try:
             from flask import request
         except ModuleNotFoundError as e:
-            msg = "fastapi is not installed"
+            msg = "flask is not installed"
             raise RuntimeError(msg) from e
 
-        @app.post(path)
+        @self._app.post(self._path)
         async def handle() -> dict:
-            await handler(
+            await feed_update(
                 request.get_json(),
-                request.headers,
+                dict(request.headers),
             )
             return {"ok": True}

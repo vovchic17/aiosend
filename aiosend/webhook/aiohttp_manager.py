@@ -5,9 +5,10 @@ from aiohttp.web import json_response
 from .base import WebhookManager
 
 if TYPE_CHECKING:
-    from aiohttp.web import Application, Request, Response
+    from collections.abc import Awaitable, Callable
+    from typing import Any
 
-    from .base import Handler
+    from aiohttp.web import Application, Request, Response  # noqa: F401
 
 
 class AiohttpManager(WebhookManager["Application"]):
@@ -19,17 +20,15 @@ class AiohttpManager(WebhookManager["Application"]):
 
     def register_handler(
         self,
-        app: "Application",
-        path: str,
-        handler: "Handler",
+        feed_update: "Callable[[dict[str, Any], dict[str, str]], Awaitable]",
     ) -> None:
         """Register webhook handler."""
 
         async def handle(request: "Request") -> "Response":
-            await handler(
+            await feed_update(
                 await request.json(),
                 dict(request.headers),
             )
             return json_response({"ok": True})
 
-        app.router.add_post(path, handle)
+        self._app.router.add_post(self._path, handle)
