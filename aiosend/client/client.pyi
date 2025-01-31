@@ -49,8 +49,8 @@ from .session import BaseSession
 
 _T = TypeVar("_T")
 
-# These classes are needed for syncronous type hinting.
-# Stub file annotates the methods as syncronous, but
+# These classes are needed for synchronous type hinting.
+# Stub file annotates the methods as synchronous, but
 # while using this lib asynchronously, the actual return type
 # is a coroutine that returns an annotated type, so these classes
 # will annotate awaited object as return type.
