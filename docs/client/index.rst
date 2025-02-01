@@ -6,8 +6,9 @@ aiosend is |python| python implementation for `Crypto Pay API <https://help.cryp
 
 * **Methods** - official Crypto Pay API methods.
 * **Tools** - additional functionality.
-* **Webhook** - webhook updates handling.
-* **Polling** - polling updates handling.
+* **Webhook** - updates handling via webhook.
+* **Invoice polling** - invoice updates handling via polling.
+* **Check polling** - check updates handling via polling.
 
 
 .. |python| image:: ../_static/python.png
@@ -19,4 +20,6 @@ aiosend is |python| python implementation for `Crypto Pay API <https://help.cryp
     methods
     tools
     webhook
-    polling
+    invoice_polling
+    check_polling
+    polling_config

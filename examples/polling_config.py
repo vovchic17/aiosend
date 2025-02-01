@@ -13,13 +13,13 @@ cp = CryptoPay(
 )
 
 
-@cp.polling_handler()
+@cp.invoice_polling()
 async def handler(invoice: Invoice):
     print(f"Received", invoice.amount, invoice.asset)
 
 
 # called after timeout (600s) or when invoice status is "expired"
-@cp.expired_handler()
+@cp.expired_invoice_polling()
 async def expired_invoice_handler(invoice: Invoice, payload: str):
     print(f"Expired invoice", invoice.invoice_id, payload)
 
@@ -27,7 +27,7 @@ async def expired_invoice_handler(invoice: Invoice, payload: str):
 async def main() -> None:
     invoice = await cp.create_invoice(1, "USDT")
     print("invoice link:", invoice.bot_invoice_url)
-    invoice.await_payment()
+    invoice.poll()
     await cp.start_polling()
 
 

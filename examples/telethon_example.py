@@ -18,10 +18,10 @@ async def get_invoice(message: NewMessage.Event) -> None:
         message.chat_id,
         f"pay: {invoice.mini_app_invoice_url}",
     )
-    invoice.await_payment(chat_id=message.chat_id)
+    invoice.poll(chat_id=message.chat_id)
 
 
-@cp.polling_handler()
+@cp.invoice_polling()
 async def handle_payment(
     invoice: Invoice,
     chat_id: int,

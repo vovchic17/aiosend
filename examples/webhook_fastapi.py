@@ -7,11 +7,14 @@ from aiosend import CryptoPay
 from aiosend.webhook import FastAPIManager
 from aiosend.types import Invoice
 
-cp = CryptoPay("TOKEN", manager=FastAPIManager())
 app = FastAPI()
+cp = CryptoPay(
+    "TOKEN",
+    webhook_manager=FastAPIManager(app, "/handler"),
+)
 
 
-@cp.webhook_handler(app, "/handler")
+@cp.webhook()
 async def handler(invoice: Invoice) -> None:
     print(f"Received {invoice.amount} {invoice.asset}")
 

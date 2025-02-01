@@ -21,10 +21,10 @@ async def get_invoice(
 ) -> None:
     invoice = await cp.create_invoice(1, "USDT")
     await update.message.reply_text(f"pay: {invoice.mini_app_invoice_url}")
-    invoice.await_payment(message=update.message)
+    invoice.poll(message=update.message)
 
 
-@cp.polling_handler()
+@cp.invoice_polling()
 async def handle_payment(
     invoice: Invoice,
     message: Message,

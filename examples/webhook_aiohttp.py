@@ -4,12 +4,16 @@ from aiohttp.web import Application, _run_app
 
 from aiosend import CryptoPay
 from aiosend.types import Invoice
+from aiosend.webhook import AiohttpManager
 
-cp = CryptoPay("TOKEN")
 app = Application()
+cp = CryptoPay(
+    "TOKEN",
+    webhook_manager=AiohttpManager(app, "/handler"),
+)
 
 
-@cp.webhook_handler(app, "/handler")
+@cp.webhook()
 async def handler(invoice: Invoice) -> None:
     print(f"Received {invoice.amount} {invoice.asset}")
 

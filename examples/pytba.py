@@ -15,10 +15,10 @@ def get_invoice(message: Message) -> None:
         message.from_user.id,
         f"pay: {invoice.mini_app_invoice_url}",
     )
-    invoice.await_payment(user_id=message.from_user.id)
+    invoice.poll(user_id=message.from_user.id)
 
 
-@cp.polling_handler()
+@cp.invoice_polling()
 def handle_payment(
     invoice: Invoice,
     user_id: int,

@@ -14,10 +14,10 @@ async def get_invoice(client: Client, message: Message) -> None:
     await message.reply_text(
         f"pay: {invoice.mini_app_invoice_url}",
     )
-    invoice.await_payment(message=message)
+    invoice.poll(message=message)
 
 
-@cp.polling_handler()
+@cp.invoice_polling()
 async def handle_payment(
     invoice: Invoice,
     message: Message,

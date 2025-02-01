@@ -5,7 +5,7 @@
 Introduction
 ------------
 
-**aiosend** is a syncronous & asynchronous `Crypto Pay API <https://help.crypt.bot/crypto-pay-api>`_ client.
+**aiosend** is a synchronous & asynchronous `Crypto Pay API <https://help.crypt.bot/crypto-pay-api>`_ client.
 
 .. seealso::
    |telegram| **aiosend** has `community chat on Telegram <https://aiosend.t.me>`_
@@ -16,7 +16,7 @@ Introduction
 
 Features
 --------
-* provides :doc:`polling handler <client/polling>`
+* provides :doc:`invoice polling handler <client/invoice_polling>` and :doc:`check polling handler <client/check_polling>`
 * provides :doc:`webhook handler <client/webhook>`
 * provides :doc:`additional function shortcuts <client/tools>`
 * supports sync and async usage
@@ -28,8 +28,8 @@ Quick start
 .. literalinclude:: ../examples/quick_start.py
 
 
-Syncronous usage
-----------------
+Synchronous usage
+-----------------
 
 .. literalinclude:: ../examples/sync.py
 

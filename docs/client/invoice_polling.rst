@@ -1,13 +1,13 @@
-=======
-Polling
-=======
+===============
+Invoice polling
+===============
 
 Polling is a method of receiving updates by periodically sending requests.
 Once :attr:`invoice status <aiosend.types.Invoice.status>` is changed to
 :attr:`PAID <aiosend.enums.InvoiceStatus.PAID>`,
 :attr:`polling manager <aiosend.polling.PollingManager>` will call the
-:attr:`polling_handler <aiosend.CryptoPay.polling_handler>`.
-Polling uses the :attr:`/getInvoices <aiosend.CryptoPay.get_invoices>` method.
+:attr:`invoice_polling <aiosend.CryptoPay.invoice_polling>` handler.
+Invoice polling uses the :attr:`/getInvoices <aiosend.CryptoPay.get_invoices>` method.
 
 .. attention::
     :attr:`Polling manager <aiosend.polling.PollingManager>` has
@@ -16,30 +16,16 @@ Polling uses the :attr:`/getInvoices <aiosend.CryptoPay.get_invoices>` method.
     and :attr:`timeout <aiosend.polling.PollingConfig.timeout>`
     for each invoice in the awaiting queue.
     After the timeout polling manager will stop polling that invoice
-    and call the :attr:`expired_handler <aiosend.CryptoPay.expired_handler>`
+    and call the :attr:`expired_invoice_polling <aiosend.CryptoPay.expired_invoice_polling>` handler
     if it is declared.
 
     **Default is 2 seconds delay and 300 seconds (5 min) timeout**.
 
-    :ref:`You can change the polling configuration. <PC>`
+    :ref:`You can change the polling configuration. <PollingConfigAnchor>`
 
-.. automethod:: aiosend.CryptoPay.polling_handler
-.. automethod:: aiosend.CryptoPay.expired_handler
+.. automethod:: aiosend.CryptoPay.invoice_polling
+.. automethod:: aiosend.CryptoPay.expired_invoice_polling
 
 Usage example
 -------------
-.. literalinclude:: ../../examples/polling.py
-
-.. autoclass:: aiosend.polling.PollingConfig
-    :members:
-
-.. _PC:
-
-Polling configuration
----------------------
-You can configure your own polling configuration.
-
-.. literalinclude:: ../../examples/polling_config.py
-
-.. autoclass:: aiosend.polling.PollingManager
-    :members:
+.. literalinclude:: ../../examples/invoice_polling.py
