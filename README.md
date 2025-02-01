@@ -49,10 +49,10 @@ dp = Dispatcher()
 async def get_invoice(message):
     invoice = await cp.create_invoice(1, "USDT")
     await message.answer(f"pay: {invoice.bot_invoice_url}")
-    invoice.await_payment(message=message)
+    invoice.poll(message=message)
 
 
-@cp.polling_handler()
+@cp.invoice_polling()
 async def handle_payment(invoice, message):
     await message.answer(f"invoice #{invoice.invoice_id} has been paid")
 
