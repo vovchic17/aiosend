@@ -28,4 +28,4 @@ class Balance(CryptoPayObject):
         :return:
         """
         balance = await self._client.get_balance_by_asset(self.currency_code)
-        self.available = balance
+        self.__dict__ = balance.__dict__

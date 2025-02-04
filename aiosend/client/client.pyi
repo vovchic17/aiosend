@@ -182,7 +182,7 @@ class CryptoPay:
     def get_balance_by_asset(
         self,
         asset: Asset | LiteralAsset | _str,
-    ) -> float: ...
+    ) -> Balance: ...
     def invoice_polling(
         self,
         *filters: MagicFilter,
