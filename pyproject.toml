@@ -7,7 +7,16 @@ license = "MIT"
 readme = "README.md"
 repository = "https://github.com/vovchic17/"
 documentation = "https://aiosend.rtfd.io/en/latest/"
-keywords = ["crypto pay", "CryptoBot", "Crypto Pay API"]
+keywords = [
+    "crypto pay",
+    "CryptoBot",
+    "Crypto Bot",
+    "Crypto Pay API",
+    "cryptopayapi",
+    "cryptobot",
+    "CryptoPayAPI",
+    "crypto pay api",
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -48,13 +57,13 @@ target-version = "py310"
 
 [tool.ruff.lint]
 ignore = [
-    "D100",   # undocumented-public-module
-    "D104",   # undocumented-public-package
-    "D106",   # undocumented-public-nested-class
-    "D107",   # undocumented-public-init
-    "D203",   # one-blank-line-before-class
-    "D212",   # multi-line-summary-first-line
-    "D403",   # first-word-uncapitalized
+    "D100", # undocumented-public-module
+    "D104", # undocumented-public-package
+    "D106", # undocumented-public-nested-class
+    "D107", # undocumented-public-init
+    "D203", # one-blank-line-before-class
+    "D212", # multi-line-summary-first-line
+    "D403", # first-word-uncapitalized
 ]
 select = ["ALL"]
 fixable = ["ALL"]
