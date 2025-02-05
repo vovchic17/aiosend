@@ -68,7 +68,11 @@ class InvoicePollingManager(BasePollingManager):
             data,
         )
 
-    async def _handle_invoice(self, invoice: "Invoice") -> None:
+    async def _handle_invoice(
+            self,
+            invoice: "Invoice",
+            **kwargs: object,
+        ) -> None:
         self._invoice_tasks[invoice.invoice_id].timeout -= self._delay
         if (
             self._invoice_tasks[invoice.invoice_id].timeout <= 0
@@ -78,7 +82,7 @@ class InvoicePollingManager(BasePollingManager):
                 if handler.check(invoice):
                     await handler.call(
                         invoice,
-                        self._invoice_tasks[invoice.invoice_id].data,
+                        self._invoice_tasks[invoice.invoice_id].data | kwargs,
                     )
                     loggers.invoice_polling.info(
                         "EXPIRED INVOICE id=%d is handled.",
@@ -95,7 +99,7 @@ class InvoicePollingManager(BasePollingManager):
                 if handler.check(invoice):
                     await handler.call(
                         invoice,
-                        self._invoice_tasks[invoice.invoice_id].data,
+                        self._invoice_tasks[invoice.invoice_id].data | kwargs,
                     )
                     loggers.invoice_polling.info(
                         "PAID INVOICE id=%d is handled.",
@@ -124,7 +128,7 @@ class InvoicePollingManager(BasePollingManager):
                 invoice_ids=list(self._invoice_tasks),
             )
             for invoice in invoices:
-                await self._handle_invoice(invoice)
+                await self._handle_invoice(invoice, **self._kwargs)
             loggers.invoice_polling.debug(
                 "Tasks left: %s Waiting %d seconds...",
                 len(self._invoice_tasks),
