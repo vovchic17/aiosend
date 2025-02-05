@@ -68,14 +68,14 @@ class CheckPollingManager(BasePollingManager):
             data,
         )
 
-    async def _handle_check(self, check: "Check") -> None:
+    async def _handle_check(self: "aiosend.CryptoPay", check: "Check") -> None:
         self._check_tasks[check.check_id].timeout -= self._delay
         if self._check_tasks[check.check_id].timeout <= 0:
             for handler in self._exp_check_handlers:
                 if handler.check(check):
                     await handler.call(
                         check,
-                        self._check_tasks[check.check_id].data,
+                        self._check_tasks[check.check_id].data | self._kwargs,
                     )
                     loggers.check_polling.info(
                         "ACTIVATED CHECK id=%d is handled.",
@@ -92,7 +92,7 @@ class CheckPollingManager(BasePollingManager):
                 if handler.check(check):
                     await handler.call(
                         check,
-                        self._check_tasks[check.check_id].data,
+                        self._check_tasks[check.check_id].data | self._kwargs,
                     )
                     loggers.check_polling.info(
                         "EXPIRED CHECK id=%d is handled.",
