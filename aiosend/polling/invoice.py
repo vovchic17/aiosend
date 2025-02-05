@@ -69,10 +69,9 @@ class InvoicePollingManager(BasePollingManager):
         )
 
     async def _handle_invoice(
-            self,
-            invoice: "Invoice",
-            **kwargs: object,
-        ) -> None:
+        self: "aiosend.CryptoPay",
+        invoice: "Invoice",
+    ) -> None:
         self._invoice_tasks[invoice.invoice_id].timeout -= self._delay
         if (
             self._invoice_tasks[invoice.invoice_id].timeout <= 0
@@ -82,7 +81,8 @@ class InvoicePollingManager(BasePollingManager):
                 if handler.check(invoice):
                     await handler.call(
                         invoice,
-                        self._invoice_tasks[invoice.invoice_id].data | kwargs,
+                        self._invoice_tasks[invoice.invoice_id].data
+                        | self._kwargs,
                     )
                     loggers.invoice_polling.info(
                         "EXPIRED INVOICE id=%d is handled.",
@@ -99,7 +99,8 @@ class InvoicePollingManager(BasePollingManager):
                 if handler.check(invoice):
                     await handler.call(
                         invoice,
-                        self._invoice_tasks[invoice.invoice_id].data | kwargs,
+                        self._invoice_tasks[invoice.invoice_id].data
+                        | self._kwargs,
                     )
                     loggers.invoice_polling.info(
                         "PAID INVOICE id=%d is handled.",
