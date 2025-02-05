@@ -25,8 +25,11 @@ class CryptoPay(Methods, Tools, RequestHandler, PollingManager):
     Client class providing API methods.
 
     :param token: Crypto Bot API token
-    :param session: HTTP Session
     :param network: Crypto Bot API server
+    :param session: HTTP Session
+    :webhook_manager: Webhook manager (based on aiohttp, fastapi, flask etc.)
+    :polling_config: Configuration for invoice and check polling
+    :kwargs: Optional argumets to pass into the polling and webhook handlers
     """
 
     def __init__(
