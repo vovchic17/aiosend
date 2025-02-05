@@ -36,9 +36,11 @@ class CryptoPay(Methods, Tools, RequestHandler, PollingManager):
         session: "type[BaseSession]" = AiohttpSession,
         webhook_manager: "WebhookManager[_APP] | None" = None,
         polling_config: "PollingConfig | None" = None,
+        **kwargs: object,
     ) -> None:
         self._token = token
         self.session = session(network)
+        self._kwargs = kwargs
         RequestHandler.__init__(self, webhook_manager)
         PollingManager.__init__(self, polling_config or PollingConfig())
         thread = PropagatingThread(target=self.__auth)

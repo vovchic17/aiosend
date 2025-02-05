@@ -86,8 +86,8 @@ class RequestHandler:
         return hmac == headers.get("crypto-pay-api-signature")
 
     async def feed_update(
-        self,
-        body: dict[str, Any],
+        self: "aiosend.CryptoPay",
+        body: "dict[str, Any]",
         headers: dict[str, str],
     ) -> None:
         """
@@ -97,7 +97,7 @@ class RequestHandler:
         :param headers: request headers.
         """
         update = Update.model_validate(body, context={"client": self})
-        if not self._check_signature(body, headers):
+        if not self._check_signature(body, headers): # type: ignore[attr-defined]
             loggers.webhook.info(
                 "Webhook Update id=%d is not handled. Signature is invalid.",
                 update.update_id,
@@ -105,7 +105,7 @@ class RequestHandler:
             return
         for handler in self._webhook_handlers:
             if handler.check(update.payload):
-                await handler.call(update.payload)
+                await handler.call(update.payload, self._kwargs)
                 loggers.webhook.info(
                     "Webhook Update id=%d is handled.",
                     update.update_id,

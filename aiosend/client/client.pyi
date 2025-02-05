@@ -83,6 +83,7 @@ class CryptoPay:
     _invoice_handlers: list[HandlerObject]
     _exp_check_handlers: list[HandlerObject]
     _exp_invoice_handlers: list[HandlerObject]
+    _kwargs: dict[_str, Any]
 
     def __init__(
         self,
@@ -91,6 +92,7 @@ class CryptoPay:
         session: type[BaseSession] = ...,
         webhook_manager: WebhookManager[_APP] | None = None,
         polling_config: PollingConfig | None = None,
+        **kwargs: object,
     ) -> None: ...
     async def __call__(
         self,
