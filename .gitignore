@@ -3,7 +3,7 @@ __pycache__
 .mypy_cache
 .ruff_cache
 _build/
-poetry.lock
+*.lock
 .env
 .venv
 /tests

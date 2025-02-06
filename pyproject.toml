@@ -1,39 +1,33 @@
-[tool.poetry]
+[project]
 name = "aiosend"
-version = "2.0.2"
 description = "sync & async Crypto Pay API client."
-authors = ["VoVcHiC <tsvetkovvova17@gmail.com>"]
+authors = [{ name = "VoVcHiC", email = "tsvetkovvova17@gmail.com" }]
 license = "MIT"
-readme = "README.md"
-repository = "https://github.com/vovchic17/"
-documentation = "https://aiosend.rtfd.io/en/latest/"
-keywords = [
-    "crypto pay",
-    "CryptoBot",
-    "Crypto Bot",
-    "Crypto Pay API",
-    "cryptopayapi",
-    "cryptobot",
-    "CryptoPayAPI",
-    "crypto pay api",
+requires-python = ">=3.10"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Libraries",
 ]
+readme = "README.md"
+dependencies = [
+    "aiohttp>=3.9.0",
+    "certifi>=2023.7.22",
+    "magic-filter>=1.0.12",
+    "pydantic>=2.4.1",
+]
+dynamic = ["version"]
 
-[tool.poetry.dependencies]
-python = "^3.10"
-pydantic = "^2.4"
-aiohttp = "^3.9"
+[tool.hatch.version]
+path = "aiosend/__meta__.py"
 
-furo = { version = "^2024.0.0", optional = true }
-sphinx-autodoc-typehints = { version = "^2.3.0", optional = true }
-sphinx-copybutton = { version = "^0.5.2", optional = true }
-sphinxext-opengraph = { version = "^0.9.1", optional = true }
-matplotlib = { version = "^3.9.2", optional = true }
-fastapi = { version = "^0.115.0", extras = ["standard"], optional = true }
-flask = { version = "^3.0.3", extras = ["async"], optional = true }
-certifi = "^2024.8.30"
-magic-filter = "^1.0.12"
-
-[tool.poetry.extras]
+[project.optional-dependencies]
 docs = [
     "furo",
     "sphinx-autodoc-typehints",
@@ -41,14 +35,12 @@ docs = [
     "sphinxext-opengraph",
     "matplotlib",
 ]
-
-fastapi = ["fastapi"]
-
+fastapi = ["fastapi[standard]"]
 flask = ["flask"]
 
-[tool.poetry.group.dev.dependencies]
-ruff = "^0.7.0"
-mypy = "^1.13.0"
+[project.urls]
+Repository = "https://github.com/vovchic17/aiosend"
+Documentation = "https://aiosend.rtfd.io/"
 
 [tool.ruff]
 line-length = 79
@@ -94,5 +86,5 @@ exclude = ["tests", "docs", "examples"]
 python_version = "3.10"
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
