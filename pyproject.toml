@@ -51,6 +51,7 @@ target-version = "py310"
 ignore = [
     "D100", # undocumented-public-module
     "D104", # undocumented-public-package
+    "D105", # undocumented-magic-method
     "D106", # undocumented-public-nested-class
     "D107", # undocumented-public-init
     "D203", # one-blank-line-before-class
