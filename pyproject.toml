@@ -15,6 +15,16 @@ classifiers = [
     "Topic :: Software Development :: Quality Assurance",
     "Topic :: Software Development :: Libraries",
 ]
+keywords = [
+    "crypto pay",
+    "CryptoBot",
+    "Crypto Bot",
+    "Crypto Pay API",
+    "cryptopayapi",
+    "cryptobot",
+    "CryptoPayAPI",
+    "crypto pay api",
+]
 readme = "README.md"
 dependencies = [
     "aiohttp>=3.9.0",
