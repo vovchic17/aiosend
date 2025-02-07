@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, VoVcHiC
+# This file is distributed under the same license as the aiosend package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: aiosend \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-07 04:36+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../client/webhook.rst:3
+msgid "Webhook"
+msgstr ""
+
+#: ../../client/webhook.rst:6
+msgid ""
+"To use webhooks you need to enable them in the `@CryptoBot "
+"<https://send.t.me>`_ settings as follows:"
+msgstr ""
+
+#: ../../client/webhook.rst:8
+msgid "🏝 Crypto Pay -> My Apps -> YOUR APP -> Webhooks -> 🌕 Enable webhooks."
+msgstr ""
+
+#: aiosend.webhook.base.RequestHandler.webhook:1 of
+msgid "Register a handler for webhook invoice updates."
+msgstr ""
+
+#: aiosend.webhook.base.RequestHandler.webhook:3 of
+msgid "Decorator for handler function."
+msgstr ""
+
+#: ../../client/webhook.rst
+msgid "Return type"
+msgstr ""
+
+#: aiosend.webhook.base.RequestHandler.webhook:5 of
+msgid ""
+":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~collections.abc.Callable\\`\\\\"
+" \\\\\\[\\\\\\[\\:py\\:class\\:\\`\\~collections.abc.Callable\\`\\\\ "
+"\\\\\\[\\:py\\:data\\:\\`...\\<Ellipsis\\>\\`\\, "
+"\\:py\\:data\\:\\`\\~typing.Any\\`\\]\\]\\, "
+"\\:py\\:class\\:\\`\\~collections.abc.Callable\\`\\\\ "
+"\\\\\\[\\:py\\:data\\:\\`...\\<Ellipsis\\>\\`\\, "
+"\\:py\\:data\\:\\`\\~typing.Any\\`\\]\\]`"
+msgstr ""
+
+#: ../../client/webhook.rst
+msgid "Returns"
+msgstr ""
+
+#: aiosend.webhook.base.RequestHandler.webhook:6 of
+msgid "handler function."
+msgstr ""
+
+#: ../../client/webhook.rst:13
+msgid ""
+"Usage example with `aiohttp web server "
+"<https://docs.aiohttp.org/en/stable/web_quickstart.html>`_"
+msgstr ""
+
+#: ../../client/webhook.rst:17
+msgid ""
+"Usage example with `fastapi web server "
+"<https://fastapi.tiangolo.com/tutorial/first-steps/>`_"
+msgstr ""
+
+#: ../../client/webhook.rst:19
+msgid "In order to use aiosend with fastapi you need to install extra package"
+msgstr ""
+
+#: ../../client/webhook.rst:28
+msgid ""
+"Usage example with `flask web server "
+"<https://flask.palletsprojects.com/en/3.0.x/quickstart/#quickstart>`_"
+msgstr ""
+
+#: ../../client/webhook.rst:30
+msgid "In order to use aiosend with flask you need to install extra package"
+msgstr ""
+
+#: ../../client/webhook.rst:38
+msgid ""
+"**aiosend** uses `aiohttp "
+"<https://docs.aiohttp.org/en/stable/index.html>`_ as web server by "
+"default. You can implement your own webhook manager by inheriting "
+":class:`cryptopay.webhook.WebhookManager` and overriding "
+":attr:`aiosend.webhook.WebhookManager.register_handler`."
+msgstr ""
+
+#: aiosend.webhook.base.WebhookManager:1 of
+msgid "Webhook manager."
+msgstr ""
+
+#: aiosend.webhook.base.WebhookManager:3 of
+msgid ""
+"If you want to implement your own webhook manager, you must inherit from "
+"this class."
+msgstr ""
+
+#: aiosend.webhook.aiohttp_manager.AiohttpManager.register_handler:1
+#: aiosend.webhook.base.WebhookManager.register_handler:1
+#: aiosend.webhook.fastapi_manager.FastAPIManager.register_handler:1
+#: aiosend.webhook.flask_manager.FlaskManager.register_handler:1 of
+msgid "Register webhook handler."
+msgstr ""
+
+#: aiosend.webhook.base.WebhookManager.register_handler:3 of
+msgid ""
+"Override this method in your own webhook manager class. This method is "
+"used for registering webhook handler in your app."
+msgstr ""
+
+#: ../../client/webhook.rst
+msgid "Parameters"
+msgstr ""
+
+#: aiosend.webhook.base.WebhookManager.register_handler:6 of
+msgid "Web server handler object."
+msgstr ""
+
+#: aiosend.webhook.aiohttp_manager.AiohttpManager.register_handler:4
+#: aiosend.webhook.base.WebhookManager.register_handler:7
+#: aiosend.webhook.fastapi_manager.FastAPIManager.register_handler:4
+#: aiosend.webhook.flask_manager.FlaskManager.register_handler:4 of
+msgid ":sphinx_autodoc_typehints_type:`\\:py\\:obj\\:\\`None\\``"
+msgstr ""
+
+#: aiosend.webhook.aiohttp_manager.AiohttpManager:1 of
+msgid ""
+"Bases: :py:class:`~aiosend.webhook.base.WebhookManager`\\ "
+"[:py:class:`Application`]"
+msgstr ""
+
+#: aiosend.webhook.aiohttp_manager.AiohttpManager:1 of
+msgid "aiohttp webhook manager."
+msgstr ""
+
+#: aiosend.webhook.aiohttp_manager.AiohttpManager:3 of
+msgid "Webhook manager based on :class:`aiohttp.web.Application`."
+msgstr ""
+
+#: aiosend.webhook.fastapi_manager.FastAPIManager:1 of
+msgid ""
+"Bases: :py:class:`~aiosend.webhook.base.WebhookManager`\\ "
+"[:py:class:`FastAPI`]"
+msgstr ""
+
+#: aiosend.webhook.fastapi_manager.FastAPIManager:1 of
+msgid "FastAPI webhook manager."
+msgstr ""
+
+#: aiosend.webhook.fastapi_manager.FastAPIManager:3 of
+msgid "Webhook manager based on :class:`fastapi.FastAPI`."
+msgstr ""
+
+#: aiosend.webhook.flask_manager.FlaskManager:1 of
+msgid ""
+"Bases: :py:class:`~aiosend.webhook.base.WebhookManager`\\ "
+"[:py:class:`Flask`]"
+msgstr ""
+
+#: aiosend.webhook.flask_manager.FlaskManager:1 of
+msgid "Flask webhook manager."
+msgstr ""
+
+#: aiosend.webhook.flask_manager.FlaskManager:3 of
+msgid "Webhook manager based on :class:`flask.Flask`."
+msgstr ""
+

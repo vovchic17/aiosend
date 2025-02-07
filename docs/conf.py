@@ -15,6 +15,10 @@ extensions = [
     "sphinx_autodoc_typehints",
 ]
 
+language = "ru"
+locale_dirs = ["locale/"]
+gettext_compact = False
+
 templates_path = ["_templates"]
 
 html_theme = "furo"
