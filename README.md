@@ -1,4 +1,4 @@
-<p align="center">
+<p align="center"> <!-- markdownlint-disable MD033 MD041 MD045 MD013-->
   <img src="https://raw.githubusercontent.com/vovchic17/static/refs/heads/main/src/aiosend.png" align="center"/>
   <h1 align="center">aiosend</h1>
 </p>
@@ -15,10 +15,11 @@
 **aiosend** is a syncronous & asynchronous [Crypto Pay API](https://help.crypt.bot/crypto-pay-api) client.
 
 > ## [Official documentation](https://aiosend.readthedocs.io/en/latest/)
+>
 > ## [<img src="https://raw.githubusercontent.com/vovchic17/static/refs/heads/main/src/telegram_logo.svg" width="30" align="top">  Telegram chat](https://aiosend.t.me/)
 
-
 ## Quick start
+
 ```python
 import asyncio
 from aiosend import CryptoPay
@@ -68,4 +69,3 @@ async def main():
 if __name__ == "__main__":
     asyncio.run(main())
 ```
-
