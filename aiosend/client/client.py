@@ -91,3 +91,15 @@ class CryptoPay(Methods, Tools, RequestHandler, PollingManager):
                 f"{net.name}, you are using {current_net.name}"
             )
             raise WrongNetworkError(msg) from None
+
+    def __setitem__(self, key: str, value: object) -> None:
+        self._kwargs[key] = value
+
+    def __getitem__(self, key: str) -> object:
+        return self._kwargs[key]
+
+    def __delitem__(self, key: str) -> None:
+        del self._kwargs[key]
+
+    def __contains__(self, key: str) -> bool:
+        return key in self._kwargs
