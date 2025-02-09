@@ -22,13 +22,15 @@ msgstr ""
 
 #: ../../index.rst:6
 msgid "Introduction"
-msgstr ""
+msgstr "Вступление"
 
 #: ../../index.rst:8
 msgid ""
 "**aiosend** is a synchronous & asynchronous `Crypto Pay API "
 "<https://help.crypt.bot/crypto-pay-api>`_ client."
 msgstr ""
+"**aiosend** это синхронный и асинхронный `Crypto Pay API "
+"<https://help.crypt.bot/crypto-pay-api>`_ клиент."
 
 #: ../../index.rst:11
 msgid ""
