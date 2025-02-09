@@ -1,10 +1,8 @@
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from aiosend.enums import Asset, Fiat
-
-if TYPE_CHECKING:
     import aiosend
+    from aiosend.enums import Asset, Fiat
 
 
 class GetRatesImage:

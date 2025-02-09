@@ -1,10 +1,11 @@
 from dataclasses import dataclass
 from typing import TYPE_CHECKING
 
+from aiosend.enums import Asset, Fiat
+
 if TYPE_CHECKING:
     from typing import Literal
 
-    from aiosend.enums import Asset, Fiat
     from aiosend.methods import CryptoPayMethod
 
 
@@ -34,6 +35,10 @@ class Network:
         main: "Literal['asset', 'fiat']",
     ) -> str:
         """Return check image url."""
+        if isinstance(asset, Asset):
+            asset = asset.value
+        if isinstance(fiat, Fiat):
+            fiat = fiat.value
         return (
             "https://imggen.send.tg/checks/image?"
             f"asset={asset}"
@@ -51,6 +56,10 @@ class Network:
         percent: float,
     ) -> str:
         """Return rates image url."""
+        if isinstance(base, Asset | Fiat):
+            base = base.value
+        if isinstance(quote, Asset | Fiat):
+            quote = quote.value
         return (
             "https://imggen.send.tg/rates/image?"
             f"base={base}"
