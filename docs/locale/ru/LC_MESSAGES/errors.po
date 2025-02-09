@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../errors.rst:3
 msgid "Errors"
-msgstr ""
+msgstr "Исключения"
 
 #: aiosend.exceptions.APIError:1 aiosend.exceptions.DeserializationError:1
 #: aiosend.exceptions.MethodValuesError:1
@@ -32,7 +32,7 @@ msgstr ""
 
 #: aiosend.exceptions.APIError:1 of
 msgid "Exception for API errors."
-msgstr ""
+msgstr "Исключение для ошибок API."
 
 #: aiosend.exceptions.CryptoPayError:1 of
 msgid "Базовые классы: :py:class:`Exception`"
@@ -40,19 +40,19 @@ msgstr ""
 
 #: aiosend.exceptions.CryptoPayError:1 of
 msgid "Base class for exceptions in this module."
-msgstr ""
+msgstr "Базовый класс всех исключений этого модуля."
 
 #: aiosend.exceptions.DeserializationError:1 of
 msgid "Exception for deserialization errors."
-msgstr ""
+msgstr "Исключение для ошибок десериализации."
 
 #: aiosend.exceptions.MethodValuesError:1 of
 msgid "Exception raised when method values are invalid."
-msgstr ""
+msgstr "Исключение, вызываемое при неверном наборе значений метода."
 
 #: aiosend.exceptions.WrongNetworkError:1 of
 msgid "Exception raised when the token is served by different network."
-msgstr ""
+msgstr "Исключение, вызываемое когда токен принаждежит другой сети."
 
 #~ msgid "Bases: :py:class:`~aiosend.exceptions.CryptoPayError`"
 #~ msgstr ""
