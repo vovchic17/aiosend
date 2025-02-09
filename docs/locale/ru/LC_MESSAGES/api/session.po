@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-07 04:36+0300\n"
+"POT-Creation-Date: 2025-02-09 18:10+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -25,7 +25,7 @@ msgid "Session"
 msgstr ""
 
 #: aiosend.client.session.aiohttp.AiohttpSession:1 of
-msgid "Bases: :py:class:`~aiosend.client.session.base.BaseSession`"
+msgid "Базовые классы: :py:class:`~aiosend.client.session.base.BaseSession`"
 msgstr ""
 
 #: aiosend.client.session.aiohttp.AiohttpSession:1 of
@@ -42,7 +42,7 @@ msgid "Make http request."
 msgstr ""
 
 #: ../../api/session.rst
-msgid "Return type"
+msgid "Тип результата"
 msgstr ""
 
 #: aiosend.client.session.aiohttp.AiohttpSession.request:4
@@ -54,7 +54,7 @@ msgid ""
 msgstr ""
 
 #: aiosend.client.session.base.BaseSession:1 of
-msgid "Bases: :py:class:`~abc.ABC`"
+msgid "Базовые классы: :py:class:`~abc.ABC`"
 msgstr ""
 
 #: aiosend.client.session.base.BaseSession:1 of
@@ -76,4 +76,13 @@ msgid ""
 "<aiosend.client.session.BaseSession.request>` and :attr:`close "
 "<aiosend.client.session.BaseSession.close>` methods."
 msgstr ""
+
+#~ msgid "Bases: :py:class:`~aiosend.client.session.base.BaseSession`"
+#~ msgstr ""
+
+#~ msgid "Return type"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~abc.ABC`"
+#~ msgstr ""
 

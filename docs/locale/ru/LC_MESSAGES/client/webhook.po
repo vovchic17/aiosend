@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-07 04:36+0300\n"
+"POT-Creation-Date: 2025-02-09 18:10+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -43,7 +43,7 @@ msgid "Decorator for handler function."
 msgstr ""
 
 #: ../../client/webhook.rst
-msgid "Return type"
+msgid "Тип результата"
 msgstr ""
 
 #: aiosend.webhook.base.RequestHandler.webhook:5 of
@@ -58,7 +58,7 @@ msgid ""
 msgstr ""
 
 #: ../../client/webhook.rst
-msgid "Returns"
+msgid "Результат"
 msgstr ""
 
 #: aiosend.webhook.base.RequestHandler.webhook:6 of
@@ -124,7 +124,7 @@ msgid ""
 msgstr ""
 
 #: ../../client/webhook.rst
-msgid "Parameters"
+msgid "Параметры"
 msgstr ""
 
 #: aiosend.webhook.base.WebhookManager.register_handler:6 of
@@ -140,7 +140,7 @@ msgstr ""
 
 #: aiosend.webhook.aiohttp_manager.AiohttpManager:1 of
 msgid ""
-"Bases: :py:class:`~aiosend.webhook.base.WebhookManager`\\ "
+"Базовые классы: :py:class:`~aiosend.webhook.base.WebhookManager`\\ "
 "[:py:class:`Application`]"
 msgstr ""
 
@@ -154,7 +154,7 @@ msgstr ""
 
 #: aiosend.webhook.fastapi_manager.FastAPIManager:1 of
 msgid ""
-"Bases: :py:class:`~aiosend.webhook.base.WebhookManager`\\ "
+"Базовые классы: :py:class:`~aiosend.webhook.base.WebhookManager`\\ "
 "[:py:class:`FastAPI`]"
 msgstr ""
 
@@ -168,7 +168,7 @@ msgstr ""
 
 #: aiosend.webhook.flask_manager.FlaskManager:1 of
 msgid ""
-"Bases: :py:class:`~aiosend.webhook.base.WebhookManager`\\ "
+"Базовые классы: :py:class:`~aiosend.webhook.base.WebhookManager`\\ "
 "[:py:class:`Flask`]"
 msgstr ""
 
@@ -179,4 +179,28 @@ msgstr ""
 #: aiosend.webhook.flask_manager.FlaskManager:3 of
 msgid "Webhook manager based on :class:`flask.Flask`."
 msgstr ""
+
+#~ msgid "Return type"
+#~ msgstr ""
+
+#~ msgid "Returns"
+#~ msgstr ""
+
+#~ msgid "Parameters"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Bases: :py:class:`~aiosend.webhook.base.WebhookManager`\\ "
+#~ "[:py:class:`Application`]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Bases: :py:class:`~aiosend.webhook.base.WebhookManager`\\ "
+#~ "[:py:class:`FastAPI`]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Bases: :py:class:`~aiosend.webhook.base.WebhookManager`\\ "
+#~ "[:py:class:`Flask`]"
+#~ msgstr ""
 

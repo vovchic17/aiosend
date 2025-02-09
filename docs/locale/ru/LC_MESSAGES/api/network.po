@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-07 04:36+0300\n"
+"POT-Creation-Date: 2025-02-09 18:10+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -65,7 +65,7 @@ msgid "Return check image url."
 msgstr ""
 
 #: ../../api/network.rst
-msgid "Return type"
+msgid "Тип результата"
 msgstr ""
 
 #: aiosend.client.network.Network.get_check_image:4
@@ -90,4 +90,7 @@ msgstr ""
 #: aiosend.client.network.Network.url:1 of
 msgid "Return URL for method."
 msgstr ""
+
+#~ msgid "Return type"
+#~ msgstr ""
 

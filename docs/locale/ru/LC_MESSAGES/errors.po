@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-07 04:36+0300\n"
+"POT-Creation-Date: 2025-02-09 18:10+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -27,7 +27,7 @@ msgstr ""
 #: aiosend.exceptions.APIError:1 aiosend.exceptions.DeserializationError:1
 #: aiosend.exceptions.MethodValuesError:1
 #: aiosend.exceptions.WrongNetworkError:1 of
-msgid "Bases: :py:class:`~aiosend.exceptions.CryptoPayError`"
+msgid "Базовые классы: :py:class:`~aiosend.exceptions.CryptoPayError`"
 msgstr ""
 
 #: aiosend.exceptions.APIError:1 of
@@ -35,7 +35,7 @@ msgid "Exception for API errors."
 msgstr ""
 
 #: aiosend.exceptions.CryptoPayError:1 of
-msgid "Bases: :py:class:`Exception`"
+msgid "Базовые классы: :py:class:`Exception`"
 msgstr ""
 
 #: aiosend.exceptions.CryptoPayError:1 of
@@ -53,4 +53,10 @@ msgstr ""
 #: aiosend.exceptions.WrongNetworkError:1 of
 msgid "Exception raised when the token is served by different network."
 msgstr ""
+
+#~ msgid "Bases: :py:class:`~aiosend.exceptions.CryptoPayError`"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`Exception`"
+#~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-07 04:36+0300\n"
+"POT-Creation-Date: 2025-02-09 18:10+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -64,7 +64,7 @@ msgid "Decorator for handler function."
 msgstr ""
 
 #: ../../client/invoice_polling.rst
-msgid "Return type"
+msgid "Тип результата"
 msgstr ""
 
 #: aiosend.polling.invoice.InvoicePollingManager.expired_invoice_polling:5
@@ -80,7 +80,7 @@ msgid ""
 msgstr ""
 
 #: ../../client/invoice_polling.rst
-msgid "Returns"
+msgid "Результат"
 msgstr ""
 
 #: aiosend.polling.invoice.InvoicePollingManager.expired_invoice_polling:6
@@ -95,4 +95,10 @@ msgstr ""
 #: ../../client/invoice_polling.rst:30
 msgid "Usage example"
 msgstr ""
+
+#~ msgid "Return type"
+#~ msgstr ""
+
+#~ msgid "Returns"
+#~ msgstr ""
 

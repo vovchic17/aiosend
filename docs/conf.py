@@ -15,7 +15,6 @@ extensions = [
     "sphinx_autodoc_typehints",
 ]
 
-language = "ru"
 locale_dirs = ["locale/"]
 gettext_compact = False
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-07 04:36+0300\n"
+"POT-Creation-Date: 2025-02-09 18:10+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -124,7 +124,7 @@ msgid "Source: https://help.crypt.bot/crypto-pay-api#getBalance"
 msgstr ""
 
 #: ../../types.rst
-msgid "Return type"
+msgid "Тип результата"
 msgstr ""
 
 #: aiosend.types.balance.Balance.update:7 aiosend.types.check.Check.poll:9
@@ -135,7 +135,7 @@ msgid ":sphinx_autodoc_typehints_type:`\\:py\\:obj\\:\\`None\\``"
 msgstr ""
 
 #: ../../types.rst
-msgid "Returns"
+msgid "Результат"
 msgstr ""
 
 #: aiosend.types.check.Check:1 of
@@ -215,7 +215,7 @@ msgid ""
 msgstr ""
 
 #: ../../types.rst
-msgid "Parameters"
+msgid "Параметры"
 msgstr ""
 
 #: aiosend.types.check.Check.poll:7 aiosend.types.invoice.Invoice.poll:7 of
@@ -616,4 +616,13 @@ msgstr ""
 #: ../../docstring aiosend.types.Update.update_type:3 of
 msgid "Webhook update type. Supported update types"
 msgstr ""
+
+#~ msgid "Return type"
+#~ msgstr ""
+
+#~ msgid "Returns"
+#~ msgstr ""
+
+#~ msgid "Parameters"
+#~ msgstr ""
 
