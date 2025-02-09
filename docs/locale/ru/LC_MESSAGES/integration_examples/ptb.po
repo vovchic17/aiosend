@@ -28,9 +28,10 @@ msgstr ""
 msgid ""
 "Usage example with `python-telegram-bot <https://docs.python-telegram-"
 "bot.org/en/latest/>`_"
-msgstr ""
+msgstr "Образец использования с `python-telegram-bot <https://docs.python-telegram-"
+"bot.org/en/latest/>`_"
 
 #: ../../integration_examples/ptb.rst:11
 msgid "Preview"
-msgstr ""
+msgstr "Предпросмотр"
 
