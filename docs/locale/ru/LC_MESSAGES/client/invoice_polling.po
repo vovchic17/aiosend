@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../client/invoice_polling.rst:3
 msgid "Invoice polling"
-msgstr ""
+msgstr "Поллинг счетов"
 
 #: ../../client/invoice_polling.rst:5
 msgid ""
@@ -34,6 +34,13 @@ msgid ""
 "Invoice polling uses the :attr:`/getInvoices "
 "<aiosend.CryptoPay.get_invoices>` method."
 msgstr ""
+"Поллинг - это метод получения уведомлений путём периодической отправки "
+"запросов. После того, как :attr:`статус счёта <aiosend.types.Invoice.status>` "
+"будет изменён на :attr:`PAID <aiosend.enums.InvoiceStatus.PAID>`, "
+":attr:`поллинг-менеджер <auisend.polling.PollingManager>` вызовет "
+"обработчик :attr:`invoice_polling <aiosend.CryptoPay.invoice_polling>`. "
+"Поллинг счетов использует метод :attr:`/getInvoices "
+"<aiosend.CryptoPay.get_invoices>`."
 
 #: ../../client/invoice_polling.rst:13
 msgid ""
