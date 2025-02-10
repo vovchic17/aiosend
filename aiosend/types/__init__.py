@@ -1,4 +1,4 @@
-from .app import App
+from .app import App  # noqa: A005
 from .app_stats import AppStats
 from .balance import Balance
 from .base import (
