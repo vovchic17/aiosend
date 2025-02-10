@@ -67,7 +67,7 @@ msgstr "Абстрактный класс сессии."
 msgid ""
 "If you want to implement your own session class, you should inherit this "
 "class."
-msgstr "Если вы хотите создать свой класс сессии, используйте этот класс как основу."
+msgstr "Если вы хотите создать свой класс сессии, используйте этот класс как базовый."
 
 #: ../../api/session.rst:9
 msgid ""
