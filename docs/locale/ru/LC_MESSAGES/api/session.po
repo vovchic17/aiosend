@@ -13,8 +13,7 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,28 +21,28 @@ msgstr ""
 
 #: ../../api/session.rst:3
 msgid "Session"
-msgstr ""
+msgstr "Сессия"
 
 #: aiosend.client.session.aiohttp.AiohttpSession:1 of
 msgid "Базовые классы: :py:class:`~aiosend.client.session.base.BaseSession`"
-msgstr ""
+msgstr "Базовые классы: :py:class:`~aiosend.client.session.base.BaseSession`"
 
 #: aiosend.client.session.aiohttp.AiohttpSession:1 of
 msgid "Http session based on aiohttp."
-msgstr ""
+msgstr "HTTP-сессия, основанная на aiohttp."
 
 #: aiosend.client.session.aiohttp.AiohttpSession:3 of
 msgid "This class is a wrapper of `aiohttp.ClientSession`."
-msgstr ""
+msgstr "Этот класс является обёрткой над `aiohttp.ClientSession`."
 
 #: aiosend.client.session.aiohttp.AiohttpSession.request:1
 #: aiosend.client.session.base.BaseSession.request:1 of
 msgid "Make http request."
-msgstr ""
+msgstr "Выполнить HTTP-запрос."
 
 #: ../../api/session.rst
 msgid "Тип результата"
-msgstr ""
+msgstr "Тип результата"
 
 #: aiosend.client.session.aiohttp.AiohttpSession.request:4
 #: aiosend.client.session.base.BaseSession.request:4 of
@@ -52,20 +51,23 @@ msgid ""
 " \\\\\\(\\`\\`\\_CryptoPayType\\`\\`\\, bound\\= CryptoPayObject \\| list"
 " \\| bool\\)`"
 msgstr ""
+":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~typing.TypeVar\\`\\\\"
+" \\\\\\(\\`\\`\\_CryptoPayType\\`\\`\\, bound\\= CryptoPayObject \\| list"
+" \\| bool\\)`"
 
 #: aiosend.client.session.base.BaseSession:1 of
 msgid "Базовые классы: :py:class:`~abc.ABC`"
-msgstr ""
+msgstr "Базовые классы: :py:class:`~abc.ABC`"
 
 #: aiosend.client.session.base.BaseSession:1 of
 msgid "Abstract session class."
-msgstr ""
+msgstr "Абстрактный класс сессии."
 
 #: aiosend.client.session.base.BaseSession:3 of
 msgid ""
 "If you want to implement your own session class, you should inherit this "
 "class."
-msgstr ""
+msgstr "Если вы хотите создать свой класс сессии, используйте этот класс как базовый."
 
 #: ../../api/session.rst:9
 msgid ""
@@ -76,13 +78,7 @@ msgid ""
 "<aiosend.client.session.BaseSession.request>` and :attr:`close "
 "<aiosend.client.session.BaseSession.close>` methods."
 msgstr ""
-
-#~ msgid "Bases: :py:class:`~aiosend.client.session.base.BaseSession`"
-#~ msgstr ""
-
-#~ msgid "Return type"
-#~ msgstr ""
-
-#~ msgid "Bases: :py:class:`~abc.ABC`"
-#~ msgstr ""
-
+"**aiosend** по умолчанию использует сессию `aiohttp <https://docs.aiohttp.org/en/stable/index.html>`_. "
+"Вы можете создать свою сессию, основываясь на :class:`BaseSession <aiosend.client.session.BaseSession>`, "
+"переопределив методы :attr:`request <aiosend.client.session.BaseSession.request>` и "
+":attr:`close <aiosend.client.session.BaseSession.close>`."
