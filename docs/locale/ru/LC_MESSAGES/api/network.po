@@ -61,7 +61,7 @@ msgstr "Базовый URL"
 
 #: aiosend.client.network.Network.get_check_image:1 of
 msgid "Return check image url."
-msgstr "Возвращает URL изображения для проверки."
+msgstr "Возвращает URL изображения для чека."
 
 #: ../../api/network.rst
 msgid "Тип результата"
