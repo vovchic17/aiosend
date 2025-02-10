@@ -13,8 +13,7 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,75 +21,71 @@ msgstr ""
 
 #: ../../api/network.rst:3
 msgid "Network"
-msgstr ""
+msgstr "Сеть"
 
 #: ../../api/network.rst:5
 msgid ""
 "Network is a class allows you to build a URL to the API endpoints for "
 "specific network."
-msgstr ""
+msgstr "Класс Network позволяет формировать URL для доступа к API конкретной сети."
 
 #: ../../api/network.rst:7
 msgid ""
 "`Crypto Pay API <https://help.crypt.bot/crypto-pay-api>`_ has two "
 "networks:"
-msgstr ""
+msgstr "`Crypto Pay API <https://help.crypt.bot/crypto-pay-api>`_ имеет две сети:"
 
 #: ../../api/network.rst:11
 msgid "The main network for transactions with real cryptocurrency."
-msgstr ""
+msgstr "Основная сеть для операций с настоящей криптовалютой."
 
 #: ../../api/network.rst:15
 msgid "The network for testing purposes in which currency has no real value."
-msgstr ""
+msgstr "Тестовая сеть, где валюта не имеет реальной ценности."
 
 #: ../../api/network.rst:18
 msgid "Usage example"
-msgstr ""
+msgstr "Пример использования"
 
 #: ../../api/network.rst:20
 msgid "You can create an instance of :class:`CryptoPay` client for both nets."
-msgstr ""
+msgstr "Вы можете создать объект клиента :class:`CryptoPay` для обеих сетей."
 
 #: aiosend.client.network.Network:1 of
 msgid "Configuration for endpoints."
-msgstr ""
+msgstr "Настройка конечных точек доступа."
 
 #: ../../docstring aiosend.client.network.Network.base:1 of
 msgid "Base URL"
-msgstr ""
+msgstr "Базовый URL"
 
 #: aiosend.client.network.Network.get_check_image:1 of
 msgid "Return check image url."
-msgstr ""
+msgstr "Возвращает URL изображения для проверки."
 
 #: ../../api/network.rst
 msgid "Тип результата"
-msgstr ""
+msgstr "Тип результата"
 
 #: aiosend.client.network.Network.get_check_image:4
 #: aiosend.client.network.Network.get_qr:4
 #: aiosend.client.network.Network.get_rates_image:4
 #: aiosend.client.network.Network.url:4 of
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`str\\``"
-msgstr ""
+msgstr ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`str\\``"
 
 #: aiosend.client.network.Network.get_qr:1 of
 msgid "Return qr code link."
-msgstr ""
+msgstr "Возвращает ссылку на QR-код."
 
 #: aiosend.client.network.Network.get_rates_image:1 of
 msgid "Return rates image url."
-msgstr ""
+msgstr "Возвращает URL изображения с курсами."
 
 #: ../../docstring aiosend.client.network.Network.name:1 of
 msgid "Net name"
-msgstr ""
+msgstr "Имя сети"
 
 #: aiosend.client.network.Network.url:1 of
 msgid "Return URL for method."
-msgstr ""
-
-#~ msgid "Return type"
-#~ msgstr ""
-
+msgstr "Возвращает URL для метода."
