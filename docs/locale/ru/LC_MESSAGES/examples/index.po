@@ -22,5 +22,5 @@ msgstr ""
 
 #: ../../examples/index.rst:3
 msgid "Examples"
-msgstr ""
+msgstr "Примеры"
 
