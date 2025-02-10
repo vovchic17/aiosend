@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../index.rst:6
 msgid "Introduction"
-msgstr "Вступление"
+msgstr "Введение"
 
 #: ../../index.rst:8
 msgid ""
@@ -37,7 +37,7 @@ msgid ""
 "|telegram| **aiosend** has `community chat on Telegram "
 "<https://aiosend.t.me>`_"
 msgstr ""
-"|telegram| У **aiosend** есть `чат комьюнити в Телеграм "
+"|telegram| У **aiosend** есть `чат сообщества в Телеграм "
 "<https://aiosend.t.me>`_"
 
 #: ../../index.rst:13
@@ -58,15 +58,15 @@ msgstr ""
 
 #: ../../index.rst:20
 msgid "provides :doc:`webhook handler <client/webhook>`"
-msgstr "предоставляет :doc:`хендлер вебхуков <client/webhook>`"
+msgstr "предоставляет :doc:`обработчик вебхуков <client/webhook>`"
 
 #: ../../index.rst:21
 msgid "provides :doc:`additional function shortcuts <client/tools>`"
-msgstr "предоставляет :doc:`дополнительные обёрточные функции <client/tools>`"
+msgstr "предоставляет :doc:`дополнительные функции <client/tools>`"
 
 #: ../../index.rst:22
 msgid "supports sync and async usage"
-msgstr "поддерживает синхронное и асинхронное использование"
+msgstr "поддерживает синхронное и асинхронное взаимодействие"
 
 #: ../../index.rst:26
 msgid "Quick start"
