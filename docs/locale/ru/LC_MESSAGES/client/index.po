@@ -22,13 +22,15 @@ msgstr ""
 
 #: ../../client/index.rst:3
 msgid "Client"
-msgstr ""
+msgstr "Клиент"
 
 #: ../../client/index.rst:5
 msgid ""
 "aiosend is |python| python implementation for `Crypto Pay API "
 "<https://help.crypt.bot/crypto-pay-api>`_."
 msgstr ""
+"aiosend это обёртка для `Crypto Pay API "
+"<https://help.crypt.bot/crypto-pay-api>`_ на |python| python"
 
 #: ../../client/index.rst:14
 msgid "python"
@@ -36,21 +38,21 @@ msgstr ""
 
 #: ../../client/index.rst:7
 msgid "**Methods** - official Crypto Pay API methods."
-msgstr ""
+msgstr "**Методы** - официальные Crypto Pay API методы"
 
 #: ../../client/index.rst:8
 msgid "**Tools** - additional functionality."
-msgstr ""
+msgstr "**Инструменты** - дополнительный функционал"
 
 #: ../../client/index.rst:9
 msgid "**Webhook** - updates handling via webhook."
-msgstr ""
+msgstr "**Вебхуки** - обработка уведомлений через вебхуки"
 
 #: ../../client/index.rst:10
 msgid "**Invoice polling** - invoice updates handling via polling."
-msgstr ""
+msgstr "**Поллинг счетов** - обработка уведомлений о счетах через поллинг"
 
 #: ../../client/index.rst:11
 msgid "**Check polling** - check updates handling via polling."
-msgstr ""
+msgstr "**Поллинг чеков** - обработка уведомлений о чеках через поллинг"
 

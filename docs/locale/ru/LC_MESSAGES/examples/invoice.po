@@ -22,9 +22,9 @@ msgstr ""
 
 #: ../../examples/invoice.rst:3
 msgid "Invoice"
-msgstr ""
+msgstr "Счёт"
 
 #: ../../examples/invoice.rst:6
 msgid "Invoice shortcut methods"
-msgstr ""
+msgstr "Альтернативные методы счёта"
 
