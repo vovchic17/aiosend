@@ -74,7 +74,7 @@ msgstr "Добавление обработчика для уведомлени�
 #: aiosend.polling.check.CheckPollingManager.check_polling:3
 #: aiosend.polling.check.CheckPollingManager.expired_check_polling:3 of
 msgid "Decorator for handler function."
-msgstr "Декоратор дял функции-обработчика."
+msgstr "Декоратор для функции-обработчика."
 
 #: ../../client/check_polling.rst
 msgid "Тип результата"
