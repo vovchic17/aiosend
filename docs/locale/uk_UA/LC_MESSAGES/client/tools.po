@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, VoVcHiC
+# This file is distributed under the same license as the aiosend package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: aiosend \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-12 14:38+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uk_UA\n"
+"Language-Team: uk_UA <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../client/tools.rst:3
+msgid "Tools"
+msgstr ""
+
+#: ../../client/tools.rst:5
+msgid "Additional functionality."
+msgstr ""
+
+#: aiosend.tools.exchange.Exchange.exchange:1 of
+msgid "Exchange currency."
+msgstr ""
+
+#: aiosend.tools.exchange.Exchange.exchange:3 of
+msgid "Wrapper for :class:`aiosend.CryptoPay.get_exchange_rates`."
+msgstr ""
+
+#: aiosend.tools.exchange.Exchange.exchange:5 of
+msgid ""
+"Use this method to get the equivalent amount in the target currency for "
+"the source currency."
+msgstr ""
+
+#: ../../client/tools.rst
+msgid "Return type"
+msgstr ""
+
+#: aiosend.tools.exchange.Exchange.exchange:8 of
+msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`float\\``"
+msgstr ""
+
+#: ../../client/tools.rst
+msgid "Returns"
+msgstr ""
+
+#: aiosend.tools.exchange.Exchange.exchange:9 of
+msgid ":class:`float` on success."
+msgstr ""
+
+#: aiosend.tools.exchange.Exchange.exchange
+#: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset of
+msgid "raise"
+msgstr ""
+
+#: aiosend.tools.exchange.Exchange.exchange:10 of
+msgid ":class:`CryptoPayError` if there is no such exchange rate."
+msgstr ""
+
+#: ../../client/tools.rst:9 ../../client/tools.rst:15 ../../client/tools.rst:21
+msgid "Usage example"
+msgstr ""
+
+#: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:1
+#: of
+msgid "Get the balance of a specific asset."
+msgstr ""
+
+#: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:3
+#: of
+msgid "Wrapper for :class:`aiosend.CryptoPay.get_balance`."
+msgstr ""
+
+#: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:5
+#: of
+msgid "Use this method to get the balance of a specific asset."
+msgstr ""
+
+#: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:7
+#: of
+msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~aiosend.types.balance.Balance\\``"
+msgstr ""
+
+#: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:8
+#: of
+msgid ":class:`Balacne` on success."
+msgstr ""
+
+#: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:9
+#: of
+msgid ":class:`CryptoPayError` if there is no such asset."
+msgstr ""
+
+#: aiosend.tools.get_invoice.GetInvoice.get_invoice:1 of
+msgid "Get exactly one invoice or none."
+msgstr ""
+
+#: aiosend.tools.get_invoice.GetInvoice.get_invoice:3 of
+msgid "Wrapper for :class:`aiosend.CryptoPay.get_invoices`"
+msgstr ""
+
+#: aiosend.tools.get_invoice.GetInvoice.get_invoice:5 of
+msgid ""
+"Use this method to update status of an existing invoice object or to get "
+"this object by passing the invoice id."
+msgstr ""
+
+#: aiosend.tools.get_invoice.GetInvoice.get_invoice:8 of
+msgid ""
+":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~aiosend.types.invoice.Invoice\\`"
+" \\| \\:py\\:obj\\:\\`None\\``"
+msgstr ""
+
+#: aiosend.tools.get_invoice.GetInvoice.get_invoice:9 of
+msgid ":class:`aiosend.types.Invoice` object."
+msgstr ""
+
+#: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:1 of
+msgid "Delete all checks."
+msgstr ""
+
+#: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:3 of
+msgid ""
+"Wrapper for :class:`aiosend.CryptoPay.get_checks` and "
+":class:`aiosend.CryptoPay.delete_check`"
+msgstr ""
+
+#: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:6 of
+msgid "Use this method to delete all existing checks created by your app."
+msgstr ""
+
+#: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:9
+#: aiosend.tools.delete_all_invoices.DeleteAllInvoices.delete_all_invoices:9 of
+msgid ":sphinx_autodoc_typehints_type:`\\:py\\:obj\\:\\`None\\``"
+msgstr ""
+
+#: aiosend.tools.delete_all_invoices.DeleteAllInvoices.delete_all_invoices:1 of
+msgid "Delete all invoices."
+msgstr ""
+
+#: aiosend.tools.delete_all_invoices.DeleteAllInvoices.delete_all_invoices:3 of
+msgid ""
+"Wrapper for :class:`aiosend.CryptoPay.get_invoices` and "
+":class:`aiosend.CryptoPay.delete_invoice`"
+msgstr ""
+
+#: aiosend.tools.delete_all_invoices.DeleteAllInvoices.delete_all_invoices:6 of
+msgid "Use this method to delete all existing invoices created by your app."
+msgstr ""
+
+#: aiosend.tools.get_rates_image.GetRatesImage.get_rates_image:1 of
+msgid "Get rates image."
+msgstr ""
+
+#: aiosend.tools.get_rates_image.GetRatesImage.get_rates_image:3 of
+msgid "Use this method to get exchange rates image."
+msgstr ""
+
+#: aiosend.tools.get_rates_image.GetRatesImage.get_rates_image:5 of
+msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`str\\``"
+msgstr ""
+
+#: aiosend.tools.get_rates_image.GetRatesImage.get_rates_image:6 of
+msgid "rates image url."
+msgstr ""
+
