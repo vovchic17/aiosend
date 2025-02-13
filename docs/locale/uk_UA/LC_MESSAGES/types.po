@@ -106,8 +106,8 @@ msgid ""
 "Cryptocurrency alphabetic code. Currently, can be “USDT”, “TON”, “BTC”, "
 "“ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet)."
 msgstr ""
-"Алфавітний код криптовалюти. В даний час це можуть бути "USDT","
-""TON", "BTC", "ETH", "LTC", "BNB", "TRX" і "USDC" (і " JET " для тестової мережі)."
+"Алфавітний код криптовалюти. В даний час це можуть бути “USDT”, "
+"“TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” і “USDC” (і “JET” для тестової мережі)."
 
 #: ../../docstring aiosend.types.Balance.onhold:1 of
 msgid "Unavailable amount currently is on hold in float."
@@ -355,7 +355,6 @@ msgid ""
 "“TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for "
 "testnet)."
 msgstr ""
-
 "*Опціонально*. Список валют, який можуть бути використані для оплати рахунку. "
 "Доступний тільки якщо currency_type є ”fiat”. На даний момент "
 "може бути ”USDT”, ”TON”, ”BTC”, ”ETH”, ”LTC”, ”BNB”, ”TRX” і ”USDC”"
@@ -436,7 +435,7 @@ msgid ""
 "*Optional*. Amount of service fees charged when the invoice was paid. "
 "Available only if status is “paid”."
 msgstr ""
-* Опціонально*. Сума плати за обслуговування, що стягується при оплаті рахунку. "
+"* Опціонально*. Сума плати за обслуговування, що стягується при оплаті рахунку. "
 "Доступна тільки при наявності статусу “оплачено”.
 
 #: ../../docstring aiosend.types.Invoice.fee_asset:1 of
@@ -504,7 +503,7 @@ msgid ""
 "*Optional*. Label of the button, can be “viewItem”, “openChannel”, "
 "“openBot” or “callback”."
 msgstr ""
-* Опціонально*. Мітка кнопки, може бути “viewItem”, “openChannel”,"
+"* Опціонально*. Мітка кнопки, може бути “viewItem”, “openChannel”,"
 "“openBot” або “callback”."
 
 #: ../../docstring aiosend.types.Invoice.paid_btn_url:1 of
@@ -545,7 +544,7 @@ msgstr "Надіслати рахунок в поллінг-менеджер."
 msgid ""
 "Use this method to check the status of the invoice until the timeout "
 "expires."
-msgstr ""Використовуйте цей метод для перевірки статусу рахунку до тих пір,"
+msgstr "Використовуйте цей метод для перевірки статусу рахунку до тих пір, "
 "пока не истечет тайм-аут."
 
 #: aiosend.types.Invoice.qr:1 of
@@ -610,7 +609,7 @@ msgstr "Сума переказу у вигляді речового числа.
 
 #: ../../docstring aiosend.types.Transfer.comment:1 of
 msgid "*Optional*. Comment for this transfer."
-msgstr "* Опціонально*. Коментар до перекладу."
+msgstr "*Опціонально*. Коментар до перекладу."
 
 #: ../../docstring aiosend.types.Transfer.completed_at:1 of
 msgid "Date the transfer was completed in ISO 8601 format."
@@ -618,7 +617,7 @@ msgstr "Дата виконання перекладу в форматі ISO 860
 
 #: ../../docstring aiosend.types.Transfer.spend_id:1 of
 msgid "Unique UTF-8 string."
-msgstr "Унікальна UTF - 8 рядок."
+msgstr "Унікальна UTF-8 рядок."
 
 #: ../../docstring aiosend.types.Transfer.status:1 of
 msgid "Status of the transfer, can only be “completed”."

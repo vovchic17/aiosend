@@ -26,7 +26,7 @@ msgstr ""
 
 #: ../../integration_examples/pyrogram.rst:6
 msgid "Usage example with `Pyrogram <https://docs.pyrogram.org/>`_"
-msgstr "Зразок використання з ' Pyrogram <https://docs.pyrogram.org / >`_"
+msgstr "Зразок використання з `Pyrogram <https://docs.pyrogram.org / >`_"
 
 #: ../../integration_examples/pyrogram.rst:11
 msgid "Preview"

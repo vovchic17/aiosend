@@ -35,11 +35,11 @@ msgid ""
 "<aiosend.CryptoPay.get_invoices>` method."
 msgstr ""
 "Полінг-це метод отримання повідомлень шляхом періодичної відправки "
-"запит. Після того, як: attr:`статус рахунку <aiosend.types.Invoice.status>` "
-"буде змінено на: attr:' PAID <aiosend.enums.InvoiceStatus.PAID>`, "
-": attr: 'поллінг-менеджер <auisend.polling.PollingManager> ' викличе "
-"обробник: attr:' invoice_polling <aiosend.CryptoPay.invoice_polling>`. "
-"Полінг рахунків використовує метод: attr:' /getInvoices "
+"запит. Після того, як :attr:`статус рахунку <aiosend.types.Invoice.status>` "
+"буде змінено на :attr:`PAID <aiosend.enums.InvoiceStatus.PAID>`, "
+":attr:`поллінг-менеджер <auisend.polling.PollingManager>` викличе "
+"обробник :attr:`invoice_polling <aiosend.CryptoPay.invoice_polling>`. "
+"Полінг рахунків використовує метод :attr:`/getInvoices "
 "<aiosend.CryptoPay.get_invoices>`."
 
 #: ../../client/invoice_polling.rst:13
@@ -52,8 +52,8 @@ msgid ""
 "stop polling that invoice and call the :attr:`expired_invoice_polling "
 "<aiosend.CryptoPay.expired_invoice_polling>` handler if it is declared."
 msgstr ""
-"Менеджер опитування (: attr:' Polling manager <aiosend.polling.PollingManager>') має налаштування (:attr:`configuration <aiosend.polling.PollingConfig>`), "
-"в яких задаються :attr:' затримка <aiosend.polling.PollingConfig.delay> ' між запитами і: attr:`таймаут <aiosend.polling.PollingConfig.timeout> ' для кожного рахунку в черзі. "
+"Менеджер опитування (:attr:`Polling manager <aiosend.polling.PollingManager>`) має налаштування (:attr:`configuration <aiosend.polling.PollingConfig>`), "
+"в яких задаються :attr:`затримка <aiosend.polling.PollingConfig.delay>` між запитами і :attr:`таймаут <aiosend.polling.PollingConfig.timeout>` для кожного рахунку в черзі. "
 "Після закінчення таймауту менеджер припиняє опитування даного рахунку і, якщо вказано, викликає обробник :attr:`expired_invoice_polling <aiosend.CryptoPay.expired_invoice_polling>`."
 
 #: ../../client/invoice_polling.rst:22
@@ -62,7 +62,7 @@ msgstr "** За замовчуванням затримка між запита�
 
 #: ../../client/invoice_polling.rst:24
 msgid ":ref:`You can change the polling configuration. <PollingConfigAnchor>`"
-msgstr ": ref: `ви можете змінити налаштування опитування. <PollingConfigAnchor>`"
+msgstr ":ref:`ви можете змінити налаштування опитування. <PollingConfigAnchor>`"
 
 #: aiosend.polling.invoice.InvoicePollingManager.invoice_polling:1 of
 msgid "Register a handler for polling invoice updates."

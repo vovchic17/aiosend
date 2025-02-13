@@ -28,8 +28,8 @@ msgstr ""
 msgid ""
 "Usage example with async `pyTelegramBotAPI "
 "<https://pytba.readthedocs.io/en/latest/>`_"
-msgstr "Зразок використання з асинхронним ' pyTelegramBotAPI "
-        "<https://pytba.readthedocs.io/en/latest/>`_"
+msgstr "Зразок використання з асинхронним `pyTelegramBotAPI "
+"<https://pytba.readthedocs.io/en/latest/>`_"
 
 #: ../../integration_examples/pytba_async.rst:12
 msgid "Preview"

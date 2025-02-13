@@ -29,7 +29,7 @@ msgid ""
 "Usage example with `python-telegram-bot <https://docs.python-telegram-"
 "bot.org/en/latest/>`_"
 msgstr "Зразок використання з `python-telegram-bot <https://docs.python-telegram-"
-                              "bot.org/en/latest/>`_"
+"bot.org/en/latest/>`_"
 
 #: ../../integration_examples/ptb.rst:11
 msgid "Preview"

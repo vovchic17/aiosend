@@ -28,7 +28,7 @@ msgstr "Мережа"
 msgid ""
 "Network is a class allows you to build a URL to the API endpoints for "
 "specific network."
-msgstr "Клас Network дозволяє формувати URL для доступу до API конкретної мережі "
+msgstr "Клас Network дозволяє формувати URL для доступу до API конкретної мережі."
 
 #: ../../api/network.rst:7
 msgid ""
@@ -50,7 +50,7 @@ msgstr "Приклад використання"
 
 #: ../../api/network.rst:20
 msgid "You can create an instance of :class:`CryptoPay` client for both nets."
-msgstr "Ви можете створити об'єкт клієнта :class:`CryptoPay` для обох мереж"
+msgstr "Ви можете створити об'єкт клієнта :class:`CryptoPay` для обох мереж."
 
 #: aiosend.client.network.Network:1 of
 msgid "Configuration for endpoints."
@@ -86,10 +86,8 @@ msgstr "Повертає URL зображення з курсами."
 
 #: ../../docstring aiosend.client.network.Network.name:1 of
 msgid "Net name"
-msgstr "ім'я мережі"
+msgstr "Iм'я мережі"
 
 #: aiosend.client.network.Network.url:1 of
 msgid "Return URL for method."
 msgstr "Повертає URL для методу."
-
-
