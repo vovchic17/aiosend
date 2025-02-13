@@ -1,0 +1,575 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, VoVcHiC
+# This file is distributed under the same license as the aiosend package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: aiosend \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-12 14:38+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uk_UA\n"
+"Language-Team: uk_UA <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../client/methods.rst:3
+msgid "Methods"
+msgstr ""
+
+#: ../../client/methods.rst:5
+msgid ""
+"`Crypto Pay API <https://help.crypt.bot/crypto-pay-api>`_ methods "
+"implementation."
+msgstr ""
+
+#: aiosend.methods.get_me.GetMe.get_me:1 of
+msgid "getMe method."
+msgstr ""
+
+#: aiosend.methods.get_me.GetMe.get_me:3 of
+msgid ""
+"Use this method to test your app's authentication token. Requires no "
+"parameters. On success, returns basic information about an app."
+msgstr ""
+
+#: aiosend.methods.get_me.GetMe.get_me:7 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#getMe"
+msgstr ""
+
+#: ../../client/methods.rst
+msgid "Return type"
+msgstr ""
+
+#: aiosend.methods.get_me.GetMe.get_me:9 of
+msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~aiosend.types.app.App\\``"
+msgstr ""
+
+#: ../../client/methods.rst
+msgid "Returns"
+msgstr ""
+
+#: aiosend.methods.get_me.GetMe.get_me:10 of
+msgid ":class:`App` object."
+msgstr ""
+
+#: aiosend.methods.create_invoice.CreateInvoice.create_invoice:1 of
+msgid "createInvoice method."
+msgstr ""
+
+#: aiosend.methods.create_invoice.CreateInvoice.create_invoice:3 of
+msgid ""
+"Use this method to create a new invoice. On success, returns an object of"
+" the created :class:`Invoice`."
+msgstr ""
+
+#: aiosend.methods.create_invoice.CreateInvoice.create_invoice:6 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#createInvoice"
+msgstr ""
+
+#: ../../client/methods.rst
+msgid "Parameters"
+msgstr ""
+
+#: aiosend.methods.create_invoice.CreateInvoice.create_invoice:9 of
+msgid "Amount of the invoice in float."
+msgstr ""
+
+#: aiosend.methods.create_invoice.CreateInvoice.create_invoice:11 of
+msgid ""
+"*Optional*. Type of the price, can be “crypto” or “fiat”. Defaults to "
+"crypto."
+msgstr ""
+
+#: aiosend.methods.create_invoice.CreateInvoice.create_invoice:13 of
+msgid ""
+"*Optional*. Required if currency_type is “crypto”. Cryptocurrency "
+"alphabetic code."
+msgstr ""
+
+#: aiosend.methods.create_invoice.CreateInvoice.create_invoice:15 of
+msgid "*Optional*. Required if currency_type is “fiat”. Fiat currency code."
+msgstr ""
+
+#: aiosend.methods.create_invoice.CreateInvoice.create_invoice:17 of
+msgid ""
+"*Optional*. List of cryptocurrency alphabetic codes. Assets which can be "
+"used to pay the invoice. Available only if currency_type is “fiat”"
+msgstr ""
+
+#: aiosend.methods.create_invoice.CreateInvoice.create_invoice:19 of
+msgid ""
+"*Optional*. Description for the invoice. User will see this description "
+"when they pay the invoice. Up to 1024 characters."
+msgstr ""
+
+#: aiosend.methods.create_invoice.CreateInvoice.create_invoice:21 of
+msgid ""
+"*Optional*. Optional. Text of the message which will be presented to a "
+"user after the invoice is paid. Up to 2048 characters."
+msgstr ""
+
+#: aiosend.methods.create_invoice.CreateInvoice.create_invoice:23 of
+msgid ""
+"*Optional*. Label of the button which will be presented to a user after "
+"the invoice is paid."
+msgstr ""
+
+#: aiosend.methods.create_invoice.CreateInvoice.create_invoice:25 of
+msgid ""
+"*Optional*. Required if paid_btn_name is specified. URL opened using the "
+"button which will be presented to a user after the invoice is paid."
+msgstr ""
+
+#: aiosend.methods.create_invoice.CreateInvoice.create_invoice:27 of
+msgid ""
+"*Optional*. Any data you want to attach to the invoice (for example, user"
+" ID, payment ID, ect). Up to 4kb."
+msgstr ""
+
+#: aiosend.methods.create_invoice.CreateInvoice.create_invoice:29 of
+msgid ""
+"*Optional*. Allow a user to add a comment to the payment. Defaults to "
+"true."
+msgstr ""
+
+#: aiosend.methods.create_invoice.CreateInvoice.create_invoice:31 of
+msgid "*Optional*. Allow a user to pay the invoice anonymously. Defaults to true."
+msgstr ""
+
+#: aiosend.methods.create_invoice.CreateInvoice.create_invoice:33 of
+msgid ""
+"*Optional*. You can set a payment time limit for the invoice in seconds. "
+"Values between 1-2678400 are accepted."
+msgstr ""
+
+#: aiosend.methods.create_invoice.CreateInvoice.create_invoice:34 of
+msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~aiosend.types.invoice.Invoice\\``"
+msgstr ""
+
+#: aiosend.methods.create_invoice.CreateInvoice.create_invoice:35 of
+msgid ":class:`Invoice` object"
+msgstr ""
+
+#: aiosend.methods.delete_invoice.DeleteInvoice.delete_invoice:1 of
+msgid "deleteInvoice method."
+msgstr ""
+
+#: aiosend.methods.delete_invoice.DeleteInvoice.delete_invoice:3 of
+msgid ""
+"Use this method to delete invoices created by your app. Returns "
+":code:`True` on success."
+msgstr ""
+
+#: aiosend.methods.delete_invoice.DeleteInvoice.delete_invoice:6 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#hwjK"
+msgstr ""
+
+#: aiosend.methods.delete_invoice.DeleteInvoice.delete_invoice:9 of
+msgid "Invoice ID to be deleted."
+msgstr ""
+
+#: aiosend.methods.delete_check.DeleteCheck.delete_check:10
+#: aiosend.methods.delete_invoice.DeleteInvoice.delete_invoice:10 of
+msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`bool\\``"
+msgstr ""
+
+#: aiosend.methods.delete_check.DeleteCheck.delete_check:11
+#: aiosend.methods.delete_invoice.DeleteInvoice.delete_invoice:11 of
+msgid ":code:`True` on success."
+msgstr ""
+
+#: ../../client/methods.rst:11
+msgid ""
+"To use /create_check method you need to enable it to the restriction "
+"settings in `@CryptoBot <https://send.t.me>`_ as follows:"
+msgstr ""
+
+#: ../../client/methods.rst:13
+msgid "🏝 Crypto Pay -> My Apps -> YOUR APP -> Security -> Checks -> Enable."
+msgstr ""
+
+#: aiosend.methods.create_check.CreateCheck.create_check:1 of
+msgid "createCheck method."
+msgstr ""
+
+#: aiosend.methods.create_check.CreateCheck.create_check:3 of
+msgid ""
+"Use this method to create a new check. On success, returns an object of "
+"the created :class:`Check`."
+msgstr ""
+
+#: aiosend.methods.create_check.CreateCheck.create_check:6 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#createCheck"
+msgstr ""
+
+#: aiosend.methods.create_check.CreateCheck.create_check:9 of
+msgid "Amount of the check in float."
+msgstr ""
+
+#: aiosend.methods.create_check.CreateCheck.create_check:11
+#: aiosend.methods.transfer.Transfer.transfer:12 of
+msgid "Cryptocurrency alphabetic code."
+msgstr ""
+
+#: aiosend.methods.create_check.CreateCheck.create_check:13 of
+msgid "ID of the user who will be able to activate the check, defaults to None"
+msgstr ""
+
+#: aiosend.methods.create_check.CreateCheck.create_check:15 of
+msgid ""
+"A user with the specified username will be able to activate the check, "
+"defaults to None"
+msgstr ""
+
+#: aiosend.methods.create_check.CreateCheck.create_check:16 of
+msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~aiosend.types.check.Check\\``"
+msgstr ""
+
+#: aiosend.methods.create_check.CreateCheck.create_check:17 of
+msgid ":class:`cryptopay.types.Check` object"
+msgstr ""
+
+#: aiosend.methods.delete_check.DeleteCheck.delete_check:1 of
+msgid "deleteCheck method."
+msgstr ""
+
+#: aiosend.methods.delete_check.DeleteCheck.delete_check:3 of
+msgid ""
+"Use this method to delete checks created by your app. Returns "
+":code:`True` on success."
+msgstr ""
+
+#: aiosend.methods.delete_check.DeleteCheck.delete_check:6 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#deleteCheck"
+msgstr ""
+
+#: aiosend.methods.delete_check.DeleteCheck.delete_check:9 of
+msgid "Check ID to be deleted."
+msgstr ""
+
+#: ../../client/methods.rst:17
+msgid ""
+"To use /transfer method you need to enable it to the restriction settings"
+" in `@CryptoBot <https://send.t.me>`_ as follows:"
+msgstr ""
+
+#: ../../client/methods.rst:19
+msgid "🏝 Crypto Pay -> My Apps -> YOUR APP -> Security -> Transfers -> Enable."
+msgstr ""
+
+#: aiosend.methods.transfer.Transfer.transfer:1 of
+msgid "transfer method."
+msgstr ""
+
+#: aiosend.methods.transfer.Transfer.transfer:3 of
+msgid ""
+"Use this method to send coins from your app's balance to a user. On "
+"success, returns completed :class:`Transfer`. This method must first be "
+"enabled in the security settings of your app."
+msgstr ""
+
+#: aiosend.methods.transfer.Transfer.transfer:7 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#transfer"
+msgstr ""
+
+#: aiosend.methods.transfer.Transfer.transfer:10 of
+msgid ""
+"User ID in Telegram. User must have previously used @CryptoBot "
+"(@CryptoTestnetBot for testnet)."
+msgstr ""
+
+#: aiosend.methods.transfer.Transfer.transfer:14 of
+msgid ""
+"Amount of the transfer in float. The minimum and maximum amount limits "
+"for each of the supported assets roughly correspond to 1-25000 USD."
+msgstr ""
+
+#: aiosend.methods.transfer.Transfer.transfer:16 of
+msgid ""
+"Random UTF-8 string unique per transfer for idempotent requests. The same"
+" spend_id can be accepted only once from your app. Up to 64 symbols."
+msgstr ""
+
+#: aiosend.methods.transfer.Transfer.transfer:18 of
+msgid ""
+"*Optional*. Comment for the transfer. Users will see this comment in the "
+"notification about the transfer. Up to 1024 symbols."
+msgstr ""
+
+#: aiosend.methods.transfer.Transfer.transfer:20 of
+msgid ""
+"*Optional*. Pass true to not send to the user the notification about the "
+"transfer. Defaults to false."
+msgstr ""
+
+#: aiosend.methods.transfer.Transfer.transfer:21 of
+msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~aiosend.types.transfer.Transfer\\``"
+msgstr ""
+
+#: aiosend.methods.transfer.Transfer.transfer:22 of
+msgid ":class:`Transfer` object."
+msgstr ""
+
+#: aiosend.methods.get_invoices.GetInvoices.get_invoices:1 of
+msgid "getInvoices method."
+msgstr ""
+
+#: aiosend.methods.get_invoices.GetInvoices.get_invoices:3 of
+msgid ""
+"Use this method to get invoices created by your app. On success, returns "
+"array of :class:`Invoice`."
+msgstr ""
+
+#: aiosend.methods.get_invoices.GetInvoices.get_invoices:6 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#getInvoices"
+msgstr ""
+
+#: aiosend.methods.get_checks.GetChecks.get_checks:9
+#: aiosend.methods.get_invoices.GetInvoices.get_invoices:9 of
+msgid "*Optional*. Cryptocurrency alphabetic code."
+msgstr ""
+
+#: aiosend.methods.get_invoices.GetInvoices.get_invoices:11 of
+msgid "*Optional*. Fiat currency code."
+msgstr ""
+
+#: aiosend.methods.get_invoices.GetInvoices.get_invoices:13 of
+msgid "*Optional*. List of invoice IDs separated by comma."
+msgstr ""
+
+#: aiosend.methods.get_invoices.GetInvoices.get_invoices:15 of
+msgid ""
+"*Optional*. Status of invoices to be returned. Available statuses: "
+"“active” and “paid”."
+msgstr ""
+
+#: aiosend.methods.get_invoices.GetInvoices.get_invoices:17 of
+msgid ""
+"*Optional*. Offset needed to return a specific subset of invoices. "
+"Defaults to 0."
+msgstr ""
+
+#: aiosend.methods.get_invoices.GetInvoices.get_invoices:19 of
+msgid ""
+"*Optional*. Number of invoices to be returned. Values between 1-1000 are "
+"accepted. Defaults to 100."
+msgstr ""
+
+#: aiosend.methods.get_invoices.GetInvoices.get_invoices:20 of
+msgid ""
+":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`list\\`\\\\ "
+"\\\\\\[\\:py\\:class\\:\\`\\~aiosend.types.invoice.Invoice\\`\\]`"
+msgstr ""
+
+#: aiosend.methods.get_invoices.GetInvoices.get_invoices:21 of
+msgid "List of :class:`Invoice` objects."
+msgstr ""
+
+#: aiosend.methods.get_checks.GetChecks.get_checks:1 of
+msgid "getChecks method."
+msgstr ""
+
+#: aiosend.methods.get_checks.GetChecks.get_checks:3 of
+msgid ""
+"Use this method to get checks created by your app. On success, returns "
+"array of :class:`Check`."
+msgstr ""
+
+#: aiosend.methods.get_checks.GetChecks.get_checks:6 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#getChecks"
+msgstr ""
+
+#: aiosend.methods.get_checks.GetChecks.get_checks:11 of
+msgid "*Optional*. List of check IDs."
+msgstr ""
+
+#: aiosend.methods.get_checks.GetChecks.get_checks:13 of
+msgid ""
+"*Optional*. Status of check to be returned. Available statuses: “active” "
+"and “activated”."
+msgstr ""
+
+#: aiosend.methods.get_checks.GetChecks.get_checks:15 of
+msgid ""
+"*Optional*. Offset needed to return a specific subset of check. Defaults "
+"to 0."
+msgstr ""
+
+#: aiosend.methods.get_checks.GetChecks.get_checks:17 of
+msgid ""
+"*Optional*. Number of check to be returned. Values between 1-1000 are "
+"accepted. Defaults to 100."
+msgstr ""
+
+#: aiosend.methods.get_checks.GetChecks.get_checks:18 of
+msgid ""
+":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`list\\`\\\\ "
+"\\\\\\[\\:py\\:class\\:\\`\\~aiosend.types.check.Check\\`\\]`"
+msgstr ""
+
+#: aiosend.methods.get_checks.GetChecks.get_checks:19 of
+msgid "List of :class:`Check` objects."
+msgstr ""
+
+#: aiosend.methods.get_transfers.GetTransfers.get_transfers:1 of
+msgid "getTransfers method."
+msgstr ""
+
+#: aiosend.methods.get_transfers.GetTransfers.get_transfers:3 of
+msgid ""
+"Use this method to get transfers created by your app. On success, returns"
+" array of :class:`Transfer`."
+msgstr ""
+
+#: aiosend.methods.get_transfers.GetTransfers.get_transfers:6 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#getTransfers"
+msgstr ""
+
+#: aiosend.methods.get_transfers.GetTransfers.get_transfers:9 of
+msgid "*Optional*. Cryptocurrency alphabetic code. Defaults to all currencies."
+msgstr ""
+
+#: aiosend.methods.get_transfers.GetTransfers.get_transfers:11 of
+msgid "*Optional*. List of transfer IDs."
+msgstr ""
+
+#: aiosend.methods.get_transfers.GetTransfers.get_transfers:13 of
+msgid "*Optional*. Unique UTF-8 transfer string."
+msgstr ""
+
+#: aiosend.methods.get_transfers.GetTransfers.get_transfers:15 of
+msgid ""
+"*Optional*. Offset needed to return a specific subset of transfers. "
+"Defaults to 0."
+msgstr ""
+
+#: aiosend.methods.get_transfers.GetTransfers.get_transfers:17 of
+msgid ""
+"*Optional*. Number of transfers to be returned. Values between 1-1000 are"
+" accepted. Defaults to 100."
+msgstr ""
+
+#: aiosend.methods.get_transfers.GetTransfers.get_transfers:18 of
+msgid ""
+":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`list\\`\\\\ "
+"\\\\\\[\\:py\\:class\\:\\`\\~aiosend.types.transfer.Transfer\\`\\]`"
+msgstr ""
+
+#: aiosend.methods.get_transfers.GetTransfers.get_transfers:19 of
+msgid "List of :class:`Transfer` objects."
+msgstr ""
+
+#: aiosend.methods.get_balance.GetBalance.get_balance:1 of
+msgid "getBalance method."
+msgstr ""
+
+#: aiosend.methods.get_balance.GetBalance.get_balance:3 of
+msgid ""
+"Use this method to get balances of your app. Requires no parameters. "
+"Returns array of :class:`Balance`."
+msgstr ""
+
+#: aiosend.methods.get_balance.GetBalance.get_balance:7 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#getBalance"
+msgstr ""
+
+#: aiosend.methods.get_balance.GetBalance.get_balance:9 of
+msgid ""
+":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`list\\`\\\\ "
+"\\\\\\[\\:py\\:class\\:\\`\\~aiosend.types.balance.Balance\\`\\]`"
+msgstr ""
+
+#: aiosend.methods.get_balance.GetBalance.get_balance:10 of
+msgid "List of :class:`Balance` objects."
+msgstr ""
+
+#: aiosend.methods.get_exchange_rates.GetExchangeRates.get_exchange_rates:1 of
+msgid "getExchangeRates method."
+msgstr ""
+
+#: aiosend.methods.get_exchange_rates.GetExchangeRates.get_exchange_rates:3 of
+msgid ""
+"Use this method to get exchange rates of supported currencies. Requires "
+"no parameters. Returns array of :class:`ExchangeRate`."
+msgstr ""
+
+#: aiosend.methods.get_exchange_rates.GetExchangeRates.get_exchange_rates:7 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#getExchangeRates"
+msgstr ""
+
+#: aiosend.methods.get_exchange_rates.GetExchangeRates.get_exchange_rates:9 of
+msgid ""
+":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`list\\`\\\\ "
+"\\\\\\[\\:py\\:class\\:\\`\\~aiosend.types.exchange\\_rate.ExchangeRate\\`\\]`"
+msgstr ""
+
+#: aiosend.methods.get_exchange_rates.GetExchangeRates.get_exchange_rates:10 of
+msgid "List of :class:`ExchangeRate` objects."
+msgstr ""
+
+#: aiosend.methods.get_currencies.GetCurrencies.get_currencies:1 of
+msgid "getCurrencies method."
+msgstr ""
+
+#: aiosend.methods.get_currencies.GetCurrencies.get_currencies:3 of
+msgid ""
+"Use this method to get a list of supported currencies. Requires no "
+"parameters. Returns a list of fiat and cryptocurrency alphabetic codes."
+msgstr ""
+
+#: aiosend.methods.get_currencies.GetCurrencies.get_currencies:7 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#getCurrencies"
+msgstr ""
+
+#: aiosend.methods.get_currencies.GetCurrencies.get_currencies:9 of
+msgid ""
+":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`list\\`\\\\ "
+"\\\\\\[\\:py\\:class\\:\\`\\~aiosend.types.currency.Currency\\`\\]`"
+msgstr ""
+
+#: aiosend.methods.get_currencies.GetCurrencies.get_currencies:10 of
+msgid "List of :class:`Currency` objects."
+msgstr ""
+
+#: aiosend.methods.get_stats.GetStats.get_stats:1 of
+msgid "getStats method."
+msgstr ""
+
+#: aiosend.methods.get_stats.GetStats.get_stats:3 of
+msgid ""
+"Use this method to get app statistics. On success, returns "
+":class:`AppStats`."
+msgstr ""
+
+#: aiosend.methods.get_stats.GetStats.get_stats:6 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#jvP3"
+msgstr ""
+
+#: aiosend.methods.get_stats.GetStats.get_stats:9 of
+msgid ""
+"*Optional*. Date from which start calculating statistics. Defaults is "
+"current date minus 24 hours."
+msgstr ""
+
+#: aiosend.methods.get_stats.GetStats.get_stats:11 of
+msgid ""
+"*Optional*. The date on which to finish calculating statistics. Defaults "
+"is current date."
+msgstr ""
+
+#: aiosend.methods.get_stats.GetStats.get_stats:12 of
+msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~aiosend.types.app\\_stats.AppStats\\``"
+msgstr ""
+
+#: aiosend.methods.get_stats.GetStats.get_stats:13 of
+msgid ":class:`AppStats` object."
+msgstr ""
+
