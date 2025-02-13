@@ -22,25 +22,24 @@ msgstr ""
 
 #: ../../install.rst:3
 msgid "Installation"
-msgstr ""
+msgstr "Установка"
 
 #: ../../install.rst:6
 msgid "Via `pip <https://pip.pypa.io/en/stable/>`_"
-msgstr ""
+msgstr "За допомогою `pip <https://pip.pypa.io/en/stable/>`_"
 
 #: ../../install.rst:7
 msgid "From PyPI"
-msgstr ""
+msgstr "З PyPI"
 
 #: ../../install.rst:13
 msgid "From GitHub"
-msgstr ""
+msgstr "З GitHub"
 
 #: ../../install.rst:20
 msgid "Via `uv <https://docs.astral.sh/uv/>`_"
-msgstr ""
+msgstr "За допомогою `uv <https://docs.astral.sh/uv/>`_"
 
 #: ../../install.rst:26
 msgid "Via `poetry <https://python-poetry.org/>`_"
-msgstr ""
-
+msgstr "За допомогою `poetry <https://python-poetry.org/>`_"

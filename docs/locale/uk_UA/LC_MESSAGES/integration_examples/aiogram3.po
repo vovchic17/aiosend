@@ -26,9 +26,8 @@ msgstr ""
 
 #: ../../integration_examples/aiogram3.rst:6
 msgid "Usage example with `aiogram 3.x <https://aiogram.dev/>`_"
-msgstr ""
+msgstr "Зразок використання з ' aiogram 3.x <https://aiogram.dev/>`_"
 
 #: ../../integration_examples/aiogram3.rst:11
 msgid "Preview"
-msgstr ""
-
+msgstr "Попередній перегляд"

@@ -22,35 +22,34 @@ msgstr ""
 
 #: ../../errors.rst:3
 msgid "Errors"
-msgstr ""
+msgstr "Виняток"
 
 #: aiosend.exceptions.APIError:1 aiosend.exceptions.DeserializationError:1
 #: aiosend.exceptions.MethodValuesError:1
 #: aiosend.exceptions.WrongNetworkError:1 of
 msgid "Bases: :py:class:`~aiosend.exceptions.CryptoPayError`"
-msgstr ""
+msgstr "Базові класи: :py:class:`~aiosend.exceptions.CryptoPayError`"
 
 #: aiosend.exceptions.APIError:1 of
 msgid "Exception for API errors."
-msgstr ""
+msgstr "Виняток для помилок API."
 
 #: aiosend.exceptions.CryptoPayError:1 of
 msgid "Bases: :py:class:`Exception`"
-msgstr ""
+msgstr "Базові класи: :py:class:`Exception`"
 
 #: aiosend.exceptions.CryptoPayError:1 of
 msgid "Base class for exceptions in this module."
-msgstr ""
+msgstr "Базовий клас усіх винятків цього модуля."
 
 #: aiosend.exceptions.DeserializationError:1 of
 msgid "Exception for deserialization errors."
-msgstr ""
+msgstr "Виняток для помилок десеріалізації."
 
 #: aiosend.exceptions.MethodValuesError:1 of
 msgid "Exception raised when method values are invalid."
-msgstr ""
+msgstr "Виняток, що викликається при невірному наборі значень методу."
 
 #: aiosend.exceptions.WrongNetworkError:1 of
 msgid "Exception raised when the token is served by different network."
-msgstr ""
-
+msgstr "Виняток, що викликається коли токен прінаждежіт іншої мережі."

@@ -26,9 +26,8 @@ msgstr ""
 
 #: ../../integration_examples/telethon.rst:6
 msgid "Usage example with `Telethon <https://docs.telethon.dev/en/stable/>`_"
-msgstr ""
+msgstr "Зразок використання з ' Telethon <https://docs.telethon.dev/en/stable/>`_"
 
 #: ../../integration_examples/telethon.rst:11
 msgid "Preview"
-msgstr ""
-
+msgstr "Попередній перегляд"

@@ -22,83 +22,83 @@ msgstr ""
 
 #: ../../types.rst:3
 msgid "Types"
-msgstr ""
+msgstr "Типи"
 
 #: ../../types.rst:5
 msgid ""
 "`Crypto Pay API <https://help.crypt.bot/crypto-pay-api>`_ types "
 "implementation."
-msgstr ""
+msgstr "Реалізація типів  `Crypto pay API <https://help.crypt.bot/crypto-pay-api>`_"
 
 #: aiosend.types.app.App:1 of
 msgid "App object."
-msgstr ""
+msgstr "Об'єкт App."
 
 #: aiosend.types.app.App:3 of
 msgid "This object represents the `Crypto Pay` app."
-msgstr ""
+msgstr "Цей об'єкт представляє додаток 'Crypto Pay'."
 
 #: ../../docstring aiosend.types.App.app_id:1 of
 msgid "Crypto Pay app id."
-msgstr ""
+msgstr "id додатки Crypto Pay"
 
 #: ../../docstring aiosend.types.App.name:1 of
 msgid "Crypto Pay app name."
-msgstr ""
+msgstr "Назва програми Crypto Pay."
 
 #: ../../docstring aiosend.types.App.payment_processing_bot_username:1 of
 msgid "Telegram username of the payment processing bot."
-msgstr ""
+msgstr "Ім'я користувача telegram бота для обробки платежів."
 
 #: aiosend.types.app_stats.AppStats:1 of
 msgid "AppStats object."
-msgstr ""
+msgstr "Об'єкт AppStats."
 
 #: aiosend.types.app_stats.AppStats:3 of
 msgid "Source: http://help.crypt.bot/crypto-pay-api#wnPA"
-msgstr ""
+msgstr "Джерело: http://help.crypt.bot/crypto-pay-api#wnPA"
 
 #: ../../docstring aiosend.types.AppStats.conversion:1 of
 msgid "Conversion of all created invoices."
-msgstr ""
+msgstr "Конверсія всіх створених рахунків."
 
 #: ../../docstring aiosend.types.AppStats.created_invoice_count:1 of
 msgid "Total created invoice count."
-msgstr ""
+msgstr "Загальна кількість створених рахунків."
 
 #: ../../docstring aiosend.types.AppStats.end_at:1 of
 msgid "The date on which the statistics calculation was ended in ISO 8601 format."
-msgstr ""
+msgstr "Дата, на яку було завершено розрахунок статистики у форматі ISO 8601."
 
 #: ../../docstring aiosend.types.AppStats.paid_invoice_count:1 of
 msgid "Total paid invoice count."
-msgstr ""
+msgstr "Загальна кількість оплачених рахунків."
 
 #: ../../docstring aiosend.types.AppStats.start_at:1 of
 msgid ""
 "The date on which the statistics calculation was started in ISO 8601 "
 "format."
-msgstr ""
+msgstr "Дата, з якої було розпочато розрахунок статистики у форматі ISO 8601."
 
 #: ../../docstring aiosend.types.AppStats.unique_users_count:1 of
 msgid "The unique number of users who have paid the invoice."
-msgstr ""
+msgstr "Унікальна кількість користувачів, які сплатили рахунок."
 
 #: ../../docstring aiosend.types.AppStats.volume:1 of
 msgid "Total volume of paid invoices in USD."
-msgstr ""
+msgstr "Загальний обсяг оплачених рахунків в USD."
 
 #: aiosend.types.balance.Balance:1 of
 msgid "Balance object."
-msgstr ""
+msgstr "Об'єкт Balance."
 
 #: aiosend.types.balance.Balance:3 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#Balance"
-msgstr ""
+msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#Balance"
 
 #: ../../docstring aiosend.types.Balance.available:1 of
 msgid "Total available amount in float."
-msgstr ""
+msgstr "Загальна доступна сума у вигляді дійсного числа."
 
 #: ../../docstring aiosend.types.Balance.currency_code:1
 #: aiosend.types.Check.asset:1 aiosend.types.Transfer.asset:1 of
@@ -106,26 +106,28 @@ msgid ""
 "Cryptocurrency alphabetic code. Currently, can be “USDT”, “TON”, “BTC”, "
 "“ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet)."
 msgstr ""
+"Алфавітний код криптовалюти. В даний час це можуть бути "USDT","
+""TON", "BTC", "ETH", "LTC", "BNB", "TRX" і "USDC" (і " JET " для тестової мережі)."
 
 #: ../../docstring aiosend.types.Balance.onhold:1 of
 msgid "Unavailable amount currently is on hold in float."
-msgstr ""
+msgstr "Недоступна сума, що знаходиться на утриманні, у вигляді дійсного числа."
 
 #: aiosend.types.balance.Balance.update:1 of
 msgid "Shortcut for method :class:`aiosend.CryptoPay.get_balance`."
-msgstr ""
+msgstr "Альтернатива методу :class:`aiosend.CryptoPay.get_balance`."
 
 #: aiosend.types.balance.Balance.update:3 of
 msgid "Use this method to update balance object."
-msgstr ""
+msgstr "Використовуйте цей метод для оновлення об'єкта балансу."
 
 #: aiosend.types.balance.Balance.update:5 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#getBalance"
-msgstr ""
+msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#getBalance"
 
 #: ../../types.rst
 msgid "Return type"
-msgstr ""
+msgstr "Тип результату"
 
 #: aiosend.types.balance.Balance.update:7 aiosend.types.check.Check.poll:9
 #: aiosend.types.exchange_rate.ExchangeRate.update:7
@@ -136,49 +138,51 @@ msgstr ""
 
 #: ../../types.rst
 msgid "Returns"
-msgstr ""
+msgstr "Результат"
 
 #: aiosend.types.check.Check:1 of
 msgid "Check object."
-msgstr ""
+msgstr "Об'єкт Check."
 
 #: aiosend.types.check.Check:3 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#Check"
-msgstr ""
+msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#Check"
 
 #: ../../docstring aiosend.types.Check.activated_at:1 of
 msgid "Date the check was activated in ISO 8601 format."
-msgstr ""
+msgstr "Дата активації чека в форматі ISO 8601."
 
 #: ../../docstring aiosend.types.Check.amount:1 of
 msgid "Amount of the check in float."
-msgstr ""
+msgstr "Сума чека у вигляді дійсного числа."
 
 #: ../../docstring aiosend.types.Check.bot_check_url:1 of
 msgid "URL should be provided to the user to activate the check."
-msgstr ""
+msgstr "URL, який повинен бути представлений користувачеві для активації чека."
 
 #: ../../docstring aiosend.types.Check.check_id:1 of
 msgid "Unique ID for this check."
-msgstr ""
+msgstr "Унікальний ID чека."
 
 #: ../../docstring aiosend.types.Check.created_at:1 of
 msgid "Date the check was created in ISO 8601 format."
-msgstr ""
+msgstr "Дата створення чека в форматі ISO 8601."
 
 #: aiosend.types.check.Check.delete:1 of
 msgid "Shortcut for method :class:`aiosend.CryptoPay.delete_check`."
-msgstr ""
+msgstr "Альтернатива методу :class:`aiosend.CryptoPay.delete_check`."
 
 #: aiosend.types.check.Check.delete:3 of
 msgid ""
 "Use this method to delete check created by your app. Returns :code:`True`"
 " on success."
 msgstr ""
+"Використовуйте цей метод для видалення чека, створеного вашим додатком. "
+"Повертає :code:`True` у разі успіху."
 
 #: aiosend.types.check.Check.delete:6 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#deleteCheck"
-msgstr ""
+msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#deleteCheck"
 
 #: aiosend.types.check.Check.delete:8 aiosend.types.invoice.Invoice.delete:8 of
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`bool\\``"
@@ -186,11 +190,11 @@ msgstr ""
 
 #: aiosend.types.check.Check.delete:9 aiosend.types.invoice.Invoice.delete:9 of
 msgid ":code:`True` on success."
-msgstr ""
+msgstr ":code:`True` у разі успіху."
 
 #: aiosend.types.check.Check.get_image:1 of
 msgid "Get check preview image."
-msgstr ""
+msgstr "Отримати зображення попереднього перегляду чека."
 
 #: aiosend.types.check.Check.get_image:3 of
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`str\\``"
@@ -198,109 +202,111 @@ msgstr ""
 
 #: aiosend.types.check.Check.get_image:4 of
 msgid "check image url."
-msgstr ""
+msgstr "url зображення чека."
 
 #: ../../docstring aiosend.types.Check.hash:1 of
 msgid "Hash of the check."
-msgstr ""
+msgstr "Хеш чека."
 
 #: aiosend.types.check.Check.poll:1 of
 msgid "Send the check to the polling manager."
-msgstr ""
+msgstr "Отправить чек в поллинг-менеджер."
 
 #: aiosend.types.check.Check.poll:3 of
 msgid ""
 "Use this method to check the status of the check until the timeout "
 "expires."
 msgstr ""
+"Використовуйте цей метод для перевірки статусу чека до тих пір,"
+"поки не закінчиться тайм-аут."
 
 #: ../../types.rst
 msgid "Parameters"
-msgstr ""
+msgstr "Параметри"
 
 #: aiosend.types.check.Check.poll:7 aiosend.types.invoice.Invoice.poll:7 of
 msgid "additional payload for the handler."
-msgstr ""
+msgstr "додаткове корисне навантаження для функції-обробника."
 
 #: aiosend.types.Check.qr:1 of
 msgid "Get check qr code."
-msgstr ""
+msgstr "Отримати qr код чека."
 
 #: aiosend.types.Check.qr:3 of
 msgid "check qr code url."
-msgstr ""
+msgstr "Отримати qr код чека."
 
 #: ../../docstring aiosend.types.Check.status:1 of
 msgid "Status of the check, can be “active” or “activated”."
-msgstr ""
+msgstr "Статус чека, може бути "active"або " activated"."
 
 #: aiosend.types.base.CryptoPayObject:1 of
 msgid "Base object class for types."
-msgstr ""
+msgstr "Базовий клас об'єкта типу."
 
 #: aiosend.types.currency.Currency:1 of
 msgid "Currency object."
-msgstr ""
+msgstr "Об'єкт Currency."
 
 #: aiosend.types.currency.Currency:3 of
 msgid "This object represents an `Crypto Pay` currency."
-msgstr ""
+msgstr "Цей об'єкт представляє об'єкт валюти 'Crypto Pay'."
 
 #: ../../docstring aiosend.types.Currency.code:1 of
 msgid "Currency code."
-msgstr ""
+msgstr "Код валюти."
 
 #: ../../docstring aiosend.types.Currency.decimals:1 of
 msgid "Currency decimals."
-msgstr ""
+msgstr "Десяткові дроби валюти."
 
 #: ../../docstring aiosend.types.Currency.is_blockchain:1 of
 msgid "True, if the currency is blockchain currency."
-msgstr ""
+msgstr "True, якщо валюта є блокчейн-валютою."
 
 #: ../../docstring aiosend.types.Currency.is_fiat:1 of
 msgid "True, if the currency is fiat."
-msgstr ""
+msgstr "True, якщо валюта є фіатной."
 
 #: ../../docstring aiosend.types.Currency.is_stablecoin:1 of
 msgid "True, if the currency is stablecoin."
-msgstr ""
+msgstr "True, якщо валюта є стабільною монетою."
 
 #: ../../docstring aiosend.types.Currency.name:1 of
 msgid "Currency name."
-msgstr ""
+msgstr "Назва валюти."
 
 #: ../../docstring aiosend.types.Currency.url:1 of
 msgid "Currency url."
-msgstr ""
+msgstr "url валюти."
 
 #: aiosend.types.base.Error:1 of
 msgid "API error model."
-msgstr ""
+msgstr "Модель помилки API."
 
 #: aiosend.types.exchange_rate.ExchangeRate:1 of
 msgid "ExchangeRate object."
-msgstr ""
+msgstr "Об'єкт ExchangeRate."
 
 #: aiosend.types.exchange_rate.ExchangeRate:3 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#ExchangeRate"
-msgstr ""
+msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#ExchangeRate"
 
 #: ../../docstring aiosend.types.ExchangeRate.is_crypto:1 of
 msgid "True, if the source is the cryptocurrency."
-msgstr ""
+msgstr "True, якщо вихідна валюта є криптовалютою."
 
 #: ../../docstring aiosend.types.ExchangeRate.is_fiat:1 of
 msgid "True, if the source is the fiat currency."
-msgstr ""
+msgstr "True, якщо початкова валюта є фіатною валютою."
 
 #: ../../docstring aiosend.types.ExchangeRate.is_valid:1 of
 msgid "True, if the received rate is up-to-date."
-msgstr ""
+msgstr "True, якщо отриманий курс актуальний."
 
 #: ../../docstring aiosend.types.ExchangeRate.rate:1 of
 msgid "The current rate of the source asset valued in the target currency."
-msgstr ""
+msgstr "Поточний курс початкової валюти, оцінений у цільовій валюті."
 
 #: ../../docstring aiosend.types.ExchangeRate.source:1 of
 msgid ""
@@ -308,32 +314,39 @@ msgid ""
 "“LTC”, “BNB”, “TRX” and “USDC”."
 msgstr ""
 
+"Алфавітний Код валюти. На даний момент може бути ”USDT”, ”TON”, ”BTC”, ”ETH”,"
+"”LTC”, ”BNB”, ”TRX” або ”USDC”."
+
 #: ../../docstring aiosend.types.ExchangeRate.target:1 of
 msgid ""
 "Fiat currency code. Currently, can be “USD”, “EUR”, “RUB”, “BYN”, “UAH”, "
 "“GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, “INR”, “BRL”, "
-"“IDR”, “AZN”, “AED”, “PLN” and “ILS\"."
+"“IDR”, “AZN”, “AED”, “PLN” and “ILS\”."
 msgstr ""
+"Код фіатної валюти. В даний час це можуть бути ”USD”, ”EUR”, ”RUB”, ”BYN”, ”UAH”,
+"GBP", “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, “INR”.”, “BRL”,
+”IDR”, ”AZN”, ”AED”, ”PLN” та ”ILS”."
+
 
 #: aiosend.types.exchange_rate.ExchangeRate.update:1 of
 msgid "Shortcut for method :class:`aiosend.CryptoPay.getExchangeRates`."
-msgstr ""
+msgstr "Альтернатива методу :class:`aiosend.CryptoPay.getExchangeRates`."
 
 #: aiosend.types.exchange_rate.ExchangeRate.update:3 of
 msgid "Use this method to update ExchangeRate object."
-msgstr ""
+msgstr "Використовуйте цей метод для оновлення Об'єкта ExchangeRate."
 
 #: aiosend.types.exchange_rate.ExchangeRate.update:5 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#getExchangeRates"
-msgstr ""
+msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#getExchangeRates"
 
 #: aiosend.types.invoice.Invoice:1 of
 msgid "Invoice object."
-msgstr ""
+msgstr "Об'єкт Invoice."
 
 #: aiosend.types.invoice.Invoice:3 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#Invoice"
-msgstr ""
+msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#Invoice"
 
 #: ../../docstring aiosend.types.Invoice.accepted_assets:1 of
 msgid ""
@@ -343,17 +356,22 @@ msgid ""
 "testnet)."
 msgstr ""
 
+"*Опціонально*. Список валют, який можуть бути використані для оплати рахунку. "
+"Доступний тільки якщо currency_type є ”fiat”. На даний момент "
+"може бути ”USDT”, ”TON”, ”BTC”, ”ETH”, ”LTC”, ”BNB”, ”TRX” і ”USDC”"
+"(і ”JET” для testnet)."
+
 #: ../../docstring aiosend.types.Invoice.allow_anonymous:1 of
 msgid "True, if the user can pay the invoice anonymously."
-msgstr ""
+msgstr "True, якщо користувач може оплатити рахунок анонімно."
 
 #: ../../docstring aiosend.types.Invoice.allow_comments:1 of
 msgid "True, if the user can add comment to the payment."
-msgstr ""
+msgstr "True, якщо користувач може залишити коментар до платежу."
 
 #: ../../docstring aiosend.types.Invoice.amount:1 of
 msgid "Amount of the invoice for which the invoice was created."
-msgstr ""
+msgstr "Сума створеного рахунку."
 
 #: ../../docstring aiosend.types.Invoice.asset:1 of
 msgid ""
@@ -361,62 +379,73 @@ msgid ""
 " currency_type is “crypto”. Currently, can be “USDT”, “TON”, “BTC”, "
 "“ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet)."
 msgstr ""
+"*Опціонально*. Код криптовалюти. Доступний тільки якщо значення поля "
+"currency_type є ”crypto”. На даний момент може бути ”USDT”, ”TON”,"
+"”BTC”, ”ETH”, ”LTC”, ”BNB”, ”TRX” і ”USDC” (і ”JET” для testnet)."
+
 
 #: ../../docstring aiosend.types.Invoice.bot_invoice_url:1 of
 msgid "URL should be provided to the user to pay the invoice."
-msgstr ""
+msgstr "URL, який повинен бути предствлен користувачеві для оплати рахунку."
 
 #: ../../docstring aiosend.types.Invoice.comment:1 of
 msgid "*Optional*. Comment to the payment from the user."
-msgstr ""
+msgstr "* Опціонально*. Коментар користувача до платежу."
 
 #: ../../docstring aiosend.types.Invoice.created_at:1 of
 msgid "Date the invoice was created in ISO 8601 format."
-msgstr ""
+msgstr "Дата створення рахунку в форматі ISO 8601."
 
 #: ../../docstring aiosend.types.Invoice.currency_type:1 of
 msgid "Type of the price, can be “crypto” or “fiat”."
-msgstr ""
+msgstr "Тип ціни, може бути ”crypto” або ”fiat”."
 
 #: aiosend.types.invoice.Invoice.delete:1 of
 msgid "Shortcut for method :class:`aiosend.CryptoPay.delete_invoice`."
-msgstr ""
+msgstr "Альтернатива методу :class:`aiosend.CryptoPay.delete_invoice`."
 
 #: aiosend.types.invoice.Invoice.delete:3 of
 msgid ""
 "Use this method to delete invoice created by your app. Returns "
 ":code:`True` on success."
 msgstr ""
+"Використовуйте цей метод для видалення рахунку, створеного вашим додатком. "
+"Повертає :code:`True` у разі успіху."
 
 #: aiosend.types.invoice.Invoice.delete:6 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#hwjK"
-msgstr ""
+msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#hwjK"
 
 #: ../../docstring aiosend.types.Invoice.description:1 of
 msgid "*Optional*. Description for this invoice."
-msgstr ""
+msgstr "* Опціонально*. Опис даного рахунку."
 
 #: ../../docstring aiosend.types.Invoice.expiration_date:1 of
 msgid "*Optional*. Date the invoice expires in ISO 8601 format."
-msgstr ""
+msgstr "* Опціонально*. Дата закінчення терміну дії рахунку в форматі ISO 8601."
 
 #: ../../docstring aiosend.types.Invoice.fee:1 of
 msgid ""
 "*Optional*. Amount of charged service fees. Available only in the payload"
 " of the webhook update (described here for reference)."
-msgstr ""
+msgstr "* Опціонально*. Сума плати за обслуговування. Доступно тільки в корисному навантаженні "
+        "webhook оновлення (описано тут для довідки)."
 
 #: ../../docstring aiosend.types.Invoice.fee_amount:1 of
 msgid ""
 "*Optional*. Amount of service fees charged when the invoice was paid. "
 "Available only if status is “paid”."
 msgstr ""
+* Опціонально*. Сума плати за обслуговування, що стягується при оплаті рахунку. "
+"Доступна тільки при наявності статусу “оплачено”.
 
 #: ../../docstring aiosend.types.Invoice.fee_asset:1 of
 msgid ""
 "*Optional*. Asset of service fees charged when the invoice was paid. "
 "Available only if status is “paid”."
 msgstr ""
+"*Опціонально*. Валюта плати за обслуговування, що стягується при оплаті рахунку. "
+"Доступна тільки при наявності статусу “оплачено”."
 
 #: ../../docstring aiosend.types.Invoice.fiat:1 of
 msgid ""
@@ -425,52 +454,62 @@ msgid ""
 "“UAH”, “GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, “INR”, "
 "“BRL”, “IDR”, “AZN”, “AED”, “PLN” and “ILS\"."
 msgstr ""
+"*Опціонально*. Код фіатної валюти. Доступний тільки якщо значення поля "
+"currency_type є “fiat”. На даний момент може бути “USD”, “EUR”, “RUB”, “BYN”, "
+"“UAH”, “GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, “INR”, "
+"“BRL”, “IDR”, “AZN”, “AED”, “PLN” and “ILS\"."
 
 #: ../../docstring aiosend.types.Invoice.hash:1 of
 msgid "Hash of the invoice."
-msgstr ""
+msgstr "Хеш рахунку"
 
 #: ../../docstring aiosend.types.Invoice.hidden_message:1 of
 msgid "*Optional*. Text of the hidden message for this invoice."
-msgstr ""
+msgstr "* Опціонально*. Текст прихованого повідомлення рахунку."
 
 #: ../../docstring aiosend.types.Invoice.invoice_id:1 of
 msgid "Unique ID for this invoice."
-msgstr ""
+msgstr "Унікальний ID даного рахунку."
 
 #: ../../docstring aiosend.types.Invoice.mini_app_invoice_url:1 of
 msgid "Use this URL to pay an invoice to the Telegram Mini App version."
-msgstr ""
+msgstr "Використовуйте цей URL щоб оплатити рахунок в Telegram Mini App версії."
 
 #: ../../docstring aiosend.types.Invoice.paid_amount:1 of
 msgid ""
 "*Optional*. Amount of the invoice for which the invoice was paid. "
 "Available only if currency_type is “fiat” and status is “paid”."
 msgstr ""
+"*Опціонально*. Сума оплаченого рахунку. "
+"Доступно тільки якщо currency_type є “fiat” і статус є “paid”."
 
 #: ../../docstring aiosend.types.Invoice.paid_anonymously:1 of
 msgid "True, if the invoice was paid anonymously."
-msgstr ""
+msgstr "True, якщо рахунок був оплачений анонімно."
 
 #: ../../docstring aiosend.types.Invoice.paid_asset:1 of
 msgid ""
 "*Optional*. Cryptocurrency alphabetic code for which the invoice was "
 "paid. Available only if currency_type is “fiat” and status is “paid”."
 msgstr ""
+"*Опціонально*. Алфавітний код криптовалюти оплаченого рахунку. "
+"Доступний тільки якщо currency_type є “fiat” і статус є “paid”."
 
 #: ../../docstring aiosend.types.Invoice.paid_at:1 of
 msgid "*Optional*. Date the invoice was paid in ISO 8601 format."
-msgstr ""
+msgstr "* Опціонально*. Дата оплати рахунку в форматі ISO 8601."
 
 #: ../../docstring aiosend.types.Invoice.paid_btn_name:1 of
 msgid ""
 "*Optional*. Label of the button, can be “viewItem”, “openChannel”, "
 "“openBot” or “callback”."
 msgstr ""
+* Опціонально*. Мітка кнопки, може бути “viewItem”, “openChannel”,"
+"“openBot” або “callback”."
 
 #: ../../docstring aiosend.types.Invoice.paid_btn_url:1 of
 msgid "*Optional*. URL opened using the button."
-msgstr ""
+msgstr "* Опціонально*. URL, який відкривається при натисканні на кнопку."
 
 #: ../../docstring aiosend.types.Invoice.paid_fiat_rate:1 of
 msgid ""
@@ -478,142 +517,149 @@ msgid ""
 "Available only if the value of the field currency_type is “fiat” and the "
 "value of the field status is “paid”."
 msgstr ""
+"*Опціонально*. Курс оплаченої валюти, виражений у фіатній валюті. "
+"Доступний тільки якщо значення поля currency_type є “fiat” і"
+"значення поля status є “paid”."
 
 #: ../../docstring aiosend.types.Invoice.paid_usd_rate:1 of
 msgid "*Optional*. Price of the asset in USD. Available only if status is “paid”."
-msgstr ""
+msgstr "* Опціонально*. Ціна валюти в USD. Доступна тільки якщо статус є “paid”."
 
 #: ../../docstring aiosend.types.Invoice.pay_url:1 of
 msgid ""
 "*Deprecated*. URL should be provided to the user to pay the invoice "
 "(described here for reference)."
 msgstr ""
+"*Постарілий*. URL, який повинен бути предствлен користувачеві для оплати рахунку. "
+"(описано тут для довідки)."
 
 #: ../../docstring aiosend.types.Invoice.payload:1 of
 msgid "*Optional*. Previously provided data for this invoice."
-msgstr ""
+msgstr "* Опціонально*. Раніше надана корисне навантаження рахунку."
 
 #: aiosend.types.invoice.Invoice.poll:1 of
 msgid "Send the invoice to the polling manager."
-msgstr ""
+msgstr "Надіслати рахунок в поллінг-менеджер."
 
 #: aiosend.types.invoice.Invoice.poll:3 of
 msgid ""
 "Use this method to check the status of the invoice until the timeout "
 "expires."
-msgstr ""
+msgstr ""Використовуйте цей метод для перевірки статусу рахунку до тих пір,"
+"пока не истечет тайм-аут."
 
 #: aiosend.types.Invoice.qr:1 of
 msgid "Get invoice qr code."
-msgstr ""
+msgstr "Отримати qr код рахунку."
 
 #: aiosend.types.Invoice.qr:3 of
 msgid "invoice qr code."
-msgstr ""
+msgstr "qr код рахунку"
 
 #: ../../docstring aiosend.types.Invoice.status:1 of
 msgid "Status of the transfer, can be “active”, “paid” or “expired”."
-msgstr ""
+msgstr "Статус перекладу, може бути “active”, “paid” або “expired”."
 
 #: aiosend.types.invoice.Invoice.update:1 of
 msgid "Shortcut for method :class:`aiosend.CryptoPay.get_invoices`."
-msgstr ""
+msgstr "Альтернатива методу :class:`aiosend.CryptoPay.get_invoices`."
 
 #: aiosend.types.invoice.Invoice.update:3 of
 msgid "Use this method to update invoice object."
-msgstr ""
+msgstr "Використовуйте цей метод для оновлення об'єкта рахунку."
 
 #: aiosend.types.invoice.Invoice.update:5 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#getInvoices"
-msgstr ""
+msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#getInvoices"
 
 #: ../../docstring aiosend.types.Invoice.usd_rate:1 of
 msgid ""
 "*Optional*. Price of the asset in USD. Available only in the Webhook "
 "update payload."
 msgstr ""
+"*Опціонально*. Ціна валюти в USD. Доступна тільки в корисному навантаженні "
+"webhook оновлення"
 
 #: ../../docstring aiosend.types.Invoice.web_app_invoice_url:1 of
 msgid "Use this URL to pay an invoice to the Web version of Crypto Bot."
-msgstr ""
+msgstr "Використовуйте цей URД для оплати рахунку в Веб версії Crypto bot."
 
 #: aiosend.types.base.ItemsList:1 of
 msgid "Items list."
-msgstr ""
+msgstr "Список елементів."
 
 #: aiosend.types.base.ItemsList:3 of
 msgid "This model is used to convert a dictionary with the `items` key to a list."
-msgstr ""
+msgstr "Ця модель використовується для конвертації словника з ключем `items` в список."
 
 #: aiosend.types.base.Response:1 of
 msgid "API response model."
-msgstr ""
+msgstr "Модель відповіді API."
 
 #: aiosend.types.transfer.Transfer:1 of
 msgid "Transfer object."
-msgstr ""
+msgstr "Об'єкт Transfer."
 
 #: aiosend.types.transfer.Transfer:3 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#Transfer"
-msgstr ""
+msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#Transfer"
 
 #: ../../docstring aiosend.types.Transfer.amount:1 of
 msgid "Amount of the transfer in float."
-msgstr ""
+msgstr "Сума переказу у вигляді речового числа."
 
 #: ../../docstring aiosend.types.Transfer.comment:1 of
 msgid "*Optional*. Comment for this transfer."
-msgstr ""
+msgstr "* Опціонально*. Коментар до перекладу."
 
 #: ../../docstring aiosend.types.Transfer.completed_at:1 of
 msgid "Date the transfer was completed in ISO 8601 format."
-msgstr ""
+msgstr "Дата виконання перекладу в форматі ISO 8601."
 
 #: ../../docstring aiosend.types.Transfer.spend_id:1 of
 msgid "Unique UTF-8 string."
-msgstr ""
+msgstr "Унікальна UTF - 8 рядок."
 
 #: ../../docstring aiosend.types.Transfer.status:1 of
 msgid "Status of the transfer, can only be “completed”."
-msgstr ""
+msgstr "Статус перекладу, може бути тільки “completed”."
 
 #: ../../docstring aiosend.types.Transfer.transfer_id:1 of
 msgid "Unique ID for this transfer."
-msgstr ""
+msgstr "Уникальный ID для данного перевода."
 
 #: ../../docstring aiosend.types.Transfer.user_id:1 of
 msgid "Telegram user ID the transfer was sent to."
-msgstr ""
+msgstr "Telegram ID пользователя, которому был отправлен перевод."
 
 #: aiosend.types.update.Update:1 of
 msgid "Update object."
-msgstr ""
+msgstr "Об'єкт Update."
 
 #: aiosend.types.update.Update:3 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#webhook-updates"
-msgstr ""
+msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#webhook-updates"
 
 #: ../../docstring aiosend.types.Update.payload:1 of
 msgid "Payload contains the class Invoice."
-msgstr ""
+msgstr "Корисне навантаження, яке містить клас Invoice."
 
 #: ../../docstring aiosend.types.Update.request_date:1 of
 msgid "Date the request was sent in ISO 8601 format."
-msgstr ""
+msgstr "Дата надсилання запиту у форматі ISO 8601."
 
 #: ../../docstring aiosend.types.Update.update_id:1 of
 msgid "Non-unique update ID."
-msgstr ""
+msgstr "Неунікальний ID оновлення."
 
 #: ../../docstring aiosend.types.Update.update_type:1 of
 msgid "`invoice_paid` - the update sent when the invoice is paid."
-msgstr ""
+msgstr "`invoice_paid` - оновлення було відправлено коли рахунок був оплачений."
 
 #: ../../docstring aiosend.types.Update.update_type of
 msgid "type"
-msgstr ""
+msgstr "тип"
 
 #: ../../docstring aiosend.types.Update.update_type:3 of
 msgid "Webhook update type. Supported update types"
-msgstr ""
-
+msgstr "Тип webhook оновлення. Підтримувані типи оновлень"

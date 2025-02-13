@@ -34,35 +34,36 @@ msgstr ""
 
 #: aiosend.enums.asset.Asset:1 of
 msgid "Cryptocurrency alphabetic code."
-msgstr ""
+msgstr "Алфавітний код криптовалюти"
 
 #: aiosend.enums.check_status.CheckStatus:1 of
 msgid "Status of check."
-msgstr ""
+msgstr "Статус чека"
 
 #: aiosend.enums.currency_type.CurrencyType:1 of
 msgid "Type of currency."
-msgstr ""
+msgstr "Тип валюти"
 
 #: aiosend.enums.fiat.Fiat:1 of
 msgid "Fiat currency code."
-msgstr ""
+msgstr "Алфавітний код фіатної валюти"
 
 #: aiosend.enums.invoice_status.InvoiceStatus:1 of
 msgid "Status of invoice."
-msgstr ""
+msgstr "Статус рахунку"
 
 #: aiosend.enums.paid_btn_name.PaidBtnName:1 of
 msgid "Paid button name."
-msgstr ""
+msgstr "Ім'я післяплатної кнопки"
 
 #: aiosend.enums.paid_btn_name.PaidBtnName:3 of
 msgid ""
 "Label of the button which will be presented to a user after the invoice "
 "is paid."
 msgstr ""
+"Мітка кнопки, яка буде надана Користувачеві після оплати "
+"рахунка"
 
 #: aiosend.enums.update_type.UpdateType:1 of
 msgid "Webhook update type."
-msgstr ""
-
+msgstr "Тип оновлення вебхука"

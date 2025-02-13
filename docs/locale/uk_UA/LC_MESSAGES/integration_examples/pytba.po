@@ -28,9 +28,9 @@ msgstr ""
 msgid ""
 "Usage example with `pyTelegramBotAPI "
 "<https://pytba.readthedocs.io/en/latest/>`_"
-msgstr ""
+msgstr "Зразок використання з ' pyTelegramBotAPI "
+        "<https://pytba.readthedocs.io/en/latest/>`_"
 
 #: ../../integration_examples/pytba.rst:12
 msgid "Preview"
-msgstr ""
-
+msgstr "Попередній перегляд"
