@@ -34,6 +34,12 @@ msgid ""
 "polling uses the :attr:`/getChecks <aiosend.CryptoPay.get_invoices>` "
 "method."
 msgstr ""
+"Полінг-це метод отримання повідомлень шляхом періодичної відправки "
+"запит. Після того, як: attr:`статус чека <aiosend.types.Check.status>` "
+"буде змінено на: attr:' ACTIVATED <aiosend.enums.InvoiceStatus.ACTIVATED>`, "
+": attr: 'поллінг менеджер <aiosend.polling.PollingManager> ' викличе обробник "
+":attr:`check_polling <aiosend.CryptoPay.check_polling>`. "
+"Полінг чеків використовує метод: attr:' /getChecks <aiosend.CryptoPay.get_invoices>`."
 
 #: ../../client/check_polling.rst:13
 msgid ""
@@ -45,18 +51,25 @@ msgid ""
 "polling that check and call the :attr:`expired_check_polling "
 "<aiosend.CryptoPay.expired_check_polling>` handler if it is declared."
 msgstr ""
+": attr: 'поллінг менеджер <aiosend.polling.PollingManager> ' має "
+": attr: 'конфігурацію <aiosend.polling.PollingConfig>`, в якій "
+"в якій задаються :attr:' затримка <aiosend.polling.PollingConfig.delay` "
+"між запитами та: attr:`таймаут <aiosend.polling.PollingConfig.timeout>` "
+"для кожного чека в черзі. Після закінчення таймауту менеджер припинить поллінг "
+"цього чека і викличе обробник: attr:' expired_check_polling "
+"<aiosend.CryptoPay.expired_check_polling>', якщо той вказаний."
 
 #: ../../client/check_polling.rst:22
 msgid "**Default is 2 seconds delay and 300 seconds (5 min) timeout**."
-msgstr ""
+msgstr "** За замовчуванням затримка між запитами - 2 секунди, а таймаут - 300 секунд (5 хвилин)**."
 
 #: ../../client/check_polling.rst:24
 msgid ":ref:`You can change the polling configuration. <PollingConfigAnchor>`"
-msgstr ""
+msgstr ": ref`' ви можете змінити конфігурацію полінгу <PollingConfigAnchor>`"
 
 #: aiosend.polling.check.CheckPollingManager.check_polling:1 of
 msgid "Register a handler for polling check updates."
-msgstr ""
+msgstr "Додавання обробника для повідомлень поллінга чеків."
 
 #: aiosend.polling.check.CheckPollingManager.check_polling:3
 #: aiosend.polling.check.CheckPollingManager.expired_check_polling:3 of
@@ -81,18 +94,17 @@ msgstr ""
 
 #: ../../client/check_polling.rst
 msgid "Returns"
-msgstr ""
+msgstr "Результат"
 
 #: aiosend.polling.check.CheckPollingManager.check_polling:6
 #: aiosend.polling.check.CheckPollingManager.expired_check_polling:6 of
 msgid "handler function."
-msgstr ""
+msgstr "функція-обробник."
 
 #: aiosend.polling.check.CheckPollingManager.expired_check_polling:1 of
 msgid "Register a handler for timed out checks."
-msgstr ""
+msgstr "Додавання обробника для минулих чеків."
 
 #: ../../client/check_polling.rst:30
 msgid "Usage example"
-msgstr ""
-
+msgstr "Приклад використання"

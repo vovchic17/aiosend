@@ -22,19 +22,23 @@ msgstr ""
 
 #: ../../index.rst:6
 msgid "Introduction"
-msgstr ""
+msgstr "Введення"
 
 #: ../../index.rst:8
 msgid ""
 "**aiosend** is a synchronous & asynchronous `Crypto Pay API "
 "<https://help.crypt.bot/crypto-pay-api>`_ client."
 msgstr ""
+"**aiosend** це синхронний і асинхронний `Crypto Pay API "
+"<https://help.crypt.bot / crypto-pay-api>`_ клієнт."
 
 #: ../../index.rst:11
 msgid ""
 "|telegram| **aiosend** has `community chat on Telegram "
 "<https://aiosend.t.me>`_"
 msgstr ""
+"|telegram| **aiosend** має 'чат спільноти в Телеграм"
+"<https://aiosend.t.me>`_"
 
 #: ../../index.rst:13
 msgid "python"
@@ -42,35 +46,37 @@ msgstr ""
 
 #: ../../index.rst:18
 msgid "Features"
-msgstr ""
+msgstr "Особливість"
 
 #: ../../index.rst:19
 msgid ""
 "provides :doc:`invoice polling handler <client/invoice_polling>` and "
 ":doc:`check polling handler <client/check_polling>`"
 msgstr ""
+"надає :doc:`поллінг рахунків <client / invoice_polling>` і "
+":doc:`Полінг чеків <client/check_polling>`"
 
 #: ../../index.rst:20
 msgid "provides :doc:`webhook handler <client/webhook>`"
-msgstr ""
+msgstr "надає :doc:`обробник вебхуків <client / webhook>`"
 
 #: ../../index.rst:21
 msgid "provides :doc:`additional function shortcuts <client/tools>`"
-msgstr ""
+msgstr "надає :doc:`додаткові функції <client / tools>`"
 
 #: ../../index.rst:22
 msgid "supports sync and async usage"
-msgstr ""
+msgstr "підтримує синхронну та асинхронну взаємодію"
 
 #: ../../index.rst:26
 msgid "Quick start"
-msgstr ""
+msgstr "Швидкий старт"
 
 #: ../../index.rst:32
 msgid "Synchronous usage"
-msgstr ""
+msgstr "Синхронне використання"
 
 #: ../../index.rst:37
 msgid "Contents"
-msgstr ""
+msgstr "Зміст"
 

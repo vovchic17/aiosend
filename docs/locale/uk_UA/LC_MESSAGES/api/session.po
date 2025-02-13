@@ -22,28 +22,28 @@ msgstr ""
 
 #: ../../api/session.rst:3
 msgid "Session"
-msgstr ""
+msgstr "Сесія"
 
 #: aiosend.client.session.aiohttp.AiohttpSession:1 of
 msgid "Bases: :py:class:`~aiosend.client.session.base.BaseSession`"
-msgstr ""
+msgstr "Базові класи: :py:class:`~aiosend.client.session.base.BaseSession`"
 
 #: aiosend.client.session.aiohttp.AiohttpSession:1 of
 msgid "Http session based on aiohttp."
-msgstr ""
+msgstr "Сесія HTTP, заснована на aiohttp."
 
 #: aiosend.client.session.aiohttp.AiohttpSession:3 of
 msgid "This class is a wrapper of `aiohttp.ClientSession`."
-msgstr ""
+msgstr "Цей клас є обгорткою над  `aiohttp.ClientSession`."
 
 #: aiosend.client.session.aiohttp.AiohttpSession.request:1
 #: aiosend.client.session.base.BaseSession.request:1 of
 msgid "Make http request."
-msgstr ""
+msgstr "Виконати HTTP-запит."
 
 #: ../../api/session.rst
 msgid "Return type"
-msgstr ""
+msgstr "Тип результату"
 
 #: aiosend.client.session.aiohttp.AiohttpSession.request:4
 #: aiosend.client.session.base.BaseSession.request:4 of
@@ -55,17 +55,17 @@ msgstr ""
 
 #: aiosend.client.session.base.BaseSession:1 of
 msgid "Bases: :py:class:`~abc.ABC`"
-msgstr ""
+msgstr "Базові класи: :py:class:`~abc.ABC`"
 
 #: aiosend.client.session.base.BaseSession:1 of
 msgid "Abstract session class."
-msgstr ""
+msgstr "Абстрактний клас сесії."
 
 #: aiosend.client.session.base.BaseSession:3 of
 msgid ""
 "If you want to implement your own session class, you should inherit this "
 "class."
-msgstr ""
+msgstr "Якщо ви хочете створити свій клас сесії, використовуйте цей клас як базовий."
 
 #: ../../api/session.rst:9
 msgid ""
@@ -76,4 +76,7 @@ msgid ""
 "<aiosend.client.session.BaseSession.request>` and :attr:`close "
 "<aiosend.client.session.BaseSession.close>` methods."
 msgstr ""
-
+"**aiosend * * за замовчуванням використовує сесію ' aiohttp <https://docs.aiohttp.org/en/stable/index.html>'_."
+"Ви можете створити свій сеанс на основі :class:`BaseSession <aiosend.client.session.BaseSession>`, "
+"перевизначивши методи: attr:' request <aiosend.client.session.BaseSession.request> ' і "
+":attr:`close <aiosend.client.session.BaseSession.close>`."

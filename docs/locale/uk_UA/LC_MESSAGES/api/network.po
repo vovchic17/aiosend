@@ -22,51 +22,51 @@ msgstr ""
 
 #: ../../api/network.rst:3
 msgid "Network"
-msgstr ""
+msgstr "Мережа"
 
 #: ../../api/network.rst:5
 msgid ""
 "Network is a class allows you to build a URL to the API endpoints for "
 "specific network."
-msgstr ""
+msgstr "Клас Network дозволяє формувати URL для доступу до API конкретної мережі "
 
 #: ../../api/network.rst:7
 msgid ""
 "`Crypto Pay API <https://help.crypt.bot/crypto-pay-api>`_ has two "
 "networks:"
-msgstr ""
+msgstr "`Crypto Pay API <https://help.crypt.bot/crypto-pay-api>`_ має дві мережі "
 
 #: ../../api/network.rst:11
 msgid "The main network for transactions with real cryptocurrency."
-msgstr ""
+msgstr "Основна мережа для операцій зі справжньою криптовалютою"
 
 #: ../../api/network.rst:15
 msgid "The network for testing purposes in which currency has no real value."
-msgstr ""
+msgstr "Тестова мережа, де валюта не має реальної цінності."
 
 #: ../../api/network.rst:18
 msgid "Usage example"
-msgstr ""
+msgstr "Приклад використання"
 
 #: ../../api/network.rst:20
 msgid "You can create an instance of :class:`CryptoPay` client for both nets."
-msgstr ""
+msgstr "Ви можете створити об'єкт клієнта :class:`CryptoPay` для обох мереж"
 
 #: aiosend.client.network.Network:1 of
 msgid "Configuration for endpoints."
-msgstr ""
+msgstr "Налаштування кінцевих точок доступу."
 
 #: ../../docstring aiosend.client.network.Network.base:1 of
 msgid "Base URL"
-msgstr ""
+msgstr "Основна URL-адреса"
 
 #: aiosend.client.network.Network.get_check_image:1 of
 msgid "Return check image url."
-msgstr ""
+msgstr "Повертає URL-адресу зображення для чека."
 
 #: ../../api/network.rst
 msgid "Return type"
-msgstr ""
+msgstr "Тип результату"
 
 #: aiosend.client.network.Network.get_check_image:4
 #: aiosend.client.network.Network.get_qr:4
@@ -77,17 +77,17 @@ msgstr ""
 
 #: aiosend.client.network.Network.get_qr:1 of
 msgid "Return qr code link."
-msgstr ""
+msgstr "Повертає посилання на QR-код."
 
 #: aiosend.client.network.Network.get_rates_image:1 of
 msgid "Return rates image url."
-msgstr ""
+msgstr "Повертає URL зображення з курсами."
 
 #: ../../docstring aiosend.client.network.Network.name:1 of
 msgid "Net name"
-msgstr ""
+msgstr "ім'я мережі"
 
 #: aiosend.client.network.Network.url:1 of
 msgid "Return URL for method."
-msgstr ""
+msgstr "Повертає URL для методу."
 

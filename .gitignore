@@ -10,3 +10,4 @@ _build/
 /dist
 *.session
 *.mo
+.idea
