@@ -4,7 +4,7 @@ Check polling
 
 Polling is a method of receiving updates by periodically sending requests.
 Once :attr:`check status <aiosend.types.Check.status>` is changed to
-:attr:`ACTIVATED <aiosend.enums.InvoiceStatus.ACTIVATED>`,
+:attr:`ACTIVATED <aiosend.enums.CheckStatus.ACTIVATED>`,
 :attr:`polling manager <aiosend.polling.PollingManager>` will call the
 :attr:`check_polling <aiosend.CryptoPay.check_polling>` handler.
 Check polling uses the :attr:`/getChecks <aiosend.CryptoPay.get_invoices>` method.

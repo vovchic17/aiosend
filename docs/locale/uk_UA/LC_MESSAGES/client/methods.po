@@ -234,7 +234,7 @@ msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~aiosend.types.check
 msgstr ""
 
 #: aiosend.methods.create_check.CreateCheck.create_check:17 of
-msgid ":class:`cryptopay.types.Check` object"
+msgid ":class:`aiosend.types.Check` object"
 msgstr ""
 
 #: aiosend.methods.delete_check.DeleteCheck.delete_check:1 of

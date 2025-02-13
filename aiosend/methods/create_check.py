@@ -40,6 +40,6 @@ class CreateCheck:
         :param asset: Cryptocurrency alphabetic code.
         :param pin_to_user_id: ID of the user who will be able to activate the check, defaults to None
         :param pin_to_username: A user with the specified username will be able to activate the check, defaults to None
-        :return: :class:`cryptopay.types.Check` object
+        :return: :class:`aiosend.types.Check` object
         """
         return await self(self.CreateCheckMethod(**locals()))
