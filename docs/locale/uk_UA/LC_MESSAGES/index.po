@@ -37,7 +37,7 @@ msgid ""
 "|telegram| **aiosend** has `community chat on Telegram "
 "<https://aiosend.t.me>`_"
 msgstr ""
-"|telegram| **aiosend** має 'чат спільноти в Телеграм"
+"|telegram| **aiosend** має `чат спільноти в Телеграм "
 "<https://aiosend.t.me>`_"
 
 #: ../../index.rst:13
