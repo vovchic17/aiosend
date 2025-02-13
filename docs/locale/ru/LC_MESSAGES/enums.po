@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-09 18:10+0300\n"
+"POT-Creation-Date: 2025-02-12 14:38+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -29,7 +29,7 @@ msgstr ""
 #: aiosend.enums.invoice_status.InvoiceStatus:1
 #: aiosend.enums.paid_btn_name.PaidBtnName:1
 #: aiosend.enums.update_type.UpdateType:1 of
-msgid "Базовые классы: :py:class:`str`, :py:class:`~enum.Enum`"
+msgid "Bases: :py:class:`str`, :py:class:`~enum.Enum`"
 msgstr ""
 
 #: aiosend.enums.asset.Asset:1 of
@@ -60,14 +60,15 @@ msgstr "Имя послеоплатной кнопки"
 msgid ""
 "Label of the button which will be presented to a user after the invoice "
 "is paid."
-msgstr ""
-"Метка кнопки, которая будет предоставлена пользователю после оплаты "
-"счёта"
+msgstr "Метка кнопки, которая будет предоставлена пользователю после оплаты счёта"
 
 #: aiosend.enums.update_type.UpdateType:1 of
 msgid "Webhook update type."
 msgstr "Тип обновления вебхука"
 
 #~ msgid "Bases: :py:class:`str`, :py:class:`~enum.Enum`"
+#~ msgstr ""
+
+#~ msgid "Базовые классы: :py:class:`str`, :py:class:`~enum.Enum`"
 #~ msgstr ""
 

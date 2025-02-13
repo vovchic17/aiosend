@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-09 18:10+0300\n"
+"POT-Creation-Date: 2025-02-12 14:38+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -35,11 +35,12 @@ msgid ""
 "method."
 msgstr ""
 "Поллинг - это метод получения уведомлений путём периодической отправки "
-"запросов. После того, как :attr:`статус чека <aiosend.types.Check.status>` "
-"будет изменён на :attr:`ACTIVATED <aiosend.enums.InvoiceStatus.ACTIVATED>`, "
-":attr:`поллинг менеджер <aiosend.polling.PollingManager>` вызовет обработчик "
-":attr:`check_polling <aiosend.CryptoPay.check_polling>`. "
-"Поллинг чеков использует метод :attr:`/getChecks <aiosend.CryptoPay.get_invoices>`."
+"запросов. После того, как :attr:`статус чека "
+"<aiosend.types.Check.status>` будет изменён на :attr:`ACTIVATED "
+"<aiosend.enums.InvoiceStatus.ACTIVATED>`, :attr:`поллинг менеджер "
+"<aiosend.polling.PollingManager>` вызовет обработчик :attr:`check_polling"
+" <aiosend.CryptoPay.check_polling>`. Поллинг чеков использует метод "
+":attr:`/getChecks <aiosend.CryptoPay.get_invoices>`."
 
 #: ../../client/check_polling.rst:13
 msgid ""
@@ -52,16 +53,18 @@ msgid ""
 "<aiosend.CryptoPay.expired_check_polling>` handler if it is declared."
 msgstr ""
 ":attr:`Поллинг менеджер <aiosend.polling.PollingManager>` имеет "
-":attr:`конфигурацию <aiosend.polling.PollingConfig>`, в которой "
-"в которой задаются :attr:`задержка <aiosend.polling.PollingConfig.delay` "
-"между запросами и :attr:`таймаут <aiosend.polling.PollingConfig.timeout>` "
-"для каждого чека в очереди. После истечения таймаута менеджер прекратит поллинг "
-"этого чека и вызовет обработчик :attr:`expired_check_polling "
+":attr:`конфигурацию <aiosend.polling.PollingConfig>`, в которой в которой"
+" задаются :attr:`задержка <aiosend.polling.PollingConfig.delay` между "
+"запросами и :attr:`таймаут <aiosend.polling.PollingConfig.timeout>` для "
+"каждого чека в очереди. После истечения таймаута менеджер прекратит "
+"поллинг этого чека и вызовет обработчик :attr:`expired_check_polling "
 "<aiosend.CryptoPay.expired_check_polling>`, если тот указан."
 
 #: ../../client/check_polling.rst:22
 msgid "**Default is 2 seconds delay and 300 seconds (5 min) timeout**."
-msgstr "**По умолчанию задержка между запросами - 2 секунды, а таймаут - 300 секунд (5 минут)**."
+msgstr ""
+"**По умолчанию задержка между запросами - 2 секунды, а таймаут - 300 "
+"секунд (5 минут)**."
 
 #: ../../client/check_polling.rst:24
 msgid ":ref:`You can change the polling configuration. <PollingConfigAnchor>`"
@@ -77,7 +80,7 @@ msgid "Decorator for handler function."
 msgstr "Декоратор для функции-обработчика."
 
 #: ../../client/check_polling.rst
-msgid "Тип результата"
+msgid "Return type"
 msgstr ""
 
 #: aiosend.polling.check.CheckPollingManager.check_polling:5
@@ -93,7 +96,7 @@ msgid ""
 msgstr ""
 
 #: ../../client/check_polling.rst
-msgid "Результат"
+msgid "Returns"
 msgstr ""
 
 #: aiosend.polling.check.CheckPollingManager.check_polling:6
@@ -109,9 +112,9 @@ msgstr "Добавление обработчика для истёкших че
 msgid "Usage example"
 msgstr "Пример использования"
 
-#~ msgid "Return type"
+#~ msgid "Тип результата"
 #~ msgstr ""
 
-#~ msgid "Returns"
+#~ msgid "Результат"
 #~ msgstr ""
 

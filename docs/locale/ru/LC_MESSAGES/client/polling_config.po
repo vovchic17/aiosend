@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-09 18:10+0300\n"
+"POT-Creation-Date: 2025-02-12 14:38+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -55,7 +55,7 @@ msgid "Run polling."
 msgstr ""
 
 #: ../../client/polling_config.rst
-msgid "Параметры"
+msgid "Parameters"
 msgstr ""
 
 #: aiosend.polling.manager.PollingManager.start_polling:4 of
@@ -63,16 +63,16 @@ msgid "function to run in background."
 msgstr ""
 
 #: ../../client/polling_config.rst
-msgid "Тип результата"
+msgid "Return type"
 msgstr ""
 
 #: aiosend.polling.manager.PollingManager.start_polling:6 of
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:obj\\:\\`None\\``"
 msgstr ""
 
-#~ msgid "Parameters"
+#~ msgid "Параметры"
 #~ msgstr ""
 
-#~ msgid "Return type"
+#~ msgid "Тип результата"
 #~ msgstr ""
 

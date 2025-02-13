@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-09 18:10+0300\n"
+"POT-Creation-Date: 2025-02-12 14:38+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -107,7 +107,8 @@ msgid ""
 "“ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet)."
 msgstr ""
 "Алфавитный код криптовалюты. В настоящее время это могут быть “USDT”, "
-"“TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” и “USDC” (и “JET” для тестовой сети)."
+"“TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” и “USDC” (и “JET” для тестовой "
+"сети)."
 
 #: ../../docstring aiosend.types.Balance.onhold:1 of
 msgid "Unavailable amount currently is on hold in float."
@@ -126,7 +127,7 @@ msgid "Source: https://help.crypt.bot/crypto-pay-api#getBalance"
 msgstr "Источник: https://help.crypt.bot/crypto-pay-api#getBalance"
 
 #: ../../types.rst
-msgid "Тип результата"
+msgid "Return type"
 msgstr ""
 
 #: aiosend.types.balance.Balance.update:7 aiosend.types.check.Check.poll:9
@@ -137,7 +138,7 @@ msgid ":sphinx_autodoc_typehints_type:`\\:py\\:obj\\:\\`None\\``"
 msgstr ""
 
 #: ../../types.rst
-msgid "Результат"
+msgid "Returns"
 msgstr ""
 
 #: aiosend.types.check.Check:1 of
@@ -217,11 +218,11 @@ msgid ""
 "Use this method to check the status of the check until the timeout "
 "expires."
 msgstr ""
-"Используйте этот метод для проверки статуса чека до тех пор, "
-"пока не истечет тайм-аут."
+"Используйте этот метод для проверки статуса чека до тех пор, пока не "
+"истечет тайм-аут."
 
 #: ../../types.rst
-msgid "Параметры"
+msgid "Parameters"
 msgstr ""
 
 #: aiosend.types.check.Check.poll:7 aiosend.types.invoice.Invoice.poll:7 of
@@ -313,18 +314,19 @@ msgid ""
 "Currency alphabetic code. Currently, can be “USDT”, “TON”, “BTC”, “ETH”, "
 "“LTC”, “BNB”, “TRX” and “USDC”."
 msgstr ""
-"Алфавитный код валюты. На данный момент может быть “USDT”, “TON”, “BTC”, “ETH”, "
-"“LTC”, “BNB”, “TRX” или “USDC”."
+"Алфавитный код валюты. На данный момент может быть “USDT”, “TON”, “BTC”, "
+"“ETH”, “LTC”, “BNB”, “TRX” или “USDC”."
 
 #: ../../docstring aiosend.types.ExchangeRate.target:1 of
+#, fuzzy
 msgid ""
 "Fiat currency code. Currently, can be “USD”, “EUR”, “RUB”, “BYN”, “UAH”, "
 "“GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, “INR”, “BRL”, "
-"“IDR”, “AZN”, “AED”, “PLN” and “ILS”."
+"“IDR”, “AZN”, “AED”, “PLN” and “ILS\"."
 msgstr ""
-"Алфавитный код фиатной валюты. На данный момент может быть “USD”, “EUR”, “RUB”, "
-"“BYN”, “UAH”, “GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, “INR”, "
-"“BRL”, “IDR”, “AZN”, “AED”, “PLN” или “ILS”."
+"Алфавитный код фиатной валюты. На данный момент может быть “USD”, “EUR”, "
+"“RUB”, “BYN”, “UAH”, “GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, "
+"“THB”, “INR”, “BRL”, “IDR”, “AZN”, “AED”, “PLN” или “ILS”."
 
 #: aiosend.types.exchange_rate.ExchangeRate.update:1 of
 msgid "Shortcut for method :class:`aiosend.CryptoPay.getExchangeRates`."
@@ -353,10 +355,10 @@ msgid ""
 "“TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for "
 "testnet)."
 msgstr ""
-"*Опционально*. Список валют, который могут быть использованы для оплаты счёта. "
-"Доступен только если currency_type является “fiat”. На данный момент "
-"может быть “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” и “USDC” "
-"(и “JET” для testnet)."
+"*Опционально*. Список валют, который могут быть использованы для оплаты "
+"счёта. Доступен только если currency_type является “fiat”. На данный "
+"момент может быть “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” и "
+"“USDC” (и “JET” для testnet)."
 
 #: ../../docstring aiosend.types.Invoice.allow_anonymous:1 of
 msgid "True, if the user can pay the invoice anonymously."
@@ -377,8 +379,8 @@ msgid ""
 "“ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet)."
 msgstr ""
 "*Опционально*. Код криптовалюты. Доступен только если значение поля "
-"currency_type является “crypto”. На данный момент может быть “USDT”, “TON”, "
-"“BTC”, “ETH”, “LTC”, “BNB”, “TRX” и “USDC” (и “JET” для testnet)."
+"currency_type является “crypto”. На данный момент может быть “USDT”, "
+"“TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” и “USDC” (и “JET” для testnet)."
 
 #: ../../docstring aiosend.types.Invoice.bot_invoice_url:1 of
 msgid "URL should be provided to the user to pay the invoice."
@@ -425,8 +427,8 @@ msgid ""
 "*Optional*. Amount of charged service fees. Available only in the payload"
 " of the webhook update (described here for reference)."
 msgstr ""
-"*Опционально*. Сумма платы за обслуживание. Доступно только в полезной нагрузке "
-"webhook обновления (описано здесь для справки)."
+"*Опционально*. Сумма платы за обслуживание. Доступно только в полезной "
+"нагрузке webhook обновления (описано здесь для справки)."
 
 #: ../../docstring aiosend.types.Invoice.fee_amount:1 of
 msgid ""
@@ -445,11 +447,12 @@ msgstr ""
 "Доступна только при наличии статуса “оплачено”."
 
 #: ../../docstring aiosend.types.Invoice.fiat:1 of
+#, fuzzy
 msgid ""
 "*Optional*. Fiat currency code. Available only if the value of the field "
 "currency_type is “fiat”. Currently one of “USD”, “EUR”, “RUB”, “BYN”, "
 "“UAH”, “GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, “INR”, "
-"“BRL”, “IDR”, “AZN”, “AED”, “PLN” and “ILS”."
+"“BRL”, “IDR”, “AZN”, “AED”, “PLN” and “ILS\"."
 msgstr ""
 "*Опционально*. Код фиатной валюты. Доступен только если значение поля "
 "currency_type является “fiat”. На данный момент может быть “USD”, “EUR”, "
@@ -477,8 +480,8 @@ msgid ""
 "*Optional*. Amount of the invoice for which the invoice was paid. "
 "Available only if currency_type is “fiat” and status is “paid”."
 msgstr ""
-"*Опционально*. Сумма оплаченного счёта. "
-"Доступно только если currency_type является “fiat” и статус является “paid”."
+"*Опционально*. Сумма оплаченного счёта. Доступно только если "
+"currency_type является “fiat” и статус является “paid”."
 
 #: ../../docstring aiosend.types.Invoice.paid_anonymously:1 of
 msgid "True, if the invoice was paid anonymously."
@@ -489,8 +492,8 @@ msgid ""
 "*Optional*. Cryptocurrency alphabetic code for which the invoice was "
 "paid. Available only if currency_type is “fiat” and status is “paid”."
 msgstr ""
-"*Опционально*. Алфавитный код криптовалюты оплаченного счёта. "
-"Доступен только если currency_type является “fiat” и статус является “paid”."
+"*Опционально*. Алфавитный код криптовалюты оплаченного счёта. Доступен "
+"только если currency_type является “fiat” и статус является “paid”."
 
 #: ../../docstring aiosend.types.Invoice.paid_at:1 of
 msgid "*Optional*. Date the invoice was paid in ISO 8601 format."
@@ -520,15 +523,17 @@ msgstr ""
 
 #: ../../docstring aiosend.types.Invoice.paid_usd_rate:1 of
 msgid "*Optional*. Price of the asset in USD. Available only if status is “paid”."
-msgstr "*Опционально*. Цена валюты в USD. Доступна только если статус является “paid”."
+msgstr ""
+"*Опционально*. Цена валюты в USD. Доступна только если статус является "
+"“paid”."
 
 #: ../../docstring aiosend.types.Invoice.pay_url:1 of
 msgid ""
 "*Deprecated*. URL should be provided to the user to pay the invoice "
 "(described here for reference)."
 msgstr ""
-"*Устаревшее*. URL, который должен быть предствлен пользователю для оплаты счёта. "
-"(описано здесь для справки)."
+"*Устаревшее*. URL, который должен быть предствлен пользователю для оплаты"
+" счёта. (описано здесь для справки)."
 
 #: ../../docstring aiosend.types.Invoice.payload:1 of
 msgid "*Optional*. Previously provided data for this invoice."
@@ -542,8 +547,9 @@ msgstr "Отправить счёт в поллинг-менеджер."
 msgid ""
 "Use this method to check the status of the invoice until the timeout "
 "expires."
-msgstr "Используйте этот метод для проверки статуса счёта до тех пор, "
-"пока не истечет тайм-аут."
+msgstr ""
+"Используйте этот метод для проверки статуса счёта до тех пор, пока не "
+"истечет тайм-аут."
 
 #: aiosend.types.Invoice.qr:1 of
 msgid "Get invoice qr code."
@@ -661,12 +667,12 @@ msgstr ""
 msgid "Webhook update type. Supported update types"
 msgstr "Тип webhook обновления. Поддерживаемые типы обновлений"
 
-#~ msgid "Return type"
+#~ msgid "Тип результата"
 #~ msgstr ""
 
-#~ msgid "Returns"
+#~ msgid "Результат"
 #~ msgstr ""
 
-#~ msgid "Parameters"
+#~ msgid "Параметры"
 #~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-09 18:10+0300\n"
+"POT-Creation-Date: 2025-02-12 14:38+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -43,7 +43,7 @@ msgid ""
 msgstr ""
 
 #: ../../client/tools.rst
-msgid "Тип результата"
+msgid "Return type"
 msgstr ""
 
 #: aiosend.tools.exchange.Exchange.exchange:8 of
@@ -51,7 +51,7 @@ msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`float\\``"
 msgstr ""
 
 #: ../../client/tools.rst
-msgid "Результат"
+msgid "Returns"
 msgstr ""
 
 #: aiosend.tools.exchange.Exchange.exchange:9 of
@@ -174,9 +174,9 @@ msgstr ""
 msgid "rates image url."
 msgstr ""
 
-#~ msgid "Return type"
+#~ msgid "Тип результата"
 #~ msgstr ""
 
-#~ msgid "Returns"
+#~ msgid "Результат"
 #~ msgstr ""
 

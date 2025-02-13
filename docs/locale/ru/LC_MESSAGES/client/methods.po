@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-09 18:10+0300\n"
+"POT-Creation-Date: 2025-02-12 14:38+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -45,7 +45,7 @@ msgid "Source: https://help.crypt.bot/crypto-pay-api#getMe"
 msgstr ""
 
 #: ../../client/methods.rst
-msgid "Тип результата"
+msgid "Return type"
 msgstr ""
 
 #: aiosend.methods.get_me.GetMe.get_me:9 of
@@ -53,7 +53,7 @@ msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~aiosend.types.app.A
 msgstr ""
 
 #: ../../client/methods.rst
-msgid "Результат"
+msgid "Returns"
 msgstr ""
 
 #: aiosend.methods.get_me.GetMe.get_me:10 of
@@ -75,7 +75,7 @@ msgid "Source: https://help.crypt.bot/crypto-pay-api#createInvoice"
 msgstr ""
 
 #: ../../client/methods.rst
-msgid "Параметры"
+msgid "Parameters"
 msgstr ""
 
 #: aiosend.methods.create_invoice.CreateInvoice.create_invoice:9 of
@@ -573,12 +573,12 @@ msgstr ""
 msgid ":class:`AppStats` object."
 msgstr ""
 
-#~ msgid "Return type"
+#~ msgid "Тип результата"
 #~ msgstr ""
 
-#~ msgid "Returns"
+#~ msgid "Результат"
 #~ msgstr ""
 
-#~ msgid "Parameters"
+#~ msgid "Параметры"
 #~ msgstr ""
 

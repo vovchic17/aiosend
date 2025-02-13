@@ -34,8 +34,8 @@ msgid ""
 "Invoice polling uses the :attr:`/getInvoices "
 "<aiosend.CryptoPay.get_invoices>` method."
 msgstr ""
-"Полінг-це метод отримання повідомлень шляхом періодичної відправки "
-"запит. Після того, як :attr:`статус рахунку <aiosend.types.Invoice.status>` "
+"Полінг-це метод отримання повідомлень шляхом періодичної відправки запит."
+" Після того, як :attr:`статус рахунку <aiosend.types.Invoice.status>` "
 "буде змінено на :attr:`PAID <aiosend.enums.InvoiceStatus.PAID>`, "
 ":attr:`поллінг-менеджер <auisend.polling.PollingManager>` викличе "
 "обробник :attr:`invoice_polling <aiosend.CryptoPay.invoice_polling>`. "
@@ -52,13 +52,20 @@ msgid ""
 "stop polling that invoice and call the :attr:`expired_invoice_polling "
 "<aiosend.CryptoPay.expired_invoice_polling>` handler if it is declared."
 msgstr ""
-"Менеджер опитування (:attr:`Polling manager <aiosend.polling.PollingManager>`) має налаштування (:attr:`configuration <aiosend.polling.PollingConfig>`), "
-"в яких задаються :attr:`затримка <aiosend.polling.PollingConfig.delay>` між запитами і :attr:`таймаут <aiosend.polling.PollingConfig.timeout>` для кожного рахунку в черзі. "
-"Після закінчення таймауту менеджер припиняє опитування даного рахунку і, якщо вказано, викликає обробник :attr:`expired_invoice_polling <aiosend.CryptoPay.expired_invoice_polling>`."
+"Менеджер опитування (:attr:`Polling manager "
+"<aiosend.polling.PollingManager>`) має налаштування (:attr:`configuration"
+" <aiosend.polling.PollingConfig>`), в яких задаються :attr:`затримка "
+"<aiosend.polling.PollingConfig.delay>` між запитами і :attr:`таймаут "
+"<aiosend.polling.PollingConfig.timeout>` для кожного рахунку в черзі. "
+"Після закінчення таймауту менеджер припиняє опитування даного рахунку і, "
+"якщо вказано, викликає обробник :attr:`expired_invoice_polling "
+"<aiosend.CryptoPay.expired_invoice_polling>`."
 
 #: ../../client/invoice_polling.rst:22
 msgid "**Default is 2 seconds delay and 300 seconds (5 min) timeout**."
-msgstr "** За замовчуванням затримка між запитами — 2 секунди, а таймаут — 300 секунд (5 хвилин)**."
+msgstr ""
+"** За замовчуванням затримка між запитами — 2 секунди, а таймаут — 300 "
+"секунд (5 хвилин)**."
 
 #: ../../client/invoice_polling.rst:24
 msgid ":ref:`You can change the polling configuration. <PollingConfigAnchor>`"
@@ -74,8 +81,9 @@ msgid "Decorator for handler function."
 msgstr "Декоратор для функції-обробника."
 
 #: ../../client/invoice_polling.rst
+#, fuzzy
 msgid "Return type"
-msgstr "Тип результату"
+msgstr "Результат"
 
 #: aiosend.polling.invoice.InvoicePollingManager.expired_invoice_polling:5
 #: aiosend.polling.invoice.InvoicePollingManager.invoice_polling:5 of
@@ -112,3 +120,4 @@ msgstr "Призначте функцію-обробник для рахункі
 #: ../../client/invoice_polling.rst:30
 msgid "Usage example"
 msgstr "Приклад використання"
+

@@ -36,7 +36,6 @@ msgstr "Сесія HTTP, заснована на aiohttp."
 msgid "This class is a wrapper of `aiohttp.ClientSession`."
 msgstr "Цей клас є обгорткою над  `aiohttp.ClientSession`."
 
-
 #: aiosend.client.session.aiohttp.AiohttpSession.request:1
 #: aiosend.client.session.base.BaseSession.request:1 of
 msgid "Make http request."
@@ -44,7 +43,7 @@ msgstr "Виконати HTTP-запит."
 
 #: ../../api/session.rst
 msgid "Return type"
-msgstr "Тип результату"
+msgstr ""
 
 #: aiosend.client.session.aiohttp.AiohttpSession.request:4
 #: aiosend.client.session.base.BaseSession.request:4 of
@@ -66,7 +65,9 @@ msgstr "Абстрактний клас сесії."
 msgid ""
 "If you want to implement your own session class, you should inherit this "
 "class."
-msgstr "Якщо ви хочете створити свій клас сесії, використовуйте цей клас як базовий."
+msgstr ""
+"Якщо ви хочете створити свій клас сесії, використовуйте цей клас як "
+"базовий."
 
 #: ../../api/session.rst:9
 msgid ""
@@ -77,7 +78,10 @@ msgid ""
 "<aiosend.client.session.BaseSession.request>` and :attr:`close "
 "<aiosend.client.session.BaseSession.close>` methods."
 msgstr ""
-"**aiosend** за замовчуванням використовує сесію `aiohttp <https://docs.aiohttp.org/en/stable/index.html>`_."
-"Ви можете створити свій сеанс на основі :class:`BaseSession <aiosend.client.session.BaseSession>`, "
-"перевизначивши методи :attr:`request <aiosend.client.session.BaseSession.request>` і "
+"**aiosend** за замовчуванням використовує сесію `aiohttp "
+"<https://docs.aiohttp.org/en/stable/index.html>`_.Ви можете створити свій"
+" сеанс на основі :class:`BaseSession "
+"<aiosend.client.session.BaseSession>`, перевизначивши методи "
+":attr:`request <aiosend.client.session.BaseSession.request>` і "
 ":attr:`close <aiosend.client.session.BaseSession.close>`."
+
