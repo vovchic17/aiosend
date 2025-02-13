@@ -36,6 +36,7 @@ msgstr "Сесія HTTP, заснована на aiohttp."
 msgid "This class is a wrapper of `aiohttp.ClientSession`."
 msgstr "Цей клас є обгорткою над  `aiohttp.ClientSession`."
 
+
 #: aiosend.client.session.aiohttp.AiohttpSession.request:1
 #: aiosend.client.session.base.BaseSession.request:1 of
 msgid "Make http request."

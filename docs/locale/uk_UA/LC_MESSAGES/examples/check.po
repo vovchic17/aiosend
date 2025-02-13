@@ -27,4 +27,3 @@ msgstr "Чек"
 #: ../../examples/check.rst:6
 msgid "Check shortcut methods"
 msgstr "Альтернативні методи чека"
-

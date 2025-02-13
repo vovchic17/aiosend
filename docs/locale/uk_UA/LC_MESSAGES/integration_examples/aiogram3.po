@@ -31,4 +31,3 @@ msgstr "Зразок використання з ' aiogram 3.x <https://aiogram.
 #: ../../integration_examples/aiogram3.rst:11
 msgid "Preview"
 msgstr "Попередній перегляд"
-

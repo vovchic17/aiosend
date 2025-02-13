@@ -27,4 +27,3 @@ msgstr "Рахунок
 #: ../../examples/invoice.rst:6
 msgid "Invoice shortcut methods"
 msgstr "Альтернативні методи рахунку"
-

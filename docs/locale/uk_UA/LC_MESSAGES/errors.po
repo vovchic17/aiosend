@@ -53,4 +53,3 @@ msgstr "Виняток, що викликається при невірному 
 #: aiosend.exceptions.WrongNetworkError:1 of
 msgid "Exception raised when the token is served by different network."
 msgstr "Виняток, що викликається коли токен прінаждежіт іншої мережі."
-

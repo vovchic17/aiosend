@@ -79,4 +79,3 @@ msgstr "Синхронне використання"
 #: ../../index.rst:37
 msgid "Contents"
 msgstr "Зміст"
-

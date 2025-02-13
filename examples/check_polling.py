@@ -13,7 +13,7 @@ async def check_handler(check: Check, payload: str):
 
 @cp.expired_check_polling()
 async def expired_check_handler(check: Check, payload: str):
-    print(f"Expired invoice", check.check_id, payload)
+    print(f"Expired check", check.check_id, payload)
 
 
 async def main() -> None:

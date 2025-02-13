@@ -43,4 +43,3 @@ msgstr "За допомогою `uv <https://docs.astral.sh/uv/>`_"
 #: ../../install.rst:26
 msgid "Via `poetry <https://python-poetry.org/>`_"
 msgstr "За допомогою `poetry <https://python-poetry.org/>`_"
-

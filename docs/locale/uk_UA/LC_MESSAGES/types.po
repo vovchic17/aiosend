@@ -313,6 +313,7 @@ msgid ""
 "Currency alphabetic code. Currently, can be “USDT”, “TON”, “BTC”, “ETH”, "
 "“LTC”, “BNB”, “TRX” and “USDC”."
 msgstr ""
+
 "Алфавітний Код валюти. На даний момент може бути ”USDT”, ”TON”, ”BTC”, ”ETH”,"
 "”LTC”, ”BNB”, ”TRX” або ”USDC”."
 
@@ -354,6 +355,7 @@ msgid ""
 "“TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for "
 "testnet)."
 msgstr ""
+
 "*Опціонально*. Список валют, який можуть бути використані для оплати рахунку. "
 "Доступний тільки якщо currency_type є ”fiat”. На даний момент "
 "може бути ”USDT”, ”TON”, ”BTC”, ”ETH”, ”LTC”, ”BNB”, ”TRX” і ”USDC”"
@@ -661,4 +663,3 @@ msgstr "тип"
 #: ../../docstring aiosend.types.Update.update_type:3 of
 msgid "Webhook update type. Supported update types"
 msgstr "Тип webhook оновлення. Підтримувані типи оновлень"
-

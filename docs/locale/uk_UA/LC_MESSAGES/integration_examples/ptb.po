@@ -34,4 +34,3 @@ msgstr "Зразок використання з `python-telegram-bot <https://d
 #: ../../integration_examples/ptb.rst:11
 msgid "Preview"
 msgstr "Попередній перегляд"
-

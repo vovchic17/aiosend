@@ -31,4 +31,3 @@ msgstr "Зразок використання з ' aiogram 2.x <https://docs.aio
 #: ../../integration_examples/aiogram2.rst:11
 msgid "Preview"
 msgstr "Попередній перегляд"
-

@@ -31,4 +31,3 @@ msgstr "Зразок використання з ' Telethon <https://docs.teleth
 #: ../../integration_examples/telethon.rst:11
 msgid "Preview"
 msgstr "Попередній перегляд"
-

@@ -31,4 +31,3 @@ msgstr "Зразок використання з ' Pyrogram <https://docs.pyrogr
 #: ../../integration_examples/pyrogram.rst:11
 msgid "Preview"
 msgstr "Попередній перегляд"
-

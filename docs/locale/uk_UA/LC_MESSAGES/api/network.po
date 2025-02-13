@@ -68,6 +68,7 @@ msgstr "Повертає URL-адресу зображення для чека."
 msgid "Return type"
 msgstr "Тип результату"
 
+
 #: aiosend.client.network.Network.get_check_image:4
 #: aiosend.client.network.Network.get_qr:4
 #: aiosend.client.network.Network.get_rates_image:4
@@ -90,4 +91,5 @@ msgstr "ім'я мережі"
 #: aiosend.client.network.Network.url:1 of
 msgid "Return URL for method."
 msgstr "Повертає URL для методу."
+
 

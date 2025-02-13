@@ -34,4 +34,3 @@ msgstr "Зразок використання з асинхронним ' pyTele
 #: ../../integration_examples/pytba_async.rst:12
 msgid "Preview"
 msgstr "Попередній перегляд"
-

@@ -67,4 +67,3 @@ msgstr ""
 #: aiosend.enums.update_type.UpdateType:1 of
 msgid "Webhook update type."
 msgstr "Тип оновлення вебхука"
-

@@ -27,4 +27,3 @@ msgstr "Зразки інтеграцій"
 #: ../../integration_examples/index.rst:5
 msgid "Examples of usage with libraries are presented here."
 msgstr "Тут представлені зразки використання з різними бібліотеками"
-
