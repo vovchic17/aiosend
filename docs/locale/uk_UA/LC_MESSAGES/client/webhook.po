@@ -96,7 +96,7 @@ msgid ""
 "**aiosend** uses `aiohttp "
 "<https://docs.aiohttp.org/en/stable/index.html>`_ as web server by "
 "default. You can implement your own webhook manager by inheriting "
-":class:`cryptopay.webhook.WebhookManager` and overriding "
+":class:`aiosend.webhook.WebhookManager` and overriding "
 ":attr:`aiosend.webhook.WebhookManager.register_handler`."
 msgstr ""
 
