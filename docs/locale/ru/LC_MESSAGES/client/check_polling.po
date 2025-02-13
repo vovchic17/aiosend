@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../client/check_polling.rst:3
 msgid "Check polling"
-msgstr ""
+msgstr "Поллинг чеков"
 
 #: ../../client/check_polling.rst:5
 msgid ""
