@@ -36,7 +36,7 @@ Usage example with `flask web server <https://flask.palletsprojects.com/en/3.0.x
 .. literalinclude:: ../../examples/webhook_flask.py
 
 **aiosend** uses `aiohttp <https://docs.aiohttp.org/en/stable/index.html>`_ as web server by default.
-You can implement your own webhook manager by inheriting :class:`cryptopay.webhook.WebhookManager`
+You can implement your own webhook manager by inheriting :class:`aiosend.webhook.WebhookManager`
 and overriding :attr:`aiosend.webhook.WebhookManager.register_handler`.
 
 .. autoclass:: aiosend.webhook.WebhookManager
