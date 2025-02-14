@@ -102,7 +102,7 @@ msgstr ""
 #: aiosend.polling.check.CheckPollingManager.check_polling:6
 #: aiosend.polling.check.CheckPollingManager.expired_check_polling:6 of
 msgid "handler function."
-msgstr "функция-обрработчик."
+msgstr "функция-обработчик."
 
 #: aiosend.polling.check.CheckPollingManager.expired_check_polling:1 of
 msgid "Register a handler for timed out checks."
