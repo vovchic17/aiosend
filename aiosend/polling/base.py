@@ -56,9 +56,19 @@ class BasePollingManager(ABC):
             await asyncio.sleep(self._delay)
             if not tasks:
                 continue
-            updates = await get_updates(**{updater_key: list(tasks)})
+            try:
+                updates = await get_updates(**{updater_key: list(tasks)})
+            except Exception:
+                logger.exception("Error while getting updates:\n")
+                continue
             for update in updates:
-                await handle_update(update)
+                try:
+                    await handle_update(update)
+                except Exception:  # noqa: PERF203
+                    logger.exception(
+                        "Error while handling update:\n",
+                    )
+                    continue
             logger.debug(
                 "Tasks left: %s Waiting %d seconds...",
                 len(tasks),
