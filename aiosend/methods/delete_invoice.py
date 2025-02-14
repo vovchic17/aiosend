@@ -25,7 +25,7 @@ class DeleteInvoice:
         Use this method to delete invoices created by your app.
         Returns :code:`True` on success.
 
-        Source: https://help.crypt.bot/crypto-pay-api#hwjK
+        Source: https://help.crypt.bot/crypto-pay-api#deleteInvoice
 
         :param invoice_id: Invoice ID to be deleted.
         :return: :code:`True` on success.

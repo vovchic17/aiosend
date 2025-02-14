@@ -169,7 +169,7 @@ msgid ""
 msgstr ""
 
 #: aiosend.methods.delete_invoice.DeleteInvoice.delete_invoice:6 of
-msgid "Source: https://help.crypt.bot/crypto-pay-api#hwjK"
+msgid "Source: https://help.crypt.bot/crypto-pay-api#deleteInvoice"
 msgstr ""
 
 #: aiosend.methods.delete_invoice.DeleteInvoice.delete_invoice:9 of
