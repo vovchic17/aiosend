@@ -22,29 +22,30 @@ msgstr ""
 
 #: ../../client/tools.rst:3
 msgid "Tools"
-msgstr ""
+msgstr "Инструменты"
 
 #: ../../client/tools.rst:5
 msgid "Additional functionality."
-msgstr ""
+msgstr "Дополнительные функции"
 
 #: aiosend.tools.exchange.Exchange.exchange:1 of
 msgid "Exchange currency."
-msgstr ""
+msgstr "Обменеый курс валюты"
 
 #: aiosend.tools.exchange.Exchange.exchange:3 of
 msgid "Wrapper for :class:`aiosend.CryptoPay.get_exchange_rates`."
-msgstr ""
+msgstr "Обёртка для :class:`aiosend.CryptoPay.get_exchange_rates`."
 
 #: aiosend.tools.exchange.Exchange.exchange:5 of
 msgid ""
 "Use this method to get the equivalent amount in the target currency for "
 "the source currency."
 msgstr ""
+"Используйте этот метод для получения эквивалентной суммы целевой валюты для исходной"
 
 #: ../../client/tools.rst
 msgid "Return type"
-msgstr ""
+msgstr "Тип результата"
 
 #: aiosend.tools.exchange.Exchange.exchange:8 of
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`float\\``"
@@ -52,39 +53,39 @@ msgstr ""
 
 #: ../../client/tools.rst
 msgid "Returns"
-msgstr ""
+msgstr "Результат"
 
 #: aiosend.tools.exchange.Exchange.exchange:9 of
 msgid ":class:`float` on success."
-msgstr ""
+msgstr ":class:`float` в случае успеха."
 
 #: aiosend.tools.exchange.Exchange.exchange
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset of
 msgid "raise"
-msgstr ""
+msgstr "Исключение"
 
 #: aiosend.tools.exchange.Exchange.exchange:10 of
 msgid ":class:`CryptoPayError` if there is no such exchange rate."
-msgstr ""
+msgstr ":class:`CryptoPayError` если нет такого обменного курса."
 
 #: ../../client/tools.rst:9 ../../client/tools.rst:15 ../../client/tools.rst:21
 msgid "Usage example"
-msgstr ""
+msgstr "Пример использования"
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:1
 #: of
 msgid "Get the balance of a specific asset."
-msgstr ""
+msgstr "Получение баланса указанного актива."
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:3
 #: of
 msgid "Wrapper for :class:`aiosend.CryptoPay.get_balance`."
-msgstr ""
+msgstr "Обёртка для :class:`aiosend.CryptoPay.get_balance`."
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:5
 #: of
 msgid "Use this method to get the balance of a specific asset."
-msgstr ""
+msgstr "Используйте этот метод для получения баланса указанного актива."
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:7
 #: of
@@ -94,26 +95,28 @@ msgstr ""
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:8
 #: of
 msgid ":class:`Balacne` on success."
-msgstr ""
+msgstr ":class:`Balance` в случае успеха."
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:9
 #: of
 msgid ":class:`CryptoPayError` if there is no such asset."
-msgstr ""
+msgstr ":class:`CryptoPayError` если нет такого актива"
 
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:1 of
 msgid "Get exactly one invoice or none."
-msgstr ""
+msgstr "Получение или только одного счёта, или ничего."
 
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:3 of
 msgid "Wrapper for :class:`aiosend.CryptoPay.get_invoices`"
-msgstr ""
+msgstr "Обёртка для :class:`aiosend.CryptoPay.get_invoices`"
 
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:5 of
 msgid ""
 "Use this method to update status of an existing invoice object or to get "
 "this object by passing the invoice id."
 msgstr ""
+"Используйте этот метод для обновления статуса существующего объекта счёта или "
+"получения этого объекта, помещая идентификатор счёта"
 
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:8 of
 msgid ""
@@ -123,21 +126,25 @@ msgstr ""
 
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:9 of
 msgid ":class:`aiosend.types.Invoice` object."
-msgstr ""
+msgstr "Объект :class:`aiosend.types.Invoice`."
 
 #: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:1 of
 msgid "Delete all checks."
-msgstr ""
+msgstr "Удаление всех чеков."
 
 #: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:3 of
 msgid ""
 "Wrapper for :class:`aiosend.CryptoPay.get_checks` and "
 ":class:`aiosend.CryptoPay.delete_check`"
 msgstr ""
+"Обёртка для :class:`aiosend.CryptoPay.get_checks` И "
+":class:`aiosend.CryptoPay.delete_check`"
 
 #: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:6 of
 msgid "Use this method to delete all existing checks created by your app."
 msgstr ""
+"Используйте этот метод для удаления всех существующих чеков, "
+"созданных вашим приложением."
 
 #: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:9
 #: aiosend.tools.delete_all_invoices.DeleteAllInvoices.delete_all_invoices:9 of
@@ -146,25 +153,29 @@ msgstr ""
 
 #: aiosend.tools.delete_all_invoices.DeleteAllInvoices.delete_all_invoices:1 of
 msgid "Delete all invoices."
-msgstr ""
+msgstr "Удаление всех счетов."
 
 #: aiosend.tools.delete_all_invoices.DeleteAllInvoices.delete_all_invoices:3 of
 msgid ""
 "Wrapper for :class:`aiosend.CryptoPay.get_invoices` and "
 ":class:`aiosend.CryptoPay.delete_invoice`"
 msgstr ""
+"Обёртка ждя :class:`aiosend.CryptoPay.get_invoices` и "
+":class:`aiosend.CryptoPay.delete_invoice`"
 
 #: aiosend.tools.delete_all_invoices.DeleteAllInvoices.delete_all_invoices:6 of
 msgid "Use this method to delete all existing invoices created by your app."
 msgstr ""
+"Используйте этот метод дял удаления всех существующих счетов, созданных "
+"вашим приложением"
 
 #: aiosend.tools.get_rates_image.GetRatesImage.get_rates_image:1 of
 msgid "Get rates image."
-msgstr ""
+msgstr "Получение изображения курса."
 
 #: aiosend.tools.get_rates_image.GetRatesImage.get_rates_image:3 of
 msgid "Use this method to get exchange rates image."
-msgstr ""
+msgstr "Используйте этот метод для получения картинки обменного курса."
 
 #: aiosend.tools.get_rates_image.GetRatesImage.get_rates_image:5 of
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`str\\``"
@@ -172,7 +183,7 @@ msgstr ""
 
 #: aiosend.tools.get_rates_image.GetRatesImage.get_rates_image:6 of
 msgid "rates image url."
-msgstr ""
+msgstr "Ссылка на изображение курса."
 
 #~ msgid "Тип результата"
 #~ msgstr ""

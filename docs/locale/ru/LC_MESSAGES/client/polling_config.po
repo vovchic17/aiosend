@@ -22,37 +22,39 @@ msgstr ""
 
 #: ../../client/polling_config.rst:4
 msgid "Polling configuration"
-msgstr ""
+msgstr "Конфигурация поллинга"
 
 #: ../../client/polling_config.rst:5
 msgid "You can configure your own polling configuration."
-msgstr ""
+msgstr "Вы можете настроить собственную конфигурацию поллинга."
 
 #: aiosend.polling.base.PollingConfig:1 of
 msgid "Polling configuration."
-msgstr ""
+msgstr "Конфигурация поллинга."
 
 #: ../../docstring aiosend.polling.PollingConfig.delay:1 of
 msgid "Time to wait between the requests in seconds."
-msgstr ""
+msgstr "Вреия ожидания между запросами (в секундах)."
 
 #: ../../docstring aiosend.polling.PollingConfig.timeout:1 of
 msgid "Timeout in seconds."
-msgstr ""
+msgstr "Таймаут в секундах."
 
 #: aiosend.polling.manager.PollingManager:1 of
 msgid "Polling manager class."
-msgstr ""
+msgstr "Класс поллинг менеджера"
 
 #: aiosend.polling.manager.PollingManager:3 of
 msgid ""
 "This class is used to handle payments and check activation via polling "
 "method."
 msgstr ""
+"Этот класс используется для обработки платежей и активаций чеков "
+"методом поллинга"
 
 #: aiosend.polling.manager.PollingManager.start_polling:1 of
 msgid "Run polling."
-msgstr ""
+msgstr "Запуск поллинга."
 
 #: ../../client/polling_config.rst
 msgid "Parameters"
@@ -60,7 +62,7 @@ msgstr ""
 
 #: aiosend.polling.manager.PollingManager.start_polling:4 of
 msgid "function to run in background."
-msgstr ""
+msgstr "функция, запускаемая в фоне"
 
 #: ../../client/polling_config.rst
 msgid "Return type"
