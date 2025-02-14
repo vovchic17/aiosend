@@ -1,8 +1,14 @@
-from abc import ABC, abstractmethod
+import asyncio
+from abc import ABC
 from dataclasses import dataclass
-from typing import Any, Generic
+from typing import TYPE_CHECKING, Generic
 
 from aiosend.types import _CryptoPayType
+
+if TYPE_CHECKING:
+    from collections.abc import Awaitable, Callable
+    from logging import Logger
+    from typing import Any
 
 
 @dataclass(slots=True)
@@ -37,6 +43,24 @@ class BasePollingManager(ABC):
     _timeout: int
     _delay: int
 
-    @abstractmethod
-    async def start_polling() -> None:
+    async def _start_polling(
+        self,
+        get_updates: "Callable[..., Awaitable[list[object]]]",
+        handle_update: "Callable[[object], Awaitable[None]]",
+        tasks: "dict[int, PollingTask]",
+        updater_key: str,
+        logger: "Logger",
+    ) -> None:
         """Start polling."""
+        while True:
+            await asyncio.sleep(self._delay)
+            if not tasks:
+                continue
+            updates = await get_updates(**{updater_key: list(tasks)})
+            for update in updates:
+                await handle_update(update)
+            logger.debug(
+                "Tasks left: %s Waiting %d seconds...",
+                len(tasks),
+                self._delay,
+            )

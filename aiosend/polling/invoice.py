@@ -1,4 +1,3 @@
-import asyncio
 from typing import TYPE_CHECKING, Any
 
 from magic_filter.magic import MagicFilter
@@ -121,17 +120,10 @@ class InvoicePollingManager(BasePollingManager):
 
     async def _start_invoice_polling(self: "aiosend.CryptoPay") -> None:
         """Start invoice polling."""
-        while True:
-            await asyncio.sleep(self._delay)
-            if not self._invoice_tasks:
-                continue
-            invoices = await self.get_invoices(
-                invoice_ids=list(self._invoice_tasks),
-            )
-            for invoice in invoices:
-                await self._handle_invoice(invoice, **self._kwargs)
-            loggers.invoice_polling.debug(
-                "Tasks left: %s Waiting %d seconds...",
-                len(self._invoice_tasks),
-                self._delay,
-            )
+        await self._start_polling(
+            self.get_invoices,  # type: ignore[arg-type]
+            self._handle_invoice,  # type: ignore[arg-type]
+            self._invoice_tasks,
+            "invoice_ids",
+            loggers.invoice_polling,
+        )

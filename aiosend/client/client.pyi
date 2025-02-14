@@ -2,8 +2,9 @@ from builtins import bool as _bool
 from builtins import float as _float
 from builtins import list as _list
 from builtins import str as _str
-from collections.abc import Callable, Generator
+from collections.abc import Awaitable, Callable, Generator
 from datetime import datetime
+from logging import Logger
 from types import NoneType as _NoneType
 from typing import Any, TypeVar
 
@@ -222,6 +223,14 @@ class CryptoPay:
         invoice: Check,
         data: dict[_str, Any],
     ) -> None: ...
+    def _start_polling(
+        self,
+        get_updates: Callable[..., Awaitable[_list[object]]],
+        handle_update: Callable[[object], Awaitable[None]],
+        tasks: dict[int, PollingTask],
+        updater_key: _str,
+        logger: Logger,
+    ) -> NoneType: ...
     def _start_invoice_polling(self) -> NoneType: ...
     def _start_check_polling(self) -> NoneType: ...
     def start_polling(

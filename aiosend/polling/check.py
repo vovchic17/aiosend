@@ -1,4 +1,3 @@
-import asyncio
 from typing import TYPE_CHECKING, Any
 
 from magic_filter.magic import MagicFilter
@@ -113,17 +112,10 @@ class CheckPollingManager(BasePollingManager):
 
     async def _start_check_polling(self: "aiosend.CryptoPay") -> None:
         """Start check polling."""
-        while True:
-            await asyncio.sleep(self._delay)
-            if not self._check_tasks:
-                continue
-            checks = await self.get_checks(
-                check_ids=list(self._check_tasks),
-            )
-            for check in checks:
-                await self._handle_check(check)
-            loggers.check_polling.debug(
-                "Tasks left: %s Waiting %d seconds...",
-                len(self._check_tasks),
-                self._delay,
-            )
+        await self._start_polling(
+            self.get_checks,  # type: ignore[arg-type]
+            self._handle_check,  # type: ignore[arg-type]
+            self._check_tasks,
+            "check_ids",
+            loggers.check_polling,
+        )
