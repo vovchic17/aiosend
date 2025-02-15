@@ -386,7 +386,7 @@ msgstr ""
 
 #: ../../docstring aiosend.types.Invoice.bot_invoice_url:1 of
 msgid "URL should be provided to the user to pay the invoice."
-msgstr "URL, який повинен бути предствлен користувачеві для оплати рахунку."
+msgstr "URL, який повинен бути представлен користувачеві для оплати рахунку."
 
 #: ../../docstring aiosend.types.Invoice.comment:1 of
 msgid "*Optional*. Comment to the payment from the user."
@@ -519,7 +519,7 @@ msgid ""
 "value of the field status is “paid”."
 msgstr ""
 "*Опціонально*. Курс оплаченої валюти, виражений у фіатній валюті. "
-"Доступний тільки якщо значення поля currency_type є “fiat” ізначення поля"
+"Доступний тільки якщо значення поля currency_type є “fiat” і значення поля"
 " status є “paid”."
 
 #: ../../docstring aiosend.types.Invoice.paid_usd_rate:1 of
@@ -531,7 +531,7 @@ msgid ""
 "*Deprecated*. URL should be provided to the user to pay the invoice "
 "(described here for reference)."
 msgstr ""
-"*Постарілий*. URL, який повинен бути предствлен користувачеві для оплати "
+"*Постарілий*. URL, який повинен бути представлен користувачеві для оплати "
 "рахунку. (описано тут для довідки)."
 
 #: ../../docstring aiosend.types.Invoice.payload:1 of

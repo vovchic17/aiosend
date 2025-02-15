@@ -22,4 +22,4 @@ msgstr ""
 
 #: ../../examples/index.rst:3
 msgid "Examples"
-msgstr "Приклад"
+msgstr "Приклади"

@@ -93,7 +93,7 @@ msgstr ""
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:8
 #: of
-msgid ":class:`Balacne` on success."
+msgid ":class:`Balance` on success."
 msgstr ""
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:9
