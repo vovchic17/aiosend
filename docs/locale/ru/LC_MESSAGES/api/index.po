@@ -22,5 +22,5 @@ msgstr ""
 
 #: ../../api/index.rst:3
 msgid "API"
-msgstr "API"
+msgstr ""
 

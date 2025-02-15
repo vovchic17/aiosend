@@ -30,7 +30,7 @@ msgstr "Дополнительные функции"
 
 #: aiosend.tools.exchange.Exchange.exchange:1 of
 msgid "Exchange currency."
-msgstr "Обменеый курс валюты"
+msgstr "Обменный курс валюты"
 
 #: aiosend.tools.exchange.Exchange.exchange:3 of
 msgid "Wrapper for :class:`aiosend.CryptoPay.get_exchange_rates`."
@@ -94,7 +94,7 @@ msgstr ""
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:8
 #: of
-msgid ":class:`Balacne` on success."
+msgid ":class:`Balance` on success."
 msgstr ":class:`Balance` в случае успеха."
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:9

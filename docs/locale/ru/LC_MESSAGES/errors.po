@@ -52,7 +52,7 @@ msgstr "Исключение, вызываемое при неверном на�
 
 #: aiosend.exceptions.WrongNetworkError:1 of
 msgid "Exception raised when the token is served by different network."
-msgstr "Исключение, вызываемое когда токен принаждежит другой сети."
+msgstr "Исключение, вызываемое когда токен принадлежит другой сети."
 
 #~ msgid "Bases: :py:class:`~aiosend.exceptions.CryptoPayError`"
 #~ msgstr ""

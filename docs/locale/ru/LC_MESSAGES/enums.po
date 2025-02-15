@@ -54,7 +54,7 @@ msgstr "Статус счёта"
 
 #: aiosend.enums.paid_btn_name.PaidBtnName:1 of
 msgid "Paid button name."
-msgstr "Имя послеоплатной кнопки"
+msgstr "Имя постоплатной кнопки"
 
 #: aiosend.enums.paid_btn_name.PaidBtnName:3 of
 msgid ""
@@ -64,7 +64,7 @@ msgstr "Метка кнопки, которая будет предоставл�
 
 #: aiosend.enums.update_type.UpdateType:1 of
 msgid "Webhook update type."
-msgstr "Тип обновления вебхука"
+msgstr "Тип обновления вебхука."
 
 #~ msgid "Bases: :py:class:`str`, :py:class:`~enum.Enum`"
 #~ msgstr ""

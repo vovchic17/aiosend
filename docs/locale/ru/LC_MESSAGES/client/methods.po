@@ -179,7 +179,7 @@ msgid ""
 "*Optional*. You can set a payment time limit for the invoice in seconds. "
 "Values between 1-2678400 are accepted."
 msgstr ""
-"*Optional*. Вы можете задать временной лимит лоя рпоаиы счёта в секундах. "
+"*Optional*. Вы можете задать временной лимит для оплаты счёта в секундах. "
 "Допустимы значения в диапазоне 1-2678400."
 
 #: aiosend.methods.create_invoice.CreateInvoice.create_invoice:34 of
@@ -203,13 +203,9 @@ msgstr ""
 "приложением. Возвращает :code:`True` в случае успеха."
 
 #: aiosend.methods.delete_invoice.DeleteInvoice.delete_invoice:6 of
-<<<<<<< Updated upstream
+
 msgid "Source: https://help.crypt.bot/crypto-pay-api#hwjK"
-msgstr ""
-=======
-msgid "Source: https://help.crypt.bot/crypto-pay-api#deleteInvoice"
-msgstr "Источник: https://help.crypt.bot/crypto-pay-api#deleteInvoice"
->>>>>>> Stashed changes
+msgstr "Источник: https://help.crypt.bot/crypto-pay-api#hwjK"
 
 #: aiosend.methods.delete_invoice.DeleteInvoice.delete_invoice:9 of
 msgid "Invoice ID to be deleted."
@@ -272,7 +268,7 @@ msgid ""
 "A user with the specified username will be able to activate the check, "
 "defaults to None"
 msgstr ""
-"Только пользователь с определённым юзернеймом сможет активировать чек, "
+"Только пользователь с определённым именем пользователя сможет активировать чек, "
 "по умолчанию None"
 
 #: aiosend.methods.create_check.CreateCheck.create_check:16 of
@@ -326,7 +322,7 @@ msgid ""
 "enabled in the security settings of your app."
 msgstr ""
 "Используйте этот метод для отправки монет из баланса вашего приложения пользователю. "
-"В случае успеха возврашает :class:`Transfer`. Этот метод сначала должен быть включен в "
+"В случае успеха возвращает :class:`Transfer`. Этот метод сначала должен быть включен в "
 "настройках безопасности вашего приложения."
 
 #: aiosend.methods.transfer.Transfer.transfer:7 of
@@ -338,7 +334,7 @@ msgid ""
 "User ID in Telegram. User must have previously used @CryptoBot "
 "(@CryptoTestnetBot for testnet)."
 msgstr ""
-"Идентификатор пользователя в Telegramю Пользователь должен "
+"Идентификатор пользователя в Telegram. Пользователь должен "
 "быть пользователем @CryptoBot (@CryptoTestnetBot для тестовой сети)."
 
 #: aiosend.methods.transfer.Transfer.transfer:14 of
@@ -393,7 +389,7 @@ msgid ""
 "array of :class:`Invoice`."
 msgstr ""
 "Используйте этот метод для получения счетов, созданных в вашем приложении. "
-"В случае успеха возврашает массив объектов :class:`Invoice`."
+"В случае успеха возвращает массив объектов :class:`Invoice`."
 
 #: aiosend.methods.get_invoices.GetInvoices.get_invoices:6 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#getInvoices"
@@ -433,7 +429,7 @@ msgid ""
 "*Optional*. Number of invoices to be returned. Values between 1-1000 are "
 "accepted. Defaults to 100."
 msgstr ""
-"*Опционально*. Количество счетов, которрые должны быть возвращены. "
+"*Опционально*. Количество счетов, которые должны быть возвращены. "
 "Допустимы значения в диапазоне 1-1000. По умолчанию 100."
 
 #: aiosend.methods.get_invoices.GetInvoices.get_invoices:20 of
@@ -498,7 +494,7 @@ msgstr ""
 
 #: aiosend.methods.get_checks.GetChecks.get_checks:19 of
 msgid "List of :class:`Check` objects."
-msgstr "Списко объектов :class:`Check`."
+msgstr "Список объектов :class:`Check`."
 
 #: aiosend.methods.get_transfers.GetTransfers.get_transfers:1 of
 msgid "getTransfers method."
@@ -552,7 +548,7 @@ msgstr ""
 
 #: aiosend.methods.get_transfers.GetTransfers.get_transfers:19 of
 msgid "List of :class:`Transfer` objects."
-msgstr "Список обхектов :class:`Transfer`."
+msgstr "Список объектов :class:`Transfer`."
 
 #: aiosend.methods.get_balance.GetBalance.get_balance:1 of
 msgid "getBalance method."
@@ -578,7 +574,7 @@ msgstr ""
 
 #: aiosend.methods.get_balance.GetBalance.get_balance:10 of
 msgid "List of :class:`Balance` objects."
-msgstr "Список обхектов :class:`Balance`."
+msgstr "Список объектов :class:`Balance`."
 
 #: aiosend.methods.get_exchange_rates.GetExchangeRates.get_exchange_rates:1 of
 msgid "getExchangeRates method."
@@ -590,7 +586,7 @@ msgid ""
 "no parameters. Returns array of :class:`ExchangeRate`."
 msgstr ""
 "Используйте этот метод для получения обменных курсов поддерживаемых валют. "
-"Не требует параметров. Возвращает массив обхектов :class:`ExchangeRate`."
+"Не требует параметров. Возвращает массив объектов :class:`ExchangeRate`."
 
 #: aiosend.methods.get_exchange_rates.GetExchangeRates.get_exchange_rates:7 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#getExchangeRates"
@@ -604,7 +600,7 @@ msgstr ""
 
 #: aiosend.methods.get_exchange_rates.GetExchangeRates.get_exchange_rates:10 of
 msgid "List of :class:`ExchangeRate` objects."
-msgstr "Список обхектов :class:`ExchangeRate`."
+msgstr "Список объектов :class:`ExchangeRate`."
 
 #: aiosend.methods.get_currencies.GetCurrencies.get_currencies:1 of
 msgid "getCurrencies method."
@@ -615,7 +611,7 @@ msgid ""
 "Use this method to get a list of supported currencies. Requires no "
 "parameters. Returns a list of fiat and cryptocurrency alphabetic codes."
 msgstr ""
-"Используйтк этот метод для получения списка поддерживаемых валют. "
+"Используйте этот метод для получения списка поддерживаемых валют. "
 "Не требует параметров. Возвращает список алфавитных кодов фиатной валюты и криптовалюты."
 
 #: aiosend.methods.get_currencies.GetCurrencies.get_currencies:7 of
@@ -630,7 +626,7 @@ msgstr ""
 
 #: aiosend.methods.get_currencies.GetCurrencies.get_currencies:10 of
 msgid "List of :class:`Currency` objects."
-msgstr "Списко объектов :class:`Currency`."
+msgstr "Список объектов :class:`Currency`."
 
 #: aiosend.methods.get_stats.GetStats.get_stats:1 of
 msgid "getStats method."

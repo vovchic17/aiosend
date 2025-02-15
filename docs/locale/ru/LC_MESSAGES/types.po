@@ -384,7 +384,7 @@ msgstr ""
 
 #: ../../docstring aiosend.types.Invoice.bot_invoice_url:1 of
 msgid "URL should be provided to the user to pay the invoice."
-msgstr "URL, который должен быть предствлен пользователю для оплаты счёта."
+msgstr "URL, который должен быть представлен пользователю для оплаты счёта."
 
 #: ../../docstring aiosend.types.Invoice.comment:1 of
 msgid "*Optional*. Comment to the payment from the user."
@@ -532,7 +532,7 @@ msgid ""
 "*Deprecated*. URL should be provided to the user to pay the invoice "
 "(described here for reference)."
 msgstr ""
-"*Устаревшее*. URL, который должен быть предствлен пользователю для оплаты"
+"*Устаревшее*. URL, который должен быть представлен пользователю для оплаты"
 " счёта. (описано здесь для справки)."
 
 #: ../../docstring aiosend.types.Invoice.payload:1 of

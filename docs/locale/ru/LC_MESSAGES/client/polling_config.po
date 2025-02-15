@@ -34,7 +34,7 @@ msgstr "Конфигурация поллинга."
 
 #: ../../docstring aiosend.polling.PollingConfig.delay:1 of
 msgid "Time to wait between the requests in seconds."
-msgstr "Вреия ожидания между запросами (в секундах)."
+msgstr "Время ожидания между запросами (в секундах)."
 
 #: ../../docstring aiosend.polling.PollingConfig.timeout:1 of
 msgid "Timeout in seconds."

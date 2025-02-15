@@ -30,7 +30,7 @@ msgid ""
 "<https://send.t.me>`_ settings as follows:"
 msgstr ""
 "Для использования вебхуков вам нужно включить их в настройках "
-"'@CryptoBot <https://send.t.me>`_ следующим образом:"
+"`@CryptoBot <https://send.t.me>`_ следующим образом:"
 
 #: ../../client/webhook.rst:8
 msgid "🏝 Crypto Pay -> My Apps -> YOUR APP -> Webhooks -> 🌕 Enable webhooks."
