@@ -22,7 +22,7 @@ class GetBalanceByAsset:
 
         Use this method to get the balance of a specific asset.
 
-        :return: :class:`Balacne` on success.
+        :return: :class:`Balance` on success.
         :raise: :class:`CryptoPayError` if there is no such asset.
         """
         balances = await self.get_balance()
