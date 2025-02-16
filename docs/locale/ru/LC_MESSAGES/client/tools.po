@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-12 14:38+0300\n"
+"POT-Creation-Date: 2025-02-16 18:06+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -41,7 +41,8 @@ msgid ""
 "Use this method to get the equivalent amount in the target currency for "
 "the source currency."
 msgstr ""
-"Используйте этот метод для получения эквивалентной суммы целевой валюты для исходной"
+"Используйте этот метод для получения эквивалентной суммы целевой валюты "
+"для исходной"
 
 #: ../../client/tools.rst
 msgid "Return type"
@@ -94,7 +95,8 @@ msgstr ""
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:8
 #: of
-msgid ":class:`Balance` on success."
+#, fuzzy
+msgid ":class:`Balacne` on success."
 msgstr ":class:`Balance` в случае успеха."
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:9
@@ -115,8 +117,8 @@ msgid ""
 "Use this method to update status of an existing invoice object or to get "
 "this object by passing the invoice id."
 msgstr ""
-"Используйте этот метод для обновления статуса существующего объекта счёта или "
-"получения этого объекта, помещая идентификатор счёта"
+"Используйте этот метод для обновления статуса существующего объекта счёта"
+" или получения этого объекта, помещая идентификатор счёта"
 
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:8 of
 msgid ""
@@ -143,8 +145,8 @@ msgstr ""
 #: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:6 of
 msgid "Use this method to delete all existing checks created by your app."
 msgstr ""
-"Используйте этот метод для удаления всех существующих чеков, "
-"созданных вашим приложением."
+"Используйте этот метод для удаления всех существующих чеков, созданных "
+"вашим приложением."
 
 #: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:9
 #: aiosend.tools.delete_all_invoices.DeleteAllInvoices.delete_all_invoices:9 of

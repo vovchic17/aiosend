@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-12 14:38+0300\n"
+"POT-Creation-Date: 2025-02-16 18:06+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -193,7 +193,7 @@ msgid ""
 msgstr ""
 
 #: ../../client/methods.rst:13
-msgid "🏝 Crypto Pay -> My Apps -> YOUR APP -> Security -> Checks -> Enable."
+msgid "🏝 Crypto Pay -> My Apps -> <Your App> -> Security -> Checks -> Enable."
 msgstr ""
 
 #: aiosend.methods.create_check.CreateCheck.create_check:1 of
@@ -262,7 +262,7 @@ msgid ""
 msgstr ""
 
 #: ../../client/methods.rst:19
-msgid "🏝 Crypto Pay -> My Apps -> YOUR APP -> Security -> Transfers -> Enable."
+msgid "🏝 Crypto Pay -> My Apps -> <Your App> -> Security -> Transfers -> Enable."
 msgstr ""
 
 #: aiosend.methods.transfer.Transfer.transfer:1 of
@@ -572,4 +572,13 @@ msgstr ""
 #: aiosend.methods.get_stats.GetStats.get_stats:13 of
 msgid ":class:`AppStats` object."
 msgstr ""
+
+#~ msgid "🏝 Crypto Pay -> My Apps -> YOUR APP -> Security -> Checks -> Enable."
+#~ msgstr ""
+
+#~ msgid ":class:`aiosend.types.Check` object"
+#~ msgstr ""
+
+#~ msgid "🏝 Crypto Pay -> My Apps -> YOUR APP -> Security -> Transfers -> Enable."
+#~ msgstr ""
 
