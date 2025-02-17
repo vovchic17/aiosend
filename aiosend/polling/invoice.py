@@ -72,15 +72,18 @@ class InvoicePollingManager(BasePollingManager):
         invoice: "Invoice",
     ) -> None:
         self._invoice_tasks[invoice.invoice_id].timeout -= self._delay
+        task = self._invoice_tasks[invoice.invoice_id]
         if (
-            self._invoice_tasks[invoice.invoice_id].timeout <= 0
-            or invoice.status == InvoiceStatus.EXPIRED
+            invoice.status in (InvoiceStatus.PAID, InvoiceStatus.EXPIRED)
+            or task.timeout <= 0
         ):
+            del self._invoice_tasks[invoice.invoice_id]
+        if task.timeout <= 0 or invoice.status == InvoiceStatus.EXPIRED:
             for handler in self._exp_invoice_handlers:
                 if handler.check(invoice):
                     await handler.call(
                         invoice,
-                        self._invoice_tasks[invoice.invoice_id].data
+                        task.data
                         | self._kwargs,
                     )
                     loggers.invoice_polling.info(
@@ -98,8 +101,7 @@ class InvoicePollingManager(BasePollingManager):
                 if handler.check(invoice):
                     await handler.call(
                         invoice,
-                        self._invoice_tasks[invoice.invoice_id].data
-                        | self._kwargs,
+                        task.data | self._kwargs,
                     )
                     loggers.invoice_polling.info(
                         "PAID INVOICE id=%d is handled.",
@@ -111,12 +113,6 @@ class InvoicePollingManager(BasePollingManager):
                     "PAID INVOICE id=%d is not handled.",
                     invoice.invoice_id,
                 )
-
-        if (
-            invoice.status in (InvoiceStatus.PAID, InvoiceStatus.EXPIRED)
-            or self._invoice_tasks[invoice.invoice_id].timeout <= 0
-        ):
-            del self._invoice_tasks[invoice.invoice_id]
 
     async def _start_invoice_polling(self: "aiosend.CryptoPay") -> None:
         """Start invoice polling."""
