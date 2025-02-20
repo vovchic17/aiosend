@@ -29,7 +29,7 @@ class FlaskManager(WebhookManager["Flask"]):
             raise RuntimeError(msg) from e
 
         @self._app.post(self._path)
-        async def handle() -> dict:
+        async def handle() -> tuple[dict[str, bool], int]:
             status = await feed_update(
                 request.get_json(),
                 dict(request.headers),

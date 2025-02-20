@@ -37,7 +37,8 @@ class WebhookManager(Generic[_APP], ABC):
     @abstractmethod
     def register_handler(
         self,
-        feed_update: "Callable[[dict[str, Any], dict[str, str]], Awaitable]",
+        feed_update: """Callable[[dict[str, Any],
+        dict[str, str]], Awaitable[bool]]""",
     ) -> None:
         """
         Register webhook handler.
