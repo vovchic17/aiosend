@@ -89,12 +89,14 @@ class RequestHandler:
         self: "aiosend.CryptoPay",
         body: "dict[str, Any]",
         headers: dict[str, str],
-    ) -> None:
+    ) -> bool:
         """
         Feed an update to the invoice handler.
 
         :param body: parsed json body.
         :param headers: request headers.
+
+        :return: :code:`True` on success.
         """
         try:
             update = Update.model_validate(body, context={"client": self})
@@ -104,7 +106,7 @@ class RequestHandler:
                     "Signature is invalid.",
                     update.update_id,
                 )
-                return
+                return False
             for handler in self._webhook_handlers:
                 if handler.check(update.payload):
                     await handler.call(update.payload, self._kwargs)
@@ -121,6 +123,8 @@ class RequestHandler:
                 )
         except Exception:  # noqa: BLE001
             loggers.webhook.exception("Error while handling update:\n")
+            return False
+        return True
 
     def webhook(
         self,

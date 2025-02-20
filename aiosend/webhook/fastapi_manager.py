@@ -18,19 +18,22 @@ class FastAPIManager(WebhookManager["FastAPI"]):
 
     def register_handler(
         self,
-        feed_update: "Callable[[dict[str, Any], dict[str, str]], Awaitable]",
+        feed_update: """Callable[[dict[str, Any],
+        dict[str, str]], Awaitable[bool]]""",
     ) -> None:
         """Register webhook handler."""
         try:
-            from fastapi import Request
+            from fastapi import HTTPException, Request
         except ModuleNotFoundError as e:
             msg = "fastapi is not installed"
             raise RuntimeError(msg) from e
 
         @self._app.post(self._path)
         async def handle(request: Request) -> dict:
-            await feed_update(
+            status = await feed_update(
                 await request.json(),
                 dict(request.headers),
             )
-            return {"ok": True}
+            if not status:
+                raise HTTPException(500, {"ok": status})
+            return {"ok": status}

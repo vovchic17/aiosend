@@ -20,15 +20,19 @@ class AiohttpManager(WebhookManager["Application"]):
 
     def register_handler(
         self,
-        feed_update: "Callable[[dict[str, Any], dict[str, str]], Awaitable]",
+        feed_update: """Callable[[dict[str, Any],
+        dict[str, str]], Awaitable[bool]]""",
     ) -> None:
         """Register webhook handler."""
 
         async def handle(request: "Request") -> "Response":
-            await feed_update(
+            status = await feed_update(
                 await request.json(),
                 dict(request.headers),
             )
-            return json_response({"ok": True})
+            return json_response(
+                {"ok": status},
+                status=200 if status else 500,
+            )
 
         self._app.router.add_post(self._path, handle)

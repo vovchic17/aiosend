@@ -18,7 +18,8 @@ class FlaskManager(WebhookManager["Flask"]):
 
     def register_handler(
         self,
-        feed_update: "Callable[[dict[str, Any], dict[str, str]], Awaitable]",
+        feed_update: """Callable[[dict[str, Any],
+        dict[str, str]], Awaitable[bool]]""",
     ) -> None:
         """Register webhook handler."""
         try:
@@ -29,8 +30,8 @@ class FlaskManager(WebhookManager["Flask"]):
 
         @self._app.post(self._path)
         async def handle() -> dict:
-            await feed_update(
+            status = await feed_update(
                 request.get_json(),
                 dict(request.headers),
             )
-            return {"ok": True}
+            return {"ok": status}, 200 if status else 500
