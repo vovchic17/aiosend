@@ -96,26 +96,31 @@ class RequestHandler:
         :param body: parsed json body.
         :param headers: request headers.
         """
-        update = Update.model_validate(body, context={"client": self})
-        if not self._check_signature(body, headers): # type: ignore[attr-defined]
-            loggers.webhook.info(
-                "Webhook Update id=%d is not handled. Signature is invalid.",
-                update.update_id,
-            )
-            return
-        for handler in self._webhook_handlers:
-            if handler.check(update.payload):
-                await handler.call(update.payload, self._kwargs)
+        try:
+            update = Update.model_validate(body, context={"client": self})
+            if not self._check_signature(body, headers):  # type: ignore[attr-defined]
                 loggers.webhook.info(
-                    "Webhook Update id=%d is handled.",
+                    "Webhook Update id=%d is not handled. "
+                    "Signature is invalid.",
                     update.update_id,
                 )
-                break
-        else:
-            loggers.webhook.info(
-                "Webhook Update id=%d is not handled. No suitable handlers.",
-                update.update_id,
-            )
+                return
+            for handler in self._webhook_handlers:
+                if handler.check(update.payload):
+                    await handler.call(update.payload, self._kwargs)
+                    loggers.webhook.info(
+                        "Webhook Update id=%d is handled.",
+                        update.update_id,
+                    )
+                    break
+            else:
+                loggers.webhook.info(
+                    "Webhook Update id=%d is not handled. "
+                    "No suitable handlers.",
+                    update.update_id,
+                )
+        except Exception:  # noqa: BLE001
+            loggers.webhook.exception("Error while handling update:\n")
 
     def webhook(
         self,
