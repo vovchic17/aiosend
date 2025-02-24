@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
@@ -231,7 +230,6 @@ msgstr ""
 "образом:"
 
 #: ../../client/methods.rst:13
-#, fuzzy
 msgid "🏝 Crypto Pay -> My Apps -> <Your App> -> Security -> Checks -> Enable."
 msgstr ""
 "🏝 Crypto Pay -> Мои приложения -> <Ваше приложение> -> Безопасность -> "
@@ -281,7 +279,6 @@ msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~aiosend.types.check
 msgstr ""
 
 #: aiosend.methods.create_check.CreateCheck.create_check:17 of
-#, fuzzy
 msgid ":class:`aiosend.types.Check` object"
 msgstr "Объект :class:`aiosend.types.Check`"
 
@@ -314,7 +311,6 @@ msgstr ""
 "ограничений в `@CryptoBot <https://send.t.me>`_ следующим образом:"
 
 #: ../../client/methods.rst:19
-#, fuzzy
 msgid "🏝 Crypto Pay -> My Apps -> <Your App> -> Security -> Transfers -> Enable."
 msgstr ""
 "🏝 Crypto Pay -> Мои приложения -> <Ваше приложение> -> Безопасность -> "
@@ -465,7 +461,7 @@ msgstr ""
 
 #: aiosend.methods.get_checks.GetChecks.get_checks:6 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#getChecks"
-msgstr "Источник: https://help.crypt.bot/crypto-pay-api#getChecks\""
+msgstr "Источник: https://help.crypt.bot/crypto-pay-api#getChecks"
 
 #: aiosend.methods.get_checks.GetChecks.get_checks:11 of
 msgid "*Optional*. List of check IDs."

@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-12 14:38+0300\n"
+"POT-Creation-Date: 2025-02-24 22:30+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -128,7 +127,6 @@ msgid "Source: https://help.crypt.bot/crypto-pay-api#getBalance"
 msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#getBalance"
 
 #: ../../types.rst
-#, fuzzy
 msgid "Return type"
 msgstr "Результат"
 
@@ -241,7 +239,7 @@ msgstr "Отримати qr код чека."
 
 #: ../../docstring aiosend.types.Check.status:1 of
 msgid "Status of the check, can be “active” or “activated”."
-msgstr "Статус чека, може бути \"active\"або \" activated\"."
+msgstr "Статус чека, може бути “active” або “activated”."
 
 #: aiosend.types.base.CryptoPayObject:1 of
 msgid "Base object class for types."
@@ -320,15 +318,14 @@ msgstr ""
 "”ETH”,”LTC”, ”BNB”, ”TRX” або ”USDC”."
 
 #: ../../docstring aiosend.types.ExchangeRate.target:1 of
-#, fuzzy
 msgid ""
 "Fiat currency code. Currently, can be “USD”, “EUR”, “RUB”, “BYN”, “UAH”, "
 "“GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, “INR”, “BRL”, "
-"“IDR”, “AZN”, “AED”, “PLN” and “ILS\"."
+"“IDR”, “AZN”, “AED”, “PLN” and “ILS”."
 msgstr ""
-"Код фіатної валюти. В даний час це можуть бути ”USD”, ”EUR”, ”RUB”, "
-"”BYN”, ”UAH”GBP\", “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, "
-"“INR”.”, “BRL”"
+"Код фіатної валюти. В даний час це можуть бути “USD”, “EUR”, “RUB”, "
+"“BYN”, “UAH”, “GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, "
+"“INR”, “BRL”, “IDR”, “AZN”, “AED”, “PLN” або “ILS”."
 
 #: aiosend.types.exchange_rate.ExchangeRate.update:1 of
 msgid "Shortcut for method :class:`aiosend.CryptoPay.getExchangeRates`."
@@ -446,19 +443,27 @@ msgid ""
 "Available only if status is “paid”."
 msgstr ""
 "*Опціонально*. Валюта плати за обслуговування, що стягується при оплаті "
-"рахунку. Доступна тільки при наявності статусу “оплачено”."
+"рахунку. Доступна тільки при наявності статусу “paid”."
+
+#: ../../docstring aiosend.types.Invoice.fee_in_usd:1 of
+msgid ""
+"*Optional*. Amount of service fees charged when the invoice was paid in "
+"USD. Available only if status is “paid”."
+msgstr ""
+"*Опціонально*. Сума плати за обслуговування, що стягується при оплаті "
+"рахунку в USD. Доступна тільки при наявності статусу “paid”"
 
 #: ../../docstring aiosend.types.Invoice.fiat:1 of
 msgid ""
 "*Optional*. Fiat currency code. Available only if the value of the field "
 "currency_type is “fiat”. Currently one of “USD”, “EUR”, “RUB”, “BYN”, "
 "“UAH”, “GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, “INR”, "
-"“BRL”, “IDR”, “AZN”, “AED”, “PLN” and “ILS\"."
+"“BRL”, “IDR”, “AZN”, “AED”, “PLN” and “ILS”."
 msgstr ""
 "*Опціонально*. Код фіатної валюти. Доступний тільки якщо значення поля "
 "currency_type є “fiat”. На даний момент може бути “USD”, “EUR”, “RUB”, "
 "“BYN”, “UAH”, “GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, "
-"“INR”, “BRL”, “IDR”, “AZN”, “AED”, “PLN” and “ILS\"."
+"“INR”, “BRL”, “IDR”, “AZN”, “AED”, “PLN” and “ILS”."
 
 #: ../../docstring aiosend.types.Invoice.hash:1 of
 msgid "Hash of the invoice."
@@ -519,8 +524,8 @@ msgid ""
 "value of the field status is “paid”."
 msgstr ""
 "*Опціонально*. Курс оплаченої валюти, виражений у фіатній валюті. "
-"Доступний тільки якщо значення поля currency_type є “fiat” і значення поля"
-" status є “paid”."
+"Доступний тільки якщо значення поля currency_type є “fiat” і значення "
+"поля status є “paid”."
 
 #: ../../docstring aiosend.types.Invoice.paid_usd_rate:1 of
 msgid "*Optional*. Price of the asset in USD. Available only if status is “paid”."
@@ -531,8 +536,8 @@ msgid ""
 "*Deprecated*. URL should be provided to the user to pay the invoice "
 "(described here for reference)."
 msgstr ""
-"*Постарілий*. URL, який повинен бути представлен користувачеві для оплати "
-"рахунку. (описано тут для довідки)."
+"*Постарілий*. URL, який повинен бути представлен користувачеві для оплати"
+" рахунку. (описано тут для довідки)."
 
 #: ../../docstring aiosend.types.Invoice.payload:1 of
 msgid "*Optional*. Previously provided data for this invoice."
@@ -667,4 +672,15 @@ msgstr "тип"
 #: ../../docstring aiosend.types.Update.update_type:3 of
 msgid "Webhook update type. Supported update types"
 msgstr "Тип webhook оновлення. Підтримувані типи оновлень"
+
+#~ msgid ""
+#~ "*Optional*. Amount in USD of service "
+#~ "fees charged when the invoice was "
+#~ "paid. Available only if status is "
+#~ "“paid”."
+#~ msgstr ""
+#~ "* Опціонально*. Сума плати за "
+#~ "обслуговування, що стягується при оплаті "
+#~ "рахунку. Доступна тільки при наявності "
+#~ "статусу “оплачено”"
 

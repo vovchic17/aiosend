@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-12 14:38+0300\n"
+"POT-Creation-Date: 2025-02-24 22:30+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -318,11 +317,10 @@ msgstr ""
 "“ETH”, “LTC”, “BNB”, “TRX” или “USDC”."
 
 #: ../../docstring aiosend.types.ExchangeRate.target:1 of
-#, fuzzy
 msgid ""
 "Fiat currency code. Currently, can be “USD”, “EUR”, “RUB”, “BYN”, “UAH”, "
 "“GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, “INR”, “BRL”, "
-"“IDR”, “AZN”, “AED”, “PLN” and “ILS\"."
+"“IDR”, “AZN”, “AED”, “PLN” and “ILS”."
 msgstr ""
 "Алфавитный код фиатной валюты. На данный момент может быть “USD”, “EUR”, "
 "“RUB”, “BYN”, “UAH”, “GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, "
@@ -436,7 +434,7 @@ msgid ""
 "Available only if status is “paid”."
 msgstr ""
 "*Опционально*. Сумма платы за обслуживание, взимаемая при оплате счета. "
-"Доступна только при наличии статуса “оплачено”."
+"Доступна только при наличии статуса “paid”."
 
 #: ../../docstring aiosend.types.Invoice.fee_asset:1 of
 msgid ""
@@ -444,15 +442,22 @@ msgid ""
 "Available only if status is “paid”."
 msgstr ""
 "*Опционально*. Валюта платы за обслуживание, взимаемая при оплате счета. "
-"Доступна только при наличии статуса “оплачено”."
+"Доступна только при наличии статуса “paid”."
+
+#: ../../docstring aiosend.types.Invoice.fee_in_usd:1 of
+msgid ""
+"*Optional*. Amount of service fees charged when the invoice was paid in "
+"USD. Available only if status is “paid”."
+msgstr ""
+"*Опционально*. Сумма платы за обслуживание, взимаемая при оплате счета в USD. "
+"Доступна только при наличии статуса “paid”."
 
 #: ../../docstring aiosend.types.Invoice.fiat:1 of
-#, fuzzy
 msgid ""
 "*Optional*. Fiat currency code. Available only if the value of the field "
 "currency_type is “fiat”. Currently one of “USD”, “EUR”, “RUB”, “BYN”, "
 "“UAH”, “GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, “INR”, "
-"“BRL”, “IDR”, “AZN”, “AED”, “PLN” and “ILS\"."
+"“BRL”, “IDR”, “AZN”, “AED”, “PLN” and “ILS”."
 msgstr ""
 "*Опционально*. Код фиатной валюты. Доступен только если значение поля "
 "currency_type является “fiat”. На данный момент может быть “USD”, “EUR”, "
@@ -532,8 +537,8 @@ msgid ""
 "*Deprecated*. URL should be provided to the user to pay the invoice "
 "(described here for reference)."
 msgstr ""
-"*Устаревшее*. URL, который должен быть представлен пользователю для оплаты"
-" счёта. (описано здесь для справки)."
+"*Устаревшее*. URL, который должен быть представлен пользователю для "
+"оплаты счёта. (описано здесь для справки)."
 
 #: ../../docstring aiosend.types.Invoice.payload:1 of
 msgid "*Optional*. Previously provided data for this invoice."
@@ -675,4 +680,14 @@ msgstr "Тип webhook обновления. Поддерживаемые тип
 
 #~ msgid "Параметры"
 #~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. Amount in USD of service "
+#~ "fees charged when the invoice was "
+#~ "paid. Available only if status is "
+#~ "“paid”."
+#~ msgstr ""
+#~ "*Опционально*. Сумма платы за обслуживание,"
+#~ " взимаемая при оплате счета. Доступна "
+#~ "только при наличии статуса “оплачено”."
 

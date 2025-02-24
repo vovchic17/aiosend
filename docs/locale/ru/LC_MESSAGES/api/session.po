@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
@@ -25,7 +24,6 @@ msgid "Session"
 msgstr "Сессия"
 
 #: aiosend.client.session.aiohttp.AiohttpSession:1 of
-#, fuzzy
 msgid "Bases: :py:class:`~aiosend.client.session.base.BaseSession`"
 msgstr "Базовые классы: :py:class:`~aiosend.client.session.base.BaseSession`"
 
@@ -58,7 +56,6 @@ msgstr ""
 " \\| bool\\)`"
 
 #: aiosend.client.session.base.BaseSession:1 of
-#, fuzzy
 msgid "Bases: :py:class:`~abc.ABC`"
 msgstr "Базовые классы: :py:class:`~abc.ABC`"
 

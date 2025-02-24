@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
@@ -25,7 +24,6 @@ msgid "Check polling"
 msgstr ""
 
 #: ../../client/check_polling.rst:5
-#, fuzzy
 msgid ""
 "Polling is a method of receiving updates by periodically sending "
 "requests. Once :attr:`check status <aiosend.types.Check.status>` is "
@@ -81,7 +79,6 @@ msgid "Decorator for handler function."
 msgstr "Декоратор для функції-обробника."
 
 #: ../../client/check_polling.rst
-#, fuzzy
 msgid "Return type"
 msgstr "Результат"
 
