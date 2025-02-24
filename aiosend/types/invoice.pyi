@@ -28,6 +28,7 @@ class Invoice(CryptoPayObject):
     accepted_assets: list[Asset | str] | None = None
     fee_asset: Asset | str | None = None
     fee_amount: float | None = None
+    fee_in_usd: float | None = None
     fee: str | None = None
     pay_url: str | None = None
     bot_invoice_url: str
