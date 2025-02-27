@@ -28,6 +28,8 @@ class Asset(str, Enum):
     MAJOR = "MAJOR"
     TRUMP = "TRUMP"
     MELANIA = "MELANIA"
+    MEMHASH = "MEMHASH"
+
 
 LiteralAsset = Literal[
     "USDT",
@@ -53,4 +55,5 @@ LiteralAsset = Literal[
     "MAJOR",
     "TRUMP",
     "MELANIA",
+    "MEMHASH",
 ]
