@@ -114,7 +114,7 @@ class Invoice(CryptoPayObject):
 
         :return:
         """
-        invoice = cast(Invoice, await self._client.get_invoice(self))
+        invoice = cast("Invoice", await self._client.get_invoice(self))
         self.__dict__ = invoice.__dict__
 
     def poll(self, **kwargs: object) -> None:
