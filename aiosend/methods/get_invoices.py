@@ -1,6 +1,6 @@
 from typing import TYPE_CHECKING
 
-from pydantic import field_serializer
+from pydantic import Field, field_serializer
 
 from aiosend.enums import Asset, Fiat, InvoiceStatus
 from aiosend.types import Invoice, SerList
@@ -23,7 +23,7 @@ class GetInvoices:
         invoice_ids: SerList[int] | None
         status: InvoiceStatus | None
         offset: int | None
-        count: int | None
+        count: int | None = Field(None, ge=1, le=1000)
 
         @field_serializer("invoice_ids")
         def serialize_ids(self, value: list[int] | None) -> str | None:

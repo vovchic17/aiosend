@@ -1,5 +1,7 @@
 from typing import TYPE_CHECKING
 
+from pydantic import Field
+
 from aiosend.enums import Asset, CheckStatus
 from aiosend.types import Check, SerList
 
@@ -20,7 +22,7 @@ class GetChecks:
         check_ids: SerList[int] | None
         status: str | None
         offset: int | None
-        count: int | None
+        count: int | None = Field(None, ge=1, le=1000)
 
     async def get_checks(
         self: "aiosend.CryptoPay",
