@@ -23,6 +23,9 @@ class DeleteAllInvoices:
 
         :return:
         """
-        invoices = await self.get_invoices(status=InvoiceStatus.ACTIVE)
+        invoices = await self.get_invoices(
+            status=InvoiceStatus.ACTIVE,
+            count=1000,
+        )
         for invoice in invoices:
             await invoice.delete()

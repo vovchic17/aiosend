@@ -23,6 +23,6 @@ class DeleteAllChecks:
 
         :return:
         """
-        checks = await self.get_checks(status=CheckStatus.ACTIVE)
+        checks = await self.get_checks(status=CheckStatus.ACTIVE, count=1000)
         for check in checks:
             await check.delete()
