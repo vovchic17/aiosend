@@ -16,10 +16,15 @@ Introduction
 
 Features
 --------
+* supports both synchronous and asynchronous use
 * provides :doc:`invoice polling handler <client/invoice_polling>` and :doc:`check polling handler <client/check_polling>`
 * provides :doc:`webhook handler <client/webhook>`
-* provides :doc:`additional function shortcuts <client/tools>`
-* supports sync and async usage
+* fully typed and has literal type hints
+* uses powerful `magic filters from aiogram 3.x <https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html#magic-filters>`_
+* provides dependency injection
+* provides :doc:`additional tool methods <client/tools>`
+* provides shortcut methods for types
+* warns you if the token is being served by another network
 
 
 Quick start
