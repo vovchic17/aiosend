@@ -1,7 +1,5 @@
 from typing import TYPE_CHECKING, Any
 
-from magic_filter.magic import MagicFilter
-
 from aiosend import loggers
 from aiosend.enums import CheckStatus
 from aiosend.handler import HandlerObject
@@ -12,7 +10,7 @@ if TYPE_CHECKING:
     from collections.abc import Callable
 
     import aiosend
-    from aiosend.handler import Handler
+    from aiosend.handler import CallbackType
     from aiosend.types import Check
 
 
@@ -26,8 +24,8 @@ class CheckPollingManager(BasePollingManager):
 
     def check_polling(
         self,
-        *filters: MagicFilter,
-    ) -> "Callable[[Handler], Handler]":
+        *filters: "CallbackType",
+    ) -> "Callable[[CallbackType], CallbackType]":
         """
         Register a handler for polling check updates.
 
@@ -36,7 +34,7 @@ class CheckPollingManager(BasePollingManager):
         :return: handler function.
         """
 
-        def wrapper(handler: "Handler") -> "Handler":
+        def wrapper(handler: "CallbackType") -> "CallbackType":
             self._check_handlers.append(HandlerObject(handler, filters))
             return handler
 
@@ -44,8 +42,8 @@ class CheckPollingManager(BasePollingManager):
 
     def expired_check_polling(
         self,
-        *filters: MagicFilter,
-    ) -> "Callable[[Handler], Handler]":
+        *filters: "CallbackType",
+    ) -> "Callable[[CallbackType], CallbackType]":
         """
         Register a handler for timed out checks.
 
@@ -54,7 +52,7 @@ class CheckPollingManager(BasePollingManager):
         :return: handler function.
         """
 
-        def wrapper(handler: "Handler") -> "Handler":
+        def wrapper(handler: "CallbackType") -> "CallbackType":
             self._exp_check_handlers.append(HandlerObject(handler, filters))
             return handler
 
@@ -70,17 +68,15 @@ class CheckPollingManager(BasePollingManager):
     async def _handle_check(self: "aiosend.CryptoPay", check: "Check") -> None:
         self._check_tasks[check.check_id].timeout -= self._delay
         task = self._check_tasks[check.check_id]
-        if (
-            check.status == CheckStatus.ACTIVATED
-            or task.timeout <= 0
-        ):
+        if check.status == CheckStatus.ACTIVATED or task.timeout <= 0:
             del self._check_tasks[check.check_id]
         if task.timeout <= 0:
             for handler in self._exp_check_handlers:
-                if handler.check(check):
+                result, data = await handler.check(check)
+                if result:
                     await handler.call(
                         check,
-                        task.data | self._kwargs,
+                        data | task.data | self._kwargs,
                     )
                     loggers.check_polling.info(
                         "ACTIVATED CHECK id=%d is handled.",
@@ -94,10 +90,11 @@ class CheckPollingManager(BasePollingManager):
                 )
         elif check.status == CheckStatus.ACTIVATED:
             for handler in self._check_handlers:
-                if handler.check(check):
+                result, data = await handler.check(check)
+                if result:
                     await handler.call(
                         check,
-                        task.data | self._kwargs,
+                        data | task.data | self._kwargs,
                     )
                     loggers.check_polling.info(
                         "EXPIRED CHECK id=%d is handled.",

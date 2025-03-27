@@ -15,7 +15,7 @@ if TYPE_CHECKING:
     from collections.abc import Awaitable, Callable, Mapping
 
     import aiosend
-    from aiosend.handler import Handler
+    from aiosend.handler import CallbackType
 
     WebServerHandler = Callable[[dict[str, Any], Mapping[str, str]], Awaitable]
 
@@ -109,8 +109,9 @@ class RequestHandler:
                 )
                 return False
             for handler in self._webhook_handlers:
-                if handler.check(update.payload):
-                    await handler.call(update.payload, self._kwargs)
+                result, data = await handler.check(update.payload)
+                if result:
+                    await handler.call(update.payload, data | self._kwargs)
                     loggers.webhook.info(
                         "Webhook Update id=%d is handled.",
                         update.update_id,
@@ -130,7 +131,7 @@ class RequestHandler:
     def webhook(
         self,
         *filters: MagicFilter,
-    ) -> "Callable[[Handler], Handler]":
+    ) -> "Callable[[CallbackType], CallbackType]":
         """
         Register a handler for webhook invoice updates.
 
@@ -139,7 +140,7 @@ class RequestHandler:
         :return: handler function.
         """
 
-        def wrapper(handler: "Handler") -> "Handler":
+        def wrapper(handler: "CallbackType") -> "CallbackType":
             if self._webhook_manager is None:
                 msg = "Webhook manager is not set."
                 raise CryptoPayError(msg)

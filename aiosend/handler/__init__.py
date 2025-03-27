@@ -1,6 +1,6 @@
-from .handler import Handler, HandlerObject
+from .handler import CallbackType, HandlerObject
 
 __all__ = (
-    "Handler",
+    "CallbackType",
     "HandlerObject",
 )

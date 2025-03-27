@@ -8,7 +8,6 @@ from logging import Logger
 from types import NoneType as _NoneType
 from typing import Any, TypeVar
 
-from magic_filter.magic import MagicFilter
 from typing_extensions import Self
 
 from aiosend.client import Network
@@ -26,7 +25,7 @@ from aiosend.enums import (
     LiteralPaidBtnName,
     PaidBtnName,
 )
-from aiosend.handler import Handler, HandlerObject
+from aiosend.handler import CallbackType, HandlerObject
 from aiosend.methods import CryptoPayMethod
 from aiosend.polling import PollingConfig
 from aiosend.polling.base import PollingTask
@@ -188,24 +187,24 @@ class CryptoPay:
     ) -> Balance: ...
     def invoice_polling(
         self,
-        *filters: MagicFilter,
-    ) -> Callable[[Handler], Handler]: ...
+        *filters: CallbackType,
+    ) -> Callable[[CallbackType], CallbackType]: ...
     def expired_invoice_polling(
         self,
-        *filters: MagicFilter,
-    ) -> Callable[[Handler], Handler]: ...
+        *filters: CallbackType,
+    ) -> Callable[[CallbackType], CallbackType]: ...
     def check_polling(
         self,
-        *filters: MagicFilter,
-    ) -> Callable[[Handler], Handler]: ...
+        *filters: CallbackType,
+    ) -> Callable[[CallbackType], CallbackType]: ...
     def expired_check_polling(
         self,
-        *filters: MagicFilter,
-    ) -> Callable[[Handler], Handler]: ...
+        *filters: CallbackType,
+    ) -> Callable[[CallbackType], CallbackType]: ...
     def webhook(
         self,
-        *filters: MagicFilter,
-    ) -> Callable[[Handler], Handler]: ...
+        *filters: CallbackType,
+    ) -> Callable[[CallbackType], CallbackType]: ...
     def feed_update(
         self,
         body: dict[_str, Any],

@@ -6,24 +6,37 @@ from typing import Any
 
 from magic_filter.magic import MagicFilter
 
-Handler = Callable[..., Any]
+CallbackType = Callable[..., Any]
 
 
 @dataclass(slots=True)
 class HandlerObject:
     """Handler object."""
 
-    handler: Handler
-    filters: tuple[MagicFilter, ...]
+    handler: CallbackType
+    filters: tuple[MagicFilter | CallbackType, ...]
 
-    def check(self, obj: object) -> bool:
+    async def check(self, obj: object) -> tuple[bool, dict[str, object]]:
         """Check if the handler is suitable for the object."""
-        return all(f.resolve(obj) for f in self.filters)
+        data: dict[str, object] = {}
+        for f in self.filters:
+            check = False
+            if isinstance(f, MagicFilter):
+                check = f.resolve(obj)
+            elif inspect.isawaitable(f) or inspect.iscoroutinefunction(f):
+                check = await f(obj)
+            elif inspect.isfunction(f):
+                check = f(obj)
+            if not check:
+                return False, data
+            if isinstance(check, dict):
+                data.update(check)
+        return True, data
 
     async def call(
         self,
         obj: object,
-        data: dict[str, "Any"] | None = None,
+        data: dict[str, object] | None = None,
     ) -> None:
         """Call handler."""
         if data is None:

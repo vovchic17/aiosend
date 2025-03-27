@@ -1,7 +1,5 @@
 from typing import TYPE_CHECKING, Any
 
-from magic_filter.magic import MagicFilter
-
 from aiosend import loggers
 from aiosend.enums import InvoiceStatus
 from aiosend.handler import HandlerObject
@@ -12,7 +10,7 @@ if TYPE_CHECKING:
     from collections.abc import Callable
 
     import aiosend
-    from aiosend.handler import Handler
+    from aiosend.handler import CallbackType
     from aiosend.types import Invoice
 
 
@@ -26,8 +24,8 @@ class InvoicePollingManager(BasePollingManager):
 
     def invoice_polling(
         self,
-        *filters: MagicFilter,
-    ) -> "Callable[[Handler], Handler]":
+        *filters: "CallbackType",
+    ) -> "Callable[[CallbackType], CallbackType]":
         """
         Register a handler for polling invoice updates.
 
@@ -36,7 +34,7 @@ class InvoicePollingManager(BasePollingManager):
         :return: handler function.
         """
 
-        def wrapper(handler: "Handler") -> "Handler":
+        def wrapper(handler: "CallbackType") -> "CallbackType":
             self._invoice_handlers.append(HandlerObject(handler, filters))
             return handler
 
@@ -44,8 +42,8 @@ class InvoicePollingManager(BasePollingManager):
 
     def expired_invoice_polling(
         self,
-        *filters: MagicFilter,
-    ) -> "Callable[[Handler], Handler]":
+        *filters: "CallbackType",
+    ) -> "Callable[[CallbackType], CallbackType]":
         """
         Register a handler for timed out invoices.
 
@@ -54,7 +52,7 @@ class InvoicePollingManager(BasePollingManager):
         :return: handler function.
         """
 
-        def wrapper(handler: "Handler") -> "Handler":
+        def wrapper(handler: "CallbackType") -> "CallbackType":
             self._exp_invoice_handlers.append(HandlerObject(handler, filters))
             return handler
 
@@ -80,11 +78,11 @@ class InvoicePollingManager(BasePollingManager):
             del self._invoice_tasks[invoice.invoice_id]
         if task.timeout <= 0 or invoice.status == InvoiceStatus.EXPIRED:
             for handler in self._exp_invoice_handlers:
-                if handler.check(invoice):
+                result, data = await handler.check(invoice)
+                if result:
                     await handler.call(
                         invoice,
-                        task.data
-                        | self._kwargs,
+                        data | task.data | self._kwargs,
                     )
                     loggers.invoice_polling.info(
                         "EXPIRED INVOICE id=%d is handled.",
@@ -98,10 +96,11 @@ class InvoicePollingManager(BasePollingManager):
                 )
         elif invoice.status == InvoiceStatus.PAID:
             for handler in self._invoice_handlers:
-                if handler.check(invoice):
+                result, data = await handler.check(invoice)
+                if result:
                     await handler.call(
                         invoice,
-                        task.data | self._kwargs,
+                        data | task.data | self._kwargs,
                     )
                     loggers.invoice_polling.info(
                         "PAID INVOICE id=%d is handled.",
