@@ -48,7 +48,7 @@ class Invoice(CryptoPayObject):
     fee_in_usd: float | None = None
     """*Optional*. Amount in USD of service fees charged when the invoice was paid. Available only if status is “paid”."""
     fee: str | None = Field(
-        None, deprecated="fee field is deprecated, use fee_amount instead."
+        None, deprecated="fee field is deprecated, use fee_amount instead.",
     )
     """*Optional*. Amount of charged service fees. Available only in the payload of the webhook update (described here for reference)."""
     pay_url: str | None = Field(
