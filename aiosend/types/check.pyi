@@ -1,8 +1,9 @@
 from datetime import datetime
 
-from aiosend.client.client import (  # type: ignore[attr-defined]
+from aiosend.client.client import (  # type: ignore[attr-defined]  # type: ignore[attr-defined]
+    NoneType,
     _str,
-    bool,  # noqa: A004
+    bool,  # noqa: A004  # noqa: A004
     str,  # noqa: A004
 )
 from aiosend.enums import Asset, CheckStatus, LiteralFiat
@@ -20,6 +21,7 @@ class Check(CryptoPayObject):
     activated_at: datetime | None = None
 
     def delete(self) -> bool: ...
+    def update(self) -> NoneType: ...
     def poll(self, **kwargs: object) -> None: ...
     @property
     def qr(self) -> _str: ...

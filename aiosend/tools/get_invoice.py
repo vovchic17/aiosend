@@ -23,10 +23,9 @@ class GetInvoice:
 
         :return: :class:`aiosend.types.Invoice` object.
         """
-        if isinstance(invoice, Invoice):
-            invoice_id = invoice.invoice_id
-        else:
-            invoice_id = invoice
+        invoice_id = (
+            invoice.invoice_id if isinstance(invoice, Invoice) else invoice
+        )
 
         invoices = await self.get_invoices(invoice_ids=[invoice_id])
         if invoices:

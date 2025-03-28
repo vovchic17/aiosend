@@ -240,6 +240,10 @@ class CryptoPay:
         self,
         invoice: int | Invoice,
     ) -> Invoice | NoneType: ...
+    def get_check(
+        self,
+        check: int | Check,
+    ) -> Check | NoneType: ...
     def get_rates_image(
         self,
         base: Asset | LiteralAsset | Fiat | LiteralFiat | _str,

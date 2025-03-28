@@ -1,4 +1,5 @@
 from datetime import datetime
+from typing import cast
 
 from aiosend.enums import Asset, CheckStatus, LiteralFiat
 
@@ -41,6 +42,19 @@ class Check(CryptoPayObject):
         :return: :code:`True` on success.
         """
         return await self._client.delete_check(self.check_id)
+
+    async def update(self) -> None:
+        """
+        Shortcut for method :class:`aiosend.CryptoPay.get_checks`.
+
+        Use this method to update check object.
+
+        Source: https://help.crypt.bot/crypto-pay-api#getChecks
+
+        :return:
+        """
+        check = cast("Check", await self._client.get_check(self))
+        self.__dict__ = check.__dict__
 
     def poll(self, **kwargs: object) -> None:
         """
