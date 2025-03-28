@@ -34,9 +34,8 @@ msgstr ""
 "**aiosend** по умолчанию использует сессию `aiohttp "
 "<https://docs.aiohttp.org/en/stable/index.html>`_. Вы можете создать свою"
 " сессию, основываясь на :class:`BaseSession "
-"<aiosend.client.session.BaseSession>`, переопределив методы "
-":attr:`request <aiosend.client.session.BaseSession.request>` и "
-":attr:`close <aiosend.client.session.BaseSession.close>`."
+"<aiosend.client.session.BaseSession>`, переопределив метод "
+":attr:`request <aiosend.client.session.BaseSession.request>`."
 
 #: aiosend.client.session.aiohttp.AiohttpSession:1 of
 msgid "Bases: :py:class:`~aiosend.client.session.base.BaseSession`"

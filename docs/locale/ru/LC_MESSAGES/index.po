@@ -48,12 +48,10 @@ msgid "Features"
 msgstr "Особенности"
 
 #: ../../index.rst:19
-#, fuzzy
 msgid "supports both synchronous and asynchronous use"
 msgstr "поддерживает синхронное и асинхронное взаимодействие"
 
 #: ../../index.rst:20
-#, fuzzy
 msgid ""
 "provides :doc:`invoice polling handler <events/invoice_polling>` and "
 ":doc:`check polling handler <events/check_polling>`"
@@ -62,37 +60,37 @@ msgstr ""
 ":doc:`поллинг чеков <client/check_polling>`"
 
 #: ../../index.rst:21
-#, fuzzy
 msgid "provides :doc:`webhook handler <events/webhook>`"
 msgstr "предоставляет :doc:`обработчик вебхуков <client/webhook>`"
 
 #: ../../index.rst:22
 msgid "fully typed and has literal type hints"
-msgstr ""
+msgstr "полностью типизирован и имеет literal подсказки"
 
 #: ../../index.rst:23
 msgid ""
 "uses powerful `magic filters from aiogram 3.x "
 "<https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html"
 "#magic-filters>`_"
-msgstr ""
+msgstr "использует мощные `магические фильтры из aiogram 3.x "
+"<https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html"
+"#magic-filters>`_"
 
 #: ../../index.rst:24
 msgid "provides dependency injection"
-msgstr ""
+msgstr "предоставляет внедрение зависимостей"
 
 #: ../../index.rst:25
-#, fuzzy
 msgid "provides :doc:`additional tool methods <client/tools>`"
 msgstr "предоставляет :doc:`дополнительные функции <client/tools>`"
 
 #: ../../index.rst:26
 msgid "provides shortcut methods for types"
-msgstr ""
+msgstr "предоставляет сокращённые методы для типов"
 
 #: ../../index.rst:27
 msgid "warns you if the token is being served by another network"
-msgstr ""
+msgstr "предупреждает вас если токен обслуживается другой сетью"
 
 #: ../../index.rst:31
 msgid "Quick start"
@@ -101,7 +99,3 @@ msgstr "Быстрый старт"
 #: ../../index.rst:37
 msgid "Contents"
 msgstr "Содержание"
-
-#~ msgid "Synchronous usage"
-#~ msgstr "Синхронное использование"
-

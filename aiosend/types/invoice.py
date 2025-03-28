@@ -47,7 +47,9 @@ class Invoice(CryptoPayObject):
     """*Optional*. Amount of service fees charged when the invoice was paid. Available only if status is “paid”."""
     fee_in_usd: float | None = None
     """*Optional*. Amount in USD of service fees charged when the invoice was paid. Available only if status is “paid”."""
-    fee: str | None = Field(None, deprecated="fee field is deprecated, use fee_amount instead.")
+    fee: str | None = Field(
+        None, deprecated="fee field is deprecated, use fee_amount instead."
+    )
     """*Optional*. Amount of charged service fees. Available only in the payload of the webhook update (described here for reference)."""
     pay_url: str | None = Field(
         None,
@@ -68,7 +70,10 @@ class Invoice(CryptoPayObject):
     """Date the invoice was created in ISO 8601 format."""
     paid_usd_rate: float | None = None
     """*Optional*. Price of the asset in USD. Available only if status is “paid”."""
-    usd_rate: str | None = Field(None, deprecated="usd_rate field is deprecated, use paid_usd_rate instead.")
+    usd_rate: str | None = Field(
+        None,
+        deprecated="usd_rate field is deprecated, use paid_usd_rate instead.",
+    )
     """*Optional*. Price of the asset in USD. Available only in the Webhook update payload."""
     allow_comments: bool
     """True, if the user can add comment to the payment."""
@@ -135,6 +140,6 @@ class Invoice(CryptoPayObject):
         """
         Get invoice qr code.
 
-        :return: invoice qr code.
+        :return: invoice qr code url.
         """
         return self._client.session.network.get_qr(self.bot_invoice_url)
