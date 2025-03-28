@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-12 14:38+0300\n"
+"POT-Creation-Date: 2025-03-28 11:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -19,9 +19,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../api/session.rst:3
+#: ../../client/session.rst:3
 msgid "Session"
 msgstr "Сессия"
+
+#: ../../client/session.rst:5
+msgid ""
+"**aiosend** uses `aiohttp "
+"<https://docs.aiohttp.org/en/stable/index.html>`_ session by default. You"
+" can implement your own session by inheriting :class:`BaseSession "
+"<aiosend.client.session.BaseSession>` and overriding :attr:`request "
+"<aiosend.client.session.BaseSession.request>` method."
+msgstr ""
+"**aiosend** по умолчанию использует сессию `aiohttp "
+"<https://docs.aiohttp.org/en/stable/index.html>`_. Вы можете создать свою"
+" сессию, основываясь на :class:`BaseSession "
+"<aiosend.client.session.BaseSession>`, переопределив методы "
+":attr:`request <aiosend.client.session.BaseSession.request>` и "
+":attr:`close <aiosend.client.session.BaseSession.close>`."
 
 #: aiosend.client.session.aiohttp.AiohttpSession:1 of
 msgid "Bases: :py:class:`~aiosend.client.session.base.BaseSession`"
@@ -40,7 +55,7 @@ msgstr "Этот класс является обёрткой над `aiohttp.Cl
 msgid "Make http request."
 msgstr "Выполнить HTTP-запрос."
 
-#: ../../api/session.rst
+#: ../../client/session.rst
 msgid "Return type"
 msgstr ""
 
@@ -51,9 +66,6 @@ msgid ""
 " \\\\\\(\\`\\`\\_CryptoPayType\\`\\`\\, bound\\= CryptoPayObject \\| list"
 " \\| bool\\)`"
 msgstr ""
-":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~typing.TypeVar\\`\\\\"
-" \\\\\\(\\`\\`\\_CryptoPayType\\`\\`\\, bound\\= CryptoPayObject \\| list"
-" \\| bool\\)`"
 
 #: aiosend.client.session.base.BaseSession:1 of
 msgid "Bases: :py:class:`~abc.ABC`"
@@ -70,23 +82,4 @@ msgid ""
 msgstr ""
 "Если вы хотите создать свой класс сессии, используйте этот класс как "
 "базовый."
-
-#: ../../api/session.rst:9
-msgid ""
-"**aiosend** uses `aiohttp "
-"<https://docs.aiohttp.org/en/stable/index.html>`_ session by default. You"
-" can implement your own session by inheriting :class:`BaseSession "
-"<aiosend.client.session.BaseSession>` and overriding :attr:`request "
-"<aiosend.client.session.BaseSession.request>` and :attr:`close "
-"<aiosend.client.session.BaseSession.close>` methods."
-msgstr ""
-"**aiosend** по умолчанию использует сессию `aiohttp "
-"<https://docs.aiohttp.org/en/stable/index.html>`_. Вы можете создать свою"
-" сессию, основываясь на :class:`BaseSession "
-"<aiosend.client.session.BaseSession>`, переопределив методы "
-":attr:`request <aiosend.client.session.BaseSession.request>` и "
-":attr:`close <aiosend.client.session.BaseSession.close>`."
-
-#~ msgid "Тип результата"
-#~ msgstr "Тип результата"
 

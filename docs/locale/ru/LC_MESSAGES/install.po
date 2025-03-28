@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-07 04:36+0300\n"
+"POT-Creation-Date: 2025-03-28 11:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -24,22 +24,57 @@ msgid "Installation"
 msgstr "Установка"
 
 #: ../../install.rst:6
-msgid "Via `pip <https://pip.pypa.io/en/stable/>`_"
+#, fuzzy
+msgid "via `pip <https://pip.pypa.io/>`_"
 msgstr "С помощью `pip <https://pip.pypa.io/en/stable/>`_"
 
 #: ../../install.rst:7
-msgid "From PyPI"
-msgstr "Из PyPI"
+#, fuzzy
+msgid "from `PyPI <https://pypi.org/p/aiosend/>`_"
+msgstr "С помощью `pip <https://pip.pypa.io/en/stable/>`_"
 
 #: ../../install.rst:13
-msgid "From GitHub"
-msgstr "Из GitHub"
+msgid "from `GitHub <https://github.com/vovchic17/aiosend>`_"
+msgstr ""
 
 #: ../../install.rst:20
-msgid "Via `uv <https://docs.astral.sh/uv/>`_"
+#, fuzzy
+msgid "via `uv <https://docs.astral.sh/uv/>`_"
 msgstr "С помощью `uv <https://docs.astral.sh/uv/>`_"
 
 #: ../../install.rst:26
-msgid "Via `poetry <https://python-poetry.org/>`_"
+#, fuzzy
+msgid "via `Poetry <https://python-poetry.org/>`_"
 msgstr "С помощью `poetry <https://python-poetry.org/>`_"
+
+#: ../../install.rst:32
+#, fuzzy
+msgid "via `PDM <https://pdm-project.org/>`_"
+msgstr "С помощью `poetry <https://python-poetry.org/>`_"
+
+#: ../../install.rst:38
+#, fuzzy
+msgid "via `pipx <https://pipx.pypa.io/>`_"
+msgstr "С помощью `pip <https://pip.pypa.io/en/stable/>`_"
+
+#: ../../install.rst:44
+#, fuzzy
+msgid "via `Rye <https://rye.astral.sh/>`_"
+msgstr "С помощью `uv <https://docs.astral.sh/uv/>`_"
+
+#: ../../install.rst:50
+#, fuzzy
+msgid "via `Conda <https://docs.conda.io/>`_"
+msgstr "С помощью `uv <https://docs.astral.sh/uv/>`_"
+
+#: ../../install.rst:56
+#, fuzzy
+msgid "via `Pipenv <https://pipenv.pypa.io/>`_"
+msgstr "С помощью `pip <https://pip.pypa.io/en/stable/>`_"
+
+#~ msgid "From PyPI"
+#~ msgstr "Из PyPI"
+
+#~ msgid "From GitHub"
+#~ msgstr "Из GitHub"
 

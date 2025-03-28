@@ -64,10 +64,3 @@ msgstr "Метка кнопки, которая будет предоставл�
 #: aiosend.enums.update_type.UpdateType:1 of
 msgid "Webhook update type."
 msgstr "Тип обновления вебхука."
-
-#~ msgid "Bases: :py:class:`str`, :py:class:`~enum.Enum`"
-#~ msgstr ""
-
-#~ msgid "Базовые классы: :py:class:`str`, :py:class:`~enum.Enum`"
-#~ msgstr ""
-

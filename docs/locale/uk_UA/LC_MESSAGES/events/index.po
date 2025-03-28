@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
@@ -19,27 +20,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../api/index.rst:3
-msgid "API"
+#: ../../events/index.rst:3
+msgid "Events"
 msgstr ""
 
-#: ../../api/index.rst:5
-msgid "**Methods** - official Crypto Pay API methods."
+#: ../../events/index.rst:5
+msgid "**Webhook** - updates handling via webhook."
 msgstr ""
 
-#: ../../api/index.rst:6
-msgid "**Types** - official Crypto Pay API types."
+#: ../../events/index.rst:6
+msgid "**Invoice polling** - invoice updates handling via polling."
 msgstr ""
 
-#: ../../api/index.rst:7
-msgid "**Enums** - enumerable parameter values of methods."
+#: ../../events/index.rst:7
+msgid "**Check polling** - check updates handling via polling."
 msgstr ""
 
-#: ../../api/index.rst:8
-msgid "**Network** - API networks."
-msgstr ""
-
-#: ../../api/index.rst:9
-msgid "**Errors** - error models."
+#: ../../events/index.rst:8
+msgid "**Polling config** - configuration for update requests"
 msgstr ""
 

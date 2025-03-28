@@ -19,11 +19,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../client/polling_config.rst:4
+#: ../../events/polling_config.rst:4
 msgid "Polling configuration"
 msgstr "Конфигурация поллинга"
 
-#: ../../client/polling_config.rst:5
+#: ../../events/polling_config.rst:5
 msgid "You can configure your own polling configuration."
 msgstr "Вы можете настроить собственную конфигурацию поллинга."
 
@@ -55,7 +55,7 @@ msgstr ""
 msgid "Run polling."
 msgstr "Запуск поллинга."
 
-#: ../../client/polling_config.rst
+#: ../../events/polling_config.rst
 msgid "Parameters"
 msgstr ""
 
@@ -63,17 +63,10 @@ msgstr ""
 msgid "function to run in background."
 msgstr "функция, запускаемая в фоне"
 
-#: ../../client/polling_config.rst
+#: ../../events/polling_config.rst
 msgid "Return type"
 msgstr ""
 
 #: aiosend.polling.manager.PollingManager.start_polling:6 of
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:obj\\:\\`None\\``"
 msgstr ""
-
-#~ msgid "Параметры"
-#~ msgstr ""
-
-#~ msgid "Тип результата"
-#~ msgstr ""
-

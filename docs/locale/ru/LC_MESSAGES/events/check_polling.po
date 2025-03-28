@@ -19,11 +19,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../client/check_polling.rst:3
+#: ../../events/check_polling.rst:3
 msgid "Check polling"
 msgstr "Поллинг чеков"
 
-#: ../../client/check_polling.rst:5
+#: ../../events/check_polling.rst:5
 msgid ""
 "Polling is a method of receiving updates by periodically sending "
 "requests. Once :attr:`check status <aiosend.types.Check.status>` is "
@@ -41,7 +41,7 @@ msgstr ""
 " <aiosend.CryptoPay.check_polling>`. Поллинг чеков использует метод "
 ":attr:`/getChecks <aiosend.CryptoPay.get_checks>`."
 
-#: ../../client/check_polling.rst:13
+#: ../../events/check_polling.rst:13
 msgid ""
 ":attr:`Polling manager <aiosend.polling.PollingManager>` has "
 ":attr:`configuration <aiosend.polling.PollingConfig>` that defines the "
@@ -59,13 +59,13 @@ msgstr ""
 "поллинг этого чека и вызовет обработчик :attr:`expired_check_polling "
 "<aiosend.CryptoPay.expired_check_polling>`, если тот указан."
 
-#: ../../client/check_polling.rst:22
+#: ../../events/check_polling.rst:22
 msgid "**Default is 2 seconds delay and 300 seconds (5 min) timeout**."
 msgstr ""
 "**По умолчанию задержка между запросами - 2 секунды, а таймаут - 300 "
 "секунд (5 минут)**."
 
-#: ../../client/check_polling.rst:24
+#: ../../events/check_polling.rst:24
 msgid ":ref:`You can change the polling configuration. <PollingConfigAnchor>`"
 msgstr ":ref:`Вы можете изменять конфигурацию поллинга <PollingConfigAnchor>`"
 
@@ -78,7 +78,7 @@ msgstr "Добавление обработчика для уведомлени�
 msgid "Decorator for handler function."
 msgstr "Декоратор для функции-обработчика."
 
-#: ../../client/check_polling.rst
+#: ../../events/check_polling.rst
 msgid "Return type"
 msgstr ""
 
@@ -94,7 +94,7 @@ msgid ""
 "\\:py\\:data\\:\\`\\~typing.Any\\`\\]\\]`"
 msgstr ""
 
-#: ../../client/check_polling.rst
+#: ../../events/check_polling.rst
 msgid "Returns"
 msgstr ""
 
@@ -107,13 +107,6 @@ msgstr "функция-обработчик."
 msgid "Register a handler for timed out checks."
 msgstr "Добавление обработчика для истёкших чеков."
 
-#: ../../client/check_polling.rst:30
+#: ../../events/check_polling.rst:30
 msgid "Usage example"
 msgstr "Пример использования"
-
-#~ msgid "Тип результата"
-#~ msgstr ""
-
-#~ msgid "Результат"
-#~ msgstr ""
-

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-07 04:36+0300\n"
+"POT-Creation-Date: 2025-03-28 11:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../examples/index.rst:3
-msgid "Examples"
-msgstr "Примеры"
+#: ../../events/filters.rst:3
+msgid "Filters"
+msgstr "Фильтры"
 

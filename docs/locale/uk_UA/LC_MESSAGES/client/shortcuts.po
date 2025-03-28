@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, VoVcHiC
+# This file is distributed under the same license as the aiosend package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: aiosend \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-28 11:59+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uk_UA\n"
+"Language-Team: uk_UA <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../client/shortcuts.rst:3
+msgid "Shortcut methods"
+msgstr ""
+
+#: ../../client/shortcuts.rst:5
+msgid ""
+"These methods simplify the use of standard :ref:`Crypto Pay API methods "
+"<MethodsAnchor>` and also provide additional functionality to the "
+"objects."
+msgstr ""
+
+#: aiosend.types.balance.Balance.update:1 of
+msgid "Shortcut for method :class:`aiosend.CryptoPay.get_balance`."
+msgstr ""
+
+#: aiosend.types.balance.Balance.update:3 of
+msgid "Use this method to update balance object."
+msgstr ""
+
+#: aiosend.types.balance.Balance.update:5 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#getBalance"
+msgstr ""
+
+#: ../../client/shortcuts.rst
+msgid "Return type"
+msgstr ""
+
+#: aiosend.types.balance.Balance.update:7 aiosend.types.check.Check.poll:9
+#: aiosend.types.check.Check.update:7
+#: aiosend.types.exchange_rate.ExchangeRate.update:7
+#: aiosend.types.invoice.Invoice.poll:9 aiosend.types.invoice.Invoice.update:7
+#: of
+msgid ":sphinx_autodoc_typehints_type:`\\:py\\:obj\\:\\`None\\``"
+msgstr ""
+
+#: ../../client/shortcuts.rst
+msgid "Returns"
+msgstr ""
+
+#: aiosend.types.check.Check.update:1 of
+msgid "Shortcut for method :class:`aiosend.CryptoPay.get_checks`."
+msgstr ""
+
+#: aiosend.types.check.Check.update:3 of
+msgid "Use this method to update check object."
+msgstr ""
+
+#: aiosend.types.check.Check.update:5 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#getChecks"
+msgstr ""
+
+#: aiosend.types.exchange_rate.ExchangeRate.update:1 of
+msgid "Shortcut for method :class:`aiosend.CryptoPay.getExchangeRates`."
+msgstr ""
+
+#: aiosend.types.exchange_rate.ExchangeRate.update:3 of
+msgid "Use this method to update ExchangeRate object."
+msgstr ""
+
+#: aiosend.types.exchange_rate.ExchangeRate.update:5 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#getExchangeRates"
+msgstr ""
+
+#: aiosend.types.invoice.Invoice.update:1 of
+msgid "Shortcut for method :class:`aiosend.CryptoPay.get_invoices`."
+msgstr ""
+
+#: aiosend.types.invoice.Invoice.update:3 of
+msgid "Use this method to update invoice object."
+msgstr ""
+
+#: aiosend.types.invoice.Invoice.update:5 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#getInvoices"
+msgstr ""
+
+#: aiosend.types.check.Check.delete:1 of
+msgid "Shortcut for method :class:`aiosend.CryptoPay.delete_check`."
+msgstr ""
+
+#: aiosend.types.check.Check.delete:3 of
+msgid ""
+"Use this method to delete check created by your app. Returns :code:`True`"
+" on success."
+msgstr ""
+
+#: aiosend.types.check.Check.delete:6 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#deleteCheck"
+msgstr ""
+
+#: aiosend.types.check.Check.delete:8 aiosend.types.invoice.Invoice.delete:8 of
+msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`bool\\``"
+msgstr ""
+
+#: aiosend.types.check.Check.delete:9 aiosend.types.invoice.Invoice.delete:9 of
+msgid ":code:`True` on success."
+msgstr ""
+
+#: aiosend.types.invoice.Invoice.delete:1 of
+msgid "Shortcut for method :class:`aiosend.CryptoPay.delete_invoice`."
+msgstr ""
+
+#: aiosend.types.invoice.Invoice.delete:3 of
+msgid ""
+"Use this method to delete invoice created by your app. Returns "
+":code:`True` on success."
+msgstr ""
+
+#: aiosend.types.invoice.Invoice.delete:6 of
+msgid "Source: https://help.crypt.bot/crypto-pay-api#hwjK"
+msgstr ""
+
+#: aiosend.types.Check.qr:1 of
+msgid "Get check qr code."
+msgstr ""
+
+#: aiosend.types.Check.qr:3 of
+msgid "check qr code url."
+msgstr ""
+
+#: aiosend.types.Invoice.qr:1 of
+msgid "Get invoice qr code."
+msgstr ""
+
+#: aiosend.types.Invoice.qr:3 of
+msgid "invoice qr code."
+msgstr ""
+
+#: aiosend.types.check.Check.get_image:1 of
+msgid "Get check preview image."
+msgstr ""
+
+#: aiosend.types.check.Check.get_image:3 of
+msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`str\\``"
+msgstr ""
+
+#: aiosend.types.check.Check.get_image:4 of
+msgid "check image url."
+msgstr ""
+
+#: aiosend.types.check.Check.poll:1 of
+msgid "Send the check to the polling manager."
+msgstr ""
+
+#: aiosend.types.check.Check.poll:3 of
+msgid ""
+"Use this method to check the status of the check until the timeout "
+"expires."
+msgstr ""
+
+#: ../../client/shortcuts.rst
+msgid "Parameters"
+msgstr ""
+
+#: aiosend.types.check.Check.poll:7 aiosend.types.invoice.Invoice.poll:7 of
+msgid "additional payload for the handler."
+msgstr ""
+
+#: aiosend.types.invoice.Invoice.poll:1 of
+msgid "Send the invoice to the polling manager."
+msgstr ""
+
+#: aiosend.types.invoice.Invoice.poll:3 of
+msgid ""
+"Use this method to check the status of the invoice until the timeout "
+"expires."
+msgstr ""
+

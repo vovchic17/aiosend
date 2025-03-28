@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-12 14:38+0300\n"
+"POT-Creation-Date: 2025-03-28 11:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -72,7 +72,7 @@ msgstr ""
 #: aiosend.client.network.Network.get_rates_image:4
 #: aiosend.client.network.Network.url:4 of
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`str\\``"
-msgstr ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`str\\``"
+msgstr ""
 
 #: aiosend.client.network.Network.get_qr:1 of
 msgid "Return qr code link."
@@ -89,7 +89,4 @@ msgstr "Имя сети"
 #: aiosend.client.network.Network.url:1 of
 msgid "Return URL for method."
 msgstr "Возвращает URL для метода."
-
-#~ msgid "Тип результата"
-#~ msgstr "Тип результата"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-12 14:38+0300\n"
+"POT-Creation-Date: 2025-03-28 11:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -28,30 +28,32 @@ msgid ""
 "aiosend is |python| python implementation for `Crypto Pay API "
 "<https://help.crypt.bot/crypto-pay-api>`_."
 msgstr ""
-"aiosend це обгортка для `Crypto Pay API "
-"<https://help.crypt.bot/crypto-pay-api>`_ на |python| python."
+"aiosend це обгортка для `Crypto Pay API <https://help.crypt.bot/crypto-"
+"pay-api>`_ на |python| python."
 
-#: ../../client/index.rst:14
+#: ../../client/index.rst:11
 msgid "python"
 msgstr ""
 
 #: ../../client/index.rst:7
-msgid "**Methods** - official Crypto Pay API methods."
-msgstr "**Методи** - офіційні Crypto Pay API методи"
-
-#: ../../client/index.rst:8
 msgid "**Tools** - additional functionality."
 msgstr "**Інструменти** - додатковий функціонал"
 
+#: ../../client/index.rst:8
+#, fuzzy
+msgid "**Shortcut methods** - shortcut type methods."
+msgstr "**Методи** - офіційні Crypto Pay API методи"
+
 #: ../../client/index.rst:9
-msgid "**Webhook** - updates handling via webhook."
-msgstr "**Вебхуки** - обробка повідомлень через вебхуки"
+msgid "**Session** - http session implementation."
+msgstr ""
 
-#: ../../client/index.rst:10
-msgid "**Invoice polling** - invoice updates handling via polling."
-msgstr "**Поллінг рахунків** - обробка повідомлень про рахунки через поллінг"
+#~ msgid "**Webhook** - updates handling via webhook."
+#~ msgstr "**Вебхуки** - обробка повідомлень через вебхуки"
 
-#: ../../client/index.rst:11
-msgid "**Check polling** - check updates handling via polling."
-msgstr "**Поллінг чеків** - обробка повідомлень про чеках через поллінг"
+#~ msgid "**Invoice polling** - invoice updates handling via polling."
+#~ msgstr "**Поллінг рахунків** - обробка повідомлень про рахунки через поллінг"
+
+#~ msgid "**Check polling** - check updates handling via polling."
+#~ msgstr "**Поллінг чеків** - обробка повідомлень про чеках через поллінг"
 

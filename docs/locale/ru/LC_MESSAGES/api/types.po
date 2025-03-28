@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-26 22:50+0300\n"
+"POT-Creation-Date: 2025-03-28 11:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../types.rst:3
+#: ../../api/types.rst:3
 msgid "Types"
 msgstr "Типы"
 
-#: ../../types.rst:5
+#: ../../api/types.rst:5
 msgid ""
 "`Crypto Pay API <https://help.crypt.bot/crypto-pay-api>`_ types "
 "implementation."
@@ -113,33 +113,6 @@ msgstr ""
 msgid "Unavailable amount currently is on hold in float."
 msgstr "Недоступная сумма, находящаяся на удержании, в виде вещественного числа."
 
-#: aiosend.types.balance.Balance.update:1 of
-msgid "Shortcut for method :class:`aiosend.CryptoPay.get_balance`."
-msgstr "Альтернатива метода :class:`aiosend.CryptoPay.get_balance`."
-
-#: aiosend.types.balance.Balance.update:3 of
-msgid "Use this method to update balance object."
-msgstr "Используйте этот метод для обновления объекта баланса."
-
-#: aiosend.types.balance.Balance.update:5 of
-msgid "Source: https://help.crypt.bot/crypto-pay-api#getBalance"
-msgstr "Источник: https://help.crypt.bot/crypto-pay-api#getBalance"
-
-#: ../../types.rst
-msgid "Return type"
-msgstr ""
-
-#: aiosend.types.balance.Balance.update:7 aiosend.types.check.Check.poll:9
-#: aiosend.types.exchange_rate.ExchangeRate.update:7
-#: aiosend.types.invoice.Invoice.poll:9 aiosend.types.invoice.Invoice.update:7
-#: of
-msgid ":sphinx_autodoc_typehints_type:`\\:py\\:obj\\:\\`None\\``"
-msgstr ""
-
-#: ../../types.rst
-msgid "Returns"
-msgstr ""
-
 #: aiosend.types.check.Check:1 of
 msgid "Check object."
 msgstr "Объект Check."
@@ -168,73 +141,9 @@ msgstr "Уникальный ID чека."
 msgid "Date the check was created in ISO 8601 format."
 msgstr "Дата создания чека в формате ISO 8601."
 
-#: aiosend.types.check.Check.delete:1 of
-msgid "Shortcut for method :class:`aiosend.CryptoPay.delete_check`."
-msgstr "Альтернатива метода :class:`aiosend.CryptoPay.delete_check`."
-
-#: aiosend.types.check.Check.delete:3 of
-msgid ""
-"Use this method to delete check created by your app. Returns :code:`True`"
-" on success."
-msgstr ""
-"Используйте этот метод для удаления чека, созданного Вашим приложением. "
-"Возвращает :code:`True` в случае успеха."
-
-#: aiosend.types.check.Check.delete:6 of
-msgid "Source: https://help.crypt.bot/crypto-pay-api#deleteCheck"
-msgstr "Источник: https://help.crypt.bot/crypto-pay-api#deleteCheck"
-
-#: aiosend.types.check.Check.delete:8 aiosend.types.invoice.Invoice.delete:8 of
-msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`bool\\``"
-msgstr ""
-
-#: aiosend.types.check.Check.delete:9 aiosend.types.invoice.Invoice.delete:9 of
-msgid ":code:`True` on success."
-msgstr ":code:`True` в случае успеха."
-
-#: aiosend.types.check.Check.get_image:1 of
-msgid "Get check preview image."
-msgstr "Получить изображение предпросмотра чека."
-
-#: aiosend.types.check.Check.get_image:3 of
-msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`str\\``"
-msgstr ""
-
-#: aiosend.types.check.Check.get_image:4 of
-msgid "check image url."
-msgstr "url изображения чека."
-
 #: ../../docstring aiosend.types.Check.hash:1 of
 msgid "Hash of the check."
 msgstr "Хеш чека."
-
-#: aiosend.types.check.Check.poll:1 of
-msgid "Send the check to the polling manager."
-msgstr "Отправить чек в поллинг-менеджер."
-
-#: aiosend.types.check.Check.poll:3 of
-msgid ""
-"Use this method to check the status of the check until the timeout "
-"expires."
-msgstr ""
-"Используйте этот метод для проверки статуса чека до тех пор, пока не "
-"истечет тайм-аут."
-
-#: ../../types.rst
-msgid "Parameters"
-msgstr ""
-
-#: aiosend.types.check.Check.poll:7 aiosend.types.invoice.Invoice.poll:7 of
-msgid "additional payload for the handler."
-msgstr "дополнительная полезная нагрузка для функции-обработчика."
-
-#: aiosend.types.Check.qr:1 of
-msgid "Get check qr code."
-msgstr "Получить qr код чека."
-
-#: aiosend.types.Check.qr:3 of
-msgid "check qr code url."
-msgstr "url qr кода чека."
 
 #: ../../docstring aiosend.types.Check.status:1 of
 msgid "Status of the check, can be “active” or “activated”."
@@ -317,7 +226,6 @@ msgstr ""
 "“ETH”, “LTC”, “BNB”, “TRX” или “USDC”."
 
 #: ../../docstring aiosend.types.ExchangeRate.target:1 of
-#, fuzzy
 msgid ""
 "Fiat currency code. Currently, can be “USD”, “EUR”, “RUB”, “BYN”, “UAH”, "
 "“GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, “INR”, “BRL”, "
@@ -326,18 +234,6 @@ msgstr ""
 "Алфавитный код фиатной валюты. На данный момент может быть “USD”, “EUR”, "
 "“RUB”, “BYN”, “UAH”, “GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, "
 "“THB”, “INR”, “BRL”, “IDR”, “AZN”, “AED”, “PLN” или “ILS”."
-
-#: aiosend.types.exchange_rate.ExchangeRate.update:1 of
-msgid "Shortcut for method :class:`aiosend.CryptoPay.getExchangeRates`."
-msgstr "Альтернатива метода :class:`aiosend.CryptoPay.getExchangeRates`."
-
-#: aiosend.types.exchange_rate.ExchangeRate.update:3 of
-msgid "Use this method to update ExchangeRate object."
-msgstr "Используйте этот метод для обновления объекта ExchangeRate."
-
-#: aiosend.types.exchange_rate.ExchangeRate.update:5 of
-msgid "Source: https://help.crypt.bot/crypto-pay-api#getExchangeRates"
-msgstr "Источник: https://help.crypt.bot/crypto-pay-api#getExchangeRates"
 
 #: aiosend.types.invoice.Invoice:1 of
 msgid "Invoice object."
@@ -397,22 +293,6 @@ msgstr "Дата создания счёта в формате ISO 8601."
 msgid "Type of the price, can be “crypto” or “fiat”."
 msgstr "Тип цены, может быть “crypto” или “fiat”."
 
-#: aiosend.types.invoice.Invoice.delete:1 of
-msgid "Shortcut for method :class:`aiosend.CryptoPay.delete_invoice`."
-msgstr "Альтернатива метода :class:`aiosend.CryptoPay.delete_invoice`."
-
-#: aiosend.types.invoice.Invoice.delete:3 of
-msgid ""
-"Use this method to delete invoice created by your app. Returns "
-":code:`True` on success."
-msgstr ""
-"Используйте этот метод для удаления счёта, созданного Вашим приложением. "
-"Возвращает :code:`True` в случае успеха."
-
-#: aiosend.types.invoice.Invoice.delete:6 of
-msgid "Source: https://help.crypt.bot/crypto-pay-api#hwjK"
-msgstr "Источник: https://help.crypt.bot/crypto-pay-api#hwjK"
-
 #: ../../docstring aiosend.types.Invoice.description:1 of
 msgid "*Optional*. Description for this invoice."
 msgstr "*Опционально*. Описание данного счёта."
@@ -450,8 +330,8 @@ msgid ""
 "*Optional*. Amount in USD of service fees charged when the invoice was "
 "paid. Available only if status is “paid”."
 msgstr ""
-"*Опционально*. Сумма платы за обслуживание, взимаемая при оплате счета в USD. "
-"Доступна только при наличии статуса “paid”."
+"*Опционально*. Сумма платы за обслуживание, взимаемая при оплате счета в "
+"USD. Доступна только при наличии статуса “paid”."
 
 #: ../../docstring aiosend.types.Invoice.fiat:1 of
 msgid ""
@@ -545,41 +425,9 @@ msgstr ""
 msgid "*Optional*. Previously provided data for this invoice."
 msgstr "*Опционально*. Ранее предоставленная полезная нагрузка счёта."
 
-#: aiosend.types.invoice.Invoice.poll:1 of
-msgid "Send the invoice to the polling manager."
-msgstr "Отправить счёт в поллинг-менеджер."
-
-#: aiosend.types.invoice.Invoice.poll:3 of
-msgid ""
-"Use this method to check the status of the invoice until the timeout "
-"expires."
-msgstr ""
-"Используйте этот метод для проверки статуса счёта до тех пор, пока не "
-"истечет тайм-аут."
-
-#: aiosend.types.Invoice.qr:1 of
-msgid "Get invoice qr code."
-msgstr "Получить qr код счёта."
-
-#: aiosend.types.Invoice.qr:3 of
-msgid "invoice qr code."
-msgstr "qr код счёта"
-
 #: ../../docstring aiosend.types.Invoice.status:1 of
 msgid "Status of the transfer, can be “active”, “paid” or “expired”."
 msgstr "Статус перевода, может быть “active”, “paid” или “expired”."
-
-#: aiosend.types.invoice.Invoice.update:1 of
-msgid "Shortcut for method :class:`aiosend.CryptoPay.get_invoices`."
-msgstr "Альтернатива метода :class:`aiosend.CryptoPay.get_invoices`."
-
-#: aiosend.types.invoice.Invoice.update:3 of
-msgid "Use this method to update invoice object."
-msgstr "Используйте этот метод для обновления объекта счёта."
-
-#: aiosend.types.invoice.Invoice.update:5 of
-msgid "Source: https://help.crypt.bot/crypto-pay-api#getInvoices"
-msgstr "Источник: https://help.crypt.bot/crypto-pay-api#getInvoices"
 
 #: ../../docstring aiosend.types.Invoice.usd_rate:1 of
 msgid ""
@@ -667,39 +515,9 @@ msgstr "`invoice_paid` - обновления было отправлено ко
 
 #: ../../docstring aiosend.types.Update.update_type of
 msgid "type"
-msgstr ""
+msgstr "Типы"
 
 #: ../../docstring aiosend.types.Update.update_type:3 of
 msgid "Webhook update type. Supported update types"
 msgstr "Тип webhook обновления. Поддерживаемые типы обновлений"
-
-#~ msgid "Тип результата"
-#~ msgstr ""
-
-#~ msgid "Результат"
-#~ msgstr ""
-
-#~ msgid "Параметры"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "*Optional*. Amount in USD of service "
-#~ "fees charged when the invoice was "
-#~ "paid. Available only if status is "
-#~ "“paid”."
-#~ msgstr ""
-#~ "*Опционально*. Сумма платы за обслуживание,"
-#~ " взимаемая при оплате счета. Доступна "
-#~ "только при наличии статуса “оплачено”."
-
-#~ msgid ""
-#~ "*Optional*. Amount of service fees "
-#~ "charged when the invoice was paid "
-#~ "in USD. Available only if status "
-#~ "is “paid”."
-#~ msgstr ""
-#~ "*Опционально*. Сумма платы за обслуживание,"
-#~ " взимаемая при оплате счета в USD."
-#~ " Доступна только при наличии статуса "
-#~ "“paid”."
 

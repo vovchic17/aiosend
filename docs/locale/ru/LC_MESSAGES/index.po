@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-07 04:36+0300\n"
+"POT-Creation-Date: 2025-03-28 11:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -48,34 +48,60 @@ msgid "Features"
 msgstr "Особенности"
 
 #: ../../index.rst:19
+#, fuzzy
+msgid "supports both synchronous and asynchronous use"
+msgstr "поддерживает синхронное и асинхронное взаимодействие"
+
+#: ../../index.rst:20
+#, fuzzy
 msgid ""
-"provides :doc:`invoice polling handler <client/invoice_polling>` and "
-":doc:`check polling handler <client/check_polling>`"
+"provides :doc:`invoice polling handler <events/invoice_polling>` and "
+":doc:`check polling handler <events/check_polling>`"
 msgstr ""
 "предоставляет :doc:`поллинг счетов <client/invoice_polling>` и "
 ":doc:`поллинг чеков <client/check_polling>`"
 
-#: ../../index.rst:20
-msgid "provides :doc:`webhook handler <client/webhook>`"
+#: ../../index.rst:21
+#, fuzzy
+msgid "provides :doc:`webhook handler <events/webhook>`"
 msgstr "предоставляет :doc:`обработчик вебхуков <client/webhook>`"
 
-#: ../../index.rst:21
-msgid "provides :doc:`additional function shortcuts <client/tools>`"
+#: ../../index.rst:22
+msgid "fully typed and has literal type hints"
+msgstr ""
+
+#: ../../index.rst:23
+msgid ""
+"uses powerful `magic filters from aiogram 3.x "
+"<https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html"
+"#magic-filters>`_"
+msgstr ""
+
+#: ../../index.rst:24
+msgid "provides dependency injection"
+msgstr ""
+
+#: ../../index.rst:25
+#, fuzzy
+msgid "provides :doc:`additional tool methods <client/tools>`"
 msgstr "предоставляет :doc:`дополнительные функции <client/tools>`"
 
-#: ../../index.rst:22
-msgid "supports sync and async usage"
-msgstr "поддерживает синхронное и асинхронное взаимодействие"
-
 #: ../../index.rst:26
+msgid "provides shortcut methods for types"
+msgstr ""
+
+#: ../../index.rst:27
+msgid "warns you if the token is being served by another network"
+msgstr ""
+
+#: ../../index.rst:31
 msgid "Quick start"
 msgstr "Быстрый старт"
-
-#: ../../index.rst:32
-msgid "Synchronous usage"
-msgstr "Синхронное использование"
 
 #: ../../index.rst:37
 msgid "Contents"
 msgstr "Содержание"
+
+#~ msgid "Synchronous usage"
+#~ msgstr "Синхронное использование"
 

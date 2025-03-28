@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-07 04:36+0300\n"
+"POT-Creation-Date: 2025-03-28 11:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -22,4 +22,24 @@ msgstr ""
 #: ../../api/index.rst:3
 msgid "API"
 msgstr ""
+
+#: ../../api/index.rst:5
+msgid "**Methods** - official Crypto Pay API methods."
+msgstr "**Методы** - официальные методы Crypto Pay API."
+
+#: ../../api/index.rst:6
+msgid "**Types** - official Crypto Pay API types."
+msgstr "**Типы** - официальные типы Crypto Pay API."
+
+#: ../../api/index.rst:7
+msgid "**Enums** - enumerable parameter values of methods."
+msgstr "**Перечисления** - перечисляемые значения параметров методов."
+
+#: ../../api/index.rst:8
+msgid "**Network** - API networks."
+msgstr "**Сеть** - сети API."
+
+#: ../../api/index.rst:9
+msgid "**Errors** - error models."
+msgstr "**Исключения** - модели исключений."
 

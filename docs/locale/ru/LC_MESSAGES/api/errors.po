@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, VoVcHiC
+# This file is distributed under the same license as the aiosend package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: aiosend \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-12 14:38+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../errors.rst:3
+msgid "Errors"
+msgstr "Исключения"
+
+#: aiosend.exceptions.APIError:1 aiosend.exceptions.DeserializationError:1
+#: aiosend.exceptions.MethodValuesError:1
+#: aiosend.exceptions.WrongNetworkError:1 of
+msgid "Bases: :py:class:`~aiosend.exceptions.CryptoPayError`"
+msgstr ""
+
+#: aiosend.exceptions.APIError:1 of
+msgid "Exception for API errors."
+msgstr "Исключение для ошибок API."
+
+#: aiosend.exceptions.CryptoPayError:1 of
+msgid "Bases: :py:class:`Exception`"
+msgstr ""
+
+#: aiosend.exceptions.CryptoPayError:1 of
+msgid "Base class for exceptions in this module."
+msgstr "Базовый класс всех исключений этого модуля."
+
+#: aiosend.exceptions.DeserializationError:1 of
+msgid "Exception for deserialization errors."
+msgstr "Исключение для ошибок десериализации."
+
+#: aiosend.exceptions.MethodValuesError:1 of
+msgid "Exception raised when method values are invalid."
+msgstr "Исключение, вызываемое при неверном наборе значений метода."
+
+#: aiosend.exceptions.WrongNetworkError:1 of
+msgid "Exception raised when the token is served by different network."
+msgstr "Исключение, вызываемое когда токен принадлежит другой сети."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-12 14:38+0300\n"
+"POT-Creation-Date: 2025-03-28 11:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../client/invoice_polling.rst:3
+#: ../../events/invoice_polling.rst:3
 msgid "Invoice polling"
 msgstr "Поллинг счетов"
 
-#: ../../client/invoice_polling.rst:5
+#: ../../events/invoice_polling.rst:5
 msgid ""
 "Polling is a method of receiving updates by periodically sending "
 "requests. Once :attr:`invoice status <aiosend.types.Invoice.status>` is "
@@ -42,7 +42,7 @@ msgstr ""
 "счетов использует метод :attr:`/getInvoices "
 "<aiosend.CryptoPay.get_invoices>`."
 
-#: ../../client/invoice_polling.rst:13
+#: ../../events/invoice_polling.rst:13
 msgid ""
 ":attr:`Polling manager <aiosend.polling.PollingManager>` has "
 ":attr:`configuration <aiosend.polling.PollingConfig>` that defines the "
@@ -61,13 +61,13 @@ msgstr ""
 "указан, вызывает обработчик :attr:`expired_invoice_polling "
 "<aiosend.CryptoPay.expired_invoice_polling>`."
 
-#: ../../client/invoice_polling.rst:22
+#: ../../events/invoice_polling.rst:22
 msgid "**Default is 2 seconds delay and 300 seconds (5 min) timeout**."
 msgstr ""
 "**По умолчанию задержка между запросами — 2 секунды, а таймаут — 300 "
 "секунд (5 минут)**."
 
-#: ../../client/invoice_polling.rst:24
+#: ../../events/invoice_polling.rst:24
 msgid ":ref:`You can change the polling configuration. <PollingConfigAnchor>`"
 msgstr ":ref:`Вы можете изменить настройки опроса. <PollingConfigAnchor>`"
 
@@ -80,7 +80,7 @@ msgstr "Назначьте функцию-обработчик для обнов
 msgid "Decorator for handler function."
 msgstr "Декоратор для функции-обработчика."
 
-#: ../../client/invoice_polling.rst
+#: ../../events/invoice_polling.rst
 msgid "Return type"
 msgstr ""
 
@@ -95,15 +95,8 @@ msgid ""
 "\\\\\\[\\:py\\:data\\:\\`...\\<Ellipsis\\>\\`\\, "
 "\\:py\\:data\\:\\`\\~typing.Any\\`\\]\\]`"
 msgstr ""
-":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~collections.abc.Callable\\`\\\\"
-" \\\\\\[\\\\\\[\\:py\\:class\\:\\`\\~collections.abc.Callable\\`\\\\ "
-"\\\\\\[\\:py\\:data\\:\\`...\\<Ellipsis\\>\\`\\, "
-"\\:py\\:data\\:\\`\\~typing.Any\\`\\]\\]\\, "
-"\\:py\\:class\\:\\`\\~collections.abc.Callable\\`\\\\ "
-"\\\\\\[\\:py\\:data\\:\\`...\\<Ellipsis\\>\\`\\, "
-"\\:py\\:data\\:\\`\\~typing.Any\\`\\]\\]`"
 
-#: ../../client/invoice_polling.rst
+#: ../../events/invoice_polling.rst
 msgid "Returns"
 msgstr ""
 
@@ -116,13 +109,6 @@ msgstr "функция-обработчик."
 msgid "Register a handler for timed out invoices."
 msgstr "Назначьте функцию-обработчик для счетов с истекшим временем ожидания."
 
-#: ../../client/invoice_polling.rst:30
+#: ../../events/invoice_polling.rst:30
 msgid "Usage example"
 msgstr "Пример использования"
-
-#~ msgid "Тип результата"
-#~ msgstr "Тип результата"
-
-#~ msgid "Результат"
-#~ msgstr "Результат"
-
