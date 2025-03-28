@@ -1,3 +1,5 @@
+.. _MethodsAnchor:
+
 =======
 Methods
 =======

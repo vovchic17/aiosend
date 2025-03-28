@@ -17,8 +17,8 @@ Introduction
 Features
 --------
 * supports both synchronous and asynchronous use
-* provides :doc:`invoice polling handler <client/invoice_polling>` and :doc:`check polling handler <client/check_polling>`
-* provides :doc:`webhook handler <client/webhook>`
+* provides :doc:`invoice polling handler <events/invoice_polling>` and :doc:`check polling handler <events/check_polling>`
+* provides :doc:`webhook handler <events/webhook>`
 * fully typed and has literal type hints
 * uses powerful `magic filters from aiogram 3.x <https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html#magic-filters>`_
 * provides dependency injection
@@ -33,21 +33,13 @@ Quick start
 .. literalinclude:: ../examples/quick_start.py
 
 
-Synchronous usage
------------------
-
-.. literalinclude:: ../examples/sync.py
-
 Contents
 --------
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    install
-   client/index
-   types
-   enums
    api/index
-   errors
-   examples/index
+   client/index
+   events/index
    integration_examples/index

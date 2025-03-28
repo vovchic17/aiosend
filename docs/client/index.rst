@@ -4,12 +4,9 @@ Client
 
 aiosend is |python| python implementation for `Crypto Pay API <https://help.crypt.bot/crypto-pay-api>`_.
 
-* **Methods** - official Crypto Pay API methods.
 * **Tools** - additional functionality.
-* **Webhook** - updates handling via webhook.
-* **Invoice polling** - invoice updates handling via polling.
-* **Check polling** - check updates handling via polling.
-
+* **Shortcut methods** - shortcut type methods.
+* **Session** - http session implementation.
 
 .. |python| image:: ../_static/python.png
     :width: 16px
@@ -17,9 +14,8 @@ aiosend is |python| python implementation for `Crypto Pay API <https://help.cryp
 
 .. toctree::
 
-    methods
     tools
-    webhook
-    invoice_polling
-    check_polling
-    polling_config
+    shortcuts
+    di
+    hints_warns
+    session

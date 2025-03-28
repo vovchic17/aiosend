@@ -1,8 +1,0 @@
-========
-Examples
-========
-
-.. toctree::
-
-    check
-    invoice

@@ -7,4 +7,4 @@ Types
 .. automodule:: aiosend.types
     :members:
     :undoc-members:
-    :exclude-members: model_config, model_fields, model_computed_fields, model_post_init
+    :exclude-members: model_config, model_fields, model_computed_fields, model_post_init, qr, get_image, update, delete, poll

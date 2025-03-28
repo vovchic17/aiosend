@@ -25,7 +25,8 @@
 
 .k,
 .kn,
-.kc {
+.kc,
+.nb {
     color: var(--code_color1) !important;
 }
 
@@ -59,7 +60,7 @@
     font-size: 3em;
 }
 
-.highlight {
-    line-height: 1 !important;
-    font-size: 1.3rem;
+.highlight pre {
+    line-height: 1.2 !important;
+    font-size: 1.2rem;
 }

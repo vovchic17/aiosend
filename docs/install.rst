@@ -2,57 +2,57 @@
 Installation
 ============
 
-Via `pip <https://pip.pypa.io/>`_
+via `pip <https://pip.pypa.io/>`_
 -------------------------------------------
-* From PyPI
+* from `PyPI <https://pypi.org/p/aiosend/>`_
 
 .. code-block:: bash
 
     pip install -U aiosend
 
-* From GitHub
+* from `GitHub <https://github.com/vovchic17/aiosend>`_
 
 .. code-block:: bash
 
     pip install https://github.com/vovchic17/aiosend/archive/refs/heads/main.zip
 
-Via `uv <https://docs.astral.sh/uv/>`_
+via `uv <https://docs.astral.sh/uv/>`_
 --------------------------------------
 .. code-block:: bash
 
     uv add aiosend
 
-Via `Poetry <https://python-poetry.org/>`_
+via `Poetry <https://python-poetry.org/>`_
 ------------------------------------------
 .. code-block:: bash
 
     poetry add aiosend
 
-Via `PDM <https://pdm-project.org/>`_
+via `PDM <https://pdm-project.org/>`_
 -----------------------------------------------
 .. code-block:: bash
 
     pdm add aiosend
 
-Via `pipx <https://pipx.pypa.io/>`_
+via `pipx <https://pipx.pypa.io/>`_
 -----------------------------------------------
 .. code-block:: bash
 
     pipx install aiosend
 
-Via `Rye <https://rye.astral.sh/>`_
+via `Rye <https://rye.astral.sh/>`_
 -----------------------------------------------
 .. code-block:: bash
 
     rye add aiosend
 
-Via `Conda <https://docs.conda.io/>`_
+via `Conda <https://docs.conda.io/>`_
 -----------------------------------------------
 .. code-block:: bash
 
     conda install aiosend
 
-Via `Pipenv <https://pipenv.pypa.io/>`_
+via `Pipenv <https://pipenv.pypa.io/>`_
 -----------------------------------------------
 .. code-block:: bash
 
