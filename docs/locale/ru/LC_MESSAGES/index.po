@@ -28,7 +28,7 @@ msgid ""
 "**aiosend** is a synchronous & asynchronous `Crypto Pay API "
 "<https://help.crypt.bot/crypto-pay-api>`_ client."
 msgstr ""
-"**aiosend** это синхронный и асинхронный `Crypto Pay API "
+"**aiosend** — это синхронный и асинхронный `Crypto Pay API "
 "<https://help.crypt.bot/crypto-pay-api>`_ клиент."
 
 #: ../../index.rst:11
@@ -56,12 +56,12 @@ msgid ""
 "provides :doc:`invoice polling handler <events/invoice_polling>` and "
 ":doc:`check polling handler <events/check_polling>`"
 msgstr ""
-"предоставляет :doc:`поллинг счетов <client/invoice_polling>` и "
-":doc:`поллинг чеков <client/check_polling>`"
+"предоставляет :doc:`поллинг счетов <events/invoice_polling>` и "
+":doc:`поллинг чеков <events/check_polling>`"
 
 #: ../../index.rst:21
 msgid "provides :doc:`webhook handler <events/webhook>`"
-msgstr "предоставляет :doc:`обработчик вебхуков <client/webhook>`"
+msgstr "предоставляет :doc:`обработчик вебхуков <events/webhook>`"
 
 #: ../../index.rst:22
 msgid "fully typed and has literal type hints"
