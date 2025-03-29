@@ -17,20 +17,18 @@ Introduction
 Features
 --------
 * supports both synchronous and asynchronous use
-* provides :doc:`invoice polling handler <events/invoice_polling>` and :doc:`check polling handler <events/check_polling>`
-* provides :doc:`webhook handler <events/webhook>`
+* provides :doc:`invoice polling <events/invoice_polling>` and :doc:`check polling <events/check_polling>`
+* provides :doc:`webhook handling <events/webhook>`
 * fully typed, has :doc:`literal type hints and warnings <client/hints_warns>`
 * uses powerful `magic filters from aiogram 3.x <https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html#magic-filters>`_
 * provides :doc:`dependency injection <client/di>`
 * provides :doc:`additional tool methods <client/tools>`
 * provides :doc:`shortcut methods for types <client/shortcuts>`
 
-
 Quick start
 -----------
 
 .. literalinclude:: ../examples/quick_start.py
-
 
 Contents
 --------
