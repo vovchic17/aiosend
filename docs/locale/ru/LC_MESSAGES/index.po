@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-29 03:13+0300\n"
+"POT-Creation-Date: 2025-03-29 04:00+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -64,8 +64,12 @@ msgid "provides :doc:`webhook handler <events/webhook>`"
 msgstr "предоставляет :doc:`обработчик вебхуков <events/webhook>`"
 
 #: ../../index.rst:22
-msgid "fully typed and has literal type hints"
-msgstr "полностью типизирован и имеет literal подсказки"
+msgid ""
+"fully typed, has :doc:`literal type hints and warnings "
+"<client/hints_warns>`"
+msgstr ""
+"полностью типизирован, имеет :doc:`literal подсказки и предупреждения"
+"<client/hints_warns>`"
 
 #: ../../index.rst:23
 msgid ""
@@ -89,14 +93,10 @@ msgstr "предоставляет :doc:`дополнительные функц
 msgid "provides :doc:`shortcut methods for types <client/shortcuts>`"
 msgstr "предоставляет :doc:`сокращённые методы для типов <client/shortcuts>`"
 
-#: ../../index.rst:27
-msgid "warns you if the token is being served by another network"
-msgstr "предупреждает вас если токен обслуживается другой сетью"
-
-#: ../../index.rst:31
+#: ../../index.rst:30
 msgid "Quick start"
 msgstr "Быстрый старт"
 
-#: ../../index.rst:37
+#: ../../index.rst:36
 msgid "Contents"
 msgstr "Содержание"

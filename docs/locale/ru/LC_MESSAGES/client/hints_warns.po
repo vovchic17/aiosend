@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-28 11:59+0300\n"
+"POT-Creation-Date: 2025-03-29 04:00+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -22,3 +22,24 @@ msgstr ""
 #: ../../client/hints_warns.rst:3
 msgid "Type hints and warnings"
 msgstr "Подсказки и предупреждения"
+
+#: ../../client/hints_warns.rst:6
+msgid "Literal type hints"
+msgstr "Literal подсказки"
+
+#: ../../client/hints_warns.rst:8
+msgid ""
+"**aiosend** provides rich typing that allows you not to remember the "
+"values of the enumerated parameters."
+msgstr ""
+"**aiosend** обеспечивает расширенную типизацию, что позволяет вам не "
+"запоминать значения перечисленных параметров."
+
+#: ../../client/hints_warns.rst:15
+msgid "Wrong net warning"
+msgstr "Предупреждение использования неверной сети"
+
+#: ../../client/hints_warns.rst:17
+msgid "**aiosend** will warn you if you are using the wrong net."
+msgstr "**aiosend** предупредит вас, если вы используете неверную сеть."
+

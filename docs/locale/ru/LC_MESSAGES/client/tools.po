@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-20 19:36+0300\n"
+"POT-Creation-Date: 2025-03-29 04:00+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -116,7 +116,7 @@ msgid ""
 "this object by passing the invoice id."
 msgstr ""
 "Используйте этот метод для обновления статуса существующего объекта счёта"
-" или получения этого объекта, помещая идентификатор счёта"
+" или получения этого объекта, передавая id счёта."
 
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:8 of
 msgid ""
@@ -127,6 +127,32 @@ msgstr ""
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:9 of
 msgid ":class:`aiosend.types.Invoice` object."
 msgstr "Объект :class:`aiosend.types.Invoice`."
+
+#: aiosend.tools.get_check.GetCheck.get_check:1 of
+msgid "Get exactly one check or none."
+msgstr "Получение или только одного чека, или ничего."
+
+#: aiosend.tools.get_check.GetCheck.get_check:3 of
+msgid "Wrapper for :class:`aiosend.CryptoPay.get_checks`"
+msgstr "Обёртка для :class:`aiosend.CryptoPay.get_checks`"
+
+#: aiosend.tools.get_check.GetCheck.get_check:5 of
+msgid ""
+"Use this method to update status of an existing check object or to get "
+"this object by passing the check id."
+msgstr ""
+"Используйте этот метод для обновления статуса существующего объекта чека"
+" или получения этого объекта, передавая id чека."
+
+#: aiosend.tools.get_check.GetCheck.get_check:8 of
+msgid ""
+":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~aiosend.types.check.Check\\`"
+" \\| \\:py\\:obj\\:\\`None\\``"
+msgstr ""
+
+#: aiosend.tools.get_check.GetCheck.get_check:9 of
+msgid ":class:`aiosend.types.Check` object."
+msgstr "Объект :class:`aiosend.types.Check`."
 
 #: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:1 of
 msgid "Delete all checks."

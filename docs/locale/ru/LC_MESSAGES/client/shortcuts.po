@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-29 03:13+0300\n"
+"POT-Creation-Date: 2025-03-29 04:00+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -162,7 +162,8 @@ msgid "Get invoice qr code."
 msgstr "Получить qr код счёта."
 
 #: aiosend.types.Invoice.qr:3 of
-msgid "invoice qr code url."
+#, fuzzy
+msgid "invoice qr code."
 msgstr "URL qr кода счёта."
 
 #: ../../client/shortcuts.rst:31
@@ -216,4 +217,3 @@ msgid ""
 msgstr ""
 "Используйте этот метод для проверки статуса счёта до тех пор, пока не "
 "истечёт тайм-аут."
-
