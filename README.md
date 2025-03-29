@@ -28,7 +28,7 @@ from aiosend import CryptoPay
 async def main():
     cp = CryptoPay(token="TOKEN")
     app = await cp.get_me()
-    print(app.name)  # Your App Name
+    print(app.name)  # Your App's Name
 
 
 if __name__ == "__main__":
