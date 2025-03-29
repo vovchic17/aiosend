@@ -1,5 +1,3 @@
-.. _PollingConfigAnchor:
-
 Polling configuration
 ---------------------
 You can configure your own polling configuration.

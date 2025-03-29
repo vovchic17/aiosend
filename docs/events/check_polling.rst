@@ -21,7 +21,7 @@ Check polling uses the :attr:`/getChecks <aiosend.CryptoPay.get_invoices>` metho
 
     **Default is 2 seconds delay and 300 seconds (5 min) timeout**.
 
-    :ref:`You can change the polling configuration. <PollingConfigAnchor>`
+    :doc:`You can change the polling configuration. <polling_config>`
 
 .. automethod:: aiosend.CryptoPay.check_polling
 .. automethod:: aiosend.CryptoPay.expired_check_polling

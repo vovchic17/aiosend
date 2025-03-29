@@ -21,9 +21,9 @@ Features
 * provides :doc:`webhook handler <events/webhook>`
 * fully typed and has literal type hints
 * uses powerful `magic filters from aiogram 3.x <https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html#magic-filters>`_
-* provides dependency injection
+* provides :doc:`dependency injection <client/di>`
 * provides :doc:`additional tool methods <client/tools>`
-* provides shortcut methods for types
+* provides :doc:`shortcut methods for types <client/shortcuts>`
 * warns you if the token is being served by another network
 
 

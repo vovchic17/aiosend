@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-28 11:59+0300\n"
+"POT-Creation-Date: 2025-03-29 03:13+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../client/shortcuts.rst:3
-msgid "Shortcut methods"
-msgstr ""
-
 #: ../../client/shortcuts.rst:5
+msgid "Shortcut methods"
+msgstr "Сокращённые методы"
+
+#: ../../client/shortcuts.rst:7
 msgid ""
 "These methods simplify the use of standard :ref:`Crypto Pay API methods "
 "<MethodsAnchor>` and also provide additional functionality to the "
@@ -32,6 +32,10 @@ msgstr ""
 "Эти методы упрощают использование стандартных :ref:`методов Crypto Pay "
 "API <MethodsAnchor>`, а также предоставляют дополнительный функционал для"
 " объектов."
+
+#: ../../client/shortcuts.rst:11
+msgid "Updating objects"
+msgstr "Обновление объектов"
 
 #: aiosend.types.balance.Balance.update:1 of
 msgid "Shortcut for method :class:`aiosend.CryptoPay.get_balance`."
@@ -97,6 +101,10 @@ msgstr "Используйте этот метод для обновления �
 msgid "Source: https://help.crypt.bot/crypto-pay-api#getInvoices"
 msgstr "Источник: https://help.crypt.bot/crypto-pay-api#getInvoices"
 
+#: ../../client/shortcuts.rst:19
+msgid "Deleting objects"
+msgstr "Удаление объектов"
+
 #: aiosend.types.check.Check.delete:1 of
 msgid "Shortcut for method :class:`aiosend.CryptoPay.delete_check`."
 msgstr "Сокращение для метода :class:`aiosend.CryptoPay.delete_check`."
@@ -137,6 +145,10 @@ msgstr ""
 msgid "Source: https://help.crypt.bot/crypto-pay-api#hwjK"
 msgstr "Источник: https://help.crypt.bot/crypto-pay-api#hwjK"
 
+#: ../../client/shortcuts.rst:25
+msgid "QR code of object"
+msgstr "QR код объекта"
+
 #: aiosend.types.Check.qr:1 of
 msgid "Get check qr code."
 msgstr "Получить qr код чека."
@@ -150,9 +162,12 @@ msgid "Get invoice qr code."
 msgstr "Получить qr код счёта."
 
 #: aiosend.types.Invoice.qr:3 of
-#, fuzzy
-msgid "invoice qr code."
+msgid "invoice qr code url."
 msgstr "URL qr кода счёта."
+
+#: ../../client/shortcuts.rst:31
+msgid "Check image"
+msgstr "URL изображения чека."
 
 #: aiosend.types.check.Check.get_image:1 of
 msgid "Get check preview image."
@@ -165,6 +180,10 @@ msgstr ""
 #: aiosend.types.check.Check.get_image:4 of
 msgid "check image url."
 msgstr "URL изображения чека."
+
+#: ../../client/shortcuts.rst:36
+msgid "Poll objects"
+msgstr "Опрашивание объектов"
 
 #: aiosend.types.check.Check.poll:1 of
 msgid "Send the check to the polling manager."
@@ -184,7 +203,7 @@ msgstr ""
 
 #: aiosend.types.check.Check.poll:7 aiosend.types.invoice.Invoice.poll:7 of
 msgid "additional payload for the handler."
-msgstr ""
+msgstr "Дополнительная полезная нагрузка для функции-обработчика"
 
 #: aiosend.types.invoice.Invoice.poll:1 of
 msgid "Send the invoice to the polling manager."

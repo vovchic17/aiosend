@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-16 18:02+0300\n"
+"POT-Creation-Date: 2025-03-29 03:13+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -66,7 +66,8 @@ msgstr ""
 "секунд (5 минут)**."
 
 #: ../../events/check_polling.rst:24
-msgid ":ref:`You can change the polling configuration. <PollingConfigAnchor>`"
+#, fuzzy
+msgid ":doc:`You can change the polling configuration. <polling_config>`"
 msgstr ":ref:`Вы можете изменять конфигурацию поллинга <PollingConfigAnchor>`"
 
 #: aiosend.polling.check.CheckPollingManager.check_polling:1 of
@@ -110,3 +111,4 @@ msgstr "Добавление обработчика для истёкших че
 #: ../../events/check_polling.rst:30
 msgid "Usage example"
 msgstr "Пример использования"
+

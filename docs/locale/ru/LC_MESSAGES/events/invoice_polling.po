@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-28 11:59+0300\n"
+"POT-Creation-Date: 2025-03-29 03:13+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -68,8 +68,8 @@ msgstr ""
 "секунд (5 минут)**."
 
 #: ../../events/invoice_polling.rst:24
-msgid ":ref:`You can change the polling configuration. <PollingConfigAnchor>`"
-msgstr ":ref:`Вы можете изменить настройки опроса. <PollingConfigAnchor>`"
+msgid ":doc:`You can change the polling configuration. <polling_config>`"
+msgstr ":doc:`Вы можете изменить настройки опроса. <polling_config>`"
 
 #: aiosend.polling.invoice.InvoicePollingManager.invoice_polling:1 of
 msgid "Register a handler for polling invoice updates."
@@ -112,3 +112,4 @@ msgstr "Назначьте функцию-обработчик для счето
 #: ../../events/invoice_polling.rst:30
 msgid "Usage example"
 msgstr "Пример использования"
+

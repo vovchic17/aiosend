@@ -21,7 +21,7 @@ Invoice polling uses the :attr:`/getInvoices <aiosend.CryptoPay.get_invoices>` m
 
     **Default is 2 seconds delay and 300 seconds (5 min) timeout**.
 
-    :ref:`You can change the polling configuration. <PollingConfigAnchor>`
+    :doc:`You can change the polling configuration. <polling_config>`
 
 .. automethod:: aiosend.CryptoPay.invoice_polling
 .. automethod:: aiosend.CryptoPay.expired_invoice_polling
