@@ -22,6 +22,7 @@ Usage example
 
 .. literalinclude:: ../../examples/get_invoice.py
 
+.. automethod:: aiosend.CryptoPay.get_check
 .. automethod:: aiosend.CryptoPay.delete_all_checks
 .. automethod:: aiosend.CryptoPay.delete_all_invoices
 .. automethod:: aiosend.CryptoPay.get_rates_image
