@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-29 04:00+0300\n"
+"POT-Creation-Date: 2025-03-31 09:34+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -53,23 +53,23 @@ msgstr "поддерживает синхронное и асинхронное 
 
 #: ../../index.rst:20
 msgid ""
-"provides :doc:`invoice polling handler <events/invoice_polling>` and "
-":doc:`check polling handler <events/check_polling>`"
+"provides :doc:`invoice polling <events/invoice_polling>` and :doc:`check "
+"polling <events/check_polling>`"
 msgstr ""
 "предоставляет :doc:`поллинг счетов <events/invoice_polling>` и "
 ":doc:`поллинг чеков <events/check_polling>`"
 
 #: ../../index.rst:21
-msgid "provides :doc:`webhook handler <events/webhook>`"
-msgstr "предоставляет :doc:`обработчик вебхуков <events/webhook>`"
+msgid "provides :doc:`webhook handling <events/webhook>`"
+msgstr "предоставляет :doc:`обработку вебхуков <events/webhook>`"
 
 #: ../../index.rst:22
 msgid ""
 "fully typed, has :doc:`literal type hints and warnings "
 "<client/hints_warns>`"
 msgstr ""
-"полностью типизирован, имеет :doc:`literal подсказки и предупреждения"
-"<client/hints_warns>`"
+"полностью типизирован, имеет :doc:`literal подсказки и "
+"предупреждения<client/hints_warns>`"
 
 #: ../../index.rst:23
 msgid ""
@@ -93,10 +93,11 @@ msgstr "предоставляет :doc:`дополнительные функц
 msgid "provides :doc:`shortcut methods for types <client/shortcuts>`"
 msgstr "предоставляет :doc:`сокращённые методы для типов <client/shortcuts>`"
 
-#: ../../index.rst:30
+#: ../../index.rst:29
 msgid "Quick start"
 msgstr "Быстрый старт"
 
-#: ../../index.rst:36
+#: ../../index.rst:34
 msgid "Contents"
 msgstr "Содержание"
+

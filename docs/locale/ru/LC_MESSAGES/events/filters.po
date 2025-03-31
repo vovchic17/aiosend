@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-28 11:59+0300\n"
+"POT-Creation-Date: 2025-03-31 09:34+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -22,4 +22,84 @@ msgstr ""
 #: ../../events/filters.rst:3
 msgid "Filters"
 msgstr "Фильтры"
+
+#: ../../events/filters.rst:5
+msgid ""
+"**Filters** are needed for routing updates to the specific handler. "
+":class:`WebhookManager <aiosend.webhook.WebhookManager>` and "
+":class:`PollingManager <aiosend.polling.PollingManager>` will check if "
+"the handler is suitable for the update. Once a handler with a suitable "
+"set of filters is found, searching of handler will be stopped."
+msgstr ""
+"**Фильтры** необходимы для маршрутизации обновлений в конкретный обработчик"
+":class:`WebhookManager <aiosend.webhook.WebhookManager>` и "
+":class:`PollingManager <aiosend.polling.PollingManager>` будут проверять "
+"подходит ли функция-обработчик для обновления. Как только обработчик с подходящим "
+"набором фильтров найден, поиск обработчика останавливается."
+
+#: ../../events/filters.rst:13
+msgid "Filters can be:"
+msgstr "Фильтрами могут быть:"
+
+#: ../../events/filters.rst:14
+msgid "asynchronous function"
+msgstr "асинхронная функция"
+
+#: ../../events/filters.rst:15
+msgid "synchronous function"
+msgstr "синхронная функция"
+
+#: ../../events/filters.rst:16
+msgid "lambda function"
+msgstr "lambda функция"
+
+#: ../../events/filters.rst:17
+msgid ""
+"instance of `MagicFilter "
+"<https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html"
+"#magic-filters>`_"
+msgstr "" 
+"экземпляр `MagicFilter "
+"<https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html"
+"#magic-filters>`_"
+
+#: ../../events/filters.rst:20
+msgid "Usage example"
+msgstr "Пример использования"
+
+#: ../../events/filters.rst:21
+msgid "For example, you can create a couple of invoices and poll them like that"
+msgstr "Например, вы можете создать пару счетов и опрашивать их следующим образом"
+
+#: ../../events/filters.rst:45
+msgid "Magic filter"
+msgstr "Магические фильтры"
+
+#: ../../events/filters.rst:61
+msgid "Function filter"
+msgstr "Функция-фильтр"
+
+#: ../../events/filters.rst:63
+msgid "You can use either :code:`def`, :code:`async def` or :code:`lambda`"
+msgstr "Вы можете использовать либо :code:`def`, либо :code:`async def`, либо :code:`lambda`"
+
+#: ../../events/filters.rst:82
+msgid "Get filter result as handler argument"
+msgstr "Получить результат фильтра в качестве аргумента обработчика"
+
+#: ../../events/filters.rst:84
+msgid ""
+"You can use `aiogram 3.x magic filter's "
+"<https://docs.aiogram.dev/en/dev-3.x/dispatcher/filters/magic_filters.html"
+"#get-filter-result-as-handler-argument>`_ :code:`as_` method to get "
+"filter result as handler argument"
+msgstr ""
+"Вы можете использовать метод :code:`as_` из `магических фильтров aiogram 3.x "
+"<https://docs.aiogram.dev/en/dev-3.x/dispatcher/filters/magic_filters.html"
+"#get-filter-result-as-handler-argument>`_ чтобы получить"
+"результат фильтра в качестве аргумента обработчика"
+
+#: ../../events/filters.rst:96
+msgid "You can also return context data from function filters like that"
+msgstr "Вы можете также возвращать контекстные данные из фильтров-функций следующим образом"
 

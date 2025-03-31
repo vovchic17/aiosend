@@ -25,7 +25,7 @@ msgstr ""
 
 #: ../../integration_examples/aiogram2.rst:6
 msgid "Usage example with `aiogram 2.x <https://docs.aiogram.dev/en/v2.25.1/>`_"
-msgstr "Образец использования с `aiogram 2.x <https://docs.aiogram.dev/en/v2.25.1/>`_"
+msgstr "Пример использования с `aiogram 2.x <https://docs.aiogram.dev/en/v2.25.1/>`_"
 
 #: ../../integration_examples/aiogram2.rst:11
 msgid "Preview"

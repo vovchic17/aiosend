@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-29 04:00+0300\n"
+"POT-Creation-Date: 2025-03-31 09:34+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -217,3 +217,8 @@ msgid ""
 msgstr ""
 "Используйте этот метод для проверки статуса счёта до тех пор, пока не "
 "истечёт тайм-аут."
+
+#: ../../client/shortcuts.rst:42
+msgid "Usage examples"
+msgstr "Пример использования"
+
