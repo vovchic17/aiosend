@@ -37,3 +37,10 @@ Poll objects
 
 .. automethod:: aiosend.types.Check.poll
 .. automethod:: aiosend.types.Invoice.poll
+
+Usage examples
+--------------
+
+.. literalinclude:: ../../examples/invoice_object.py
+
+.. literalinclude:: ../../examples/check_object.py
