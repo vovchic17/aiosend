@@ -29,9 +29,11 @@ msgid ""
 "program more flexible, adaptable, and extensible by decoupling the usage "
 "of an object from its creation."
 msgstr ""
+"**Внедрение зависимостей** это механизм, который позволяет вам сделать "
+"программу более гибкой, адаптируемой и расширяемой путём разделения "
+"использование объекта от его создания."
 
 #: ../../client/di.rst:9
-#, fuzzy
-msgid "Example"
+msgid "Usage example"
 msgstr "Пример использования"
 
