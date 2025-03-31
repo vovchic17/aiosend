@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-28 11:59+0300\n"
+"POT-Creation-Date: 2025-03-31 09:34+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -21,15 +22,13 @@ msgstr ""
 
 #: ../../client/index.rst:3
 msgid "Client"
-msgstr "Клієнт"
+msgstr ""
 
 #: ../../client/index.rst:5
 msgid ""
 "aiosend is |python| python implementation for `Crypto Pay API "
 "<https://help.crypt.bot/crypto-pay-api>`_."
 msgstr ""
-"aiosend це обгортка для `Crypto Pay API <https://help.crypt.bot/crypto-"
-"pay-api>`_ на |python| python."
 
 #: ../../client/index.rst:11
 msgid "python"
@@ -37,23 +36,13 @@ msgstr ""
 
 #: ../../client/index.rst:7
 msgid "**Tools** - additional functionality."
-msgstr "**Інструменти** - додатковий функціонал"
+msgstr ""
 
 #: ../../client/index.rst:8
-#, fuzzy
 msgid "**Shortcut methods** - shortcut type methods."
-msgstr "**Методи** - офіційні Crypto Pay API методи"
+msgstr ""
 
 #: ../../client/index.rst:9
 msgid "**Session** - http session implementation."
 msgstr ""
-
-#~ msgid "**Webhook** - updates handling via webhook."
-#~ msgstr "**Вебхуки** - обробка повідомлень через вебхуки"
-
-#~ msgid "**Invoice polling** - invoice updates handling via polling."
-#~ msgstr "**Поллінг рахунків** - обробка повідомлень про рахунки через поллінг"
-
-#~ msgid "**Check polling** - check updates handling via polling."
-#~ msgstr "**Поллінг чеків** - обробка повідомлень про чеках через поллінг"
 

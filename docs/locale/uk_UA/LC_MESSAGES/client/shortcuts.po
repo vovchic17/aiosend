@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-28 11:59+0300\n"
+"POT-Creation-Date: 2025-03-31 09:34+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -20,15 +20,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../client/shortcuts.rst:3
+#: ../../client/shortcuts.rst:5
 msgid "Shortcut methods"
 msgstr ""
 
-#: ../../client/shortcuts.rst:5
+#: ../../client/shortcuts.rst:7
 msgid ""
 "These methods simplify the use of standard :ref:`Crypto Pay API methods "
 "<MethodsAnchor>` and also provide additional functionality to the "
 "objects."
+msgstr ""
+
+#: ../../client/shortcuts.rst:11
+msgid "Updating objects"
 msgstr ""
 
 #: aiosend.types.balance.Balance.update:1 of
@@ -95,6 +99,10 @@ msgstr ""
 msgid "Source: https://help.crypt.bot/crypto-pay-api#getInvoices"
 msgstr ""
 
+#: ../../client/shortcuts.rst:19
+msgid "Deleting objects"
+msgstr ""
+
 #: aiosend.types.check.Check.delete:1 of
 msgid "Shortcut for method :class:`aiosend.CryptoPay.delete_check`."
 msgstr ""
@@ -131,6 +139,10 @@ msgstr ""
 msgid "Source: https://help.crypt.bot/crypto-pay-api#hwjK"
 msgstr ""
 
+#: ../../client/shortcuts.rst:25
+msgid "QR code of object"
+msgstr ""
+
 #: aiosend.types.Check.qr:1 of
 msgid "Get check qr code."
 msgstr ""
@@ -147,6 +159,10 @@ msgstr ""
 msgid "invoice qr code."
 msgstr ""
 
+#: ../../client/shortcuts.rst:31
+msgid "Check image"
+msgstr ""
+
 #: aiosend.types.check.Check.get_image:1 of
 msgid "Get check preview image."
 msgstr ""
@@ -157,6 +173,10 @@ msgstr ""
 
 #: aiosend.types.check.Check.get_image:4 of
 msgid "check image url."
+msgstr ""
+
+#: ../../client/shortcuts.rst:36
+msgid "Poll objects"
 msgstr ""
 
 #: aiosend.types.check.Check.poll:1 of
@@ -185,5 +205,9 @@ msgstr ""
 msgid ""
 "Use this method to check the status of the invoice until the timeout "
 "expires."
+msgstr ""
+
+#: ../../client/shortcuts.rst:42
+msgid "Usage examples"
 msgstr ""
 

@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-20 19:36+0300\n"
+"POT-Creation-Date: 2025-03-31 09:34+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -124,6 +125,30 @@ msgstr ""
 msgid ":class:`aiosend.types.Invoice` object."
 msgstr ""
 
+#: aiosend.tools.get_check.GetCheck.get_check:1 of
+msgid "Get exactly one check or none."
+msgstr ""
+
+#: aiosend.tools.get_check.GetCheck.get_check:3 of
+msgid "Wrapper for :class:`aiosend.CryptoPay.get_checks`"
+msgstr ""
+
+#: aiosend.tools.get_check.GetCheck.get_check:5 of
+msgid ""
+"Use this method to update status of an existing check object or to get "
+"this object by passing the check id."
+msgstr ""
+
+#: aiosend.tools.get_check.GetCheck.get_check:8 of
+msgid ""
+":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~aiosend.types.check.Check\\`"
+" \\| \\:py\\:obj\\:\\`None\\``"
+msgstr ""
+
+#: aiosend.tools.get_check.GetCheck.get_check:9 of
+msgid ":class:`aiosend.types.Check` object."
+msgstr ""
+
 #: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:1 of
 msgid "Delete all checks."
 msgstr ""
@@ -172,10 +197,4 @@ msgstr ""
 #: aiosend.tools.get_rates_image.GetRatesImage.get_rates_image:6 of
 msgid "rates image url."
 msgstr ""
-
-#~ msgid ":class:`Balance` on success."
-#~ msgstr ""
-
-#~ msgid ":class:`Balacne` on success."
-#~ msgstr ""
 

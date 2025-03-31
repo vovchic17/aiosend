@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-28 11:59+0300\n"
+"POT-Creation-Date: 2025-03-31 09:34+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -20,11 +20,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../events/polling_config.rst:4
+#: ../../events/polling_config.rst:2
 msgid "Polling configuration"
 msgstr ""
 
-#: ../../events/polling_config.rst:5
+#: ../../events/polling_config.rst:3
 msgid "You can configure your own polling configuration."
 msgstr ""
 

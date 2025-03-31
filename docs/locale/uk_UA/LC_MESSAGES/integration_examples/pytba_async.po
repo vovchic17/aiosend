@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-12 14:38+0300\n"
+"POT-Creation-Date: 2025-03-31 09:34+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -27,9 +28,9 @@ msgstr ""
 msgid ""
 "Usage example with async `pyTelegramBotAPI "
 "<https://pytba.readthedocs.io/en/latest/>`_"
-msgstr "Зразок використання з асинхронним `pyTelegramBotAPI "
-"<https://pytba.readthedocs.io/en/latest/>`_"
+msgstr ""
 
 #: ../../integration_examples/pytba_async.rst:12
 msgid "Preview"
-msgstr "Попередній перегляд"
+msgstr ""
+

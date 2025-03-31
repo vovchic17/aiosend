@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-28 11:59+0300\n"
+"POT-Creation-Date: 2025-03-31 09:34+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -22,5 +22,73 @@ msgstr ""
 
 #: ../../events/filters.rst:3
 msgid "Filters"
+msgstr ""
+
+#: ../../events/filters.rst:5
+msgid ""
+"**Filters** are needed for routing updates to the specific handler. "
+":class:`WebhookManager <aiosend.webhook.WebhookManager>` and "
+":class:`PollingManager <aiosend.polling.PollingManager>` will check if "
+"the handler is suitable for the update. Once a handler with a suitable "
+"set of filters is found, searching of handler will be stopped."
+msgstr ""
+
+#: ../../events/filters.rst:13
+msgid "Filters can be:"
+msgstr ""
+
+#: ../../events/filters.rst:14
+msgid "asynchronous function"
+msgstr ""
+
+#: ../../events/filters.rst:15
+msgid "synchronous function"
+msgstr ""
+
+#: ../../events/filters.rst:16
+msgid "lambda function"
+msgstr ""
+
+#: ../../events/filters.rst:17
+msgid ""
+"instance of `MagicFilter "
+"<https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html"
+"#magic-filters>`_"
+msgstr ""
+
+#: ../../events/filters.rst:20
+msgid "Usage example"
+msgstr ""
+
+#: ../../events/filters.rst:21
+msgid "For example, you can create a couple of invoices and poll them like that"
+msgstr ""
+
+#: ../../events/filters.rst:45
+msgid "Magic filter"
+msgstr ""
+
+#: ../../events/filters.rst:61
+msgid "Function filter"
+msgstr ""
+
+#: ../../events/filters.rst:63
+msgid "You can use either :code:`def`, :code:`async def` or :code:`lambda`"
+msgstr ""
+
+#: ../../events/filters.rst:82
+msgid "Get filter result as handler argument"
+msgstr ""
+
+#: ../../events/filters.rst:84
+msgid ""
+"You can use `aiogram 3.x magic filter's "
+"<https://docs.aiogram.dev/en/dev-3.x/dispatcher/filters/magic_filters.html"
+"#get-filter-result-as-handler-argument>`_ :code:`as_` method to get "
+"filter result as handler argument"
+msgstr ""
+
+#: ../../events/filters.rst:96
+msgid "You can also return context data from function filters like that"
 msgstr ""
 

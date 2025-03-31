@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-12 14:38+0300\n"
+"POT-Creation-Date: 2025-03-31 09:34+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -21,47 +22,47 @@ msgstr ""
 
 #: ../../api/network.rst:3
 msgid "Network"
-msgstr "Мережа"
+msgstr ""
 
 #: ../../api/network.rst:5
 msgid ""
 "Network is a class allows you to build a URL to the API endpoints for "
 "specific network."
-msgstr "Клас Network дозволяє формувати URL для доступу до API конкретної мережі."
+msgstr ""
 
 #: ../../api/network.rst:7
 msgid ""
 "`Crypto Pay API <https://help.crypt.bot/crypto-pay-api>`_ has two "
 "networks:"
-msgstr "`Crypto Pay API <https://help.crypt.bot/crypto-pay-api>`_ має дві мережі "
+msgstr ""
 
 #: ../../api/network.rst:11
 msgid "The main network for transactions with real cryptocurrency."
-msgstr "Основна мережа для операцій зі справжньою криптовалютою"
+msgstr ""
 
 #: ../../api/network.rst:15
 msgid "The network for testing purposes in which currency has no real value."
-msgstr "Тестова мережа, де валюта не має реальної цінності."
+msgstr ""
 
 #: ../../api/network.rst:18
 msgid "Usage example"
-msgstr "Приклад використання"
+msgstr ""
 
 #: ../../api/network.rst:20
 msgid "You can create an instance of :class:`CryptoPay` client for both nets."
-msgstr "Ви можете створити об'єкт клієнта :class:`CryptoPay` для обох мереж."
+msgstr ""
 
 #: aiosend.client.network.Network:1 of
 msgid "Configuration for endpoints."
-msgstr "Налаштування кінцевих точок доступу."
+msgstr ""
 
 #: ../../docstring aiosend.client.network.Network.base:1 of
 msgid "Base URL"
-msgstr "Основна URL-адреса"
+msgstr ""
 
 #: aiosend.client.network.Network.get_check_image:1 of
 msgid "Return check image url."
-msgstr "Повертає URL-адресу зображення для чека."
+msgstr ""
 
 #: ../../api/network.rst
 msgid "Return type"
@@ -76,17 +77,17 @@ msgstr ""
 
 #: aiosend.client.network.Network.get_qr:1 of
 msgid "Return qr code link."
-msgstr "Повертає посилання на QR-код."
+msgstr ""
 
 #: aiosend.client.network.Network.get_rates_image:1 of
 msgid "Return rates image url."
-msgstr "Повертає URL зображення з курсами."
+msgstr ""
 
 #: ../../docstring aiosend.client.network.Network.name:1 of
 msgid "Net name"
-msgstr "Iм'я мережі"
+msgstr ""
 
 #: aiosend.client.network.Network.url:1 of
 msgid "Return URL for method."
-msgstr "Повертає URL для методу."
+msgstr ""
 

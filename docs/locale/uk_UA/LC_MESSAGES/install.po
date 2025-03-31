@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-28 11:59+0300\n"
+"POT-Creation-Date: 2025-03-31 09:34+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -21,60 +22,45 @@ msgstr ""
 
 #: ../../install.rst:3
 msgid "Installation"
-msgstr "Установка"
+msgstr ""
 
 #: ../../install.rst:6
-#, fuzzy
 msgid "via `pip <https://pip.pypa.io/>`_"
-msgstr "За допомогою `pip <https://pip.pypa.io/en/stable/>`_"
+msgstr ""
 
 #: ../../install.rst:7
-#, fuzzy
 msgid "from `PyPI <https://pypi.org/p/aiosend/>`_"
-msgstr "За допомогою `pip <https://pip.pypa.io/en/stable/>`_"
+msgstr ""
 
 #: ../../install.rst:13
 msgid "from `GitHub <https://github.com/vovchic17/aiosend>`_"
 msgstr ""
 
 #: ../../install.rst:20
-#, fuzzy
 msgid "via `uv <https://docs.astral.sh/uv/>`_"
-msgstr "За допомогою `uv <https://docs.astral.sh/uv/>`_"
+msgstr ""
 
 #: ../../install.rst:26
-#, fuzzy
 msgid "via `Poetry <https://python-poetry.org/>`_"
-msgstr "За допомогою `poetry <https://python-poetry.org/>`_"
+msgstr ""
 
 #: ../../install.rst:32
-#, fuzzy
 msgid "via `PDM <https://pdm-project.org/>`_"
-msgstr "За допомогою `poetry <https://python-poetry.org/>`_"
+msgstr ""
 
 #: ../../install.rst:38
-#, fuzzy
 msgid "via `pipx <https://pipx.pypa.io/>`_"
-msgstr "За допомогою `pip <https://pip.pypa.io/en/stable/>`_"
+msgstr ""
 
 #: ../../install.rst:44
-#, fuzzy
 msgid "via `Rye <https://rye.astral.sh/>`_"
-msgstr "За допомогою `uv <https://docs.astral.sh/uv/>`_"
+msgstr ""
 
 #: ../../install.rst:50
-#, fuzzy
 msgid "via `Conda <https://docs.conda.io/>`_"
-msgstr "За допомогою `uv <https://docs.astral.sh/uv/>`_"
+msgstr ""
 
 #: ../../install.rst:56
-#, fuzzy
 msgid "via `Pipenv <https://pipenv.pypa.io/>`_"
-msgstr "За допомогою `pip <https://pip.pypa.io/en/stable/>`_"
-
-#~ msgid "From PyPI"
-#~ msgstr "З PyPI"
-
-#~ msgid "From GitHub"
-#~ msgstr "З GitHub"
+msgstr ""
 

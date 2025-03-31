@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-12 14:38+0300\n"
+"POT-Creation-Date: 2025-03-31 09:34+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -21,8 +22,9 @@ msgstr ""
 
 #: ../../integration_examples/index.rst:3
 msgid "Integration examples"
-msgstr "Зразки інтеграцій"
+msgstr ""
 
 #: ../../integration_examples/index.rst:5
 msgid "Examples of usage with libraries are presented here."
-msgstr "Тут представлені зразки використання з різними бібліотеками"
+msgstr ""
+

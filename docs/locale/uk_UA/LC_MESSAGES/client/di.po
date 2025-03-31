@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-28 11:59+0300\n"
+"POT-Creation-Date: 2025-03-31 09:34+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -22,5 +22,16 @@ msgstr ""
 
 #: ../../client/di.rst:3
 msgid "Dependency Injection"
+msgstr ""
+
+#: ../../client/di.rst:5
+msgid ""
+"**Dependency injection** is a mechanism that allows you to make the "
+"program more flexible, adaptable, and extensible by decoupling the usage "
+"of an object from its creation."
+msgstr ""
+
+#: ../../client/di.rst:9
+msgid "Example"
 msgstr ""
 
