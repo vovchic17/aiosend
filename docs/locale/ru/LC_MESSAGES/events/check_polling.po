@@ -33,7 +33,7 @@ msgid ""
 "polling uses the :attr:`/getChecks <aiosend.CryptoPay.get_invoices>` "
 "method."
 msgstr ""
-"Поллинг - это метод получения уведомлений путём периодической отправки "
+"Поллинг - это метод получения обновлений путём периодической отправки "
 "запросов. После того, как :attr:`статус чека "
 "<aiosend.types.Check.status>` будет изменён на :attr:`ACTIVATED "
 "<aiosend.enums.CheckStatus.ACTIVATED>`, :attr:`поллинг менеджер "
@@ -66,9 +66,8 @@ msgstr ""
 "секунд (5 минут)**."
 
 #: ../../events/check_polling.rst:24
-#, fuzzy
 msgid ":doc:`You can change the polling configuration. <polling_config>`"
-msgstr ":ref:`Вы можете изменять конфигурацию поллинга <PollingConfigAnchor>`"
+msgstr ":doc:`Вы можете изменять конфигурацию поллинга <polling_config>`"
 
 #: aiosend.polling.check.CheckPollingManager.check_polling:1 of
 msgid "Register a handler for polling check updates."
