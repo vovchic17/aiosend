@@ -77,3 +77,32 @@ You can use either :code:`def`, :code:`async def` or :code:`lambda`
     @cp.invoice_polling(filter2, lambda inv: inv.amount == 1)
     async def handler2(invoice: Invoice) -> None:
         print(f"paid {invoice.amount} {invoice.asset} for product2")
+
+Get filter result as handler argument
+-------------------------------------
+
+You can use `aiogram 3.x magic filter's
+<https://docs.aiogram.dev/en/dev-3.x/dispatcher/filters/magic_filters.html#get-filter-result-as-handler-argument>`_
+:code:`as_` method to get filter result as handler argument
+
+.. code-block:: python
+
+    from aiogram import F
+
+    @cp.invoice_polling(F.payload.as_("payload"))
+    async def handler1(invoice: Invoice, payload: str) -> None:
+        print(f"paid #{invoice.invoice_id} paylaod: {payload}")
+
+You can also return context data from function filters like that
+
+.. code-block:: python
+
+    def myfilter(invoice: Invoice) -> bool | dict[str, object]:
+        if invoice.payload is None:
+            return False
+        return {"payload": invoice.payload}
+        
+
+    @cp.invoice_polling(myfilter)
+    async def handler1(invoice: Invoice, payload: str) -> None:
+        print(f"paid #{invoice.invoice_id} paylaod: {payload}")

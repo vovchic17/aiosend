@@ -26,7 +26,8 @@
 .k,
 .kn,
 .kc,
-.nb {
+.nb,
+.ow {
     color: var(--code_color1) !important;
 }
 
