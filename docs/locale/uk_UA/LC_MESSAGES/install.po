@@ -54,7 +54,7 @@ msgstr "за допомогою `pipx <https://pipx.pypa.io/>`_"
 
 #: ../../install.rst:44
 msgid "via `Rye <https://rye.astral.sh/>`_"
-msgstr "за допомогою `Rye <https://rye.astral.sh/>`"
+msgstr "за допомогою `Rye <https://rye.astral.sh/>`_"
 
 #: ../../install.rst:50
 msgid "via `Conda <https://docs.conda.io/>`_"
