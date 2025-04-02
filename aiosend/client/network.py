@@ -39,6 +39,8 @@ class Network:
             asset = asset.value
         if isinstance(fiat, Fiat):
             fiat = fiat.value
+        asset_amount = round(asset_amount, 3)
+        fiat_amount = round(fiat_amount, 3)
         return (
             "https://imggen.send.tg/checks/image?"
             f"asset={asset}"
