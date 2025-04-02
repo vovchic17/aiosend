@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../api/errors.rst:3
 msgid "Errors"
-msgstr ""
+msgstr "Винятки"
 
 #: aiosend.exceptions.APIError:1 aiosend.exceptions.DeserializationError:1
 #: aiosend.exceptions.MethodValuesError:1
@@ -32,7 +31,7 @@ msgstr ""
 
 #: aiosend.exceptions.APIError:1 of
 msgid "Exception for API errors."
-msgstr ""
+msgstr "Виняток для помилок API."
 
 #: aiosend.exceptions.CryptoPayError:1 of
 msgid "Bases: :py:class:`Exception`"
@@ -40,17 +39,17 @@ msgstr ""
 
 #: aiosend.exceptions.CryptoPayError:1 of
 msgid "Base class for exceptions in this module."
-msgstr ""
+msgstr "Базовий клас усіх винятків цього модуля."
 
 #: aiosend.exceptions.DeserializationError:1 of
 msgid "Exception for deserialization errors."
-msgstr ""
+msgstr "Виняток для помилок десеріалізації."
 
 #: aiosend.exceptions.MethodValuesError:1 of
 msgid "Exception raised when method values are invalid."
-msgstr ""
+msgstr "Виняток, що викликається при невірному наборі значень методу."
 
 #: aiosend.exceptions.WrongNetworkError:1 of
 msgid "Exception raised when the token is served by different network."
-msgstr ""
+msgstr "Виняток, що викликається коли токен належить іншої мережі."
 

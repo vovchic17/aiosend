@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
@@ -26,21 +25,20 @@ msgstr ""
 
 #: ../../api/index.rst:5
 msgid "**Methods** - official Crypto Pay API methods."
-msgstr ""
+msgstr "**Методи** - офіційні методи Crypto Pay API."
 
 #: ../../api/index.rst:6
 msgid "**Types** - official Crypto Pay API types."
-msgstr ""
+msgstr "**Типи** - офіційні типи Crypto Pay API."
 
 #: ../../api/index.rst:7
 msgid "**Enums** - enumerable parameter values of methods."
-msgstr ""
+msgstr "**Перерахування** - значення параметрів методів, що перераховуються."
 
 #: ../../api/index.rst:8
 msgid "**Network** - API networks."
-msgstr ""
+msgstr "**Мережа** - мережі API."
 
 #: ../../api/index.rst:9
 msgid "**Errors** - error models."
-msgstr ""
-
+msgstr "**Винятки** - моделі винятків."

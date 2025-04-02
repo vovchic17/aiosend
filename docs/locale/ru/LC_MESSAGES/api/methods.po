@@ -82,11 +82,11 @@ msgstr "Источник: https://help.crypt.bot/crypto-pay-api#createInvoice"
 
 #: ../../api/methods.rst
 msgid "Parameters"
-msgstr "Параметры"
+msgstr ""
 
 #: aiosend.methods.create_invoice.CreateInvoice.create_invoice:9 of
 msgid "Amount of the invoice in float."
-msgstr "Сумма счёта в формате числа с плавающей точкой"
+msgstr "Сумма счёта в формате числа с плавающей точкой."
 
 #: aiosend.methods.create_invoice.CreateInvoice.create_invoice:11 of
 msgid ""
@@ -200,7 +200,7 @@ msgid ""
 ":code:`True` on success."
 msgstr ""
 "Используйте этот метод для удаления счетов, созданных вашим приложением. "
-"Возвращает :code:`True` в случае успеха."
+"Возвращает :code:`True` в случае успеха."  
 
 #: aiosend.methods.delete_invoice.DeleteInvoice.delete_invoice:6 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#hwjK"
