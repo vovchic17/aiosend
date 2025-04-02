@@ -22,45 +22,45 @@ msgstr ""
 
 #: ../../install.rst:3
 msgid "Installation"
-msgstr ""
+msgstr "Установка"
 
 #: ../../install.rst:6
 msgid "via `pip <https://pip.pypa.io/>`_"
-msgstr ""
+msgstr "за допомогою `pip <https://pip.pypa.io/>`_"
 
 #: ../../install.rst:7
 msgid "from `PyPI <https://pypi.org/p/aiosend/>`_"
-msgstr ""
+msgstr "з `PyPI <https://pypi.org/p/aiosend/>`_"
 
 #: ../../install.rst:13
 msgid "from `GitHub <https://github.com/vovchic17/aiosend>`_"
-msgstr ""
+msgstr "з `GitHub <https://github.com/vovchic17/aiosend>`_"
 
 #: ../../install.rst:20
 msgid "via `uv <https://docs.astral.sh/uv/>`_"
-msgstr ""
+msgstr "за допомогою `uv <https://docs.astral.sh/uv/>`_"
 
 #: ../../install.rst:26
 msgid "via `Poetry <https://python-poetry.org/>`_"
-msgstr ""
+msgstr "за допомогою `Poetry <https://python-poetry.org/>`_"
 
 #: ../../install.rst:32
 msgid "via `PDM <https://pdm-project.org/>`_"
-msgstr ""
+msgstr "за допомогою `PDM <https://pdm-project.org/>`_"
 
 #: ../../install.rst:38
 msgid "via `pipx <https://pipx.pypa.io/>`_"
-msgstr ""
+msgstr "за допомогою `pipx <https://pipx.pypa.io/>`_"
 
 #: ../../install.rst:44
 msgid "via `Rye <https://rye.astral.sh/>`_"
-msgstr ""
+msgstr "за допомогою `Rye <https://rye.astral.sh/>`"
 
 #: ../../install.rst:50
 msgid "via `Conda <https://docs.conda.io/>`_"
-msgstr ""
+msgstr "за допомогою `Conda <https://docs.conda.io/>`_"
 
 #: ../../install.rst:56
 msgid "via `Pipenv <https://pipenv.pypa.io/>`_"
-msgstr ""
+msgstr "за допомогою `Pipenv <https://pipenv.pypa.io/>`_"
 
