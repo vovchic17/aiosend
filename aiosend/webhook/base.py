@@ -8,14 +8,14 @@ from magic_filter.magic import MagicFilter
 
 from aiosend import loggers
 from aiosend.exceptions import CryptoPayError
-from aiosend.handler import HandlerObject
+from aiosend._handler import HandlerObject
 from aiosend.types import Update
 
 if TYPE_CHECKING:
     from collections.abc import Awaitable, Callable, Mapping
 
     import aiosend
-    from aiosend.handler import CallbackType
+    from aiosend._handler import CallbackType
 
     WebServerHandler = Callable[[dict[str, Any], Mapping[str, str]], Awaitable]
 

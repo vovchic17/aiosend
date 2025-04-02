@@ -6,7 +6,7 @@ from aiosend.enums import Asset, Fiat
 if TYPE_CHECKING:
     from typing import Literal
 
-    from aiosend.methods import CryptoPayMethod
+    from aiosend._methods import CryptoPayMethod
 
 
 @dataclass(frozen=True)

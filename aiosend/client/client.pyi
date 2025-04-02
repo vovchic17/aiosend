@@ -25,8 +25,8 @@ from aiosend.enums import (
     LiteralPaidBtnName,
     PaidBtnName,
 )
-from aiosend.handler import CallbackType, HandlerObject
-from aiosend.methods import CryptoPayMethod
+from aiosend._handler import CallbackType, HandlerObject
+from aiosend._methods import CryptoPayMethod
 from aiosend.polling import PollingConfig
 from aiosend.polling.base import PollingTask
 from aiosend.types import (

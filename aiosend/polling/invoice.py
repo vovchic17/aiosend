@@ -2,7 +2,7 @@ from typing import TYPE_CHECKING, Any
 
 from aiosend import loggers
 from aiosend.enums import InvoiceStatus
-from aiosend.handler import HandlerObject
+from aiosend._handler import HandlerObject
 
 from .base import BasePollingManager, PollingTask
 
@@ -10,7 +10,7 @@ if TYPE_CHECKING:
     from collections.abc import Callable
 
     import aiosend
-    from aiosend.handler import CallbackType
+    from aiosend._handler import CallbackType
     from aiosend.types import Invoice
 
 

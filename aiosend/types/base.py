@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING, Annotated, Generic, TypeVar
 from pydantic import BaseModel, ConfigDict, PrivateAttr
 from pydantic.functional_serializers import PlainSerializer
 
-from aiosend.utils import serialize_list
+from aiosend._utils import serialize_list
 
 if TYPE_CHECKING:
     from aiosend import CryptoPay

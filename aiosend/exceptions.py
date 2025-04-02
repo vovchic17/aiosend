@@ -1,7 +1,7 @@
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from aiosend.methods import CryptoPayMethod
+    from aiosend._methods import CryptoPayMethod
     from aiosend.types import Error
 
 

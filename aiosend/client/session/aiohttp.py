@@ -12,7 +12,7 @@ from .base import BaseSession
 if TYPE_CHECKING:
     import aiosend
     from aiosend.client import Network
-    from aiosend.methods import CryptoPayMethod
+    from aiosend._methods import CryptoPayMethod
     from aiosend.types import _CryptoPayType
 
 

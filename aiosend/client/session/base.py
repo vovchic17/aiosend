@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING, cast
 from pydantic import ValidationError
 
 from aiosend.exceptions import APIError, DeserializationError
-from aiosend.methods import (
+from aiosend._methods import (
     CryptoPayMethod,
 )
 from aiosend.types import (
