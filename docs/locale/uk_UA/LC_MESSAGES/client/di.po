@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 09:34+0300\n"
+"POT-Creation-Date: 2025-04-02 17:50+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../client/di.rst:3
 msgid "Dependency Injection"
-msgstr ""
+msgstr "Введення залежностей"
 
 #: ../../client/di.rst:5
 msgid ""
@@ -30,8 +29,11 @@ msgid ""
 "program more flexible, adaptable, and extensible by decoupling the usage "
 "of an object from its creation."
 msgstr ""
+"Введення залежностей це механізм, який дозволяє зробити програму більш "
+"гнучкою, адаптивною та розширюваною шляхом розділення використання "
+"об'єкта від його створення."
 
 #: ../../client/di.rst:9
-msgid "Example"
-msgstr ""
+msgid "Usage example"
+msgstr "Зразок використання"
 

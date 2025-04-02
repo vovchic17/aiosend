@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
@@ -42,27 +41,31 @@ msgstr ""
 
 #: ../../index.rst:18
 msgid "Features"
-msgstr ""
+msgstr "Особливості"
 
 #: ../../index.rst:19
 msgid "supports both synchronous and asynchronous use"
-msgstr ""
+msgstr "підтримує як синхронне, так і асинхронне використання"
 
 #: ../../index.rst:20
 msgid ""
 "provides :doc:`invoice polling <events/invoice_polling>` and :doc:`check "
 "polling <events/check_polling>`"
 msgstr ""
+"надає :doc:`поллінг рахунків <events/invoice_polling>` i :doc:`полінг "
+"чеків <events/check_polling>`"
 
 #: ../../index.rst:21
 msgid "provides :doc:`webhook handling <events/webhook>`"
-msgstr ""
+msgstr "надає :doc:`обробку вебхуків <events/webhook>`"
 
 #: ../../index.rst:22
 msgid ""
 "fully typed, has :doc:`literal type hints and warnings "
 "<client/hints_warns>`"
 msgstr ""
+"повністю типізований, має :doc:`literal підказки та "
+"попередження <client/hints_warns>`"
 
 #: ../../index.rst:23
 msgid ""
@@ -70,24 +73,27 @@ msgid ""
 "<https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html"
 "#magic-filters>`_"
 msgstr ""
+"використовує потужні `магічні фільтри з aiogram 3.x "
+"<https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html"
+"#magic-filters>`_"
 
 #: ../../index.rst:24
 msgid "provides :doc:`dependency injection <client/di>`"
-msgstr ""
+msgstr "надає :doc:`впровадження залежностей`"
 
 #: ../../index.rst:25
 msgid "provides :doc:`additional tool methods <client/tools>`"
-msgstr ""
+msgstr "надає :doc:`додаткові функції <client/tools>`"
 
 #: ../../index.rst:26
 msgid "provides :doc:`shortcut methods for types <client/shortcuts>`"
-msgstr ""
+msgstr "надає :doc:`скорочені методи для типів <client/shortcuts>`"
 
 #: ../../index.rst:29
 msgid "Quick start"
-msgstr ""
+msgstr "Швидкий старт"
 
 #: ../../index.rst:34
 msgid "Contents"
-msgstr ""
+msgstr "Зміст"
 
