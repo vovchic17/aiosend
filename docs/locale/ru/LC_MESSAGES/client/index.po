@@ -29,7 +29,7 @@ msgid ""
 "<https://help.crypt.bot/crypto-pay-api>`_."
 msgstr ""
 "aiosend это обёртка для `Crypto Pay API <https://help.crypt.bot/crypto-"
-"pay-api>`_ на |python| python"
+"pay-api>`_ на |python| python."
 
 #: ../../client/index.rst:11
 msgid "python"
@@ -37,11 +37,11 @@ msgstr ""
 
 #: ../../client/index.rst:7
 msgid "**Tools** - additional functionality."
-msgstr "**Инструменты** - дополнительный функционал"
+msgstr "**Инструменты** - дополнительный функционал."
 
 #: ../../client/index.rst:8
 msgid "**Shortcut methods** - shortcut type methods."
-msgstr "**Методы** - официальные Crypto Pay API методы"
+msgstr "**Методы** - официальные Crypto Pay API методы."
 
 #: ../../client/index.rst:9
 msgid "**Session** - http session implementation."

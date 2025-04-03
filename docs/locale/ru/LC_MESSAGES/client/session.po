@@ -39,7 +39,7 @@ msgstr ""
 
 #: aiosend.client.session.aiohttp.AiohttpSession:1 of
 msgid "Bases: :py:class:`~aiosend.client.session.base.BaseSession`"
-msgstr "Базовые классы: :py:class:`~aiosend.client.session.base.BaseSession`"
+msgstr ""
 
 #: aiosend.client.session.aiohttp.AiohttpSession:1 of
 msgid "Http session based on aiohttp."
@@ -68,7 +68,7 @@ msgstr ""
 
 #: aiosend.client.session.base.BaseSession:1 of
 msgid "Bases: :py:class:`~abc.ABC`"
-msgstr "Базовые классы: :py:class:`~abc.ABC`"
+msgstr ""
 
 #: aiosend.client.session.base.BaseSession:1 of
 msgid "Abstract session class."

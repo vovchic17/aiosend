@@ -162,7 +162,6 @@ msgid "Get invoice qr code."
 msgstr "Получить qr код счёта."
 
 #: aiosend.types.Invoice.qr:3 of
-#, fuzzy
 msgid "invoice qr code."
 msgstr "URL qr кода счёта."
 

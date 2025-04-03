@@ -53,7 +53,7 @@ msgstr ""
 
 #: ../../client/tools.rst
 msgid "Returns"
-msgstr "Результат"
+msgstr ""
 
 #: aiosend.tools.exchange.Exchange.exchange:9 of
 msgid ":class:`float` on success."
@@ -62,7 +62,7 @@ msgstr ":class:`float` в случае успеха."
 #: aiosend.tools.exchange.Exchange.exchange
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset of
 msgid "raise"
-msgstr "Исключение"
+msgstr ""
 
 #: aiosend.tools.exchange.Exchange.exchange:10 of
 msgid ":class:`CryptoPayError` if there is no such exchange rate."
@@ -100,11 +100,11 @@ msgstr ":class:`Balance` в случае успеха."
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:9
 #: of
 msgid ":class:`CryptoPayError` if there is no such asset."
-msgstr ":class:`CryptoPayError` если нет такого актива"
+msgstr ":class:`CryptoPayError` если нет такого актива."
 
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:1 of
 msgid "Get exactly one invoice or none."
-msgstr "Получение или только одного счёта, или ничего."
+msgstr "Получение ровно одного счёта, или ничего."
 
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:3 of
 msgid "Wrapper for :class:`aiosend.CryptoPay.get_invoices`"
@@ -130,7 +130,7 @@ msgstr "Объект :class:`aiosend.types.Invoice`."
 
 #: aiosend.tools.get_check.GetCheck.get_check:1 of
 msgid "Get exactly one check or none."
-msgstr "Получение или только одного чека, или ничего."
+msgstr "Получение ровно одного чека, или ничего."
 
 #: aiosend.tools.get_check.GetCheck.get_check:3 of
 msgid "Wrapper for :class:`aiosend.CryptoPay.get_checks`"
@@ -210,10 +210,4 @@ msgstr ""
 #: aiosend.tools.get_rates_image.GetRatesImage.get_rates_image:6 of
 msgid "rates image url."
 msgstr "Ссылка на изображение курса."
-
-#~ msgid "Тип результата"
-#~ msgstr ""
-
-#~ msgid "Результат"
-#~ msgstr ""
 
