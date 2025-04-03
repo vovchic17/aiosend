@@ -1,8 +1,8 @@
 from typing import TYPE_CHECKING, Any
 
 from aiosend import loggers
-from aiosend.enums import CheckStatus
 from aiosend._handler import HandlerObject
+from aiosend.enums import CheckStatus
 
 from .base import BasePollingManager, PollingTask
 

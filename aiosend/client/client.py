@@ -1,19 +1,19 @@
 from typing import TYPE_CHECKING
 
 from aiosend import loggers
+from aiosend._methods import Methods
+from aiosend._utils import PropagatingThread
 from aiosend.client.network import MAINNET, TESTNET
 from aiosend.exceptions import APIError, WrongNetworkError
-from aiosend._methods import Methods
 from aiosend.polling import PollingConfig, PollingManager
 from aiosend.tools import Tools
-from aiosend._utils import PropagatingThread
 from aiosend.webhook import RequestHandler
 
 from .session import AiohttpSession
 
 if TYPE_CHECKING:
-    from aiosend.client import Network
     from aiosend._methods import CryptoPayMethod
+    from aiosend.client import Network
     from aiosend.types import App, _CryptoPayType
     from aiosend.webhook import _APP, WebhookManager
 

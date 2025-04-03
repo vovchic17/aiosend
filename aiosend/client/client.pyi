@@ -10,6 +10,8 @@ from typing import Any, TypeVar
 
 from typing_extensions import Self
 
+from aiosend._handler import CallbackType, HandlerObject
+from aiosend._methods import CryptoPayMethod
 from aiosend.client import Network
 from aiosend.enums import (
     Asset,
@@ -25,8 +27,6 @@ from aiosend.enums import (
     LiteralPaidBtnName,
     PaidBtnName,
 )
-from aiosend._handler import CallbackType, HandlerObject
-from aiosend._methods import CryptoPayMethod
 from aiosend.polling import PollingConfig
 from aiosend.polling.base import PollingTask
 from aiosend.types import (

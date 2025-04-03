@@ -11,8 +11,8 @@ from .base import BaseSession
 
 if TYPE_CHECKING:
     import aiosend
-    from aiosend.client import Network
     from aiosend._methods import CryptoPayMethod
+    from aiosend.client import Network
     from aiosend.types import _CryptoPayType
 
 

@@ -3,10 +3,10 @@ from typing import TYPE_CHECKING, cast
 
 from pydantic import ValidationError
 
-from aiosend.exceptions import APIError, DeserializationError
 from aiosend._methods import (
     CryptoPayMethod,
 )
+from aiosend.exceptions import APIError, DeserializationError
 from aiosend.types import (
     ItemsList,
     Response,

@@ -1,5 +1,5 @@
-from aiosend.client import MAINNET, TESTNET
 from aiosend._utils.sync import CryptoPay
+from aiosend.client import MAINNET, TESTNET
 
 from .__meta__ import __api_version__, __version__
 

@@ -7,8 +7,8 @@ from typing import TYPE_CHECKING, Any, Generic, TypeVar
 from magic_filter.magic import MagicFilter
 
 from aiosend import loggers
-from aiosend.exceptions import CryptoPayError
 from aiosend._handler import HandlerObject
+from aiosend.exceptions import CryptoPayError
 from aiosend.types import Update
 
 if TYPE_CHECKING:
