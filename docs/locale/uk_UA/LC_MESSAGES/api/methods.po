@@ -86,7 +86,7 @@ msgstr ""
 
 #: aiosend.methods.create_invoice.CreateInvoice.create_invoice:9 of
 msgid "Amount of the invoice in float."
-msgstr "Сума рахунку у форматі числа з плаваючою точкою."
+msgstr "Сума рахунку у форматі речового числа."
 
 #: aiosend.methods.create_invoice.CreateInvoice.create_invoice:11 of
 msgid ""
@@ -253,7 +253,7 @@ msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#createCheck"
 
 #: aiosend.methods.create_check.CreateCheck.create_check:9 of
 msgid "Amount of the check in float."
-msgstr "Сума чека у форматі числа з плаваючою точкою."
+msgstr "Сума чека у форматі речового числа."
 
 #: aiosend.methods.create_check.CreateCheck.create_check:11
 #: aiosend.methods.transfer.Transfer.transfer:12 of
@@ -347,7 +347,7 @@ msgid ""
 "Amount of the transfer in float. The minimum and maximum amount limits "
 "for each of the supported assets roughly correspond to 1-25000 USD."
 msgstr ""
-"Сума перекладу у форматі числа з плаваючою точкою. Мінімальні та "
+"Сума перекладу у форматі речового числа. Мінімальні та "
 "максимальні обмеження суми для кожного з активів, що підтримуються "
 "приблизно відповідають 1-25000 USD."
 

@@ -39,7 +39,7 @@ msgstr "Этот объект представляет приложение `Cry
 
 #: ../../docstring aiosend.types.App.app_id:1 of
 msgid "Crypto Pay app id."
-msgstr "id приложения Crypto Pay"
+msgstr "id приложения Crypto Pay."
 
 #: ../../docstring aiosend.types.App.name:1 of
 msgid "Crypto Pay app name."
@@ -187,7 +187,7 @@ msgstr "Название валюты."
 
 #: ../../docstring aiosend.types.Currency.url:1 of
 msgid "Currency url."
-msgstr "url валюты."
+msgstr "URL валюты."
 
 #: aiosend.types.base.Error:1 of
 msgid "API error model."

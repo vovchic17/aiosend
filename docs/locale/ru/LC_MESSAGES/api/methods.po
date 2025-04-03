@@ -86,7 +86,7 @@ msgstr ""
 
 #: aiosend.methods.create_invoice.CreateInvoice.create_invoice:9 of
 msgid "Amount of the invoice in float."
-msgstr "Сумма счёта в формате числа с плавающей точкой."
+msgstr "Сумма счёта в формате вещественного числа."
 
 #: aiosend.methods.create_invoice.CreateInvoice.create_invoice:11 of
 msgid ""
@@ -253,7 +253,7 @@ msgstr "Источник: https://help.crypt.bot/crypto-pay-api#createCheck"
 
 #: aiosend.methods.create_check.CreateCheck.create_check:9 of
 msgid "Amount of the check in float."
-msgstr "Сумма чека в формате числа с плавающей точкой."
+msgstr "Сумма чека в формате вещественного числа."
 
 #: aiosend.methods.create_check.CreateCheck.create_check:11
 #: aiosend.methods.transfer.Transfer.transfer:12 of
@@ -347,7 +347,7 @@ msgid ""
 "Amount of the transfer in float. The minimum and maximum amount limits "
 "for each of the supported assets roughly correspond to 1-25000 USD."
 msgstr ""
-"Сумма перевода в формате числа с плавающей точкой. Минимальные и "
+"Сумма перевода в формате вещественного числа. Минимальные и "
 "максимальные ограничения суммы для каждого из поддерживаемых активов "
 "примерно соответствуют 1-25000 USD."
 
