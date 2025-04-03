@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
@@ -22,25 +21,27 @@ msgstr ""
 
 #: ../../client/tools.rst:3
 msgid "Tools"
-msgstr ""
+msgstr "Інструменти"
 
 #: ../../client/tools.rst:5
 msgid "Additional functionality."
-msgstr ""
+msgstr "Додаткові функції"
 
 #: aiosend.tools.exchange.Exchange.exchange:1 of
 msgid "Exchange currency."
-msgstr ""
+msgstr "Обмінний курс валюти"
 
 #: aiosend.tools.exchange.Exchange.exchange:3 of
 msgid "Wrapper for :class:`aiosend.CryptoPay.get_exchange_rates`."
-msgstr ""
+msgstr "Обгортка для :class:`aiosend.CryptoPay.get_exchange_rates`."
 
 #: aiosend.tools.exchange.Exchange.exchange:5 of
 msgid ""
 "Use this method to get the equivalent amount in the target currency for "
 "the source currency."
 msgstr ""
+"Використовуйте цей метод для отримання еквівалентної суми цільової валюти"
+"для вихідної"
 
 #: ../../client/tools.rst
 msgid "Return type"
@@ -56,7 +57,7 @@ msgstr ""
 
 #: aiosend.tools.exchange.Exchange.exchange:9 of
 msgid ":class:`float` on success."
-msgstr ""
+msgstr ":class:`float` у разі успіху"
 
 #: aiosend.tools.exchange.Exchange.exchange
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset of
@@ -69,22 +70,22 @@ msgstr ""
 
 #: ../../client/tools.rst:9 ../../client/tools.rst:15 ../../client/tools.rst:21
 msgid "Usage example"
-msgstr ""
+msgstr "Приклад використання"
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:1
 #: of
 msgid "Get the balance of a specific asset."
-msgstr ""
+msgstr "Отримання балансу зазначеного активу."
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:3
 #: of
 msgid "Wrapper for :class:`aiosend.CryptoPay.get_balance`."
-msgstr ""
+msgstr "Обгортка для :class:`aiosend.CryptoPay.get_balance`."
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:5
 #: of
 msgid "Use this method to get the balance of a specific asset."
-msgstr ""
+msgstr "Використовуйте цей метод для отримання балансу зазначеного активу."
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:7
 #: of
@@ -94,26 +95,28 @@ msgstr ""
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:8
 #: of
 msgid ":class:`Balance` on success."
-msgstr ""
+msgstr ":class:`Balance` у разі успіху."
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:9
 #: of
 msgid ":class:`CryptoPayError` if there is no such asset."
-msgstr ""
+msgstr ":class:`CryptoPayError` якщо немає такого активу."
 
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:1 of
 msgid "Get exactly one invoice or none."
-msgstr ""
+msgstr "Отримайте рівно один рахунок або жодного."
 
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:3 of
 msgid "Wrapper for :class:`aiosend.CryptoPay.get_invoices`"
-msgstr ""
+msgstr "Обгортка для :class:`aiosend.CryptoPay.get_invoices`"
 
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:5 of
 msgid ""
 "Use this method to update status of an existing invoice object or to get "
 "this object by passing the invoice id."
 msgstr ""
+"Використовуйте цей метод для оновлення статусу наявного об'єкта рахунку"
+" або отримання цього об'єкта, передаючи id рахунку."
 
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:8 of
 msgid ""
@@ -123,21 +126,23 @@ msgstr ""
 
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:9 of
 msgid ":class:`aiosend.types.Invoice` object."
-msgstr ""
+msgstr "Об'єкт :class:`aiosend.types.Invoice`."
 
 #: aiosend.tools.get_check.GetCheck.get_check:1 of
 msgid "Get exactly one check or none."
-msgstr ""
+msgstr "Отримання рівно одного чека, або нічого."
 
 #: aiosend.tools.get_check.GetCheck.get_check:3 of
 msgid "Wrapper for :class:`aiosend.CryptoPay.get_checks`"
-msgstr ""
+msgstr "Обгортка для :class:`aiosend.CryptoPay.get_checks`"
 
 #: aiosend.tools.get_check.GetCheck.get_check:5 of
 msgid ""
 "Use this method to update status of an existing check object or to get "
 "this object by passing the check id."
 msgstr ""
+"Використовуйте цей метод для оновлення статусу існуючого об'єкта чека"
+" або отримання цього об'єкта, передаючи id чека.""
 
 #: aiosend.tools.get_check.GetCheck.get_check:8 of
 msgid ""
@@ -147,21 +152,25 @@ msgstr ""
 
 #: aiosend.tools.get_check.GetCheck.get_check:9 of
 msgid ":class:`aiosend.types.Check` object."
-msgstr ""
+msgstr "Об'єкт: class: `aiosend.types.Check`."
 
 #: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:1 of
 msgid "Delete all checks."
-msgstr ""
+msgstr "Видалення всіх чеків."
 
 #: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:3 of
 msgid ""
 "Wrapper for :class:`aiosend.CryptoPay.get_checks` and "
 ":class:`aiosend.CryptoPay.delete_check`"
 msgstr ""
+"Обгортка для :class:`aiosend.CryptoPay.get_checks` І "
+":class:`aiosend.CryptoPay.delete_check`"
 
 #: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:6 of
 msgid "Use this method to delete all existing checks created by your app."
 msgstr ""
+"Використовуйте цей метод для видалення всіх існуючих чеків, створених"
+"вашим додатком."
 
 #: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:9
 #: aiosend.tools.delete_all_invoices.DeleteAllInvoices.delete_all_invoices:9 of
@@ -170,25 +179,29 @@ msgstr ""
 
 #: aiosend.tools.delete_all_invoices.DeleteAllInvoices.delete_all_invoices:1 of
 msgid "Delete all invoices."
-msgstr ""
+msgstr "Видалення всіх рахунків."
 
 #: aiosend.tools.delete_all_invoices.DeleteAllInvoices.delete_all_invoices:3 of
 msgid ""
 "Wrapper for :class:`aiosend.CryptoPay.get_invoices` and "
 ":class:`aiosend.CryptoPay.delete_invoice`"
 msgstr ""
+"Обгортка для :class:`aio send.CryptoPay.get_invoices` та "
+":class:`aiosend.CryptoPay.delete_invoice`"
 
 #: aiosend.tools.delete_all_invoices.DeleteAllInvoices.delete_all_invoices:6 of
 msgid "Use this method to delete all existing invoices created by your app."
 msgstr ""
+"Використовуйте цей метод для видалення всіх існуючих рахунків, створених"
+"вашим додатком"
 
 #: aiosend.tools.get_rates_image.GetRatesImage.get_rates_image:1 of
 msgid "Get rates image."
-msgstr ""
+msgstr "Отримання зображення курсу."
 
 #: aiosend.tools.get_rates_image.GetRatesImage.get_rates_image:3 of
 msgid "Use this method to get exchange rates image."
-msgstr ""
+msgstr "Використовуйте цей метод для отримання зображення обмінного курсу."
 
 #: aiosend.tools.get_rates_image.GetRatesImage.get_rates_image:5 of
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`str\\``"
@@ -196,5 +209,5 @@ msgstr ""
 
 #: aiosend.tools.get_rates_image.GetRatesImage.get_rates_image:6 of
 msgid "rates image url."
-msgstr ""
+msgstr "Посилання на зображення курсу."
 

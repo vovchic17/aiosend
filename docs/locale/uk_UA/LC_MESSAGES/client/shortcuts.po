@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../client/shortcuts.rst:5
 msgid "Shortcut methods"
-msgstr ""
+msgstr "Скорочені методи"
 
 #: ../../client/shortcuts.rst:7
 msgid ""
@@ -30,22 +29,25 @@ msgid ""
 "<MethodsAnchor>` and also provide additional functionality to the "
 "objects."
 msgstr ""
+"Ці методи спрощують використання стандартних :ref:`методів Crypto Pay"
+"API <MethodsAnchor>`, а також надають додатковий функціонал для"
+"об'єктів."
 
 #: ../../client/shortcuts.rst:11
 msgid "Updating objects"
-msgstr ""
+msgstr "Оновлення об'єктів"
 
 #: aiosend.types.balance.Balance.update:1 of
 msgid "Shortcut for method :class:`aiosend.CryptoPay.get_balance`."
-msgstr ""
+msgstr "Скорочення методу :class:`aiosend.CryptoPay.get_balance`."
 
 #: aiosend.types.balance.Balance.update:3 of
 msgid "Use this method to update balance object."
-msgstr ""
+msgstr "Використовуйте цей метод для оновлення об'єкта балансу."
 
 #: aiosend.types.balance.Balance.update:5 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#getBalance"
-msgstr ""
+msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#getBalance"
 
 #: ../../client/shortcuts.rst
 msgid "Return type"
@@ -65,57 +67,59 @@ msgstr ""
 
 #: aiosend.types.check.Check.update:1 of
 msgid "Shortcut for method :class:`aiosend.CryptoPay.get_checks`."
-msgstr ""
+msgstr "Скорочення методу :class:`aiosend.CryptoPay.get_checks`."
 
 #: aiosend.types.check.Check.update:3 of
 msgid "Use this method to update check object."
-msgstr ""
+msgstr "Використовуйте цей метод для оновлення об'єкта чека."
 
 #: aiosend.types.check.Check.update:5 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#getChecks"
-msgstr ""
+msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#getChecks"
 
 #: aiosend.types.exchange_rate.ExchangeRate.update:1 of
 msgid "Shortcut for method :class:`aiosend.CryptoPay.getExchangeRates`."
-msgstr ""
+msgstr "Скорочення методу :class:`aiosend.CryptoPay.getExchangeRates`."
 
 #: aiosend.types.exchange_rate.ExchangeRate.update:3 of
 msgid "Use this method to update ExchangeRate object."
-msgstr ""
+msgstr "Використовуйте цей метод для оновлення об'єкта ExchangeRate"
 
 #: aiosend.types.exchange_rate.ExchangeRate.update:5 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#getExchangeRates"
-msgstr ""
+msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#getExchangeRates"
 
 #: aiosend.types.invoice.Invoice.update:1 of
 msgid "Shortcut for method :class:`aiosend.CryptoPay.get_invoices`."
-msgstr ""
+msgstr "Скорочення методу :class:`aiosend.CryptoPay.get_invoices`."
 
 #: aiosend.types.invoice.Invoice.update:3 of
 msgid "Use this method to update invoice object."
-msgstr ""
+msgstr "Використовуйте цей метод для оновлення об'єкта рахунку."
 
 #: aiosend.types.invoice.Invoice.update:5 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#getInvoices"
-msgstr ""
+msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#getInvoices"
 
 #: ../../client/shortcuts.rst:19
 msgid "Deleting objects"
-msgstr ""
+msgstr "Видалення об'єктів"
 
 #: aiosend.types.check.Check.delete:1 of
 msgid "Shortcut for method :class:`aiosend.CryptoPay.delete_check`."
-msgstr ""
+msgstr "Скорочення методу :class:`aiosend.CryptoPay.delete_check`."
 
 #: aiosend.types.check.Check.delete:3 of
 msgid ""
 "Use this method to delete check created by your app. Returns :code:`True`"
 " on success."
 msgstr ""
+"Використовуйте цей метод для видалення чека, створеного вашою програмою."
+"Повертає :code:`True` у разі успіху."
 
 #: aiosend.types.check.Check.delete:6 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#deleteCheck"
-msgstr ""
+msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#deleteCheck"
 
 #: aiosend.types.check.Check.delete:8 aiosend.types.invoice.Invoice.delete:8 of
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`bool\\``"
@@ -123,49 +127,51 @@ msgstr ""
 
 #: aiosend.types.check.Check.delete:9 aiosend.types.invoice.Invoice.delete:9 of
 msgid ":code:`True` on success."
-msgstr ""
+msgstr ":code:`True` у разі успіху"
 
 #: aiosend.types.invoice.Invoice.delete:1 of
 msgid "Shortcut for method :class:`aiosend.CryptoPay.delete_invoice`."
-msgstr ""
+msgstr "Скорочення методу :class:`aiosend.CryptoPay.delete_invoice`."
 
 #: aiosend.types.invoice.Invoice.delete:3 of
 msgid ""
 "Use this method to delete invoice created by your app. Returns "
 ":code:`True` on success."
 msgstr ""
+"Використовуйте цей метод, щоб видалити рахунок, створений вашою програмою."
+"Повертає :code:`True` у разі успіху."
 
 #: aiosend.types.invoice.Invoice.delete:6 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#hwjK"
-msgstr ""
+msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#hwjK"
 
 #: ../../client/shortcuts.rst:25
 msgid "QR code of object"
-msgstr ""
+msgstr "QR код об'єкта"
 
 #: aiosend.types.Check.qr:1 of
 msgid "Get check qr code."
-msgstr ""
+msgstr "Отримати QR код чека."
 
 #: aiosend.types.Check.qr:3 of
 msgid "check qr code url."
-msgstr ""
+msgstr "URL qr коду чека."
 
 #: aiosend.types.Invoice.qr:1 of
 msgid "Get invoice qr code."
-msgstr ""
+msgstr "Отримати код qr рахунку."
 
 #: aiosend.types.Invoice.qr:3 of
 msgid "invoice qr code."
-msgstr ""
+msgstr "URL qr коду рахунку."
 
 #: ../../client/shortcuts.rst:31
 msgid "Check image"
-msgstr ""
+msgstr "URL зображення чека."
 
 #: aiosend.types.check.Check.get_image:1 of
 msgid "Get check preview image."
-msgstr ""
+msgstr "Отримати зображення передперегляду чека."
 
 #: aiosend.types.check.Check.get_image:3 of
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`str\\``"
@@ -173,21 +179,23 @@ msgstr ""
 
 #: aiosend.types.check.Check.get_image:4 of
 msgid "check image url."
-msgstr ""
+msgstr "URL зображення чека."
 
 #: ../../client/shortcuts.rst:36
 msgid "Poll objects"
-msgstr ""
+msgstr "Опитування об'єктів"
 
 #: aiosend.types.check.Check.poll:1 of
 msgid "Send the check to the polling manager."
-msgstr ""
+msgstr "Надіслати чек у менеджер поллінга."
 
 #: aiosend.types.check.Check.poll:3 of
 msgid ""
 "Use this method to check the status of the check until the timeout "
 "expires."
 msgstr ""
+"Використовуйте цей метод для перевірки статусу чека до тих пір, поки не "
+"Закінчиться тайм-аут."
 
 #: ../../client/shortcuts.rst
 msgid "Parameters"
@@ -195,19 +203,21 @@ msgstr ""
 
 #: aiosend.types.check.Check.poll:7 aiosend.types.invoice.Invoice.poll:7 of
 msgid "additional payload for the handler."
-msgstr ""
+msgstr "Додаткове корисне навантаження для функції-обробника"
 
 #: aiosend.types.invoice.Invoice.poll:1 of
 msgid "Send the invoice to the polling manager."
-msgstr ""
+msgstr "Надіслати рахунок в менеджер поллінга."
 
 #: aiosend.types.invoice.Invoice.poll:3 of
 msgid ""
 "Use this method to check the status of the invoice until the timeout "
 "expires."
 msgstr ""
+"Використовуйте цей метод для перевірки статусу рахунку, поки не "
+"Закінчиться тайм-аут."
 
 #: ../../client/shortcuts.rst:42
 msgid "Usage examples"
-msgstr ""
+msgstr "Приклад використання"
 

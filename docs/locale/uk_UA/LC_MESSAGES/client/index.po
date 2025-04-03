@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
@@ -22,13 +21,15 @@ msgstr ""
 
 #: ../../client/index.rst:3
 msgid "Client"
-msgstr ""
+msgstr "Клієнт"
 
 #: ../../client/index.rst:5
 msgid ""
 "aiosend is |python| python implementation for `Crypto Pay API "
 "<https://help.crypt.bot/crypto-pay-api>`_."
 msgstr ""
+"aiosend це обгортка для `Crypto Pay API <https://help.crypt.bot/crypto-"
+"pay-api>`_ на | python | python"
 
 #: ../../client/index.rst:11
 msgid "python"
@@ -36,13 +37,13 @@ msgstr ""
 
 #: ../../client/index.rst:7
 msgid "**Tools** - additional functionality."
-msgstr ""
+msgstr "**Інструменти** - додатковий функціонал."
 
 #: ../../client/index.rst:8
 msgid "**Shortcut methods** - shortcut type methods."
-msgstr ""
+msgstr "**Методи** - офіційні Crypto Pay API методи."
 
 #: ../../client/index.rst:9
 msgid "**Session** - http session implementation."
-msgstr ""
+msgstr "**Сесія** - реалізація http сесії."
 

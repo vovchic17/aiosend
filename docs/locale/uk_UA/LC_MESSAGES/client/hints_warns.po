@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
@@ -22,23 +21,25 @@ msgstr ""
 
 #: ../../client/hints_warns.rst:3
 msgid "Type hints and warnings"
-msgstr ""
+msgstr "Підказки та попередження"
 
 #: ../../client/hints_warns.rst:6
 msgid "Literal type hints"
-msgstr ""
+msgstr "Literal підказки"
 
 #: ../../client/hints_warns.rst:8
 msgid ""
 "**aiosend** provides rich typing that allows you not to remember the "
 "values of the enumerated parameters."
 msgstr ""
+"**aiosend** забезпечує розширену типізацію, що дозволяє вам не"
+"запам'ятовувати параметри."
 
 #: ../../client/hints_warns.rst:15
 msgid "Wrong net warning"
-msgstr ""
+msgstr "Попередження використання неправильної мережі"
 
 #: ../../client/hints_warns.rst:17
 msgid "**aiosend** will warn you if you are using the wrong net."
-msgstr ""
+msgstr "**aiosend** попередить вас, якщо ви використовуєте неправильну мережу."
 
