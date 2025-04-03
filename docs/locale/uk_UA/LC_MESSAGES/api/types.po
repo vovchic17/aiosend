@@ -504,7 +504,7 @@ msgstr "Дата надсилання запиту ISO 8601."
 
 #: ../../docstring aiosend.types.Update.update_id:1 of
 msgid "Non-unique update ID."
-msgstr "Неповторний ID оновлення."
+msgstr "Неунікальний ID оновлення."
 
 #: ../../docstring aiosend.types.Update.update_type:1 of
 msgid "`invoice_paid` - the update sent when the invoice is paid."
