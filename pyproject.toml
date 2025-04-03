@@ -73,7 +73,7 @@ select = ["ALL"]
 fixable = ["ALL"]
 
 [tool.ruff.lint.per-file-ignores]
-"*/methods/*" = ["PLR0913", "E501"] # too-many-arguments line-too-long
+"*/_methods/*" = ["PLR0913", "E501"] # too-many-arguments line-too-long
 "*/types/*" = ["E501"]              # line-too-long
 "*/client/*" = ["PLR0913"]          # too-many-arguments
 "tests/*" = ["ALL"]
@@ -86,7 +86,7 @@ indent-style = "space"
 docstring-code-line-length = "dynamic"
 
 [[tool.mypy.overrides]]
-module = ["*.methods.*", "*.webhook.*", "*.tools.*", "*.polling.*"]
+module = ["*._methods.*", "*.webhook.*", "*.tools.*", "*.polling.*"]
 disable_error_code = ["misc"]
 
 [[tool.mypy.overrides]]
