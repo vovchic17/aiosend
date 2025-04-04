@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-04 15:33+0300\n"
+"POT-Creation-Date: 2025-04-04 20:13+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -38,8 +38,8 @@ msgid "Updating objects"
 msgstr "Обновление объектов"
 
 #: aiosend.types.balance.Balance.update:1 of
-msgid "Shortcut for method :class:`aiosend.CryptoPay.get_balance`."
-msgstr "Сокращение для метода :class:`aiosend.CryptoPay.get_balance`."
+msgid "Shortcut for method :meth:`aiosend.CryptoPay.get_balance`."
+msgstr "Сокращение для метода :meth:`aiosend.CryptoPay.get_balance`."
 
 #: aiosend.types.balance.Balance.update:3 of
 msgid "Use this method to update balance object."
@@ -66,8 +66,8 @@ msgid "Returns"
 msgstr ""
 
 #: aiosend.types.check.Check.update:1 of
-msgid "Shortcut for method :attr:`aiosend.CryptoPay.get_checks`."
-msgstr "Сокращение для метода :attr:`aiosend.CryptoPay.get_checks`."
+msgid "Shortcut for method :meth:`aiosend.CryptoPay.get_checks`."
+msgstr "Сокращение для метода :meth:`aiosend.CryptoPay.get_checks`."
 
 #: aiosend.types.check.Check.update:3 of
 msgid "Use this method to update check object."
@@ -78,8 +78,8 @@ msgid "Source: https://help.crypt.bot/crypto-pay-api#getChecks"
 msgstr "Источник: https://help.crypt.bot/crypto-pay-api#getChecks"
 
 #: aiosend.types.exchange_rate.ExchangeRate.update:1 of
-msgid "Shortcut for method :class:`aiosend.CryptoPay.getExchangeRates`."
-msgstr "Сокращение для метода :class:`aiosend.CryptoPay.getExchangeRates`."
+msgid "Shortcut for method :meth:`aiosend.CryptoPay.get_exchange_rates`."
+msgstr "Сокращение для метода :meth:`aiosend.CryptoPay.get_exchange_rates`."
 
 #: aiosend.types.exchange_rate.ExchangeRate.update:3 of
 msgid "Use this method to update ExchangeRate object."
@@ -90,8 +90,8 @@ msgid "Source: https://help.crypt.bot/crypto-pay-api#getExchangeRates"
 msgstr "Источник: https://help.crypt.bot/crypto-pay-api#getExchangeRates"
 
 #: aiosend.types.invoice.Invoice.update:1 of
-msgid "Shortcut for method :class:`aiosend.CryptoPay.get_invoices`."
-msgstr "Сокращение для метода :class:`aiosend.CryptoPay.get_invoices`."
+msgid "Shortcut for method :meth:`aiosend.CryptoPay.get_invoices`."
+msgstr "Сокращение для метода :meth:`aiosend.CryptoPay.get_invoices`."
 
 #: aiosend.types.invoice.Invoice.update:3 of
 msgid "Use this method to update invoice object."
@@ -106,8 +106,8 @@ msgid "Deleting objects"
 msgstr "Удаление объектов"
 
 #: aiosend.types.check.Check.delete:1 of
-msgid "Shortcut for method :attr:`aiosend.CryptoPay.delete_check`."
-msgstr "Сокращение для метода :attr:`aiosend.CryptoPay.delete_check`."
+msgid "Shortcut for method :meth:`aiosend.CryptoPay.delete_check`."
+msgstr "Сокращение для метода :meth:`aiosend.CryptoPay.delete_check`."
 
 #: aiosend.types.check.Check.delete:3 of
 msgid ""
@@ -130,8 +130,8 @@ msgid ":code:`True` on success."
 msgstr ":code:`True` в случае успеха."
 
 #: aiosend.types.invoice.Invoice.delete:1 of
-msgid "Shortcut for method :class:`aiosend.CryptoPay.delete_invoice`."
-msgstr "Сокращение для метода :class:`aiosend.CryptoPay.delete_invoice`."
+msgid "Shortcut for method :meth:`aiosend.CryptoPay.delete_invoice`."
+msgstr "Сокращение для метода :meth:`aiosend.CryptoPay.delete_invoice`."
 
 #: aiosend.types.invoice.Invoice.delete:3 of
 msgid ""

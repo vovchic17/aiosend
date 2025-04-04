@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-04 15:33+0300\n"
+"POT-Creation-Date: 2025-04-04 20:47+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -61,8 +61,8 @@ msgid "Returns"
 msgstr ""
 
 #: aiosend._methods.get_me.GetMe.get_me:10 of
-msgid ":class:`App` object."
-msgstr "Об'єкт: class: `App`."
+msgid ":class:`aiosend.types.App` object."
+msgstr "Об'єкт :class:`aiosend.types.Check`"
 
 #: aiosend._methods.create_invoice.CreateInvoice.create_invoice:1 of
 msgid "createInvoice method."
@@ -71,10 +71,10 @@ msgstr "Метод createInvoice."
 #: aiosend._methods.create_invoice.CreateInvoice.create_invoice:3 of
 msgid ""
 "Use this method to create a new invoice. On success, returns an object of"
-" the created :class:`Invoice`."
+" the created :class:`aiosend.types.Invoice`."
 msgstr ""
 "Використовуйте цей метод для створення нового рахунку. У разі успіху "
-"повертає об'єкт створеного :class:`Invoice`."
+"повертає об'єкт створеного :class:`aiosend.types.Invoice`."
 
 #: aiosend._methods.create_invoice.CreateInvoice.create_invoice:6 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#createInvoice"
@@ -113,10 +113,10 @@ msgid ""
 "“CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, “INR”, “BRL”, “IDR”, "
 "“AZN”, “AED”, “PLN” and “ILS\"."
 msgstr ""
-"*Опціонально*. Потрібно, якщо currency_type — “fiat”. Код фіатної "
-"валюти. Підтримувані фіатні валюти: “USD”, “EUR”, “RUB”, “BYN”, "
-"“UAH”, “GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, "
-"“BRL”, “IDR”, “AZN”, “AED”, “PLN” i “ILS”."
+"*Опціонально*. Потрібно, якщо currency_type — “fiat”. Код фіатної валюти."
+" Підтримувані фіатні валюти: “USD”, “EUR”, “RUB”, “BYN”, “UAH”, “GBP”, "
+"“CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, “BRL”, “IDR”, “AZN”, "
+"“AED”, “PLN” i “ILS”."
 
 #: aiosend._methods.create_invoice.CreateInvoice.create_invoice:17 of
 msgid ""
@@ -205,8 +205,8 @@ msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~aiosend.types.invoi
 msgstr ""
 
 #: aiosend._methods.create_invoice.CreateInvoice.create_invoice:35 of
-msgid ":class:`Invoice` object"
-msgstr "Об'єкт :class:`Invoice`"
+msgid ":class:`aiosend.types.Invoice` object"
+msgstr "Об'єкт :class:`aiosend.types.Invoice`"
 
 #: aiosend._methods.delete_invoice.DeleteInvoice.delete_invoice:1 of
 msgid "deleteInvoice method."
@@ -260,10 +260,10 @@ msgstr "Метод createCheck."
 #: aiosend._methods.create_check.CreateCheck.create_check:3 of
 msgid ""
 "Use this method to create a new check. On success, returns an object of "
-"the created :class:`Check`."
+"the created :class:`aiosend.types.Check`."
 msgstr ""
 "Використовуйте цей метод для створення нового чека. У разі успіху "
-"повертає об'єкт створеного :class:`Check`."
+"повертає об'єкт створеного :class:`aiosend.types.Check`."
 
 #: aiosend._methods.create_check.CreateCheck.create_check:6 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#createCheck"
@@ -284,15 +284,15 @@ msgstr ""
 
 #: aiosend._methods.create_check.CreateCheck.create_check:13 of
 msgid "*Optional*. ID of the user who will be able to activate the check."
-msgstr ""
-"*Опціонально*. Ідентифікатор користувача, який зможе активувати чек."
+msgstr "*Опціонально*. Ідентифікатор користувача, який зможе активувати чек."
 
 #: aiosend._methods.create_check.CreateCheck.create_check:15 of
 msgid ""
 "*Optional*. A user with the specified username will be able to activate "
 "the check."
 msgstr ""
-"*Опціонально*. Тільки користувач з певним ім'ям користувача зможе активувати чек"
+"*Опціонально*. Тільки користувач з певним ім'ям користувача зможе "
+"активувати чек"
 
 #: aiosend._methods.create_check.CreateCheck.create_check:16 of
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~aiosend.types.check.Check\\``"
@@ -344,12 +344,13 @@ msgstr "Метод transfer."
 #: aiosend._methods.transfer.Transfer.transfer:3 of
 msgid ""
 "Use this method to send coins from your app's balance to a user. On "
-"success, returns completed :class:`Transfer`. This method must first be "
-"enabled in the security settings of your app."
+"success, returns completed :class:`aiosend.types.Transfer`. This method "
+"must first be enabled in the security settings of your app."
 msgstr ""
 "Використовуйте цей метод для відправки монет з балансу вашої програми "
-"Користувачеві. У разі успіху повертає :class:`Transfer`. Цей метод "
-"спочатку повинен бути включений у налаштуваннях безпеки вашої програми."
+"Користувачеві. У разі успіху повертає :class:`aiosend.types.Transfer`. "
+"Цей метод спочатку повинен бути включений у налаштуваннях безпеки вашого "
+"додатку."
 
 #: aiosend._methods.transfer.Transfer.transfer:7 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#transfer"
@@ -367,13 +368,13 @@ msgstr ""
 msgid ""
 "Amount of the transfer in float. The minimum and maximum amount limits "
 "for each of the supported assets roughly correspond to 1-25000 USD. Use "
-":method:`aiosend.CryptoPay.get_exchange_rates` to convert amounts. For "
+":meth:`aiosend.CryptoPay.get_exchange_rates` to convert amounts. For "
 "example: `125.50`"
 msgstr ""
 "Сума переказу у форматі речового числа. Мінімальні та максимальні "
 "обмеження суми для кожного з активів, що підтримуються приблизно "
 "відповідають 1-25000 USD. Використовуйте "
-":method:`aiosend.CryptoPay.get_exchange_rates` для конвертації сум. "
+":meth:`aiosend.CryptoPay.get_exchange_rates` для конвертації сум. "
 "Наприклад: `125.50`"
 
 #: aiosend._methods.transfer.Transfer.transfer:16 of
@@ -381,8 +382,8 @@ msgid ""
 "Random UTF-8 string unique per transfer for idempotent requests. The same"
 " `spend_id` can be accepted only once from your app. Up to 64 symbols."
 msgstr ""
-"Випадковий рядок у кодуванні UTF-8 є унікальним для кожного переказу для"
-" ідемопотентних запитів. Один і той же `spend_id` може бути прийнятий "
+"Випадковий рядок у кодуванні UTF-8 є унікальним для кожного переказу для "
+"ідемопотентних запитів. Один і той же `spend_id` може бути прийнятий "
 "тільки один раз у вашому додатку. До 64 символів."
 
 #: aiosend._methods.transfer.Transfer.transfer:18 of
@@ -406,8 +407,8 @@ msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~aiosend.types.trans
 msgstr ""
 
 #: aiosend._methods.transfer.Transfer.transfer:22 of
-msgid ":class:`Transfer` object."
-msgstr "Об'єкт: class: `Transfer`."
+msgid ":class:`aiosend.types.Transfer` object."
+msgstr "Об'єкт :class:`aiosend.types.Transfer`"
 
 #: aiosend._methods.get_invoices.GetInvoices.get_invoices:1 of
 msgid "getInvoices method."
@@ -416,20 +417,27 @@ msgstr "Метод getInvoices."
 #: aiosend._methods.get_invoices.GetInvoices.get_invoices:3 of
 msgid ""
 "Use this method to get invoices created by your app. On success, returns "
-"array of :class:`Invoice`."
+"array of :class:`aiosend.types.Invoice`."
 msgstr ""
 "Використовуйте цей метод для отримання рахунків, створених у вашому "
-"додатку. У разі успіху повертає масив об'єктів :class:`Invoice`."
+"додатку. У разі успіху повертає масив об'єктів "
+":class:`aiosend.types.Invoice`."
 
 #: aiosend._methods.get_invoices.GetInvoices.get_invoices:6 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#getInvoices"
 msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#getInvoices"
 
-#: aiosend._methods.get_invoices.GetInvoices.get_invoices:9 of
+#: aiosend._methods.get_checks.GetChecks.get_checks:9
+#: aiosend._methods.get_invoices.GetInvoices.get_invoices:9
+#: aiosend._methods.get_transfers.GetTransfers.get_transfers:9 of
 msgid ""
-"*Optional*. Supported assets: “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, "
-"“TRX” and “USDC” (and “JET” for testnet). Defaults to all currencies."
+"*Optional*. Cryptocurrency alphabetic code. Supported assets: “USDT”, "
+"“TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for "
+"testnet). Defaults to all currencies."
 msgstr ""
+"*Опціонально*. Алфавітний код криптовалюти. Підтримувані активи: “USDT”, "
+"“BTC”, “ETH”, “LTC”, “BNB”, “TRX” i “USDC” (і “JET” для testnet). За "
+"замовчуванням усі валюти."
 
 #: aiosend._methods.get_invoices.GetInvoices.get_invoices:11 of
 msgid ""
@@ -438,6 +446,8 @@ msgid ""
 "“THB”, “INR”, “BRL”, “IDR”, “AZN”, “AED”, “PLN” and “ILS\". Defaults to "
 "all currencies."
 msgstr ""
+"*Опціонально*. Підтримувані активи: “USDT”, “TON”, “BTC”, “ETH”, “LTC”, "
+"“BNB”, “TRX” i “USDC” (i “JET” для testnet). За замовчуванням всі валюти."
 
 #: aiosend._methods.get_invoices.GetInvoices.get_invoices:13 of
 msgid "*Optional*. List of invoice IDs separated by comma."
@@ -474,8 +484,8 @@ msgid ""
 msgstr ""
 
 #: aiosend._methods.get_invoices.GetInvoices.get_invoices:21 of
-msgid "List of :class:`Invoice` objects."
-msgstr "Список об'єктів :class:`Invoice`."
+msgid "List of :class:`aiosend.types.Invoice` objects."
+msgstr "Список об'єктів :class:`aiosend.types.Invoice`."
 
 #: aiosend._methods.get_checks.GetChecks.get_checks:1 of
 msgid "getChecks method."
@@ -484,25 +494,14 @@ msgstr "Метод getCheck."
 #: aiosend._methods.get_checks.GetChecks.get_checks:3 of
 msgid ""
 "Use this method to get checks created by your app. On success, returns "
-"array of :class:`Check`."
+"array of :class:`aiosend.types.Check`."
 msgstr ""
 "Використовуйте цей метод для отримання чеків, створених вашим додатком. У"
-" разі успіху повертає масив об'єктів :class:`Check`."
+" разі успіху повертає масив об'єктів :class:`aiosend.types.Check`."
 
 #: aiosend._methods.get_checks.GetChecks.get_checks:6 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#getChecks"
 msgstr "Джерело: https://help.crypt.bot/crypto-pay-api#getChecks"
-
-#: aiosend._methods.get_checks.GetChecks.get_checks:9
-#: aiosend._methods.get_transfers.GetTransfers.get_transfers:9 of
-msgid ""
-"*Optional*. Cryptocurrency alphabetic code. Supported assets: “USDT”, "
-"“TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for "
-"testnet). Defaults to all currencies."
-msgstr ""
-"*Опціонально*. Алфавітний код криптовалюти. Підтримувані активи: "
-"“USDT”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” i “USDC” (і “JET” для "
-"testnet). За замовчуванням усі валюти."
 
 #: aiosend._methods.get_checks.GetChecks.get_checks:11 of
 msgid "*Optional*. List of check IDs separated by comma."
@@ -539,8 +538,8 @@ msgid ""
 msgstr ""
 
 #: aiosend._methods.get_checks.GetChecks.get_checks:19 of
-msgid "List of :class:`Check` objects."
-msgstr "Список об'єктів :class:`Check`."
+msgid "List of :class:`aiosend.types.Check` objects."
+msgstr "Список об'єктів :class:`aiosend.types.Check`."
 
 #: aiosend._methods.get_transfers.GetTransfers.get_transfers:1 of
 msgid "getTransfers method."
@@ -549,10 +548,11 @@ msgstr "Метод getTransfers."
 #: aiosend._methods.get_transfers.GetTransfers.get_transfers:3 of
 msgid ""
 "Use this method to get transfers created by your app. On success, returns"
-" array of :class:`Transfer`."
+" array of :class:`aiosend.types.Transfer`."
 msgstr ""
 "Використовуйте цей метод для отримання переказів, створених вашим "
-"додатком. У разі успіху повертає масив об'єктів:class:`Transfer`."
+"додатком. У разі успіху повертає масив об'єктів "
+":class:`aiosend.types.Transfer`."
 
 #: aiosend._methods.get_transfers.GetTransfers.get_transfers:6 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#getTransfers"
@@ -589,8 +589,8 @@ msgid ""
 msgstr ""
 
 #: aiosend._methods.get_transfers.GetTransfers.get_transfers:19 of
-msgid "List of :class:`Transfer` objects."
-msgstr "Список об'єктів :class:`Transfer`."
+msgid "List of :class:`aiosend.types.Transfer` objects."
+msgstr "Список об'єктів :class:`aiosend.types.Transfer`."
 
 #: aiosend._methods.get_balance.GetBalance.get_balance:1 of
 msgid "getBalance method."
@@ -599,10 +599,10 @@ msgstr "Метод getBalance."
 #: aiosend._methods.get_balance.GetBalance.get_balance:3 of
 msgid ""
 "Use this method to get balances of your app. Requires no parameters. "
-"Returns array of :class:`Balance`."
+"Returns array of :class:`aiosend.types.Balance`."
 msgstr ""
 "Використовуйте цей метод для отримання балансів вашої програми. Не "
-"вимагає параметрів. Повертає масив об'єктів :class:`Balance`."
+"вимагає параметрів. Повертає масив об'єктів :class:`aiosend.types.Balance`."
 
 #: aiosend._methods.get_balance.GetBalance.get_balance:7 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#getBalance"
@@ -615,8 +615,8 @@ msgid ""
 msgstr ""
 
 #: aiosend._methods.get_balance.GetBalance.get_balance:10 of
-msgid "List of :class:`Balance` objects."
-msgstr "Список об'єктів: class: `Balance`."
+msgid "List of :class:`aiosend.types.Balance` objects."
+msgstr "Список об'єктів: class: `aiosend.types.Balance`."
 
 #: aiosend._methods.get_exchange_rates.GetExchangeRates.get_exchange_rates:1 of
 msgid "getExchangeRates method."
@@ -625,11 +625,11 @@ msgstr "Метод getExchangeRates."
 #: aiosend._methods.get_exchange_rates.GetExchangeRates.get_exchange_rates:3 of
 msgid ""
 "Use this method to get exchange rates of supported currencies. Requires "
-"no parameters. Returns array of :class:`ExchangeRate`."
+"no parameters. Returns array of :class:`aiosend.types.ExchangeRate`."
 msgstr ""
 "Використовуйте цей метод для отримання обмінних курсів підтримуваних "
 "валют. Не потребує параметрів. Повертає масив об'єктів "
-":class:`ExchangeRate`."
+":class:`aiosend.types.ExchangeRate`."
 
 #: aiosend._methods.get_exchange_rates.GetExchangeRates.get_exchange_rates:7 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#getExchangeRates"
@@ -643,8 +643,8 @@ msgstr ""
 
 #: aiosend._methods.get_exchange_rates.GetExchangeRates.get_exchange_rates:10
 #: of
-msgid "List of :class:`ExchangeRate` objects."
-msgstr "Список об'єктів :class:`ExchangeRate`."
+msgid "List of :class:`aiosend.types.ExchangeRate` objects."
+msgstr "Список об'єктів :class:`aiosend.types.ExchangeRate`."
 
 #: aiosend._methods.get_currencies.GetCurrencies.get_currencies:1 of
 msgid "getCurrencies method."
@@ -670,8 +670,8 @@ msgid ""
 msgstr ""
 
 #: aiosend._methods.get_currencies.GetCurrencies.get_currencies:10 of
-msgid "List of :class:`Currency` objects."
-msgstr "Список об'єктів :class:`Currency`."
+msgid "List of :class:`aiosend.types.Currency` objects."
+msgstr "Список об'єктів :class:`aiosend.types.Currency`."
 
 #: aiosend._methods.get_stats.GetStats.get_stats:1 of
 msgid "getStats method."
@@ -680,10 +680,10 @@ msgstr "Метод getStats."
 #: aiosend._methods.get_stats.GetStats.get_stats:3 of
 msgid ""
 "Use this method to get app statistics. On success, returns "
-":class:`AppStats`."
+":class:`aiosend.types.AppStats`."
 msgstr ""
 "Використовуйте цей метод для отримання статистики програми. У разі успіху"
-" повертає об'єкт :class:`AppStats`."
+" повертає об'єкт :class:`aiosend.types.AppStats`."
 
 #: aiosend._methods.get_stats.GetStats.get_stats:6 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#jvP3"
@@ -710,5 +710,5 @@ msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~aiosend.types.app\\
 msgstr ""
 
 #: aiosend._methods.get_stats.GetStats.get_stats:13 of
-msgid ":class:`AppStats` object."
-msgstr "Об'єкт :class:`AppStats`."
+msgid ":class:`aiosend.types.AppStats` object."
+msgstr "Об'єкт :class:`aiosend.types.AppStats`"

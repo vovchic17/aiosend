@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-29 04:00+0300\n"
+"POT-Creation-Date: 2025-04-04 20:13+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -32,8 +32,8 @@ msgid "Exchange currency."
 msgstr "Обменный курс валюты"
 
 #: aiosend.tools.exchange.Exchange.exchange:3 of
-msgid "Wrapper for :class:`aiosend.CryptoPay.get_exchange_rates`."
-msgstr "Обёртка для :class:`aiosend.CryptoPay.get_exchange_rates`."
+msgid "Wrapper for :meth:`aiosend.CryptoPay.get_exchange_rates`."
+msgstr "Обёртка для :meth:`aiosend.CryptoPay.get_exchange_rates`."
 
 #: aiosend.tools.exchange.Exchange.exchange:5 of
 msgid ""
@@ -79,8 +79,8 @@ msgstr "Получение баланса указанного актива."
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:3
 #: of
-msgid "Wrapper for :class:`aiosend.CryptoPay.get_balance`."
-msgstr "Обёртка для :class:`aiosend.CryptoPay.get_balance`."
+msgid "Wrapper for :meth:`aiosend.CryptoPay.get_balance`."
+msgstr "Обёртка для :meth:`aiosend.CryptoPay.get_balance`."
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:5
 #: of
@@ -94,21 +94,21 @@ msgstr ""
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:8
 #: of
-msgid ":class:`Balance` on success."
-msgstr ":class:`Balance` в случае успеха."
+msgid ":class:`aiosend.types.Balance` on success."
+msgstr ":class:`aiosend.types.Balance` в случае успеха."
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:9
 #: of
-msgid ":class:`CryptoPayError` if there is no such asset."
-msgstr ":class:`CryptoPayError` если нет такого актива."
+msgid ":class:`aiosend.errors.CryptoPayError` if there is no such asset."
+msgstr ":class:`aiosend.errors.CryptoPayError` если нет такого актива."
 
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:1 of
 msgid "Get exactly one invoice or none."
 msgstr "Получение ровно одного счёта, или ничего."
 
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:3 of
-msgid "Wrapper for :class:`aiosend.CryptoPay.get_invoices`"
-msgstr "Обёртка для :class:`aiosend.CryptoPay.get_invoices`"
+msgid "Wrapper for :meth:`aiosend.CryptoPay.get_invoices`"
+msgstr "Обёртка для :meth:`aiosend.CryptoPay.get_invoices`"
 
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:5 of
 msgid ""
@@ -133,16 +133,16 @@ msgid "Get exactly one check or none."
 msgstr "Получение ровно одного чека, или ничего."
 
 #: aiosend.tools.get_check.GetCheck.get_check:3 of
-msgid "Wrapper for :class:`aiosend.CryptoPay.get_checks`"
-msgstr "Обёртка для :class:`aiosend.CryptoPay.get_checks`"
+msgid "Wrapper for :meth:`aiosend.CryptoPay.get_checks`"
+msgstr "Обёртка для :meth:`aiosend.CryptoPay.get_checks`"
 
 #: aiosend.tools.get_check.GetCheck.get_check:5 of
 msgid ""
 "Use this method to update status of an existing check object or to get "
 "this object by passing the check id."
 msgstr ""
-"Используйте этот метод для обновления статуса существующего объекта чека"
-" или получения этого объекта, передавая id чека."
+"Используйте этот метод для обновления статуса существующего объекта чека "
+"или получения этого объекта, передавая id чека."
 
 #: aiosend.tools.get_check.GetCheck.get_check:8 of
 msgid ""
@@ -151,8 +151,8 @@ msgid ""
 msgstr ""
 
 #: aiosend.tools.get_check.GetCheck.get_check:9 of
-msgid ":class:`aiosend.types.Check` object."
-msgstr "Объект :class:`aiosend.types.Check`."
+msgid ":meth:`aiosend.types.Check` object."
+msgstr "Объект :meth:`aiosend.types.Check`."
 
 #: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:1 of
 msgid "Delete all checks."
@@ -160,11 +160,11 @@ msgstr "Удаление всех чеков."
 
 #: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:3 of
 msgid ""
-"Wrapper for :class:`aiosend.CryptoPay.get_checks` and "
-":class:`aiosend.CryptoPay.delete_check`"
+"Wrapper for :meth:`aiosend.CryptoPay.get_checks` and "
+":meth:`aiosend.CryptoPay.delete_check`"
 msgstr ""
-"Обёртка для :class:`aiosend.CryptoPay.get_checks` И "
-":class:`aiosend.CryptoPay.delete_check`"
+"Обёртка для :meth:`aiosend.CryptoPay.get_checks` и "
+":meth:`aiosend.CryptoPay.delete_check`"
 
 #: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:6 of
 msgid "Use this method to delete all existing checks created by your app."
@@ -183,11 +183,11 @@ msgstr "Удаление всех счетов."
 
 #: aiosend.tools.delete_all_invoices.DeleteAllInvoices.delete_all_invoices:3 of
 msgid ""
-"Wrapper for :class:`aiosend.CryptoPay.get_invoices` and "
-":class:`aiosend.CryptoPay.delete_invoice`"
+"Wrapper for :meth:`aiosend.CryptoPay.get_invoices` and "
+":meth:`aiosend.CryptoPay.delete_invoice`"
 msgstr ""
-"Обёртка ждя :class:`aiosend.CryptoPay.get_invoices` и "
-":class:`aiosend.CryptoPay.delete_invoice`"
+"Обёртка ждя :meth:`aiosend.CryptoPay.get_invoices` и "
+":meth:`aiosend.CryptoPay.delete_invoice`"
 
 #: aiosend.tools.delete_all_invoices.DeleteAllInvoices.delete_all_invoices:6 of
 msgid "Use this method to delete all existing invoices created by your app."
