@@ -25,7 +25,7 @@ class Exchange:
         the target currency for the source currency.
 
         :return: :class:`float` on success.
-        :raise: :class:`CryptoPayError` if there is no such exchange rate.
+        :raise: :class:`aiosend.exceptions.CryptoPayError` if there is no such exchange rate.
         """
         ex_rates = await self.get_exchange_rates()
         for ex_rate in ex_rates:

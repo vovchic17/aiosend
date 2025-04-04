@@ -65,8 +65,8 @@ msgid "raise"
 msgstr ""
 
 #: aiosend.tools.exchange.Exchange.exchange:10 of
-msgid ":class:`CryptoPayError` if there is no such exchange rate."
-msgstr ":class:`CryptoPayError` если нет такого обменного курса."
+msgid ":class:`aiosend.exceptions.CryptoPayError` if there is no such exchange rate."
+msgstr ":class:`aiosend.exceptions.CryptoPayError` если нет такого обменного курса."
 
 #: ../../client/tools.rst:9 ../../client/tools.rst:15 ../../client/tools.rst:21
 msgid "Usage example"
