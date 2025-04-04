@@ -23,7 +23,7 @@ class GetBalanceByAsset:
         Use this method to get the balance of a specific asset.
 
         :return: :class:`aiosend.types.Balance` on success.
-        :raise: :class:`aiosend.errors.CryptoPayError` if there is no such asset.
+        :raise: :class:`aiosend.exceptions.CryptoPayError` if there is no such asset.
         """
         balances = await self.get_balance()
         for balance in balances:

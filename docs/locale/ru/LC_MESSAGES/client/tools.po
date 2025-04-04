@@ -99,8 +99,8 @@ msgstr ":class:`aiosend.types.Balance` в случае успеха."
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:9
 #: of
-msgid ":class:`aiosend.errors.CryptoPayError` if there is no such asset."
-msgstr ":class:`aiosend.errors.CryptoPayError` если нет такого актива."
+msgid ":class:`aiosend.exceptions.CryptoPayError` if there is no such asset."
+msgstr ":class:`aiosend.exceptions.CryptoPayError` если нет такого актива."
 
 #: aiosend.tools.get_invoice.GetInvoice.get_invoice:1 of
 msgid "Get exactly one invoice or none."
