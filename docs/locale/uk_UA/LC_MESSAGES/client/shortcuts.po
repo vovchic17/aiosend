@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 09:34+0300\n"
+"POT-Creation-Date: 2025-04-04 15:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -29,9 +29,8 @@ msgid ""
 "<MethodsAnchor>` and also provide additional functionality to the "
 "objects."
 msgstr ""
-"Ці методи спрощують використання стандартних :ref:`методів Crypto Pay"
-"API <MethodsAnchor>`, а також надають додатковий функціонал для"
-"об'єктів."
+"Ці методи спрощують використання стандартних :ref:`методів Crypto PayAPI "
+"<MethodsAnchor>`, а також надають додатковий функціонал дляоб'єктів."
 
 #: ../../client/shortcuts.rst:11
 msgid "Updating objects"
@@ -66,8 +65,8 @@ msgid "Returns"
 msgstr ""
 
 #: aiosend.types.check.Check.update:1 of
-msgid "Shortcut for method :class:`aiosend.CryptoPay.get_checks`."
-msgstr "Скорочення методу :class:`aiosend.CryptoPay.get_checks`."
+msgid "Shortcut for method :attr:`aiosend.CryptoPay.get_checks`."
+msgstr "Скорочення методу :attr:`aiosend.CryptoPay.get_checks`."
 
 #: aiosend.types.check.Check.update:3 of
 msgid "Use this method to update check object."
@@ -106,16 +105,16 @@ msgid "Deleting objects"
 msgstr "Видалення об'єктів"
 
 #: aiosend.types.check.Check.delete:1 of
-msgid "Shortcut for method :class:`aiosend.CryptoPay.delete_check`."
-msgstr "Скорочення методу :class:`aiosend.CryptoPay.delete_check`."
+msgid "Shortcut for method :attr:`aiosend.CryptoPay.delete_check`."
+msgstr "Скорочення методу :attr:`aiosend.CryptoPay.delete_check`."
 
 #: aiosend.types.check.Check.delete:3 of
 msgid ""
 "Use this method to delete check created by your app. Returns :code:`True`"
 " on success."
 msgstr ""
-"Використовуйте цей метод для видалення чека, створеного вашою програмою."
-"Повертає :code:`True` у разі успіху."
+"Використовуйте цей метод для видалення чека, створеного вашою "
+"програмою.Повертає :code:`True` у разі успіху."
 
 #: aiosend.types.check.Check.delete:6 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#deleteCheck"
@@ -138,8 +137,8 @@ msgid ""
 "Use this method to delete invoice created by your app. Returns "
 ":code:`True` on success."
 msgstr ""
-"Використовуйте цей метод, щоб видалити рахунок, створений вашою програмою."
-"Повертає :code:`True` у разі успіху."
+"Використовуйте цей метод, щоб видалити рахунок, створений вашою "
+"програмою.Повертає :code:`True` у разі успіху."
 
 #: aiosend.types.invoice.Invoice.delete:6 of
 msgid "Source: https://help.crypt.bot/crypto-pay-api#hwjK"
@@ -162,7 +161,7 @@ msgid "Get invoice qr code."
 msgstr "Отримати код qr рахунку."
 
 #: aiosend.types.Invoice.qr:3 of
-msgid "invoice qr code."
+msgid "invoice qr code url."
 msgstr "URL qr коду рахунку."
 
 #: ../../client/shortcuts.rst:31

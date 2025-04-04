@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 09:34+0300\n"
+"POT-Creation-Date: 2025-04-04 15:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -66,8 +66,8 @@ msgid "Returns"
 msgstr ""
 
 #: aiosend.types.check.Check.update:1 of
-msgid "Shortcut for method :class:`aiosend.CryptoPay.get_checks`."
-msgstr "Сокращение для метода :class:`aiosend.CryptoPay.get_checks`."
+msgid "Shortcut for method :attr:`aiosend.CryptoPay.get_checks`."
+msgstr "Сокращение для метода :attr:`aiosend.CryptoPay.get_checks`."
 
 #: aiosend.types.check.Check.update:3 of
 msgid "Use this method to update check object."
@@ -106,8 +106,8 @@ msgid "Deleting objects"
 msgstr "Удаление объектов"
 
 #: aiosend.types.check.Check.delete:1 of
-msgid "Shortcut for method :class:`aiosend.CryptoPay.delete_check`."
-msgstr "Сокращение для метода :class:`aiosend.CryptoPay.delete_check`."
+msgid "Shortcut for method :attr:`aiosend.CryptoPay.delete_check`."
+msgstr "Сокращение для метода :attr:`aiosend.CryptoPay.delete_check`."
 
 #: aiosend.types.check.Check.delete:3 of
 msgid ""
@@ -162,7 +162,7 @@ msgid "Get invoice qr code."
 msgstr "Получить qr код счёта."
 
 #: aiosend.types.Invoice.qr:3 of
-msgid "invoice qr code."
+msgid "invoice qr code url."
 msgstr "URL qr кода счёта."
 
 #: ../../client/shortcuts.rst:31
