@@ -30,7 +30,7 @@ msgid ""
 "objects."
 msgstr ""
 "Ці методи спрощують використання стандартних :ref:`методів Crypto PayAPI "
-"<MethodsAnchor>`, а також надають додатковий функціонал дляоб'єктів."
+"<MethodsAnchor>`, а також надають додатковий функціонал для об'єктів."
 
 #: ../../client/shortcuts.rst:11
 msgid "Updating objects"
@@ -170,7 +170,7 @@ msgstr "URL зображення чека."
 
 #: aiosend.types.check.Check.get_image:1 of
 msgid "Get check preview image."
-msgstr "Отримати зображення передперегляду чека."
+msgstr "Отримати зображення предперегляду чека."
 
 #: aiosend.types.check.Check.get_image:3 of
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`str\\``"

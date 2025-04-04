@@ -41,7 +41,7 @@ msgid ""
 "the source currency."
 msgstr ""
 "Використовуйте цей метод для отримання еквівалентної суми цільової "
-"валютидля вихідної"
+"валюти для вихідної"
 
 #: ../../client/tools.rst
 msgid "Return type"
@@ -170,7 +170,7 @@ msgstr ""
 msgid "Use this method to delete all existing checks created by your app."
 msgstr ""
 "Використовуйте цей метод для видалення всіх існуючих чеків, "
-"створенихвашим додатком."
+"створених вашим додатком."
 
 #: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:9
 #: aiosend.tools.delete_all_invoices.DeleteAllInvoices.delete_all_invoices:9 of
@@ -193,7 +193,7 @@ msgstr ""
 msgid "Use this method to delete all existing invoices created by your app."
 msgstr ""
 "Використовуйте цей метод для видалення всіх існуючих рахунків, "
-"створенихвашим додатком"
+"створених вашим додатком"
 
 #: aiosend.tools.get_rates_image.GetRatesImage.get_rates_image:1 of
 msgid "Get rates image."

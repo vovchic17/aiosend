@@ -197,7 +197,7 @@ msgid ""
 "*Optional*. You can set a payment time limit for the invoice in seconds. "
 "Values between 1-2678400 are accepted."
 msgstr ""
-"*Optional*. Ви можете задати тимчасовий ліміт для оплати рахунку за "
+"*Опціонально*. Ви можете задати тимчасовий ліміт для оплати рахунку за "
 "секунди. Допустимі значення в діапазоні 1-2678400."
 
 #: aiosend._methods.create_invoice.CreateInvoice.create_invoice:34 of

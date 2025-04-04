@@ -167,7 +167,7 @@ msgstr "Код валюти."
 
 #: ../../docstring aiosend.types.Currency.decimals:1 of
 msgid "Currency decimals."
-msgstr "Десятичні дроби валюти."
+msgstr "Десяткові дроби валюти."
 
 #: ../../docstring aiosend.types.Currency.is_blockchain:1 of
 msgid "True, if the currency is blockchain currency."
