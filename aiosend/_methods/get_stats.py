@@ -32,8 +32,8 @@ class GetStats:
 
         Source: https://help.crypt.bot/crypto-pay-api#jvP3
 
-        :param start_at: *Optional*. Date from which start calculating statistics. Defaults is current date minus 24 hours.
-        :param end_at: *Optional*. The date on which to finish calculating statistics. Defaults is current date.
+        :param start_at: *Optional*. Date from which start calculating statistics. Default is current date minus 24 hours.
+        :param end_at: *Optional*. The date on which to finish calculating statistics. Default is current date.
         :return: :class:`AppStats` object.
         """
         return await self(self.GetStatsMethod(**locals()))

@@ -82,18 +82,18 @@ class CreateInvoice:
 
         Source: https://help.crypt.bot/crypto-pay-api#createInvoice
 
-        :param amount: Amount of the invoice in float.
+        :param amount: Amount of the invoice in float. For example: `125.50`
         :param currency_type: *Optional*. Type of the price, can be “crypto” or “fiat”. Defaults to crypto.
-        :param asset: *Optional*. Required if currency_type is “crypto”. Cryptocurrency alphabetic code.
-        :param fiat: *Optional*. Required if currency_type is “fiat”. Fiat currency code.
-        :param accepted_assets: *Optional*. List of cryptocurrency alphabetic codes. Assets which can be used to pay the invoice. Available only if currency_type is “fiat”
+        :param asset: *Optional*. Required if currency_type is “crypto”. Cryptocurrency alphabetic code. Supported assets: “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC”.
+        :param fiat: *Optional*. Required if currency_type is “fiat”. Fiat currency code. Supported fiat currencies: “USD”, “EUR”, “RUB”, “BYN”, “UAH”, “GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, “INR”, “BRL”, “IDR”, “AZN”, “AED”, “PLN” and “ILS".
+        :param accepted_assets: *Optional*. List of cryptocurrency alphabetic codes. Assets which can be used to pay the invoice. Available only if currency_type is “fiat”. Supported assets: “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet). Defaults to all currencies.
         :param description: *Optional*. Description for the invoice. User will see this description when they pay the invoice. Up to 1024 characters.
-        :param hidden_message: *Optional*. Optional. Text of the message which will be presented to a user after the invoice is paid. Up to 2048 characters.
+        :param hidden_message: *Optional*. Text of the message which will be presented to a user after the invoice is paid. Up to 2048 characters.
         :param paid_btn_name: *Optional*. Label of the button which will be presented to a user after the invoice is paid.
-        :param paid_btn_url: *Optional*. Required if paid_btn_name is specified. URL opened using the button which will be presented to a user after the invoice is paid.
+        :param paid_btn_url: *Optional*. Required if paid_btn_name is specified. URL opened using the button which will be presented to a user after the invoice is paid. You can set any callback link (for example, a success link or link to homepage). Starts with https or http.
         :param payload: *Optional*. Any data you want to attach to the invoice (for example, user ID, payment ID, ect). Up to 4kb.
-        :param allow_comments: *Optional*. Allow a user to add a comment to the payment. Defaults to true.
-        :param allow_anonymous: *Optional*. Allow a user to pay the invoice anonymously. Defaults to true.
+        :param allow_comments: *Optional*. Allow a user to add a comment to the payment. Defaults to :code:`True`.
+        :param allow_anonymous: *Optional*. Allow a user to pay the invoice anonymously. Defaults to :code:`True`.
         :param expires_in: *Optional*. You can set a payment time limit for the invoice in seconds. Values between 1-2678400 are accepted.
         :return: :class:`Invoice` object
         """

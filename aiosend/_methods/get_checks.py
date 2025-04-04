@@ -40,11 +40,11 @@ class GetChecks:
 
         Source: https://help.crypt.bot/crypto-pay-api#getChecks
 
-        :param asset: *Optional*. Cryptocurrency alphabetic code.
-        :param check_ids: *Optional*. List of check IDs.
-        :param status: *Optional*. Status of check to be returned. Available statuses: “active” and “activated”.
+        :param asset: *Optional*. Cryptocurrency alphabetic code. Supported assets: “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet). Defaults to all currencies.
+        :param check_ids: *Optional*. List of check IDs separated by comma.
+        :param status: *Optional*. Status of check to be returned. Available statuses: “active” and “activated”. Defaults to all statuses.
         :param offset: *Optional*. Offset needed to return a specific subset of check. Defaults to 0.
-        :param count: *Optional*. Number of check to be returned. Values between 1-1000 are accepted. Defaults to 100.
+        :param count: *Optional*. Number of checks to be returned. Values between 1-1000 are accepted. Defaults to 100.
         :return: List of :class:`Check` objects.
         """
         return await self(self.GetChecksMethod(**locals()))

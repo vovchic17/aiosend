@@ -49,10 +49,10 @@ class GetInvoices:
 
         Source: https://help.crypt.bot/crypto-pay-api#getInvoices
 
-        :param asset: *Optional*. Cryptocurrency alphabetic code.
-        :param fiat: *Optional*. Fiat currency code.
+        :param asset: *Optional*. Supported assets: “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet). Defaults to all currencies.
+        :param fiat: *Optional*. Fiat currency code. Supported fiat currencies: “USD”, “EUR”, “RUB”, “BYN”, “UAH”, “GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, “INR”, “BRL”, “IDR”, “AZN”, “AED”, “PLN” and “ILS". Defaults to all currencies.
         :param invoice_ids: *Optional*. List of invoice IDs separated by comma.
-        :param status: *Optional*. Status of invoices to be returned. Available statuses: “active” and “paid”.
+        :param status: *Optional*. Status of invoices to be returned. Available statuses: “active” and “paid”. Defaults to all statuses.
         :param offset: *Optional*. Offset needed to return a specific subset of invoices. Defaults to 0.
         :param count: *Optional*. Number of invoices to be returned. Values between 1-1000 are accepted. Defaults to 100.
         :return: List of :class:`Invoice` objects.

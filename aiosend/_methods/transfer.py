@@ -51,11 +51,11 @@ class Transfer:
         Source: https://help.crypt.bot/crypto-pay-api#transfer
 
         :param user_id: User ID in Telegram. User must have previously used @CryptoBot (@CryptoTestnetBot for testnet).
-        :param asset: Cryptocurrency alphabetic code.
-        :param amount: Amount of the transfer in float. The minimum and maximum amount limits for each of the supported assets roughly correspond to 1-25000 USD.
-        :param spend_id: Random UTF-8 string unique per transfer for idempotent requests. The same spend_id can be accepted only once from your app. Up to 64 symbols.
+        :param asset: Cryptocurrency alphabetic code. Supported assets: “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet).
+        :param amount: Amount of the transfer in float. The minimum and maximum amount limits for each of the supported assets roughly correspond to 1-25000 USD. Use :attr:`aiosend.CryptoPay.get_exchange_rates` to convert amounts. For example: `125.50`
+        :param spend_id: Random UTF-8 string unique per transfer for idempotent requests. The same `spend_id` can be accepted only once from your app. Up to 64 symbols.
         :param comment: *Optional*. Comment for the transfer. Users will see this comment in the notification about the transfer. Up to 1024 symbols.
-        :param disable_send_notification: *Optional*. Pass true to not send to the user the notification about the transfer. Defaults to false.
+        :param disable_send_notification: *Optional*. Pass true to not send to the user the notification about the transfer. Defaults to :code:`False`.
         :return: :class:`Transfer` object.
         """
         return await self(self.TransferMethod(**locals()))

@@ -40,8 +40,8 @@ class GetTransfers:
 
         Source: https://help.crypt.bot/crypto-pay-api#getTransfers
 
-        :param asset: *Optional*. Cryptocurrency alphabetic code. Defaults to all currencies.
-        :param transfer_ids: *Optional*. List of transfer IDs.
+        :param asset: *Optional*. Cryptocurrency alphabetic code. Supported assets: “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet). Defaults to all currencies.
+        :param transfer_ids: *Optional*. List of transfer IDs separated by comma.
         :param spend_id: *Optional*. Unique UTF-8 transfer string.
         :param offset: *Optional*. Offset needed to return a specific subset of transfers. Defaults to 0.
         :param count: *Optional*. Number of transfers to be returned. Values between 1-1000 are accepted. Defaults to 100.

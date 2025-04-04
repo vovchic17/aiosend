@@ -32,7 +32,7 @@ class Check(CryptoPayObject):
 
     async def delete(self) -> bool:
         """
-        Shortcut for method :class:`aiosend.CryptoPay.delete_check`.
+        Shortcut for method :attr:`aiosend.CryptoPay.delete_check`.
 
         Use this method to delete check created by your app.
         Returns :code:`True` on success.
@@ -45,7 +45,7 @@ class Check(CryptoPayObject):
 
     async def update(self) -> None:
         """
-        Shortcut for method :class:`aiosend.CryptoPay.get_checks`.
+        Shortcut for method :attr:`aiosend.CryptoPay.get_checks`.
 
         Use this method to update check object.
 

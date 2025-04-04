@@ -36,10 +36,10 @@ class CreateCheck:
 
         Source: https://help.crypt.bot/crypto-pay-api#createCheck
 
-        :param amount: Amount of the check in float.
-        :param asset: Cryptocurrency alphabetic code.
-        :param pin_to_user_id: ID of the user who will be able to activate the check, defaults to None
-        :param pin_to_username: A user with the specified username will be able to activate the check, defaults to None
+        :param amount: Amount of the check in float. For example: `125.50`
+        :param asset: Cryptocurrency alphabetic code. Supported assets: “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet).
+        :param pin_to_user_id: *Optional*. ID of the user who will be able to activate the check.
+        :param pin_to_username: *Optional*. A user with the specified username will be able to activate the check.
         :return: :class:`aiosend.types.Check` object
         """
         return await self(self.CreateCheckMethod(**locals()))
