@@ -41,7 +41,7 @@ msgstr "Таймаут в секундах."
 
 #: aiosend.polling.manager.PollingManager:1 of
 msgid "Polling manager class."
-msgstr "Класс поллинг менеджера"
+msgstr "Класс поллинг менеджера."
 
 #: aiosend.polling.manager.PollingManager:3 of
 msgid ""
@@ -49,7 +49,7 @@ msgid ""
 "method."
 msgstr ""
 "Этот класс используется для обработки платежей и активаций чеков "
-"методом поллинга"
+"методом поллинга."
 
 #: aiosend.polling.manager.PollingManager.start_polling:1 of
 msgid "Run polling."
@@ -61,7 +61,7 @@ msgstr ""
 
 #: aiosend.polling.manager.PollingManager.start_polling:4 of
 msgid "function to run in background."
-msgstr "функция, запускаемая в фоне"
+msgstr "функция, запускаемая в фоне."
 
 #: ../../events/polling_config.rst
 msgid "Return type"

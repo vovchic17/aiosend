@@ -33,11 +33,11 @@ msgstr ""
 
 #: ../../events/webhook.rst:8
 msgid "🏝 Crypto Pay -> My Apps -> YOUR APP -> Webhooks -> 🌕 Enable webhooks."
-msgstr "🏝 Crypto Pay -> Мои приложения -> ВАШЕ ПРИЛОЖЕНИЕ -> Вебхуки -> 🌕 Включить вебхуки."
+msgstr "🏝 Crypto Pay -> Мои приложения -> <Ваше приложение> -> Вебхуки -> 🌕 Включить вебхуки."
 
 #: aiosend.webhook.base.RequestHandler.webhook:1 of
 msgid "Register a handler for webhook invoice updates."
-msgstr "Добавление обработчика для вебхук-уведомлений "
+msgstr "Добавление обработчика для вебхук-уведомлений."
 
 #: aiosend.webhook.base.RequestHandler.webhook:3 of
 msgid "Decorator for handler function."
@@ -122,7 +122,7 @@ msgid ""
 "this class."
 msgstr ""
 "Если вы хотите создать свой собственный менеджер вебхуков, вы должны "
-"наследоваться от этого класса"
+"наследоваться от этого класса."
 
 #: aiosend.webhook.aiohttp_manager.AiohttpManager.register_handler:1
 #: aiosend.webhook.base.WebhookManager.register_handler:1
@@ -137,7 +137,7 @@ msgid ""
 "used for registering webhook handler in your app."
 msgstr ""
 "Переопределите этот метод в классе вашего менеджера вебхуков. Этот метод "
-"используется для регистрации обработчика вебхуков в вашем приложении"
+"используется для регистрации обработчика вебхуков в вашем приложении."
 
 #: ../../events/webhook.rst
 msgid "Parameters"
@@ -145,7 +145,7 @@ msgstr ""
 
 #: aiosend.webhook.base.WebhookManager.register_handler:6 of
 msgid "Web server handler object."
-msgstr "Объект обработчика веб-сервера"
+msgstr "Объект обработчика веб-сервера."
 
 #: aiosend.webhook.aiohttp_manager.AiohttpManager.register_handler:4
 #: aiosend.webhook.base.WebhookManager.register_handler:7
