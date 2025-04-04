@@ -25,6 +25,6 @@ class GetMe:
 
         Source: https://help.crypt.bot/crypto-pay-api#getMe
 
-        :return: :class:`App` object.
+        :return: :class:`aiosend.types.App` object.
         """
         return await self(self.GetMeMethod(**locals()))

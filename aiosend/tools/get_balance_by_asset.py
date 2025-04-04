@@ -18,12 +18,12 @@ class GetBalanceByAsset:
         """
         Get the balance of a specific asset.
 
-        Wrapper for :class:`aiosend.CryptoPay.get_balance`.
+        Wrapper for :meth:`aiosend.CryptoPay.get_balance`.
 
         Use this method to get the balance of a specific asset.
 
-        :return: :class:`Balance` on success.
-        :raise: :class:`CryptoPayError` if there is no such asset.
+        :return: :class:`aiosend.types.Balance` on success.
+        :raise: :class:`aiosend.errors.CryptoPayError` if there is no such asset.
         """
         balances = await self.get_balance()
         for balance in balances:

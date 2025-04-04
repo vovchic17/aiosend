@@ -25,7 +25,7 @@ class ExchangeRate(CryptoPayObject):
 
     async def update(self) -> None:
         """
-        Shortcut for method :class:`aiosend.CryptoPay.getExchangeRates`.
+        Shortcut for method :meth:`aiosend.CryptoPay.get_exchange_rates`.
 
         Use this method to update ExchangeRate object.
 

@@ -16,12 +16,12 @@ class GetCheck:
         """
         Get exactly one check or none.
 
-        Wrapper for :class:`aiosend.CryptoPay.get_checks`
+        Wrapper for :meth:`aiosend.CryptoPay.get_checks`
 
         Use this method to update status of an existing check
         object or to get this object by passing the check id.
 
-        :return: :class:`aiosend.types.Check` object.
+        :return: :meth:`aiosend.types.Check` object.
         """
         check_id = check.check_id if isinstance(check, Check) else check
 

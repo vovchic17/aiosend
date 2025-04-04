@@ -78,7 +78,7 @@ class CreateInvoice:
         createInvoice method.
 
         Use this method to create a new invoice.
-        On success, returns an object of the created :class:`Invoice`.
+        On success, returns an object of the created :class:`aiosend.types.Invoice`.
 
         Source: https://help.crypt.bot/crypto-pay-api#createInvoice
 
@@ -95,6 +95,6 @@ class CreateInvoice:
         :param allow_comments: *Optional*. Allow a user to add a comment to the payment. Defaults to :code:`True`.
         :param allow_anonymous: *Optional*. Allow a user to pay the invoice anonymously. Defaults to :code:`True`.
         :param expires_in: *Optional*. You can set a payment time limit for the invoice in seconds. Values between 1-2678400 are accepted.
-        :return: :class:`Invoice` object
+        :return: :class:`aiosend.types.Invoice` object
         """
         return await self(self.CreateInvoiceMethod(**locals()))

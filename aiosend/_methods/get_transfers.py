@@ -36,7 +36,7 @@ class GetTransfers:
         getTransfers method.
 
         Use this method to get transfers created by your app.
-        On success, returns array of :class:`Transfer`.
+        On success, returns array of :class:`aiosend.types.Transfer`.
 
         Source: https://help.crypt.bot/crypto-pay-api#getTransfers
 
@@ -45,6 +45,6 @@ class GetTransfers:
         :param spend_id: *Optional*. Unique UTF-8 transfer string.
         :param offset: *Optional*. Offset needed to return a specific subset of transfers. Defaults to 0.
         :param count: *Optional*. Number of transfers to be returned. Values between 1-1000 are accepted. Defaults to 100.
-        :return: List of :class:`Transfer` objects.
+        :return: List of :class:`aiosend.types.Transfer` objects.
         """
         return await self(self.GetTransfersMethod(**locals()))

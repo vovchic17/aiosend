@@ -23,10 +23,10 @@ class GetExchangeRates:
 
         Use this method to get exchange rates of supported currencies.
         Requires no parameters.
-        Returns array of :class:`ExchangeRate`.
+        Returns array of :class:`aiosend.types.ExchangeRate`.
 
         Source: https://help.crypt.bot/crypto-pay-api#getExchangeRates
 
-        :return: List of :class:`ExchangeRate` objects.
+        :return: List of :class:`aiosend.types.ExchangeRate` objects.
         """
         return await self(self.GetExchangeRates(**locals()))

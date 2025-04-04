@@ -36,7 +36,7 @@ class GetChecks:
         getChecks method.
 
         Use this method to get checks created by your app.
-        On success, returns array of :class:`Check`.
+        On success, returns array of :class:`aiosend.types.Check`.
 
         Source: https://help.crypt.bot/crypto-pay-api#getChecks
 
@@ -45,6 +45,6 @@ class GetChecks:
         :param status: *Optional*. Status of check to be returned. Available statuses: “active” and “activated”. Defaults to all statuses.
         :param offset: *Optional*. Offset needed to return a specific subset of check. Defaults to 0.
         :param count: *Optional*. Number of checks to be returned. Values between 1-1000 are accepted. Defaults to 100.
-        :return: List of :class:`Check` objects.
+        :return: List of :class:`aiosend.types.Check` objects.
         """
         return await self(self.GetChecksMethod(**locals()))

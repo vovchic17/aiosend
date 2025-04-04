@@ -60,7 +60,7 @@ class CryptoPay(Methods, Tools, RequestHandler, PollingManager):
         Use this method to make an API request.
 
         :param method: CryptoPayMethod object.
-        :return: :class:`CryptoPayType` object.
+        :return: :class:`aiosend.types.CryptoPayType` object.
         """
         loggers.client.debug(
             "Requesting: /%s with payload %s",

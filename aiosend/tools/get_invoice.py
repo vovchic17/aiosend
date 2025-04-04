@@ -16,7 +16,7 @@ class GetInvoice:
         """
         Get exactly one invoice or none.
 
-        Wrapper for :class:`aiosend.CryptoPay.get_invoices`
+        Wrapper for :meth:`aiosend.CryptoPay.get_invoices`
 
         Use this method to update status of an existing invoice
         object or to get this object by passing the invoice id.

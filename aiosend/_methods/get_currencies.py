@@ -27,6 +27,6 @@ class GetCurrencies:
 
         Source: https://help.crypt.bot/crypto-pay-api#getCurrencies
 
-        :return: List of :class:`Currency` objects.
+        :return: List of :class:`aiosend.types.Currency` objects.
         """
         return await self(self.GetCurrenciesMethod(**locals()))

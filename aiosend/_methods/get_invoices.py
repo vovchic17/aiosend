@@ -45,7 +45,7 @@ class GetInvoices:
         getInvoices method.
 
         Use this method to get invoices created by your app.
-        On success, returns array of :class:`Invoice`.
+        On success, returns array of :class:`aiosend.types.Invoice`.
 
         Source: https://help.crypt.bot/crypto-pay-api#getInvoices
 
@@ -55,6 +55,6 @@ class GetInvoices:
         :param status: *Optional*. Status of invoices to be returned. Available statuses: “active” and “paid”. Defaults to all statuses.
         :param offset: *Optional*. Offset needed to return a specific subset of invoices. Defaults to 0.
         :param count: *Optional*. Number of invoices to be returned. Values between 1-1000 are accepted. Defaults to 100.
-        :return: List of :class:`Invoice` objects.
+        :return: List of :class:`aiosend.types.Invoice` objects.
         """
         return await self(self.GetInvoicesMethod(**locals()))

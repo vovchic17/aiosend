@@ -15,8 +15,8 @@ class DeleteAllChecks:
         """
         Delete all checks.
 
-        Wrapper for :class:`aiosend.CryptoPay.get_checks`
-        and :class:`aiosend.CryptoPay.delete_check`
+        Wrapper for :meth:`aiosend.CryptoPay.get_checks`
+        and :meth:`aiosend.CryptoPay.delete_check`
 
         Use this method to delete all existing
         checks created by your app.

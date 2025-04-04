@@ -28,12 +28,12 @@ class GetStats:
         getStats method.
 
         Use this method to get app statistics.
-        On success, returns :class:`AppStats`.
+        On success, returns :class:`aiosend.types.AppStats`.
 
         Source: https://help.crypt.bot/crypto-pay-api#jvP3
 
         :param start_at: *Optional*. Date from which start calculating statistics. Default is current date minus 24 hours.
         :param end_at: *Optional*. The date on which to finish calculating statistics. Default is current date.
-        :return: :class:`AppStats` object.
+        :return: :class:`aiosend.types.AppStats` object.
         """
         return await self(self.GetStatsMethod(**locals()))

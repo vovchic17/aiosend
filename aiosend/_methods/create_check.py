@@ -32,7 +32,7 @@ class CreateCheck:
         createCheck method.
 
         Use this method to create a new check.
-        On success, returns an object of the created :class:`Check`.
+        On success, returns an object of the created :class:`aiosend.types.Check`.
 
         Source: https://help.crypt.bot/crypto-pay-api#createCheck
 

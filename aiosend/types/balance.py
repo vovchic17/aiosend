@@ -19,7 +19,7 @@ class Balance(CryptoPayObject):
 
     async def update(self) -> None:
         """
-        Shortcut for method :class:`aiosend.CryptoPay.get_balance`.
+        Shortcut for method :meth:`aiosend.CryptoPay.get_balance`.
 
         Use this method to update balance object.
 

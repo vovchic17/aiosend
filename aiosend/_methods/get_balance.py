@@ -21,10 +21,10 @@ class GetBalance:
 
         Use this method to get balances of your app.
         Requires no parameters.
-        Returns array of :class:`Balance`.
+        Returns array of :class:`aiosend.types.Balance`.
 
         Source: https://help.crypt.bot/crypto-pay-api#getBalance
 
-        :return: List of :class:`Balance` objects.
+        :return: List of :class:`aiosend.types.Balance` objects.
         """
         return await self(self.GetBalanceMethod(**locals()))

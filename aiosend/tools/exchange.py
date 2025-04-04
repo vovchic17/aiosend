@@ -19,7 +19,7 @@ class Exchange:
         """
         Exchange currency.
 
-        Wrapper for :class:`aiosend.CryptoPay.get_exchange_rates`.
+        Wrapper for :meth:`aiosend.CryptoPay.get_exchange_rates`.
 
         Use this method to get the equivalent amount in
         the target currency for the source currency.
