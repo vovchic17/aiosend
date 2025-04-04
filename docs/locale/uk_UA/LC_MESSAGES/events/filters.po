@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../events/filters.rst:3
 msgid "Filters"
-msgstr ""
+msgstr "Фільтри"
 
 #: ../../events/filters.rst:5
 msgid ""
@@ -32,22 +31,27 @@ msgid ""
 "the handler is suitable for the update. Once a handler with a suitable "
 "set of filters is found, searching of handler will be stopped."
 msgstr ""
+"**Фільтри** необхідні для маршрутизації оновлень до конкретного обробника."
+":class:`WebhookManager <aiosend.webhook.WebhookManager>` та "
+":class:`PollingManager <aiosend.polling.PollingManager>` перевірятимуть "
+"Чи підходить функція-обробник для оновлення. Як тільки обробник з відповідним "
+"Знайдено пошук фільтрів, пошук обробника зупиняється."
 
 #: ../../events/filters.rst:13
 msgid "Filters can be:"
-msgstr ""
+msgstr "Фільтрами можуть бути:"
 
 #: ../../events/filters.rst:14
 msgid "asynchronous function"
-msgstr ""
+msgstr "асинхронна функція"
 
 #: ../../events/filters.rst:15
 msgid "synchronous function"
-msgstr ""
+msgstr "синхронна функція"
 
 #: ../../events/filters.rst:16
 msgid "lambda function"
-msgstr ""
+msgstr "lambda функція"
 
 #: ../../events/filters.rst:17
 msgid ""
@@ -63,22 +67,25 @@ msgstr ""
 #: ../../events/filters.rst:21
 msgid "For example, you can create a couple of invoices and poll them like that"
 msgstr ""
+"примірник `MagicFilter"
+"<https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html"
+"#magic-filters>`_"
 
 #: ../../events/filters.rst:45
 msgid "Magic filter"
-msgstr ""
+msgstr "Магічні фільтри"
 
 #: ../../events/filters.rst:61
 msgid "Function filter"
-msgstr ""
+msgstr "Функція-фільтр"
 
 #: ../../events/filters.rst:63
 msgid "You can use either :code:`def`, :code:`async def` or :code:`lambda`"
-msgstr ""
+msgstr "Ви можете використовувати або :code:`def`, або :code:`async def`, або :code:`lambda`"
 
 #: ../../events/filters.rst:82
 msgid "Get filter result as handler argument"
-msgstr ""
+msgstr "Отримання результату фільтра як аргумент оброблювача"
 
 #: ../../events/filters.rst:84
 msgid ""
@@ -87,8 +94,12 @@ msgid ""
 "#get-filter-result-as-handler-argument>`_ :code:`as_` method to get "
 "filter result as handler argument"
 msgstr ""
+"Ви можете використовувати метод :code:`as_` з `магічних фільтрів aiogram 3.x"
+"<https://docs.aiogram.dev/en/dev-3.x/dispatcher/filters/magic_filters.html"
+"#get-filter-result-as-handler-argument>`_ щоб отримати"
+"результат фільтра як аргумент оброблювача"
 
 #: ../../events/filters.rst:96
 msgid "You can also return context data from function filters like that"
-msgstr ""
+msgstr "Ви також можете повертати контекстні дані з фільтрів-функцій наступним чином"
 

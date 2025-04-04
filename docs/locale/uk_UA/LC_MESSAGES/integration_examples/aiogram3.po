@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
@@ -26,9 +25,9 @@ msgstr ""
 
 #: ../../integration_examples/aiogram3.rst:6
 msgid "Usage example with `aiogram 3.x <https://aiogram.dev/>`_"
-msgstr ""
+msgstr "Приклад використання з `aiogram 3.x <https://aiogram.dev/>`_"
 
 #: ../../integration_examples/aiogram3.rst:11
 msgid "Preview"
-msgstr ""
+msgstr "Предперегляд"
 

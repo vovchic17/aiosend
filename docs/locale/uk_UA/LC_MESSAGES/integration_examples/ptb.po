@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
@@ -29,8 +28,10 @@ msgid ""
 "Usage example with `python-telegram-bot <https://docs.python-telegram-"
 "bot.org/en/latest/>`_"
 msgstr ""
+"Приклад використання з `python-telegram-bot <https://docs.python-telegram-"
+"bot.org/en/latest/>`_"
 
 #: ../../integration_examples/ptb.rst:11
 msgid "Preview"
-msgstr ""
+msgstr "Предперегляд"
 

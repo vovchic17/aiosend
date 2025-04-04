@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
@@ -22,37 +21,39 @@ msgstr ""
 
 #: ../../events/polling_config.rst:2
 msgid "Polling configuration"
-msgstr ""
+msgstr "Конфігурація поллінгу"
 
 #: ../../events/polling_config.rst:3
 msgid "You can configure your own polling configuration."
-msgstr ""
+msgstr "Ви можете налаштувати власну конфігурацію полінгу."
 
 #: aiosend.polling.base.PollingConfig:1 of
 msgid "Polling configuration."
-msgstr ""
+msgstr "Конфігурація полінгу."
 
 #: ../../docstring aiosend.polling.PollingConfig.delay:1 of
 msgid "Time to wait between the requests in seconds."
-msgstr ""
+msgstr "Час очікування між запитами (у секундах)."
 
 #: ../../docstring aiosend.polling.PollingConfig.timeout:1 of
 msgid "Timeout in seconds."
-msgstr ""
+msgstr "Таймаут у секундах."
 
 #: aiosend.polling.manager.PollingManager:1 of
 msgid "Polling manager class."
-msgstr ""
+msgstr "Клас поллінг-менеджера."
 
 #: aiosend.polling.manager.PollingManager:3 of
 msgid ""
 "This class is used to handle payments and check activation via polling "
 "method."
 msgstr ""
+"Цей клас використовується для обробки платежів та активацій чеків"
+"методом поллінга"
 
 #: aiosend.polling.manager.PollingManager.start_polling:1 of
 msgid "Run polling."
-msgstr ""
+msgstr "Запуск поллінгу."
 
 #: ../../events/polling_config.rst
 msgid "Parameters"
@@ -60,7 +61,7 @@ msgstr ""
 
 #: aiosend.polling.manager.PollingManager.start_polling:4 of
 msgid "function to run in background."
-msgstr ""
+msgstr "функція, що запускається у фоні."
 
 #: ../../events/polling_config.rst
 msgid "Return type"

@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../events/invoice_polling.rst:3
 msgid "Invoice polling"
-msgstr ""
+msgstr "Поллінг рахунків"
 
 #: ../../events/invoice_polling.rst:5
 msgid ""
@@ -34,6 +33,14 @@ msgid ""
 "Invoice polling uses the :attr:`/getInvoices "
 "<aiosend.CryptoPay.get_invoices>` method."
 msgstr ""
+"Полінг - це метод отримання оновлень шляхом періодичного відправлення"
+"запитів. Після того, як :attr:`статус рахунку "
+"<aiosend.types.Invoice.status>` буде змінено на :attr:`PAID "
+"<aiosend.enums.InvoiceStatus.PAID>`, :attr:`поллінг-менеджер"
+"<aiosend.polling.PollingManager>` викличе обробник "
+":attr:`invoice_polling <aiosend.CryptoPay.invoice_polling>`. Поллінг "
+"Рахунків використовує метод :attr:`/getInvoices "
+"<aiosend.CryptoPay.get_invoices>`."
 
 #: ../../events/invoice_polling.rst:13
 msgid ""
@@ -45,23 +52,33 @@ msgid ""
 "stop polling that invoice and call the :attr:`expired_invoice_polling "
 "<aiosend.CryptoPay.expired_invoice_polling>` handler if it is declared."
 msgstr ""
+"Менеджер опитування (:attr:`Polling manager"
+"<aiosend.polling.PollingManager>`) має налаштування (:attr:`configuration "
+"<aiosend.polling.PollingConfig>`), в яких задаються :attr:`затримка "
+"<aiosend.polling.PollingConfig.delay>` між запитами та :attr:`таймаут "
+"<aiosend.polling.PollingConfig.timeout>` для кожного рахунку в черзі."
+"Після закінчення таймауту менеджер припиняє опитування даного рахунку і, якщо "
+"вказаний, викликає обробник :attr:`expired_invoice_polling"
+"<aiosend.CryptoPay.expired_invoice_polling>`."
 
 #: ../../events/invoice_polling.rst:22
 msgid "**Default is 2 seconds delay and 300 seconds (5 min) timeout**."
 msgstr ""
+"** За замовчуванням затримка між запитами - 2 секунди, а тайм-аут - 300 "
+"секунд (5 хвилин)**."
 
 #: ../../events/invoice_polling.rst:24
 msgid ":doc:`You can change the polling configuration. <polling_config>`"
-msgstr ""
+msgstr ":doc:`Ви можете змінити налаштування опитування. <polling_config>`"
 
 #: aiosend.polling.invoice.InvoicePollingManager.invoice_polling:1 of
 msgid "Register a handler for polling invoice updates."
-msgstr ""
+msgstr "Призначте функцію-обробник для оновлення рахунків під час опитування."
 
 #: aiosend.polling.invoice.InvoicePollingManager.expired_invoice_polling:3
 #: aiosend.polling.invoice.InvoicePollingManager.invoice_polling:3 of
 msgid "Decorator for handler function."
-msgstr ""
+msgstr "Декоратор для функції-обробника."
 
 #: ../../events/invoice_polling.rst
 msgid "Return type"
@@ -86,13 +103,13 @@ msgstr ""
 #: aiosend.polling.invoice.InvoicePollingManager.expired_invoice_polling:6
 #: aiosend.polling.invoice.InvoicePollingManager.invoice_polling:6 of
 msgid "handler function."
-msgstr ""
+msgstr "функція-обробник."
 
 #: aiosend.polling.invoice.InvoicePollingManager.expired_invoice_polling:1 of
 msgid "Register a handler for timed out invoices."
-msgstr ""
+msgstr "Призначте функцію-обробник для рахунків з часом очікування."
 
 #: ../../events/invoice_polling.rst:30
 msgid "Usage example"
-msgstr ""
+msgstr "Приклад використання"
 

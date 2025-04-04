@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
@@ -22,25 +21,27 @@ msgstr ""
 
 #: ../../events/webhook.rst:3
 msgid "Webhook"
-msgstr ""
+msgstr "Вебхукі"
 
 #: ../../events/webhook.rst:6
 msgid ""
 "To use webhooks you need to enable them in the `@CryptoBot "
 "<https://send.t.me>`_ settings as follows:"
 msgstr ""
+"Для використання веб-хуків вам потрібно включити їх у налаштуваннях"
+"`@CryptoBot <https://send.t.me>`_ наступним чином:"
 
 #: ../../events/webhook.rst:8
 msgid "🏝 Crypto Pay -> My Apps -> YOUR APP -> Webhooks -> 🌕 Enable webhooks."
-msgstr ""
+msgstr "🏝 Crypto Pay -> Мої додатки -> <Ваш додаток> -> Вебхукі -> 🌕 Включити вебхуки."
 
 #: aiosend.webhook.base.RequestHandler.webhook:1 of
 msgid "Register a handler for webhook invoice updates."
-msgstr ""
+msgstr "Додавання обробника для вебхук-повідомлень."
 
 #: aiosend.webhook.base.RequestHandler.webhook:3 of
 msgid "Decorator for handler function."
-msgstr ""
+msgstr "Декоратор для функції-обробника."
 
 #: ../../events/webhook.rst
 msgid "Return type"
@@ -63,33 +64,39 @@ msgstr ""
 
 #: aiosend.webhook.base.RequestHandler.webhook:6 of
 msgid "handler function."
-msgstr ""
+msgstr "функція-обробник."
 
 #: ../../events/webhook.rst:13
 msgid ""
 "Usage example with `aiohttp web server "
 "<https://docs.aiohttp.org/en/stable/web_quickstart.html>`_"
 msgstr ""
+"Приклад використання з `aiohttp веб-сервером"
+"<https://docs.aiohttp.org/en/stable/web_quickstart.html>`_"
 
 #: ../../events/webhook.rst:17
 msgid ""
 "Usage example with `fastapi web server "
 "<https://fastapi.tiangolo.com/tutorial/first-steps/>`_"
 msgstr ""
+"Приклад використання з `fastapi веб-сервером"
+"<https://fastapi.tiangolo.com/tutorial/first-steps/>`_"
 
 #: ../../events/webhook.rst:19
 msgid "In order to use aiosend with fastapi you need to install extra package"
-msgstr ""
+msgstr "Щоб використовувати aiosend з fastapi, вам потрібно встановити екстра залежність"
 
 #: ../../events/webhook.rst:28
 msgid ""
 "Usage example with `flask web server "
 "<https://flask.palletsprojects.com/en/3.0.x/quickstart/#quickstart>`_"
 msgstr ""
+"Приклад використання з `flask веб-сервером"
+"<https://flask.palletsprojects.com/en/3.0.x/quickstart/#quickstart>`_"
 
 #: ../../events/webhook.rst:30
 msgid "In order to use aiosend with flask you need to install extra package"
-msgstr ""
+msgstr "Щоб використовувати aiosend з flask, вам потрібно встановити екстра залежність"
 
 #: ../../events/webhook.rst:38
 msgid ""
@@ -99,29 +106,38 @@ msgid ""
 ":class:`aiosend.webhook.WebhookManager` and overriding "
 ":attr:`aiosend.webhook.WebhookManager.register_handler`."
 msgstr ""
+"**aiosend** використовує `aiohttp"
+"<https://docs.aiohttp.org/en/stable/index.html>`_ як веб-сервер за промовчанням."
+"Ви можете додати свій власний менеджер веб-хуків, наслідуючи "
+":class:`aiosend.webhook.WebhookManager` і перевизначаючи"
+":attr:`aiosend.webhook.WebhookManager.register_handler`."
 
 #: aiosend.webhook.base.WebhookManager:1 of
 msgid "Webhook manager."
-msgstr ""
+msgstr "Менеджер вебхуків."
 
 #: aiosend.webhook.base.WebhookManager:3 of
 msgid ""
 "If you want to implement your own webhook manager, you must inherit from "
 "this class."
 msgstr ""
+"Якщо ви хочете створити свій власний менеджер вебхуків, ви повинні"
+"успадковуватись від цього класу"
 
 #: aiosend.webhook.aiohttp_manager.AiohttpManager.register_handler:1
 #: aiosend.webhook.base.WebhookManager.register_handler:1
 #: aiosend.webhook.fastapi_manager.FastAPIManager.register_handler:1
 #: aiosend.webhook.flask_manager.FlaskManager.register_handler:1 of
 msgid "Register webhook handler."
-msgstr ""
+msgstr "Реєстрація обробника вебхуків."
 
 #: aiosend.webhook.base.WebhookManager.register_handler:3 of
 msgid ""
 "Override this method in your own webhook manager class. This method is "
 "used for registering webhook handler in your app."
 msgstr ""
+"Перевизначіть цей метод у класі вашого менеджера веб-хуків. Цей метод "
+"використовується для реєстрації обробника веб-хуків у вашому додатку."
 
 #: ../../events/webhook.rst
 msgid "Parameters"
@@ -129,7 +145,7 @@ msgstr ""
 
 #: aiosend.webhook.base.WebhookManager.register_handler:6 of
 msgid "Web server handler object."
-msgstr ""
+msgstr "Об'єкт обробника веб-сервера."
 
 #: aiosend.webhook.aiohttp_manager.AiohttpManager.register_handler:4
 #: aiosend.webhook.base.WebhookManager.register_handler:7
@@ -146,11 +162,11 @@ msgstr ""
 
 #: aiosend.webhook.aiohttp_manager.AiohttpManager:1 of
 msgid "aiohttp webhook manager."
-msgstr ""
+msgstr "Менеджер вебхуків на aiohttp."
 
 #: aiosend.webhook.aiohttp_manager.AiohttpManager:3 of
 msgid "Webhook manager based on :class:`aiohttp.web.Application`."
-msgstr ""
+msgstr "Менеджер веб-хуків, що базується на :class:`aiohttp.web.Application`."
 
 #: aiosend.webhook.fastapi_manager.FastAPIManager:1 of
 msgid ""
@@ -160,11 +176,11 @@ msgstr ""
 
 #: aiosend.webhook.fastapi_manager.FastAPIManager:1 of
 msgid "FastAPI webhook manager."
-msgstr ""
+msgstr "Менеджер вебхуків на FastAPI."
 
 #: aiosend.webhook.fastapi_manager.FastAPIManager:3 of
 msgid "Webhook manager based on :class:`fastapi.FastAPI`."
-msgstr ""
+msgstr "Менеджер вебхуків, що базується на :class:`fastapi.FastAPI`."
 
 #: aiosend.webhook.flask_manager.FlaskManager:1 of
 msgid ""
@@ -174,9 +190,8 @@ msgstr ""
 
 #: aiosend.webhook.flask_manager.FlaskManager:1 of
 msgid "Flask webhook manager."
-msgstr ""
+msgstr "Менеджер вебхуків на Flask."
 
 #: aiosend.webhook.flask_manager.FlaskManager:3 of
 msgid "Webhook manager based on :class:`flask.Flask`."
-msgstr ""
-
+msgstr "Менеджер вебхуків, що базується на :class:`flask.Flask`."

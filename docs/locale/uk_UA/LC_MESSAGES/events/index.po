@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
@@ -22,21 +21,21 @@ msgstr ""
 
 #: ../../events/index.rst:3
 msgid "Events"
-msgstr ""
+msgstr "Події"
 
 #: ../../events/index.rst:5
 msgid "**Webhook** - updates handling via webhook."
-msgstr ""
+msgstr "**Вебхукі** - обробка подій за допомогою вебхуків."
 
 #: ../../events/index.rst:6
 msgid "**Invoice polling** - invoice updates handling via polling."
-msgstr ""
+msgstr "**Полінг рахунків** - обробка подій оплати рахунків за допомогою поллінгу."
 
 #: ../../events/index.rst:7
 msgid "**Check polling** - check updates handling via polling."
-msgstr ""
+msgstr "**Полінг чеків** - обробка подій активації чеків за допомогою полінгу."
 
 #: ../../events/index.rst:8
 msgid "**Polling config** - configuration for update requests"
-msgstr ""
+msgstr "**Конфігурація поллінга** - конфігурація запитів оновлень."
 
