@@ -33,7 +33,7 @@ msgid ""
 "values of the enumerated parameters."
 msgstr ""
 "**aiosend** обеспечивает расширенную типизацию, что позволяет вам не "
-"запоминать значения перечисленных параметров."
+"запоминать значения перечисляемых параметров."
 
 #: ../../client/hints_warns.rst:15
 msgid "Wrong net warning"

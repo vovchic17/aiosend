@@ -96,7 +96,7 @@ msgid ""
 msgstr ""
 "Ви можете використовувати метод :code:`as_` з `магічних фільтрів aiogram 3.x"
 "<https://docs.aiogram.dev/en/dev-3.x/dispatcher/filters/magic_filters.html"
-"#get-filter-result-as-handler-argument>`_ щоб отримати"
+"#get-filter-result-as-handler-argument>`_ щоб отримати "
 "результат фільтра як аргумент оброблювача"
 
 #: ../../events/filters.rst:96
