@@ -84,7 +84,12 @@ class RequestHandler:
             ensure_ascii=False,
         )
         hmac = HMAC(secret, check_string.encode(), hashlib.sha256).hexdigest()
-        return hmac == headers.get("crypto-pay-api-signature")
+        signature = headers.get(
+            "Crypto-Pay-Api-Signature",
+        ) or headers.get(
+            "crypto-pay-api-signature",
+        )
+        return hmac == signature
 
     async def feed_update(
         self: "aiosend.CryptoPay",
