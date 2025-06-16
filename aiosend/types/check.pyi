@@ -18,7 +18,7 @@ class Check(CryptoPayObject):
     bot_check_url: _str
     status: CheckStatus | _str
     created_at: datetime
-    activated_at: datetime | None = None
+    activated_at: datetime | None
 
     def delete(self) -> bool: ...
     def update(self) -> NoneType: ...

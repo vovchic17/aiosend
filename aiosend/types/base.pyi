@@ -27,5 +27,5 @@ class ItemsList(BaseModel, Generic[_CryptoPayType]):
 
 class Response(BaseModel, Generic[_CryptoPayType]):
     ok: bool
-    result: _CryptoPayType | ItemsList[_CryptoPayType] | None = None
+    result: _CryptoPayType | ItemsList[_CryptoPayType] | None
     error: Error | None = None
