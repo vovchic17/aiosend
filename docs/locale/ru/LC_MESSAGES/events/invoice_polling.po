@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-04 20:47+0300\n"
+"POT-Creation-Date: 2025-06-16 22:54+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -52,13 +52,13 @@ msgid ""
 "stop polling that invoice and call the :meth:`expired_invoice_polling "
 "<aiosend.CryptoPay.expired_invoice_polling>` handler if it is declared."
 msgstr ""
-"Менеджер опроса :class:`Polling manager <aiosend.polling.PollingManager>` "
-"имеет настройки :class:`configuration <aiosend.polling.PollingConfig>`, в "
-"которых задаются :attr:`задержка <aiosend.polling.PollingConfig.delay>` "
-"(между запросами) и :attr:`таймаут <aiosend.polling.PollingConfig.timeout>`"
-" для каждого счета в очереди. После истечения таймаута менеджер "
-"прекращает опрос данного счета и, если указан, вызывает обработчик "
-":meth:`expired_invoice_polling "
+"Менеджер опроса :class:`Polling manager <aiosend.polling.PollingManager>`"
+" имеет настройки :class:`configuration <aiosend.polling.PollingConfig>`, "
+"в которых задаются :attr:`задержка <aiosend.polling.PollingConfig.delay>`"
+" (между запросами) и :attr:`таймаут "
+"<aiosend.polling.PollingConfig.timeout>` для каждого счета в очереди. "
+"После истечения таймаута менеджер прекращает опрос данного счета и, если "
+"указан, вызывает обработчик :meth:`expired_invoice_polling "
 "<aiosend.CryptoPay.expired_invoice_polling>`."
 
 #: ../../events/invoice_polling.rst:22
@@ -96,15 +96,6 @@ msgid ""
 "\\:py\\:data\\:\\`\\~typing.Any\\`\\]\\]`"
 msgstr ""
 
-#: ../../events/invoice_polling.rst
-msgid "Returns"
-msgstr ""
-
-#: aiosend.polling.invoice.InvoicePollingManager.expired_invoice_polling:6
-#: aiosend.polling.invoice.InvoicePollingManager.invoice_polling:6 of
-msgid "handler function."
-msgstr "функция-обработчик."
-
 #: aiosend.polling.invoice.InvoicePollingManager.expired_invoice_polling:1 of
 msgid "Register a handler for timed out invoices."
 msgstr "Назначьте функцию-обработчик для счетов с истекшим временем ожидания."
@@ -112,4 +103,10 @@ msgstr "Назначьте функцию-обработчик для счето
 #: ../../events/invoice_polling.rst:30
 msgid "Usage example"
 msgstr "Пример использования"
+
+#~ msgid "Returns"
+#~ msgstr ""
+
+#~ msgid "handler function."
+#~ msgstr "функция-обработчик."
 

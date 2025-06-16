@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-04 20:47+0300\n"
+"POT-Creation-Date: 2025-06-16 22:54+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -94,15 +94,6 @@ msgid ""
 "\\:py\\:data\\:\\`\\~typing.Any\\`\\]\\]`"
 msgstr ""
 
-#: ../../events/check_polling.rst
-msgid "Returns"
-msgstr ""
-
-#: aiosend.polling.check.CheckPollingManager.check_polling:6
-#: aiosend.polling.check.CheckPollingManager.expired_check_polling:6 of
-msgid "handler function."
-msgstr "функция-обработчик."
-
 #: aiosend.polling.check.CheckPollingManager.expired_check_polling:1 of
 msgid "Register a handler for timed out checks."
 msgstr "Добавление обработчика для истёкших чеков."
@@ -110,4 +101,10 @@ msgstr "Добавление обработчика для истёкших че
 #: ../../events/check_polling.rst:30
 msgid "Usage example"
 msgstr "Пример использования"
+
+#~ msgid "Returns"
+#~ msgstr ""
+
+#~ msgid "handler function."
+#~ msgstr "функция-обработчик."
 

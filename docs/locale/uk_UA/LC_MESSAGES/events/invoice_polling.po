@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-04 20:47+0300\n"
+"POT-Creation-Date: 2025-06-16 22:54+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -33,14 +33,13 @@ msgid ""
 "Invoice polling uses the :meth:`/getInvoices "
 "<aiosend.CryptoPay.get_invoices>` method."
 msgstr ""
-"Полінг - це метод отримання оновлень шляхом періодичного "
-"відправлення запитів. Після того, як :attr:`статус рахунку "
+"Полінг - це метод отримання оновлень шляхом періодичного відправлення "
+"запитів. Після того, як :attr:`статус рахунку "
 "<aiosend.types.Invoice.status>` буде змінено на :attr:`PAID "
-"<aiosend.enums.InvoiceStatus.PAID>`, "
-":class:`поллінг-менеджер <aiosend.polling.PollingManager>` викличе обробник"
-" :meth:`invoice_polling <aiosend.CryptoPay.invoice_polling>`. Поллінг "
-"Рахунків використовує метод :meth:`/getInvoices "
-"<aiosend.CryptoPay.get_invoices>`."
+"<aiosend.enums.InvoiceStatus.PAID>`, :class:`поллінг-менеджер "
+"<aiosend.polling.PollingManager>` викличе обробник :meth:`invoice_polling"
+" <aiosend.CryptoPay.invoice_polling>`. Поллінг Рахунків використовує "
+"метод :meth:`/getInvoices <aiosend.CryptoPay.get_invoices>`."
 
 #: ../../events/invoice_polling.rst:13
 msgid ""
@@ -58,7 +57,8 @@ msgstr ""
 ":attr:`таймаут <aiosend.polling.PollingConfig.timeout>` для кожного "
 "рахунку в черзі. Після закінчення таймауту менеджер припиняє опитування "
 "даного рахунку і, якщо вказаний, викликає обробник "
-":meth:`expired_invoice_polling <aiosend.CryptoPay.expired_invoice_polling>`."
+":meth:`expired_invoice_polling "
+"<aiosend.CryptoPay.expired_invoice_polling>`."
 
 #: ../../events/invoice_polling.rst:22
 msgid "**Default is 2 seconds delay and 300 seconds (5 min) timeout**."
@@ -95,15 +95,6 @@ msgid ""
 "\\:py\\:data\\:\\`\\~typing.Any\\`\\]\\]`"
 msgstr ""
 
-#: ../../events/invoice_polling.rst
-msgid "Returns"
-msgstr ""
-
-#: aiosend.polling.invoice.InvoicePollingManager.expired_invoice_polling:6
-#: aiosend.polling.invoice.InvoicePollingManager.invoice_polling:6 of
-msgid "handler function."
-msgstr "функція-обробник."
-
 #: aiosend.polling.invoice.InvoicePollingManager.expired_invoice_polling:1 of
 msgid "Register a handler for timed out invoices."
 msgstr "Призначте функцію-обробник для рахунків з часом очікування."
@@ -111,4 +102,10 @@ msgstr "Призначте функцію-обробник для рахункі
 #: ../../events/invoice_polling.rst:30
 msgid "Usage example"
 msgstr "Приклад використання"
+
+#~ msgid "Returns"
+#~ msgstr ""
+
+#~ msgid "handler function."
+#~ msgstr "функція-обробник."
 

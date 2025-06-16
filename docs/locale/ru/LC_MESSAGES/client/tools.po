@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-04 20:13+0300\n"
+"POT-Creation-Date: 2025-06-16 22:54+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -51,22 +51,18 @@ msgstr "Тип результата"
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`float\\``"
 msgstr ""
 
-#: ../../client/tools.rst
-msgid "Returns"
-msgstr ""
-
-#: aiosend.tools.exchange.Exchange.exchange:9 of
-msgid ":class:`float` on success."
-msgstr ":class:`float` в случае успеха."
-
 #: aiosend.tools.exchange.Exchange.exchange
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset of
 msgid "raise"
 msgstr ""
 
-#: aiosend.tools.exchange.Exchange.exchange:10 of
-msgid ":class:`aiosend.exceptions.CryptoPayError` if there is no such exchange rate."
-msgstr ":class:`aiosend.exceptions.CryptoPayError` если нет такого обменного курса."
+#: aiosend.tools.exchange.Exchange.exchange:9 of
+msgid ""
+":class:`aiosend.exceptions.CryptoPayError` if there is no such exchange "
+"rate."
+msgstr ""
+":class:`aiosend.exceptions.CryptoPayError` если нет такого обменного "
+"курса."
 
 #: ../../client/tools.rst:9 ../../client/tools.rst:15 ../../client/tools.rst:21
 msgid "Usage example"
@@ -94,11 +90,6 @@ msgstr ""
 
 #: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:8
 #: of
-msgid ":class:`aiosend.types.Balance` on success."
-msgstr ":class:`aiosend.types.Balance` в случае успеха."
-
-#: aiosend.tools.get_balance_by_asset.GetBalanceByAsset.get_balance_by_asset:9
-#: of
 msgid ":class:`aiosend.exceptions.CryptoPayError` if there is no such asset."
 msgstr ":class:`aiosend.exceptions.CryptoPayError` если нет такого актива."
 
@@ -124,10 +115,6 @@ msgid ""
 " \\| \\:py\\:obj\\:\\`None\\``"
 msgstr ""
 
-#: aiosend.tools.get_invoice.GetInvoice.get_invoice:9 of
-msgid ":class:`aiosend.types.Invoice` object."
-msgstr "Объект :class:`aiosend.types.Invoice`."
-
 #: aiosend.tools.get_check.GetCheck.get_check:1 of
 msgid "Get exactly one check or none."
 msgstr "Получение ровно одного чека, или ничего."
@@ -149,10 +136,6 @@ msgid ""
 ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~aiosend.types.check.Check\\`"
 " \\| \\:py\\:obj\\:\\`None\\``"
 msgstr ""
-
-#: aiosend.tools.get_check.GetCheck.get_check:9 of
-msgid ":meth:`aiosend.types.Check` object."
-msgstr "Объект :meth:`aiosend.types.Check`."
 
 #: aiosend.tools.delete_all_checks.DeleteAllChecks.delete_all_checks:1 of
 msgid "Delete all checks."
@@ -207,7 +190,21 @@ msgstr "Используйте этот метод для получения к�
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`str\\``"
 msgstr ""
 
-#: aiosend.tools.get_rates_image.GetRatesImage.get_rates_image:6 of
-msgid "rates image url."
-msgstr "Ссылка на изображение курса."
+#~ msgid "Returns"
+#~ msgstr ""
+
+#~ msgid ":class:`float` on success."
+#~ msgstr ":class:`float` в случае успеха."
+
+#~ msgid ":class:`aiosend.types.Balance` on success."
+#~ msgstr ":class:`aiosend.types.Balance` в случае успеха."
+
+#~ msgid ":class:`aiosend.types.Invoice` object."
+#~ msgstr "Объект :class:`aiosend.types.Invoice`."
+
+#~ msgid ":meth:`aiosend.types.Check` object."
+#~ msgstr "Объект :meth:`aiosend.types.Check`."
+
+#~ msgid "rates image url."
+#~ msgstr "Ссылка на изображение курса."
 

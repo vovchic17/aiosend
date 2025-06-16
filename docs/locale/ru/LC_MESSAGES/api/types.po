@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-28 11:59+0300\n"
+"POT-Creation-Date: 2025-06-16 23:01+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -357,6 +357,14 @@ msgstr "*Опционально*. Текст скрытого сообщения
 msgid "Unique ID for this invoice."
 msgstr "Уникальный ID данного счёта."
 
+#: ../../docstring aiosend.types.Invoice.is_swapped:1 of
+msgid ""
+"*Optional*. For invoices with the \"paid\" status, this flag indicates "
+"whether the swap was successful (only applicable if `swap_to` is set)."
+msgstr ""
+"*Опционально*. Для счетов со статусом \"paid\" этот флажок указывает, "
+"был ли обмен успешным (применимо только в том случае, если задано значение `swap_to`)."
+
 #: ../../docstring aiosend.types.Invoice.mini_app_invoice_url:1 of
 msgid "Use this URL to pay an invoice to the Telegram Mini App version."
 msgstr "Используйте этот URL чтобы оплатить счёт в Telegram Mini App версии."
@@ -428,6 +436,71 @@ msgstr "*Опционально*. Ранее предоставленная по
 #: ../../docstring aiosend.types.Invoice.status:1 of
 msgid "Status of the transfer, can be “active”, “paid” or “expired”."
 msgstr "Статус перевода, может быть “active”, “paid” или “expired”."
+
+#: ../../docstring aiosend.types.Invoice.swap_to:1 of
+msgid "\"USDT\", \"TON\", \"TRX\", \"ETH\", \"SOL\", \"BTC\", \"LTC\"."
+msgstr ""
+
+#: ../../docstring aiosend.types.Invoice.swap_to
+#: aiosend.types.Update.update_type of
+msgid "type"
+msgstr "Типы"
+
+#: ../../docstring aiosend.types.Invoice.swap_to:3 of
+msgid ""
+"*Optional*. The asset that will be attempted to be swapped into after the"
+" user makes a payment (the swap is not guaranteed). Supported assets"
+msgstr ""
+"*Опционально*. Актив, на который будет предпринята попытка обмена после "
+"того, как пользователь произведет платеж (обмен не гарантирован). Поддерживаемые активы:"
+
+#: ../../docstring aiosend.types.Invoice.swapped_output:1 of
+msgid ""
+"*Optional*. If `is_swapped` is `True`, stores the amount received as a "
+"result of the swap (in the `swapped_to` asset)."
+msgstr ""
+"*Опционально*. Если значение `is_swapped` равно `True`, то хранит сумму, полученную в "
+"результате обмена (в активе `swapped_to`)."
+
+#: ../../docstring aiosend.types.Invoice.swapped_rate:1 of
+msgid ""
+"*Optional*. If `is_swapped` is `True`, stores the exchange rate at which "
+"the swap was executed."
+msgstr ""
+"*Опционально*. Если значение `is_swapped` равно `True`, то хранит обменный курс, по которому "
+"был произведен обмен."
+
+#: ../../docstring aiosend.types.Invoice.swapped_to:1 of
+msgid ""
+"*Optional*. If `is_swapped` is `True`, stores the asset into which the "
+"swap was made."
+msgstr ""
+"*Опционально*. Если значение `is_swapped` равно `True`, то хранит актив, "
+"на который был произведен обмен."
+
+#: ../../docstring aiosend.types.Invoice.swapped_uid:1 of
+msgid ""
+"*Optional*. If `is_swapped` is `True`, stores the unique identifier of "
+"the swap."
+msgstr ""
+"*Опционально*. Если значение `is_swapped` равно `True`, то хранит "
+"уникальный идентификатор обмена."
+
+#: ../../docstring aiosend.types.Invoice.swapped_usd_amount:1 of
+msgid ""
+"*Optional*. If `is_swapped` is `True`, stores the resulting swap amount "
+"in USD."
+msgstr ""
+"*Опционально*. Если значение `is_swapped` равно `True`, то хранит итоговую сумму обмена "
+"в долларах США."
+
+#: ../../docstring aiosend.types.Invoice.swapped_usd_rate:1 of
+msgid ""
+"*Optional*. If `is_swapped` is `True`, stores the USD exchange rate of "
+"the currency from `swapped_to`."
+msgstr ""
+"*Optional*. Если значение `is_swapped` равно `True`, то хранит обменный курс в доллара США "
+"валюты `swapped_to`."
 
 #: ../../docstring aiosend.types.Invoice.usd_rate:1 of
 msgid ""
@@ -512,10 +585,6 @@ msgstr "Неуникальный ID обновления."
 #: ../../docstring aiosend.types.Update.update_type:1 of
 msgid "`invoice_paid` - the update sent when the invoice is paid."
 msgstr "`invoice_paid` - обновления было отправлено когда счёт был оплачен."
-
-#: ../../docstring aiosend.types.Update.update_type of
-msgid "type"
-msgstr "Типы"
 
 #: ../../docstring aiosend.types.Update.update_type:3 of
 msgid "Webhook update type. Supported update types"

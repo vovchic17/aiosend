@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 09:34+0300\n"
+"POT-Creation-Date: 2025-06-16 23:01+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -105,9 +105,8 @@ msgid ""
 "Cryptocurrency alphabetic code. Currently, can be “USDT”, “TON”, “BTC”, "
 "“ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet)."
 msgstr ""
-"Алфавітний код криптовалюти. В даний час це можуть бути “USDT”, "
-"“TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” і “USDC” (і “JET” для тестової "
-"Мережі)."
+"Алфавітний код криптовалюти. В даний час це можуть бути “USDT”, “TON”, "
+"“BTC”, “ETH”, “LTC”, “BNB”, “TRX” і “USDC” (і “JET” для тестової Мережі)."
 
 #: ../../docstring aiosend.types.Balance.onhold:1 of
 msgid "Unavailable amount currently is on hold in float."
@@ -187,7 +186,7 @@ msgstr "Назва валюти."
 
 #: ../../docstring aiosend.types.Currency.url:1 of
 msgid "Currency url."
-msgstr "URL валюти.""
+msgstr "URL валюти.\""
 
 #: aiosend.types.base.Error:1 of
 msgid "API error model."
@@ -250,10 +249,10 @@ msgid ""
 "“TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for "
 "testnet)."
 msgstr ""
-"*Опціонально*. Список валют, які можуть бути використані для оплати"
-"рахунки. Доступний тільки якщо currency_type є “fiat”. На даний момент "
-"Момент може бути “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” і "
-"“USDC” (і “JET” для testnet)."
+"*Опціонально*. Список валют, які можуть бути використані для "
+"оплатирахунки. Доступний тільки якщо currency_type є “fiat”. На даний "
+"момент Момент може бути “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” "
+"і “USDC” (і “JET” для testnet)."
 
 #: ../../docstring aiosend.types.Invoice.allow_anonymous:1 of
 msgid "True, if the user can pay the invoice anonymously."
@@ -273,9 +272,9 @@ msgid ""
 " currency_type is “crypto”. Currently, can be “USDT”, “TON”, “BTC”, "
 "“ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet)."
 msgstr ""
-"*Опціонально*. Код криптовалюти. Доступний лише якщо значення поля"
-" currency_type є “crypto”. На даний момент може бути “USDT”, "
-"“TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” і “USDC” (і “JET” для testnet)."
+"*Опціонально*. Код криптовалюти. Доступний лише якщо значення поля "
+"currency_type є “crypto”. На даний момент може бути “USDT”, “TON”, “BTC”,"
+" “ETH”, “LTC”, “BNB”, “TRX” і “USDC” (і “JET” для testnet)."
 
 #: ../../docstring aiosend.types.Invoice.bot_invoice_url:1 of
 msgid "URL should be provided to the user to pay the invoice."
@@ -314,24 +313,24 @@ msgid ""
 "*Optional*. Amount of service fees charged when the invoice was paid. "
 "Available only if status is “paid”."
 msgstr ""
-"*Опціонально*. Сума плати за обслуговування, що стягується при оплаті рахунку."
-"Доступна лише за наявності статусу “paid”."
+"*Опціонально*. Сума плати за обслуговування, що стягується при оплаті "
+"рахунку.Доступна лише за наявності статусу “paid”."
 
 #: ../../docstring aiosend.types.Invoice.fee_asset:1 of
 msgid ""
 "*Optional*. Asset of service fees charged when the invoice was paid. "
 "Available only if status is “paid”."
 msgstr ""
-"*Опціонально*. Валюта плати за обслуговування, що стягується під час оплати рахунку."
-"Доступна лише за наявності статусу “paid”."
+"*Опціонально*. Валюта плати за обслуговування, що стягується під час "
+"оплати рахунку.Доступна лише за наявності статусу “paid”."
 
 #: ../../docstring aiosend.types.Invoice.fee_in_usd:1 of
 msgid ""
 "*Optional*. Amount in USD of service fees charged when the invoice was "
 "paid. Available only if status is “paid”."
 msgstr ""
-"*Опціонально*. Сума плати за обслуговування, що стягується при оплаті рахунку в "
-"USD. Доступна лише за наявності статусу “paid”."
+"*Опціонально*. Сума плати за обслуговування, що стягується при оплаті "
+"рахунку в USD. Доступна лише за наявності статусу “paid”."
 
 #: ../../docstring aiosend.types.Invoice.fiat:1 of
 msgid ""
@@ -341,9 +340,9 @@ msgid ""
 "“BRL”, “IDR”, “AZN”, “AED”, “PLN” and “ILS\"."
 msgstr ""
 "*Опціонально*. Код фіатної валюти. Доступний лише якщо значення поля "
-"currency_type є “fiat”. На даний момент може бути “USD”, “EUR”, "
-"“RUB”, “BYN”, “UAH”, “GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, "
-"“THB”, “INR”, “BRL”, “IDR”, “AZN”, “AED”, “PLN” та “ILS”."
+"currency_type є “fiat”. На даний момент може бути “USD”, “EUR”, “RUB”, "
+"“BYN”, “UAH”, “GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, "
+"“INR”, “BRL”, “IDR”, “AZN”, “AED”, “PLN” та “ILS”."
 
 #: ../../docstring aiosend.types.Invoice.hash:1 of
 msgid "Hash of the invoice."
@@ -357,6 +356,14 @@ msgstr "*Опціонально*. Текст прихованого повідо
 msgid "Unique ID for this invoice."
 msgstr "Унікальний ID цього рахунку."
 
+#: ../../docstring aiosend.types.Invoice.is_swapped:1 of
+msgid ""
+"*Optional*. For invoices with the \"paid\" status, this flag indicates "
+"whether the swap was successful (only applicable if `swap_to` is set)."
+msgstr ""
+"*Опціонально*. Для рахунків зі статусом \"paid\" цей прапорець вказує, "
+"чи був обмін успішним (застосовується лише в тому випадку, якщо задано значення `swap_to`)."
+
 #: ../../docstring aiosend.types.Invoice.mini_app_invoice_url:1 of
 msgid "Use this URL to pay an invoice to the Telegram Mini App version."
 msgstr "Використовуйте цей URL, щоб сплатити рахунок у Telegram Mini App версії."
@@ -366,8 +373,8 @@ msgid ""
 "*Optional*. Amount of the invoice for which the invoice was paid. "
 "Available only if currency_type is “fiat” and status is “paid”."
 msgstr ""
-"*Опціонально*. Сума сплаченого рахунку. Доступно лише якщо "
-"currency_type є “fiat” і статус є “paid”."
+"*Опціонально*. Сума сплаченого рахунку. Доступно лише якщо currency_type "
+"є “fiat” і статус є “paid”."
 
 #: ../../docstring aiosend.types.Invoice.paid_anonymously:1 of
 msgid "True, if the invoice was paid anonymously."
@@ -406,17 +413,15 @@ msgstr ""
 
 #: ../../docstring aiosend.types.Invoice.paid_usd_rate:1 of
 msgid "*Optional*. Price of the asset in USD. Available only if status is “paid”."
-msgstr ""
-"*Опціонально*. Ціна валюти в USD. Доступна тільки якщо статус є "
-"“paid”."
+msgstr "*Опціонально*. Ціна валюти в USD. Доступна тільки якщо статус є “paid”."
 
 #: ../../docstring aiosend.types.Invoice.pay_url:1 of
 msgid ""
 "*Deprecated*. URL should be provided to the user to pay the invoice "
 "(described here for reference)."
 msgstr ""
-"*Застаріле*. URL, який має бути представлений користувачеві для "
-"оплати рахунку. (описано тут для довідки)."
+"*Застаріле*. URL, який має бути представлений користувачеві для оплати "
+"рахунку. (описано тут для довідки)."
 
 #: ../../docstring aiosend.types.Invoice.payload:1 of
 msgid "*Optional*. Previously provided data for this invoice."
@@ -426,13 +431,78 @@ msgstr "*Опціонально*. Раніше надане корисне на�
 msgid "Status of the transfer, can be “active”, “paid” or “expired”."
 msgstr "Статус перекладу може бути “active”, “paid” або “expired”."
 
+#: ../../docstring aiosend.types.Invoice.swap_to:1 of
+msgid "\"USDT\", \"TON\", \"TRX\", \"ETH\", \"SOL\", \"BTC\", \"LTC\"."
+msgstr ""
+
+#: ../../docstring aiosend.types.Invoice.swap_to
+#: aiosend.types.Update.update_type of
+msgid "type"
+msgstr "Типи"
+
+#: ../../docstring aiosend.types.Invoice.swap_to:3 of
+msgid ""
+"*Optional*. The asset that will be attempted to be swapped into after the"
+" user makes a payment (the swap is not guaranteed). Supported assets"
+msgstr ""
+"*Опціонально*. Актив, на який буде зроблена спроба обміну після"
+" того, як користувач здійснить платіж (обмін не гарантований). Підтримувані активи:"
+
+#: ../../docstring aiosend.types.Invoice.swapped_output:1 of
+msgid ""
+"*Optional*. If `is_swapped` is `True`, stores the amount received as a "
+"result of the swap (in the `swapped_to` asset)."
+msgstr ""
+"*Опціонально*. Якщо значення `is_swapped` дорівнює `True`, то зберігає суму, отриману в "
+"результаті обміну (в активі `swapped_to`)."
+
+#: ../../docstring aiosend.types.Invoice.swapped_rate:1 of
+msgid ""
+"*Optional*. If `is_swapped` is `True`, stores the exchange rate at which "
+"the swap was executed."
+msgstr ""
+"*Опціонально*. Якщо значення `is_swapped` дорівнює `True`, то зберігає обмінний курс, за яким "
+"був проведений обмін."
+
+#: ../../docstring aiosend.types.Invoice.swapped_to:1 of
+msgid ""
+"*Optional*. If `is_swapped` is `True`, stores the asset into which the "
+"swap was made."
+msgstr ""
+"*Опціонально*. Якщо значення `is_swapped` дорівнює `True`, то зберігає актив,"
+"на який був проведений обмін."
+
+#: ../../docstring aiosend.types.Invoice.swapped_uid:1 of
+msgid ""
+"*Optional*. If `is_swapped` is `True`, stores the unique identifier of "
+"the swap."
+msgstr ""
+"*Опціонально*. Якщо значення `is_swapped` дорівнює `True`, то зберігає "
+"унікальний ідентифікатор обміну."
+
+#: ../../docstring aiosend.types.Invoice.swapped_usd_amount:1 of
+msgid ""
+"*Optional*. If `is_swapped` is `True`, stores the resulting swap amount "
+"in USD."
+msgstr ""
+"*Опціонально*. Якщо значення `is_swapped` дорівнює `True`, то зберігає підсумкову суму обміну "
+"у доларах США."
+
+#: ../../docstring aiosend.types.Invoice.swapped_usd_rate:1 of
+msgid ""
+"*Optional*. If `is_swapped` is `True`, stores the USD exchange rate of "
+"the currency from `swapped_to`."
+msgstr ""
+"*Optional*. Якщо значення `is_swapped` дорівнює `True`, то зберігає обмінний курс в долара США "
+"валюти ' swapped_to'."
+
 #: ../../docstring aiosend.types.Invoice.usd_rate:1 of
 msgid ""
 "*Optional*. Price of the asset in USD. Available only in the Webhook "
 "update payload."
 msgstr ""
-"*Опціонально*. Ціна валюти в USD. Доступна тільки в корисному навантаженні "
-"webhook оновлення"
+"*Опціонально*. Ціна валюти в USD. Доступна тільки в корисному "
+"навантаженні webhook оновлення"
 
 #: ../../docstring aiosend.types.Invoice.web_app_invoice_url:1 of
 msgid "Use this URL to pay an invoice to the Web version of Crypto Bot."
@@ -444,7 +514,9 @@ msgstr "Список елементів."
 
 #: aiosend.types.base.ItemsList:3 of
 msgid "This model is used to convert a dictionary with the `items` key to a list."
-msgstr "Ця модель використовується для конвертації словника з ключем `items` у список."
+msgstr ""
+"Ця модель використовується для конвертації словника з ключем `items` у "
+"список."
 
 #: aiosend.types.base.Response:1 of
 msgid "API response model."
@@ -509,10 +581,6 @@ msgstr "Неунікальний ID оновлення."
 #: ../../docstring aiosend.types.Update.update_type:1 of
 msgid "`invoice_paid` - the update sent when the invoice is paid."
 msgstr "'invoice_paid` - оновлення було надіслано, коли рахунок було оплачено."
-
-#: ../../docstring aiosend.types.Update.update_type of
-msgid "type"
-msgstr "Типи"
 
 #: ../../docstring aiosend.types.Update.update_type:3 of
 msgid "Webhook update type. Supported update types"

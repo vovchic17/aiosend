@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-04 20:13+0300\n"
+"POT-Creation-Date: 2025-06-16 22:54+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -59,10 +59,6 @@ msgstr ""
 #: aiosend.types.invoice.Invoice.poll:9 aiosend.types.invoice.Invoice.update:7
 #: of
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:obj\\:\\`None\\``"
-msgstr ""
-
-#: ../../client/shortcuts.rst
-msgid "Returns"
 msgstr ""
 
 #: aiosend.types.check.Check.update:1 of
@@ -125,10 +121,6 @@ msgstr "Источник: https://help.crypt.bot/crypto-pay-api#deleteCheck"
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`bool\\``"
 msgstr ""
 
-#: aiosend.types.check.Check.delete:9 aiosend.types.invoice.Invoice.delete:9 of
-msgid ":code:`True` on success."
-msgstr ":code:`True` в случае успеха."
-
 #: aiosend.types.invoice.Invoice.delete:1 of
 msgid "Shortcut for method :meth:`aiosend.CryptoPay.delete_invoice`."
 msgstr "Сокращение для метода :meth:`aiosend.CryptoPay.delete_invoice`."
@@ -153,17 +145,9 @@ msgstr "QR код объекта"
 msgid "Get check qr code."
 msgstr "Получить qr код чека."
 
-#: aiosend.types.Check.qr:3 of
-msgid "check qr code url."
-msgstr "URL qr кода чека."
-
 #: aiosend.types.Invoice.qr:1 of
 msgid "Get invoice qr code."
 msgstr "Получить qr код счёта."
-
-#: aiosend.types.Invoice.qr:3 of
-msgid "invoice qr code url."
-msgstr "URL qr кода счёта."
 
 #: ../../client/shortcuts.rst:31
 msgid "Check image"
@@ -176,10 +160,6 @@ msgstr "Получить изображение предпросмотра че�
 #: aiosend.types.check.Check.get_image:3 of
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`str\\``"
 msgstr ""
-
-#: aiosend.types.check.Check.get_image:4 of
-msgid "check image url."
-msgstr "URL изображения чека."
 
 #: ../../client/shortcuts.rst:36
 msgid "Poll objects"
@@ -220,4 +200,19 @@ msgstr ""
 #: ../../client/shortcuts.rst:42
 msgid "Usage examples"
 msgstr "Пример использования"
+
+#~ msgid "Returns"
+#~ msgstr ""
+
+#~ msgid ":code:`True` on success."
+#~ msgstr ":code:`True` в случае успеха."
+
+#~ msgid "check qr code url."
+#~ msgstr "URL qr кода чека."
+
+#~ msgid "invoice qr code url."
+#~ msgstr "URL qr кода счёта."
+
+#~ msgid "check image url."
+#~ msgstr "URL изображения чека."
 
