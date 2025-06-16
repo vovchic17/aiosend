@@ -67,6 +67,22 @@ class Invoice(CryptoPayObject):
     """*Optional*. Description for this invoice."""
     status: InvoiceStatus | str | None = None
     """Status of the transfer, can be “active”, “paid” or “expired”."""
+    swap_to: Asset | str | None = None
+    """*Optional*. The asset that will be attempted to be swapped into after the user makes a payment (the swap is not guaranteed). Supported assets: "USDT", "TON", "TRX", "ETH", "SOL", "BTC", "LTC"."""
+    is_swapped: bool | None = None
+    """*Optional*. For invoices with the "paid" status, this flag indicates whether the swap was successful (only applicable if `swap_to` is set)."""
+    swapped_uid: int | None = None
+    """*Optional*. If `is_swapped` is `True`, stores the unique identifier of the swap."""
+    swapped_to: Asset | None = None
+    """*Optional*. If `is_swapped` is `True`, stores the asset into which the swap was made."""
+    swapped_rate: float | None = None
+    """*Optional*. If `is_swapped` is `True`, stores the exchange rate at which the swap was executed."""
+    swapped_output: float | None = None
+    """*Optional*. If `is_swapped` is `True`, stores the amount received as a result of the swap (in the `swapped_to` asset)."""
+    swapped_usd_amount: float | None = None
+    """*Optional*. If `is_swapped` is `True`, stores the resulting swap amount in USD."""
+    swapped_usd_rate: float | None = None
+    """*Optional*. If `is_swapped` is `True`, stores the USD exchange rate of the currency from `swapped_to`."""
     created_at: datetime
     """Date the invoice was created in ISO 8601 format."""
     paid_usd_rate: float | None = None
