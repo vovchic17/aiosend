@@ -24,6 +24,7 @@ class CreateInvoice:
         fiat: str | None
         accepted_assets: SerList[Asset] | None
         amount: float
+        swap_to: Asset | None
         description: str | None
         hidden_message: str | None
         paid_btn_name: str | None
@@ -65,6 +66,7 @@ class CreateInvoice:
         currency_type: CurrencyType | None = None,
         fiat: Fiat | None = None,
         accepted_assets: list[Asset] | None = None,
+        swap_to: Asset | None = None,
         description: str | None = None,
         hidden_message: str | None = None,
         paid_btn_name: PaidBtnName | None = None,
@@ -87,6 +89,7 @@ class CreateInvoice:
         :param asset: *Optional*. Required if currency_type is “crypto”. Cryptocurrency alphabetic code. Supported assets: “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC”.
         :param fiat: *Optional*. Required if currency_type is “fiat”. Fiat currency code. Supported fiat currencies: “USD”, “EUR”, “RUB”, “BYN”, “UAH”, “GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, “INR”, “BRL”, “IDR”, “AZN”, “AED”, “PLN” and “ILS".
         :param accepted_assets: *Optional*. List of cryptocurrency alphabetic codes. Assets which can be used to pay the invoice. Available only if currency_type is “fiat”. Supported assets: “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet). Defaults to all currencies.
+        :param swap_to: *Optional*. The asset that will be attempted to be swapped into after the user makes a payment (the swap is not guaranteed). Supported assets: "USDT", "TON", "TRX", "ETH", "SOL", "BTC", "LTC".
         :param description: *Optional*. Description for the invoice. User will see this description when they pay the invoice. Up to 1024 characters.
         :param hidden_message: *Optional*. Text of the message which will be presented to a user after the invoice is paid. Up to 2048 characters.
         :param paid_btn_name: *Optional*. Label of the button which will be presented to a user after the invoice is paid.

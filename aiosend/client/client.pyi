@@ -107,6 +107,7 @@ class CryptoPay:
         currency_type: CurrencyType | LiteralCurrencyType | _str | None = None,
         fiat: Fiat | LiteralFiat | _str | None = None,
         accepted_assets: _list[Asset | LiteralAsset | _str] | None = None,
+        swap_to: Asset | LiteralAsset | _str | None = None,
         description: _str | None = None,
         hidden_message: _str | None = None,
         paid_btn_name: PaidBtnName | LiteralPaidBtnName | _str | None = None,
