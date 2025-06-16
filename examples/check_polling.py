@@ -8,12 +8,12 @@ cp = CryptoPay("TOKEN")
 
 @cp.check_polling()
 async def check_handler(check: Check, payload: str) -> None:
-    print(f"Received", check.amount, check.asset, payload)
+    print("Received", check.amount, check.asset, payload)
 
 
 @cp.expired_check_polling()
 async def expired_check_handler(check: Check, payload: str) -> None:
-    print(f"Expired check", check.check_id, payload)
+    print("Expired check", check.check_id, payload)
 
 
 async def main() -> None:
