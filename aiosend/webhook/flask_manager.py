@@ -3,10 +3,9 @@ from typing import TYPE_CHECKING
 from .base import WebhookManager
 
 if TYPE_CHECKING:
-    from collections.abc import Awaitable, Callable
-    from typing import Any
-
     from flask import Flask  # noqa: F401
+
+    from .base import WebServerHandler
 
 
 class FlaskManager(WebhookManager["Flask"]):
@@ -18,12 +17,11 @@ class FlaskManager(WebhookManager["Flask"]):
 
     def register_handler(
         self,
-        feed_update: """Callable[[dict[str, Any],
-        dict[str, str]], Awaitable[bool]]""",
+        feed_update: "WebServerHandler",
     ) -> None:
         """Register webhook handler."""
         try:
-            from flask import request
+            from flask import request  # noqa: PLC0415
         except ModuleNotFoundError as e:
             msg = "flask is not installed"
             raise RuntimeError(msg) from e

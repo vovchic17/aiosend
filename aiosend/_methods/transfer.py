@@ -39,6 +39,7 @@ class Transfer:
         amount: float,
         spend_id: str | None = None,
         comment: str | None = None,
+        *,
         disable_send_notification: bool | None = None,
     ) -> TransferType:
         """

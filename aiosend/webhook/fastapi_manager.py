@@ -3,10 +3,9 @@ from typing import TYPE_CHECKING
 from .base import WebhookManager
 
 if TYPE_CHECKING:
-    from collections.abc import Awaitable, Callable
-    from typing import Any
-
     from fastapi import FastAPI  # noqa: F401
+
+    from .base import WebServerHandler
 
 
 class FastAPIManager(WebhookManager["FastAPI"]):
@@ -18,12 +17,11 @@ class FastAPIManager(WebhookManager["FastAPI"]):
 
     def register_handler(
         self,
-        feed_update: """Callable[[dict[str, Any],
-        dict[str, str]], Awaitable[bool]]""",
+        feed_update: "WebServerHandler",
     ) -> None:
         """Register webhook handler."""
         try:
-            from fastapi import HTTPException, Request
+            from fastapi import HTTPException, Request  # noqa: PLC0415
         except ModuleNotFoundError as e:
             msg = "fastapi is not installed"
             raise RuntimeError(msg) from e
@@ -34,6 +32,7 @@ class FastAPIManager(WebhookManager["FastAPI"]):
                 await request.json(),
                 dict(request.headers),
             )
+            resp = {"ok": status}
             if not status:
-                raise HTTPException(500, {"ok": status})
-            return {"ok": status}
+                raise HTTPException(500, resp)
+            return resp

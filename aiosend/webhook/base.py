@@ -17,7 +17,10 @@ if TYPE_CHECKING:
     import aiosend
     from aiosend._handler import CallbackType
 
-    WebServerHandler = Callable[[dict[str, Any], Mapping[str, str]], Awaitable]
+    WebServerHandler = Callable[
+        [dict[str, Any], Mapping[str, str]],
+        Awaitable[bool],
+    ]
 
 _APP = TypeVar("_APP")
 
@@ -37,8 +40,7 @@ class WebhookManager(Generic[_APP], ABC):
     @abstractmethod
     def register_handler(
         self,
-        feed_update: """Callable[[dict[str, Any],
-        dict[str, str]], Awaitable[bool]]""",
+        feed_update: "WebServerHandler",
     ) -> None:
         """
         Register webhook handler.
@@ -94,7 +96,7 @@ class RequestHandler:
     async def feed_update(
         self: "aiosend.CryptoPay",
         body: "dict[str, Any]",
-        headers: dict[str, str],
+        headers: "Mapping[str, str]",
     ) -> bool:
         """
         Feed an update to the invoice handler.
