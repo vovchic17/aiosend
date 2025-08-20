@@ -9,7 +9,7 @@ from aiosend.client import CryptoPay
 from aiosend.types import CryptoPayObject
 
 if TYPE_CHECKING:
-    from collections.abc import Awaitable
+    from collections.abc import Coroutine
 
 
 def async_to_sync(obj: object, name: str) -> None:
@@ -21,7 +21,7 @@ def async_to_sync(obj: object, name: str) -> None:
         *args: object,
         **kwargs: object,
     ) -> object:
-        coro: Awaitable = method(*args, **kwargs)
+        coro: Coroutine = method(*args, **kwargs)
         try:
             loop = asyncio.get_event_loop()
         except RuntimeError:

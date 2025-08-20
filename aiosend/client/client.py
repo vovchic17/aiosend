@@ -2,7 +2,7 @@ from typing import TYPE_CHECKING
 
 from aiosend import loggers
 from aiosend._methods import Methods
-from aiosend._utils import PropagatingThread
+from aiosend._utils.check_token import token_validate
 from aiosend.client.network import MAINNET, TESTNET
 from aiosend.exceptions import APIError, WrongNetworkError
 from aiosend.polling import PollingConfig, PollingManager
@@ -46,9 +46,7 @@ class CryptoPay(Methods, Tools, RequestHandler, PollingManager):
         self._kwargs = kwargs
         RequestHandler.__init__(self, webhook_manager)
         PollingManager.__init__(self, polling_config or PollingConfig())
-        thread = PropagatingThread(target=self.__auth)
-        thread.start()
-        thread.join()
+        self.__auth()
 
     async def __call__(
         self,
@@ -71,7 +69,7 @@ class CryptoPay(Methods, Tools, RequestHandler, PollingManager):
 
     def __auth(self) -> None:
         try:
-            me: App = self.get_me()  # type: ignore[assignment]
+            me: App = token_validate(self, self.session.network)
             loggers.client.info(
                 "Authorized as '%s' id=%d on %s",
                 me.name,
@@ -84,7 +82,7 @@ class CryptoPay(Methods, Tools, RequestHandler, PollingManager):
                 self.session = self.session.__class__(TESTNET)
             else:
                 self.session = self.session.__class__(MAINNET)
-            self.get_me()  # type: ignore[unused-coroutine]
+            token_validate(self, self.session.network)
             net = self.session.network
             msg = (
                 "Authorization failed. Token is served by the "
