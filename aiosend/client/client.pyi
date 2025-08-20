@@ -6,7 +6,7 @@ from collections.abc import Awaitable, Callable, Generator
 from datetime import datetime
 from logging import Logger
 from types import NoneType as _NoneType
-from typing import Any, TypeVar
+from typing import Any, Literal, TypeVar
 
 from typing_extensions import Self
 
@@ -18,12 +18,12 @@ from aiosend.enums import (
     CheckStatus,
     CurrencyType,
     Fiat,
+    GetInvoicesStatus,
     InvoiceStatus,
     LiteralAsset,
     LiteralCheckStatus,
     LiteralCurrencyType,
     LiteralFiat,
-    LiteralInvoiceStatus,
     LiteralPaidBtnName,
     PaidBtnName,
 )
@@ -146,7 +146,10 @@ class CryptoPay:
         asset: Asset | LiteralAsset | _str | None = None,
         fiat: Fiat | LiteralFiat | _str | None = None,
         invoice_ids: _list[int] | None = None,
-        status: InvoiceStatus | LiteralInvoiceStatus | _str | None = None,
+        status: Literal[InvoiceStatus.ACTIVE, InvoiceStatus.PAID]
+        | GetInvoicesStatus
+        | _str
+        | None = None,
         offset: int | None = None,
         count: int | None = None,
     ) -> list[Invoice]: ...

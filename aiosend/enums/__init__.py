@@ -2,7 +2,11 @@ from .asset import Asset, LiteralAsset
 from .check_status import CheckStatus, LiteralCheckStatus
 from .currency_type import CurrencyType, LiteralCurrencyType
 from .fiat import Fiat, LiteralFiat
-from .invoice_status import InvoiceStatus, LiteralInvoiceStatus
+from .invoice_status import (
+    GetInvoicesStatus,
+    InvoiceStatus,
+    LiteralInvoiceStatus,
+)
 from .paid_btn_name import LiteralPaidBtnName, PaidBtnName
 from .update_type import LiteralUpdateType, UpdateType
 
@@ -11,6 +15,7 @@ __all__ = (
     "CheckStatus",
     "CurrencyType",
     "Fiat",
+    "GetInvoicesStatus",
     "InvoiceStatus",
     "LiteralAsset",
     "LiteralCheckStatus",

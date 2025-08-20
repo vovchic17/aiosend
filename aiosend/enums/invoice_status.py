@@ -15,3 +15,8 @@ LiteralInvoiceStatus = Literal[
     "paid",
     "expired",
 ]
+
+GetInvoicesStatus = Literal[
+    "active",
+    "paid",
+]

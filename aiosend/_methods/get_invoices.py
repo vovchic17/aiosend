@@ -1,4 +1,4 @@
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Literal
 
 from pydantic import Field, field_serializer
 
@@ -37,7 +37,8 @@ class GetInvoices:
         asset: Asset | None = None,
         fiat: Fiat | None = None,
         invoice_ids: list[int] | None = None,
-        status: InvoiceStatus | None = None,
+        status: Literal[InvoiceStatus.ACTIVE, InvoiceStatus.PAID]
+        | None = None,
         offset: int | None = None,
         count: int | None = None,
     ) -> list[Invoice]:
