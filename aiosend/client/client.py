@@ -44,7 +44,8 @@ class CryptoPay(Methods, Tools, WebhookHandler, PollingManager):
     ) -> None:
         self._token = token
         self.session = session(network)
-        self._kwargs = kwargs
+        self._kwargs = {"cp": self}
+        self._kwargs |= kwargs
         WebhookHandler.__init__(self, webhook_manager)
         PollingManager.__init__(self, polling_config or PollingConfig())
         self.__auth()
