@@ -10,7 +10,12 @@ from typing import Any, Literal, TypeVar
 
 from typing_extensions import Self
 
-from aiosend._handler import CallbackType, HandlerObject
+from aiosend._events import (
+    BaseRouter,
+    CallbackType,
+    EventObserver,
+    HandlerObject,
+)
 from aiosend._methods import CryptoPayMethod
 from aiosend.client import Network
 from aiosend.enums import (
@@ -84,6 +89,10 @@ class CryptoPay:
     _exp_check_handlers: list[HandlerObject]
     _exp_invoice_handlers: list[HandlerObject]
     _kwargs: dict[_str, Any]
+    invoice_paid: EventObserver
+    invoice_expired: EventObserver
+    check_activated: EventObserver
+    check_expired: EventObserver
 
     def __init__(
         self,
@@ -219,17 +228,17 @@ class CryptoPay:
     def _poll_invoice(
         self,
         invoice: Invoice,
-        data: dict[_str, Any],
+        **kwargs: object,
     ) -> None: ...
     def _poll_check(
         self,
         invoice: Check,
-        data: dict[_str, Any],
+        **kwargs: object,
     ) -> None: ...
     def _start_polling(
         self,
-        get_updates: Callable[..., Awaitable[_list[object]]],
-        handle_update: Callable[[object], Awaitable[None]],
+        get_updates: Callable[..., Awaitable[list[Any]]],
+        handle_update: Callable[[Any], Awaitable[None]],
         tasks: dict[int, PollingTask],
         updater_key: _str,
         logger: Logger,
@@ -255,6 +264,7 @@ class CryptoPay:
         rate: _float,
         percent: _float,
     ) -> _str: ...
+    def include_router(self, router: BaseRouter) -> None: ...
     def __setitem__(self, key: _str, value: object) -> None: ...
     def __getitem__(self, key: _str) -> object: ...
     def __delitem__(self, key: _str) -> None: ...

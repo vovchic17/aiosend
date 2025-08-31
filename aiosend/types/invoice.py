@@ -150,7 +150,7 @@ class Invoice(CryptoPayObject):
 
         :return:
         """
-        self._client._poll_invoice(self, kwargs)  # noqa: SLF001
+        self._client._poll_invoice(self, **kwargs)  # noqa: SLF001
 
     @property
     def qr(self) -> str:

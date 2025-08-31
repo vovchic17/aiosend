@@ -1,118 +1,83 @@
-from typing import TYPE_CHECKING, Any
+from abc import ABC, abstractmethod
+from typing import TYPE_CHECKING
 
 from aiosend import loggers
-from aiosend._handler import HandlerObject
 from aiosend.enums import CheckStatus
 
 from .base import BasePollingManager, PollingTask
+from .router import PollingRouter
 
 if TYPE_CHECKING:
-    from collections.abc import Callable
-
-    import aiosend
-    from aiosend._handler import CallbackType
+    from aiosend.enums import Asset
     from aiosend.types import Check
 
 
-class CheckPollingManager(BasePollingManager):
+class CheckPollingManager(BasePollingManager, PollingRouter, ABC):
     """Check polling manager."""
 
     def __init__(self) -> None:
+        super().__init__()
         self._check_tasks: dict[int, PollingTask[Check]] = {}
-        self._check_handlers: list[HandlerObject] = []
-        self._exp_check_handlers: list[HandlerObject] = []
 
-    def check_polling(
+    @abstractmethod
+    async def get_checks(
         self,
-        *filters: "CallbackType",
-    ) -> "Callable[[CallbackType], CallbackType]":
-        """
-        Register a handler for polling check updates.
+        asset: "Asset | None" = None,
+        check_ids: list[int] | None = None,
+        status: CheckStatus | None = None,
+        offset: int | None = None,
+        count: int | None = None,
+    ) -> list["Check"]:
+        """getchecks method."""
 
-        Decorator for handler function.
-
-        :return: handler function.
-        """
-
-        def wrapper(handler: "CallbackType") -> "CallbackType":
-            self._check_handlers.append(HandlerObject(handler, filters))
-            return handler
-
-        return wrapper
-
-    def expired_check_polling(
-        self,
-        *filters: "CallbackType",
-    ) -> "Callable[[CallbackType], CallbackType]":
-        """
-        Register a handler for timed out checks.
-
-        Decorator for handler function.
-
-        :return: handler function.
-        """
-
-        def wrapper(handler: "CallbackType") -> "CallbackType":
-            self._exp_check_handlers.append(HandlerObject(handler, filters))
-            return handler
-
-        return wrapper
-
-    def _poll_check(self, check: "Check", data: dict[str, Any]) -> None:
+    def _poll_check(self, check: "Check", **kwargs: object) -> None:
         self._check_tasks[check.check_id] = PollingTask(
             check,
             self._timeout,
-            data,
+            kwargs,
         )
 
-    async def _handle_check(self: "aiosend.CryptoPay", check: "Check") -> None:
-        self._check_tasks[check.check_id].timeout -= self._delay
+    async def _handle_check(self, check: "Check") -> None:
         task = self._check_tasks[check.check_id]
+        task.timeout -= self._delay
         if check.status == CheckStatus.ACTIVATED or task.timeout <= 0:
             del self._check_tasks[check.check_id]
         if task.timeout <= 0:
-            for handler in self._exp_check_handlers:
-                result, data = await handler.check(check)
-                if result:
-                    await handler.call(
-                        check,
-                        data | task.data | self._kwargs,
-                    )
-                    loggers.check_polling.info(
-                        "ACTIVATED CHECK id=%d is handled.",
-                        check.check_id,
-                    )
-                    break
-            else:
-                loggers.check_polling.info(
-                    "ACTIVATED CHECK id=%d is not handled.",
+            if await self.propagate_event(
+                check,
+                "check_expired",
+                **task.data | self._kwargs,
+            ):
+                loggers.polling.info(
+                    "EXPIRED CHECK id=%d is handled.",
                     check.check_id,
                 )
-        elif check.status == CheckStatus.ACTIVATED:
-            for handler in self._check_handlers:
-                result, data = await handler.check(check)
-                if result:
-                    await handler.call(
-                        check,
-                        data | task.data | self._kwargs,
-                    )
-                    loggers.check_polling.info(
-                        "EXPIRED CHECK id=%d is handled.",
-                        check.check_id,
-                    )
-                    break
             else:
-                loggers.check_polling.info(
+                loggers.polling.info(
                     "EXPIRED CHECK id=%d is not handled.",
                     check.check_id,
                 )
+        elif check.status == CheckStatus.ACTIVATED:
+            if await self.propagate_event(
+                check,
+                "check_activated",
+                **task.data | self._kwargs,
+            ):
+                loggers.polling.info(
+                    "ACTIVATED CHECK id=%d is handled.",
+                    check.check_id,
+                )
+            else:
+                loggers.polling.info(
+                    "ACTIVATED CHECK id=%d is not handled.",
+                    check.check_id,
+                )
 
-    async def _start_check_polling(self: "aiosend.CryptoPay") -> None:
+    async def _start_check_polling(self) -> None:
         """Start check polling."""
         await self._start_polling(
-            self.get_checks,  # type: ignore[arg-type]
-            self._handle_check,  # type: ignore[arg-type]
+            self.get_checks,
+            self._handle_check,
             self._check_tasks,
             "check_ids",
-            loggers.check_polling,
         )

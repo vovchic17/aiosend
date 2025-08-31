@@ -4,18 +4,13 @@ from abc import ABC, abstractmethod
 from hmac import HMAC
 from typing import TYPE_CHECKING, Any, Generic, TypeVar
 
-from magic_filter.magic import MagicFilter
-
 from aiosend import loggers
-from aiosend._handler import HandlerObject
-from aiosend.exceptions import CryptoPayError
 from aiosend.types import Update
+
+from .router import WebhookRouter
 
 if TYPE_CHECKING:
     from collections.abc import Awaitable, Callable, Mapping
-
-    import aiosend
-    from aiosend._handler import CallbackType
 
     WebServerHandler = Callable[
         [dict[str, Any], Mapping[str, str]],
@@ -53,8 +48,11 @@ class WebhookManager(Generic[_APP], ABC):
         """
 
 
-class RequestHandler:
+class WebhookHandler(WebhookRouter):
     """Updates handler."""
+
+    _token: str
+    _kwargs: dict[str, "Any"]
 
     def __init__(
         self,
@@ -63,12 +61,11 @@ class RequestHandler:
         if manager is not None:
             manager.register_handler(self.feed_update)
         self._webhook_manager = manager
-        self._webhook_handlers: list[HandlerObject] = []
 
     def _check_signature(
-        self: "aiosend.CryptoPay",
-        body: "dict[str, Any]",
-        headers: dict[str, str],
+        self,
+        body: dict[str, "Any"],
+        headers: "Mapping[str, str]",
     ) -> bool:
         """
         Verify the received update and the integrity of the received data.
@@ -94,8 +91,8 @@ class RequestHandler:
         return hmac == signature
 
     async def feed_update(
-        self: "aiosend.CryptoPay",
-        body: "dict[str, Any]",
+        self,
+        body: dict[str, "Any"],
         headers: "Mapping[str, str]",
     ) -> bool:
         """
@@ -108,50 +105,29 @@ class RequestHandler:
         """
         try:
             update = Update.model_validate(body, context={"client": self})
-            if not self._check_signature(body, headers):  # type: ignore[attr-defined]
+            if not self._check_signature(body, headers):
                 loggers.webhook.info(
                     "Webhook Update id=%d is not handled. "
                     "Signature is invalid.",
                     update.update_id,
                 )
                 return False
-            for handler in self._webhook_handlers:
-                result, data = await handler.check(update.payload)
-                if result:
-                    await handler.call(update.payload, data | self._kwargs)
-                    loggers.webhook.info(
-                        "Webhook Update id=%d is handled.",
-                        update.update_id,
-                    )
-                    break
+            if await self.propagate_event(
+                update.payload,
+                "invoice_paid",
+                **self._kwargs,
+            ):
+                loggers.webhook.info(
+                    "Webhook Update id=%d is handled.",
+                    update.update_id,
+                )
             else:
                 loggers.webhook.info(
                     "Webhook Update id=%d is not handled. "
                     "No suitable handlers.",
                     update.update_id,
                 )
-        except Exception:  # noqa: BLE001
+        except Exception:  # noqa: BLE001 logger catches exception
             loggers.webhook.exception("Error while handling update:\n")
             return False
         return True
-
-    def webhook(
-        self,
-        *filters: MagicFilter,
-    ) -> "Callable[[CallbackType], CallbackType]":
-        """
-        Register a handler for webhook invoice updates.
-
-        Decorator for handler function.
-
-        :return: handler function.
-        """
-
-        def wrapper(handler: "CallbackType") -> "CallbackType":
-            if self._webhook_manager is None:
-                msg = "Webhook manager is not set."
-                raise CryptoPayError(msg)
-            self._webhook_handlers.append(HandlerObject(handler, filters))
-            return handler
-
-        return wrapper

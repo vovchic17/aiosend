@@ -67,7 +67,7 @@ class Check(CryptoPayObject):
 
         :return:
         """
-        self._client._poll_check(self, kwargs)  # noqa: SLF001
+        self._client._poll_check(self, **kwargs)  # noqa: SLF001
 
     @property
     def qr(self) -> str:

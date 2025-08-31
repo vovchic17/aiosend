@@ -3,16 +3,17 @@ from abc import ABC
 from dataclasses import dataclass
 from typing import TYPE_CHECKING, Generic
 
+from aiosend import loggers
 from aiosend.types import _CryptoPayType
 
 if TYPE_CHECKING:
     from collections.abc import Awaitable, Callable
-    from logging import Logger
     from typing import Any
 
 
 @dataclass(slots=True)
-class PollingConfig:
+class PollingConfig:  # type: ignore[misc]
+    # https://github.com/python/mypy/issues/17121
     """Polling configuration."""
 
     timeout: int = 300
@@ -22,14 +23,15 @@ class PollingConfig:
 
 
 @dataclass(slots=True)
-class PollingTask(Generic[_CryptoPayType]):
+class PollingTask(Generic[_CryptoPayType]):  # type: ignore[misc]
+    # https://github.com/python/mypy/issues/17121
     """
     Wrapper for an Invoice.
 
     This class is used to make a polling task.
     """
 
-    object: _CryptoPayType
+    obj: _CryptoPayType
     """Invoice object."""
     timeout: int
     """Remaining time for checking the invoice status."""
@@ -42,14 +44,14 @@ class BasePollingManager(ABC):
 
     _timeout: int
     _delay: int
+    _kwargs: dict[str, "Any"]
 
     async def _start_polling(
         self,
-        get_updates: "Callable[..., Awaitable[list[object]]]",
-        handle_update: "Callable[[object], Awaitable[None]]",
+        get_updates: "Callable[..., Awaitable[list[Any]]]",
+        handle_update: "Callable[[Any], Awaitable[None]]",
         tasks: "dict[int, PollingTask]",
         updater_key: str,
-        logger: "Logger",
     ) -> None:
         """Start polling."""
         while True:
@@ -58,18 +60,18 @@ class BasePollingManager(ABC):
                 continue
             try:
                 updates = await get_updates(**{updater_key: list(tasks)})
-            except Exception:
-                logger.exception("Error while getting updates:\n")
+            except Exception:  # noqa: BLE001 logger catches exception
+                loggers.polling.exception("Error while getting updates:\n")
                 continue
             for update in updates:
                 try:
                     await handle_update(update)
-                except Exception:  # noqa: PERF203
-                    logger.exception(
+                except Exception:  # noqa: BLE001, PERF203
+                    loggers.polling.exception(
                         "Error while handling update:\n",
                     )
                     continue
-            logger.debug(
+            loggers.polling.debug(
                 "Tasks left: %s Waiting %d seconds...",
                 len(tasks),
                 self._delay,

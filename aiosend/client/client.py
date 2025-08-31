@@ -5,13 +5,14 @@ from aiosend._methods import Methods
 from aiosend._utils.check_token import token_validate
 from aiosend.client.network import MAINNET, TESTNET
 from aiosend.exceptions import APIError, WrongNetworkError
-from aiosend.polling import PollingConfig, PollingManager
+from aiosend.polling import PollingConfig, PollingManager, PollingRouter
 from aiosend.tools import Tools
-from aiosend.webhook import RequestHandler
+from aiosend.webhook import WebhookHandler, WebhookRouter
 
 from .session import AiohttpSession
 
 if TYPE_CHECKING:
+    from aiosend._events.router import BaseRouter
     from aiosend._methods import CryptoPayMethod
     from aiosend.client import Network
     from aiosend.types import App, _CryptoPayType
@@ -20,7 +21,7 @@ if TYPE_CHECKING:
     from .session import BaseSession
 
 
-class CryptoPay(Methods, Tools, RequestHandler, PollingManager):
+class CryptoPay(Methods, Tools, WebhookHandler, PollingManager):
     """
     Client class providing API methods.
 
@@ -44,7 +45,7 @@ class CryptoPay(Methods, Tools, RequestHandler, PollingManager):
         self._token = token
         self.session = session(network)
         self._kwargs = kwargs
-        RequestHandler.__init__(self, webhook_manager)
+        WebhookHandler.__init__(self, webhook_manager)
         PollingManager.__init__(self, polling_config or PollingConfig())
         self.__auth()
 
@@ -89,6 +90,23 @@ class CryptoPay(Methods, Tools, RequestHandler, PollingManager):
                 f"{net.name}, you are using {current_net.name}"
             )
             raise WrongNetworkError(msg) from None
+
+    def include_router(self, router: "BaseRouter") -> None:
+        """
+        Include router into the client.
+
+        :param router: Router object.
+        """
+        if isinstance(router, WebhookRouter):
+            WebhookHandler.include_router(self, router)
+        elif isinstance(router, PollingRouter):
+            PollingManager.include_router(self, router)
+        else:
+            msg = (
+                f"Router {router} is neither WebhookRouter "
+                "or PollingRouter instance"
+            )
+            raise TypeError(msg)
 
     def __setitem__(self, key: str, value: object) -> None:
         self._kwargs[key] = value

@@ -1,124 +1,98 @@
-from typing import TYPE_CHECKING, Any
+from abc import ABC, abstractmethod
+from typing import TYPE_CHECKING
 
 from aiosend import loggers
-from aiosend._handler import HandlerObject
 from aiosend.enums import InvoiceStatus
 
 from .base import BasePollingManager, PollingTask
+from .router import PollingRouter
 
 if TYPE_CHECKING:
-    from collections.abc import Callable
+    from typing import Literal
 
-    import aiosend
-    from aiosend._handler import CallbackType
+    from aiosend.enums import Asset, Fiat
     from aiosend.types import Invoice
 
 
-class InvoicePollingManager(BasePollingManager):
+class InvoicePollingManager(BasePollingManager, PollingRouter, ABC):
     """Invoice polling manager."""
 
     def __init__(self) -> None:
+        super().__init__()
         self._invoice_tasks: dict[int, PollingTask[Invoice]] = {}
-        self._invoice_handlers: list[HandlerObject] = []
-        self._exp_invoice_handlers: list[HandlerObject] = []
 
-    def invoice_polling(
+    @abstractmethod
+    async def get_invoices(  # noqa: PLR0913
         self,
-        *filters: "CallbackType",
-    ) -> "Callable[[CallbackType], CallbackType]":
-        """
-        Register a handler for polling invoice updates.
+        asset: "Asset | None" = None,
+        fiat: "Fiat | None" = None,
+        invoice_ids: list[int] | None = None,
+        status: """Literal[InvoiceStatus.ACTIVE,
+        InvoiceStatus.PAID] | None""" = None,
+        offset: int | None = None,
+        count: int | None = None,
+    ) -> list["Invoice"]:
+        """getinvoices method."""
 
-        Decorator for handler function.
-
-        :return: handler function.
-        """
-
-        def wrapper(handler: "CallbackType") -> "CallbackType":
-            self._invoice_handlers.append(HandlerObject(handler, filters))
-            return handler
-
-        return wrapper
-
-    def expired_invoice_polling(
+    def _poll_invoice(
         self,
-        *filters: "CallbackType",
-    ) -> "Callable[[CallbackType], CallbackType]":
-        """
-        Register a handler for timed out invoices.
-
-        Decorator for handler function.
-
-        :return: handler function.
-        """
-
-        def wrapper(handler: "CallbackType") -> "CallbackType":
-            self._exp_invoice_handlers.append(HandlerObject(handler, filters))
-            return handler
-
-        return wrapper
-
-    def _poll_invoice(self, invoice: "Invoice", data: dict[str, Any]) -> None:
+        invoice: "Invoice",
+        **kwargs: object,
+    ) -> None:
         self._invoice_tasks[invoice.invoice_id] = PollingTask(
             invoice,
             self._timeout,
-            data,
+            kwargs,
         )
 
     async def _handle_invoice(
-        self: "aiosend.CryptoPay",
+        self,
         invoice: "Invoice",
     ) -> None:
-        self._invoice_tasks[invoice.invoice_id].timeout -= self._delay
         task = self._invoice_tasks[invoice.invoice_id]
+        task.timeout -= self._delay
         if (
             invoice.status in (InvoiceStatus.PAID, InvoiceStatus.EXPIRED)
             or task.timeout <= 0
         ):
             del self._invoice_tasks[invoice.invoice_id]
         if task.timeout <= 0 or invoice.status == InvoiceStatus.EXPIRED:
-            for handler in self._exp_invoice_handlers:
-                result, data = await handler.check(invoice)
-                if result:
-                    await handler.call(
-                        invoice,
-                        data | task.data | self._kwargs,
-                    )
-                    loggers.invoice_polling.info(
-                        "EXPIRED INVOICE id=%d is handled.",
-                        invoice.invoice_id,
-                    )
-                    break
+            if await self.propagate_event(
+                invoice,
+                "invoice_expired",
+                **task.data | self._kwargs,
+            ):
+                loggers.polling.info(
+                    "EXPIRED INVOICE id=%d is handled.",
+                    invoice.invoice_id,
+                )
             else:
-                loggers.invoice_polling.info(
+                loggers.polling.info(
                     "EXPIRED INVOICE id=%d is not handled.",
                     invoice.invoice_id,
                 )
+
         elif invoice.status == InvoiceStatus.PAID:
-            for handler in self._invoice_handlers:
-                result, data = await handler.check(invoice)
-                if result:
-                    await handler.call(
-                        invoice,
-                        data | task.data | self._kwargs,
-                    )
-                    loggers.invoice_polling.info(
-                        "PAID INVOICE id=%d is handled.",
-                        invoice.invoice_id,
-                    )
-                    break
+            if await self.propagate_event(
+                invoice,
+                "invoice_paid",
+                **task.data | self._kwargs,
+            ):
+                loggers.polling.info(
+                    "PAID INVOICE id=%d is handled.",
+                    invoice.invoice_id,
+                )
             else:
-                loggers.invoice_polling.info(
+                loggers.polling.info(
                     "PAID INVOICE id=%d is not handled.",
                     invoice.invoice_id,
                 )
 
-    async def _start_invoice_polling(self: "aiosend.CryptoPay") -> None:
+    async def _start_invoice_polling(self) -> None:
         """Start invoice polling."""
         await self._start_polling(
-            self.get_invoices,  # type: ignore[arg-type]
-            self._handle_invoice,  # type: ignore[arg-type]
+            self.get_invoices,
+            self._handle_invoice,
             self._invoice_tasks,
             "invoice_ids",
-            loggers.invoice_polling,
         )

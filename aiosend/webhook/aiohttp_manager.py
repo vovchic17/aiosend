@@ -1,3 +1,4 @@
+from http import HTTPStatus
 from typing import TYPE_CHECKING
 
 from aiohttp.web import json_response
@@ -30,7 +31,9 @@ class AiohttpManager(WebhookManager["Application"]):
             )
             return json_response(
                 {"ok": status},
-                status=200 if status else 500,
+                status=HTTPStatus.OK
+                if status
+                else HTTPStatus.INTERNAL_SERVER_ERROR,
             )
 
         self._app.router.add_post(self._path, handle)
