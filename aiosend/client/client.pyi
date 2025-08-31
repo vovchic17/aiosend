@@ -198,26 +198,6 @@ class CryptoPay:
         self,
         asset: Asset | LiteralAsset | _str,
     ) -> Balance: ...
-    def invoice_polling(
-        self,
-        *filters: CallbackType,
-    ) -> Callable[[CallbackType], CallbackType]: ...
-    def expired_invoice_polling(
-        self,
-        *filters: CallbackType,
-    ) -> Callable[[CallbackType], CallbackType]: ...
-    def check_polling(
-        self,
-        *filters: CallbackType,
-    ) -> Callable[[CallbackType], CallbackType]: ...
-    def expired_check_polling(
-        self,
-        *filters: CallbackType,
-    ) -> Callable[[CallbackType], CallbackType]: ...
-    def webhook(
-        self,
-        *filters: CallbackType,
-    ) -> Callable[[CallbackType], CallbackType]: ...
     def feed_update(
         self,
         body: dict[_str, Any],
