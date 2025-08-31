@@ -41,6 +41,11 @@ class BaseRouter:
 
         self.sub_routers.append(router)
 
+    def include_routers(self, *routers: "Self") -> None:
+        """Include multiple routers to this one."""
+        for router in routers:
+            self.include_router(router)
+
     async def propagate_event(
         self,
         event: "CryptoPayObject",
