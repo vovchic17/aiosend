@@ -12,7 +12,7 @@
 [![Code linter: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/charliermarsh/ruff)
 [![Checked with mypy](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/vovchic17/static/main/src/badges/mypy.json)](https://mypy-lang.org/)
 
-**aiosend** is a syncronous & asynchronous [Crypto Pay API](https://help.crypt.bot/crypto-pay-api) client.
+**aiosend** is a synchronous & asynchronous [Crypto Pay API](https://help.crypt.bot/crypto-pay-api) client.
 
 > ## [Official documentation](https://aiosend.readthedocs.io/en/latest/)
 >
