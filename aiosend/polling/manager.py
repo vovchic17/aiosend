@@ -10,12 +10,9 @@ from .invoice import InvoicePollingManager
 
 if TYPE_CHECKING:
     from collections.abc import Callable
-    from typing import Any, Protocol
+    from typing import Any
 
-    class ClientWebhookManager("PollingManager", Protocol):  # type: ignore[misc]
-        """Client webhook manager."""
-
-        _webhook_manager: object
+    from aiosend._typing import ClientWebhookManager
 
 
 class PollingManager(InvoicePollingManager, CheckPollingManager):

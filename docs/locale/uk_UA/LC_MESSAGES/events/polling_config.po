@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 09:34+0300\n"
+"POT-Creation-Date: 2025-09-01 02:42+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -48,8 +48,32 @@ msgid ""
 "This class is used to handle payments and check activation via polling "
 "method."
 msgstr ""
-"Цей клас використовується для обробки платежів та активацій чеків"
-"методом поллінга"
+"Цей клас використовується для обробки платежів та активацій чеківметодом "
+"поллінга"
+
+#: aiosend.polling.check.CheckPollingManager.get_checks:1 of
+msgid "getchecks method."
+msgstr ""
+
+#: ../../events/polling_config.rst
+msgid "Return type"
+msgstr ""
+
+#: aiosend.polling.check.CheckPollingManager.get_checks:4 of
+msgid ""
+":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`list\\`\\\\ "
+"\\\\\\[\\:py\\:class\\:\\`\\~aiosend.types.check.Check\\`\\]`"
+msgstr ""
+
+#: aiosend.polling.invoice.InvoicePollingManager.get_invoices:1 of
+msgid "getinvoices method."
+msgstr ""
+
+#: aiosend.polling.invoice.InvoicePollingManager.get_invoices:4 of
+msgid ""
+":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`list\\`\\\\ "
+"\\\\\\[\\:py\\:class\\:\\`\\~aiosend.types.invoice.Invoice\\`\\]`"
+msgstr ""
 
 #: aiosend.polling.manager.PollingManager.start_polling:1 of
 msgid "Run polling."
@@ -62,10 +86,6 @@ msgstr ""
 #: aiosend.polling.manager.PollingManager.start_polling:4 of
 msgid "function to run in background."
 msgstr "функція, що запускається у фоні."
-
-#: ../../events/polling_config.rst
-msgid "Return type"
-msgstr ""
 
 #: aiosend.polling.manager.PollingManager.start_polling:6 of
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:obj\\:\\`None\\``"

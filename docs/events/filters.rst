@@ -48,12 +48,12 @@ Magic filter
 
     from magic_filter import F
 
-    @cp.invoice_polling(F.payload == "product1")
+    @cp.invoice_paid(F.payload == "product1")
     async def handler1(invoice: Invoice) -> None:
         print(f"paid {invoice.amount} {invoice.asset} for product1")
 
 
-    @cp.invoice_polling(F.payload == "product2")
+    @cp.invoice_paid(F.payload == "product2")
     async def handler2(invoice: Invoice) -> None:
         print(f"paid {invoice.amount} {invoice.asset} for product2")
 
@@ -70,11 +70,11 @@ You can use either :code:`def`, :code:`async def` or :code:`lambda`
     async def filter2(invoice: Invoice) -> bool:
         return invoice.payload == "product2" 
 
-    @cp.invoice_polling(filter1)
+    @cp.invoice_paid(filter1)
     async def handler1(invoice: Invoice) -> None:
         print(f"paid {invoice.amount} {invoice.asset} for product1")
 
-    @cp.invoice_polling(filter2, lambda inv: inv.amount == 1)
+    @cp.invoice_paid(filter2, lambda inv: inv.amount == 1)
     async def handler2(invoice: Invoice) -> None:
         print(f"paid {invoice.amount} {invoice.asset} for product2")
 
@@ -89,7 +89,7 @@ You can use `aiogram 3.x magic filter's
 
     from aiogram import F
 
-    @cp.invoice_polling(F.payload.as_("payload"))
+    @cp.invoice_paid(F.payload.as_("payload"))
     async def handler1(invoice: Invoice, payload: str) -> None:
         print(f"paid #{invoice.invoice_id} paylaod: {payload}")
 
@@ -103,6 +103,6 @@ You can also return context data from function filters like that
         return {"payload": invoice.payload}
         
 
-    @cp.invoice_polling(myfilter)
+    @cp.invoice_paid(myfilter)
     async def handler1(invoice: Invoice, payload: str) -> None:
         print(f"paid #{invoice.invoice_id} paylaod: {payload}")

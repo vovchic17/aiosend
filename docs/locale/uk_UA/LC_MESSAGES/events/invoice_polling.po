@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-16 22:54+0300\n"
+"POT-Creation-Date: 2025-09-01 02:42+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -29,16 +29,16 @@ msgid ""
 "requests. Once :attr:`invoice status <aiosend.types.Invoice.status>` is "
 "changed to :attr:`PAID <aiosend.enums.InvoiceStatus.PAID>`, "
 ":class:`polling manager <aiosend.polling.PollingManager>` will call the "
-":meth:`invoice_polling <aiosend.CryptoPay.invoice_polling>` handler. "
-"Invoice polling uses the :meth:`/getInvoices "
-"<aiosend.CryptoPay.get_invoices>` method."
+":meth:`invoice_paid <aiosend.CryptoPay.invoice_paid>` handler. Invoice "
+"polling uses the :meth:`/getInvoices <aiosend.CryptoPay.get_invoices>` "
+"method."
 msgstr ""
 "Полінг - це метод отримання оновлень шляхом періодичного відправлення "
 "запитів. Після того, як :attr:`статус рахунку "
 "<aiosend.types.Invoice.status>` буде змінено на :attr:`PAID "
 "<aiosend.enums.InvoiceStatus.PAID>`, :class:`поллінг-менеджер "
-"<aiosend.polling.PollingManager>` викличе обробник :meth:`invoice_polling"
-" <aiosend.CryptoPay.invoice_polling>`. Поллінг Рахунків використовує "
+"<aiosend.polling.PollingManager>` викличе обробник :meth:`invoice_paid"
+" <aiosend.CryptoPay.invoice_paid>`. Поллінг Рахунків використовує "
 "метод :meth:`/getInvoices <aiosend.CryptoPay.get_invoices>`."
 
 #: ../../events/invoice_polling.rst:13
@@ -48,8 +48,8 @@ msgid ""
 ":attr:`delay <aiosend.polling.PollingConfig.delay>` (between requests) "
 "and :attr:`timeout <aiosend.polling.PollingConfig.timeout>` for each "
 "invoice in the awaiting queue. After the timeout polling manager will "
-"stop polling that invoice and call the :meth:`expired_invoice_polling "
-"<aiosend.CryptoPay.expired_invoice_polling>` handler if it is declared."
+"stop polling that invoice and call the :meth:`invoice_expired "
+"<aiosend.CryptoPay.invoice_expired>` handler if it is declared."
 msgstr ""
 ":class:`Менеджер опитування <aiosend.polling.PollingManager>` має "
 ":class:`налаштування <aiosend.polling.PollingConfig>`, в яких задаються "
@@ -57,8 +57,8 @@ msgstr ""
 ":attr:`таймаут <aiosend.polling.PollingConfig.timeout>` для кожного "
 "рахунку в черзі. Після закінчення таймауту менеджер припиняє опитування "
 "даного рахунку і, якщо вказаний, викликає обробник "
-":meth:`expired_invoice_polling "
-"<aiosend.CryptoPay.expired_invoice_polling>`."
+":meth:`invoice_expired "
+"<aiosend.CryptoPay.invoice_expired>`."
 
 #: ../../events/invoice_polling.rst:22
 msgid "**Default is 2 seconds delay and 300 seconds (5 min) timeout**."
@@ -70,36 +70,7 @@ msgstr ""
 msgid ":doc:`You can change the polling configuration. <polling_config>`"
 msgstr ":doc:`Ви можете змінити налаштування опитування. <polling_config>`"
 
-#: aiosend.polling.invoice.InvoicePollingManager.invoice_polling:1 of
-msgid "Register a handler for polling invoice updates."
-msgstr "Призначте функцію-обробник для оновлення рахунків під час опитування."
-
-#: aiosend.polling.invoice.InvoicePollingManager.expired_invoice_polling:3
-#: aiosend.polling.invoice.InvoicePollingManager.invoice_polling:3 of
-msgid "Decorator for handler function."
-msgstr "Декоратор для функції-обробника."
-
-#: ../../events/invoice_polling.rst
-msgid "Return type"
-msgstr ""
-
-#: aiosend.polling.invoice.InvoicePollingManager.expired_invoice_polling:5
-#: aiosend.polling.invoice.InvoicePollingManager.invoice_polling:5 of
-msgid ""
-":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~collections.abc.Callable\\`\\\\"
-" \\\\\\[\\\\\\[\\:py\\:class\\:\\`\\~collections.abc.Callable\\`\\\\ "
-"\\\\\\[\\:py\\:data\\:\\`...\\<Ellipsis\\>\\`\\, "
-"\\:py\\:data\\:\\`\\~typing.Any\\`\\]\\]\\, "
-"\\:py\\:class\\:\\`\\~collections.abc.Callable\\`\\\\ "
-"\\\\\\[\\:py\\:data\\:\\`...\\<Ellipsis\\>\\`\\, "
-"\\:py\\:data\\:\\`\\~typing.Any\\`\\]\\]`"
-msgstr ""
-
-#: aiosend.polling.invoice.InvoicePollingManager.expired_invoice_polling:1 of
-msgid "Register a handler for timed out invoices."
-msgstr "Призначте функцію-обробник для рахунків з часом очікування."
-
-#: ../../events/invoice_polling.rst:30
+#: ../../events/invoice_polling.rst:27
 msgid "Usage example"
 msgstr "Приклад використання"
 
@@ -108,4 +79,27 @@ msgstr "Приклад використання"
 
 #~ msgid "handler function."
 #~ msgstr "функція-обробник."
+
+#~ msgid "Register a handler for polling invoice updates."
+#~ msgstr "Призначте функцію-обробник для оновлення рахунків під час опитування."
+
+#~ msgid "Decorator for handler function."
+#~ msgstr "Декоратор для функції-обробника."
+
+#~ msgid "Return type"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~collections.abc.Callable\\`\\\\"
+#~ " "
+#~ "\\\\\\[\\\\\\[\\:py\\:class\\:\\`\\~collections.abc.Callable\\`\\\\"
+#~ " \\\\\\[\\:py\\:data\\:\\`...\\<Ellipsis\\>\\`\\, "
+#~ "\\:py\\:data\\:\\`\\~typing.Any\\`\\]\\]\\, "
+#~ "\\:py\\:class\\:\\`\\~collections.abc.Callable\\`\\\\ "
+#~ "\\\\\\[\\:py\\:data\\:\\`...\\<Ellipsis\\>\\`\\, "
+#~ "\\:py\\:data\\:\\`\\~typing.Any\\`\\]\\]`"
+#~ msgstr ""
+
+#~ msgid "Register a handler for timed out invoices."
+#~ msgstr "Призначте функцію-обробник для рахунків з часом очікування."
 

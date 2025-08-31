@@ -10,6 +10,8 @@ if TYPE_CHECKING:
 
 
 class EventObserver:
+    """Event observer for storing handlers and propagating events."""
+
     def __init__(self) -> None:
         self.handlers: list[HandlerObject] = []
 
@@ -28,6 +30,7 @@ class EventObserver:
         handler: "CallbackType",
         *filters: "CallbackType",
     ) -> None:
+        """Register event handler."""
         self.handlers.append(HandlerObject(handler, filters))
 
     async def trigger(
@@ -35,6 +38,7 @@ class EventObserver:
         event: "CryptoPayObject",
         **kwargs: object,
     ) -> bool:
+        """Trigger event observer."""
         for handler in self.handlers:
             result, data = await handler.check(event)
             if result:

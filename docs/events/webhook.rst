@@ -7,8 +7,6 @@ Webhook
 
     🏝 Crypto Pay -> My Apps -> YOUR APP -> Webhooks -> 🌕 Enable webhooks.
 
-.. automethod:: aiosend.CryptoPay.webhook
-
 Usage example with `aiohttp web server <https://docs.aiohttp.org/en/stable/web_quickstart.html>`_
 -------------------------------------------------------------------------------------------------
 .. literalinclude:: ../../examples/webhook_aiohttp.py

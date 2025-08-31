@@ -6,7 +6,7 @@ Polling is a method of receiving updates by periodically sending requests.
 Once :attr:`invoice status <aiosend.types.Invoice.status>` is changed to
 :attr:`PAID <aiosend.enums.InvoiceStatus.PAID>`,
 :class:`polling manager <aiosend.polling.PollingManager>` will call the
-:meth:`invoice_polling <aiosend.CryptoPay.invoice_polling>` handler.
+:meth:`invoice_paid <aiosend.CryptoPay.invoice_paid>` handler.
 Invoice polling uses the :meth:`/getInvoices <aiosend.CryptoPay.get_invoices>` method.
 
 .. attention::
@@ -16,15 +16,12 @@ Invoice polling uses the :meth:`/getInvoices <aiosend.CryptoPay.get_invoices>` m
     and :attr:`timeout <aiosend.polling.PollingConfig.timeout>`
     for each invoice in the awaiting queue.
     After the timeout polling manager will stop polling that invoice
-    and call the :meth:`expired_invoice_polling <aiosend.CryptoPay.expired_invoice_polling>` handler
+    and call the :meth:`invoice_expired <aiosend.CryptoPay.invoice_expired>` handler
     if it is declared.
 
     **Default is 2 seconds delay and 300 seconds (5 min) timeout**.
 
     :doc:`You can change the polling configuration. <polling_config>`
-
-.. automethod:: aiosend.CryptoPay.invoice_polling
-.. automethod:: aiosend.CryptoPay.expired_invoice_polling
 
 Usage example
 -------------

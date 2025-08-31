@@ -15,6 +15,8 @@ extensions = [
     "sphinx_autodoc_typehints",
 ]
 
+autodoc_mock_imports = ["aiosend._typing"]
+
 locale_dirs = ["locale/"]
 gettext_compact = False
 
@@ -70,8 +72,12 @@ html_theme_options = {
     ],
 }
 
+
 def remove_return(app, what, name, obj, options, lines):
-    lines[:] = [line for line in lines if not line.strip().startswith(':return:')]
+    lines[:] = [
+        line for line in lines if not line.strip().startswith(":return:")
+    ]
+
 
 def setup(app):
     app.connect("autodoc-process-docstring", remove_return)

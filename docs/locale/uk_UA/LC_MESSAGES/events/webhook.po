@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-16 22:54+0300\n"
+"POT-Creation-Date: 2025-09-01 02:42+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -37,30 +37,7 @@ msgstr ""
 "🏝 Crypto Pay -> Мої додатки -> <Ваш додаток> -> Вебхукі -> 🌕 Включити "
 "вебхуки."
 
-#: aiosend.webhook.base.RequestHandler.webhook:1 of
-msgid "Register a handler for webhook invoice updates."
-msgstr "Додавання обробника для вебхук-повідомлень."
-
-#: aiosend.webhook.base.RequestHandler.webhook:3 of
-msgid "Decorator for handler function."
-msgstr "Декоратор для функції-обробника."
-
-#: ../../events/webhook.rst
-msgid "Return type"
-msgstr ""
-
-#: aiosend.webhook.base.RequestHandler.webhook:5 of
-msgid ""
-":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~collections.abc.Callable\\`\\\\"
-" \\\\\\[\\\\\\[\\:py\\:class\\:\\`\\~collections.abc.Callable\\`\\\\ "
-"\\\\\\[\\:py\\:data\\:\\`...\\<Ellipsis\\>\\`\\, "
-"\\:py\\:data\\:\\`\\~typing.Any\\`\\]\\]\\, "
-"\\:py\\:class\\:\\`\\~collections.abc.Callable\\`\\\\ "
-"\\\\\\[\\:py\\:data\\:\\`...\\<Ellipsis\\>\\`\\, "
-"\\:py\\:data\\:\\`\\~typing.Any\\`\\]\\]`"
-msgstr ""
-
-#: ../../events/webhook.rst:13
+#: ../../events/webhook.rst:11
 msgid ""
 "Usage example with `aiohttp web server "
 "<https://docs.aiohttp.org/en/stable/web_quickstart.html>`_"
@@ -68,7 +45,7 @@ msgstr ""
 "Приклад використання з `aiohttp "
 "веб-сервером<https://docs.aiohttp.org/en/stable/web_quickstart.html>`_"
 
-#: ../../events/webhook.rst:17
+#: ../../events/webhook.rst:15
 msgid ""
 "Usage example with `fastapi web server "
 "<https://fastapi.tiangolo.com/tutorial/first-steps/>`_"
@@ -76,13 +53,13 @@ msgstr ""
 "Приклад використання з `fastapi "
 "веб-сервером<https://fastapi.tiangolo.com/tutorial/first-steps/>`_"
 
-#: ../../events/webhook.rst:19
+#: ../../events/webhook.rst:17
 msgid "In order to use aiosend with fastapi you need to install extra package"
 msgstr ""
 "Щоб використовувати aiosend з fastapi, вам потрібно встановити екстра "
 "залежність"
 
-#: ../../events/webhook.rst:28
+#: ../../events/webhook.rst:26
 msgid ""
 "Usage example with `flask web server "
 "<https://flask.palletsprojects.com/en/3.0.x/quickstart/#quickstart>`_"
@@ -90,13 +67,13 @@ msgstr ""
 "Приклад використання з `flask "
 "веб-сервером<https://flask.palletsprojects.com/en/3.0.x/quickstart/#quickstart>`_"
 
-#: ../../events/webhook.rst:30
+#: ../../events/webhook.rst:28
 msgid "In order to use aiosend with flask you need to install extra package"
 msgstr ""
 "Щоб використовувати aiosend з flask, вам потрібно встановити екстра "
 "залежність"
 
-#: ../../events/webhook.rst:38
+#: ../../events/webhook.rst:36
 msgid ""
 "**aiosend** uses `aiohttp "
 "<https://docs.aiohttp.org/en/stable/index.html>`_ as web server by "
@@ -144,6 +121,10 @@ msgstr ""
 #: aiosend.webhook.base.WebhookManager.register_handler:6 of
 msgid "Web server handler object."
 msgstr "Об'єкт обробника веб-сервера."
+
+#: ../../events/webhook.rst
+msgid "Return type"
+msgstr ""
 
 #: aiosend.webhook.aiohttp_manager.AiohttpManager.register_handler:4
 #: aiosend.webhook.base.WebhookManager.register_handler:7
@@ -193,10 +174,3 @@ msgstr "Менеджер вебхуків на Flask."
 #: aiosend.webhook.flask_manager.FlaskManager:3 of
 msgid "Webhook manager based on :class:`flask.Flask`."
 msgstr "Менеджер вебхуків, що базується на :class:`flask.Flask`."
-
-#~ msgid "Returns"
-#~ msgstr ""
-
-#~ msgid "handler function."
-#~ msgstr "функція-обробник."
-

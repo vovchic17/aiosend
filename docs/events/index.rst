@@ -9,6 +9,7 @@ Events
 
 .. toctree::
 
+    routers
     webhook
     invoice_polling
     check_polling
