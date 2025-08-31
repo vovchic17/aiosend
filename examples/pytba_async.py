@@ -1,14 +1,11 @@
 import asyncio
-
 from telebot.async_telebot import AsyncTeleBot
 from telebot.types import Message
-
 from aiosend import CryptoPay
 from aiosend.types import Invoice
 
 cp = CryptoPay("TOKEN")
 bot = AsyncTeleBot("TOKEN")
-
 
 @bot.message_handler()
 async def get_invoice(message: Message) -> None:
@@ -18,7 +15,6 @@ async def get_invoice(message: Message) -> None:
         f"pay: {invoice.mini_app_invoice_url}",
     )
     invoice.poll(user_id=message.from_user.id)
-
 
 @cp.invoice_paid()
 async def handle_payment(
@@ -30,13 +26,11 @@ async def handle_payment(
         f"payment received: {invoice.amount} {invoice.asset}",
     )
 
-
 async def main() -> None:
     await asyncio.gather(
         bot.infinity_polling(),
         cp.start_polling(),
     )
-
 
 if __name__ == "__main__":
     asyncio.run(main())

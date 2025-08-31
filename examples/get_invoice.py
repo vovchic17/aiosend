@@ -1,7 +1,5 @@
 import asyncio
-
 from aiosend import CryptoPay
-
 
 async def main() -> None:
     cp = CryptoPay(token="TOKEN")
@@ -11,7 +9,6 @@ async def main() -> None:
     await asyncio.sleep(10)  # payment
     new_invoice = await cp.get_invoice(invoice)
     print(new_invoice.status)  # paid
-
 
 if __name__ == "__main__":
     asyncio.run(main())

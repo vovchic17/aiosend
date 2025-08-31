@@ -1,7 +1,5 @@
 import asyncio
-
 from aiosend import CryptoPay
-
 
 async def main() -> None:
     cp = CryptoPay("TOKEN")
@@ -14,7 +12,6 @@ async def main() -> None:
     print(check.qr)  # check qr code link
 
     await check.delete()  # delete check
-
 
 if __name__ == "__main__":
     asyncio.run(main())

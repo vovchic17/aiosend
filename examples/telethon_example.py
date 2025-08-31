@@ -1,6 +1,5 @@
 from telethon import TelegramClient, events
 from telethon.events.newmessage import NewMessage
-
 from aiosend import CryptoPay
 from aiosend.types import Invoice
 
@@ -9,7 +8,6 @@ api_hash = "API HASH"
 
 cp = CryptoPay("TOKEN")
 client = TelegramClient("anon", api_id, api_hash)
-
 
 @client.on(events.NewMessage(func=lambda e: e.is_private))
 async def get_invoice(message: NewMessage.Event) -> None:
@@ -20,7 +18,6 @@ async def get_invoice(message: NewMessage.Event) -> None:
     )
     invoice.poll(chat_id=message.chat_id)
 
-
 @cp.invoice_paid()
 async def handle_payment(
     invoice: Invoice,
@@ -30,7 +27,6 @@ async def handle_payment(
         chat_id,
         f"payment received: {invoice.amount} {invoice.asset}",
     )
-
 
 client.start()
 cp.start_polling()

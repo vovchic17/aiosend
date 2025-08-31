@@ -1,12 +1,10 @@
 from telebot import TeleBot
 from telebot.types import Message
-
 from aiosend import CryptoPay
 from aiosend.types import Invoice
 
 cp = CryptoPay("TOKEN")
 bot = TeleBot("TOKEN")
-
 
 @bot.message_handler()
 def get_invoice(message: Message) -> None:
@@ -17,7 +15,6 @@ def get_invoice(message: Message) -> None:
     )
     invoice.poll(user_id=message.from_user.id)
 
-
 @cp.invoice_paid()
 def handle_payment(
     invoice: Invoice,
@@ -27,7 +24,6 @@ def handle_payment(
         user_id,
         f"payment received: {invoice.amount} {invoice.asset}",
     )
-
 
 if __name__ == "__main__":
     cp.start_polling(bot.infinity_polling)

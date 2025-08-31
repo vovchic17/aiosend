@@ -1,5 +1,4 @@
 import asyncio
-
 from aiosend import CryptoPay
 from aiosend.polling import PollingConfig
 from aiosend.types import Invoice
@@ -12,24 +11,20 @@ cp = CryptoPay(
     ),
 )
 
-
 @cp.invoice_paid()
 async def handler(invoice: Invoice) -> None:
     print("Received", invoice.amount, invoice.asset)
-
 
 # called after timeout (600s) or when invoice status is "expired"
 @cp.invoice_expired()
 async def expired_invoice_handler(invoice: Invoice, payload: str) -> None:
     print("Expired invoice", invoice.invoice_id, payload)
 
-
 async def main() -> None:
     invoice = await cp.create_invoice(1, "USDT")
     print("invoice link:", invoice.bot_invoice_url)
     invoice.poll()
     await cp.start_polling()
-
 
 if __name__ == "__main__":
     asyncio.run(main())

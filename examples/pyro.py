@@ -1,12 +1,10 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
-
 from aiosend import CryptoPay
 from aiosend.types import Invoice
 
 app = Client("my_account")
 cp = CryptoPay("TOKEN")
-
 
 @app.on_message(filters.private)
 async def get_invoice(client: Client, message: Message) -> None:
@@ -16,7 +14,6 @@ async def get_invoice(client: Client, message: Message) -> None:
     )
     invoice.poll(message=message)
 
-
 @cp.invoice_paid()
 async def handle_payment(
     invoice: Invoice,
@@ -25,6 +22,5 @@ async def handle_payment(
     await message.reply_text(
         f"payment received: {invoice.amount} {invoice.asset}",
     )
-
 
 cp.start_polling(app.start)
