@@ -1,4 +1,4 @@
-*.pyc
+*.py[oc]
 __pycache__
 .mypy_cache
 .ruff_cache
