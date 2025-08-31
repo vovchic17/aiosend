@@ -48,6 +48,7 @@ docs = [
 ]
 fastapi = ["fastapi[standard]"]
 flask = ["flask"]
+test = ["pytest", "pytest-asyncio"]
 
 [project.urls]
 Repository = "https://github.com/vovchic17/aiosend"
@@ -85,10 +86,6 @@ fixable = ["ALL"]
 quote-style = "double"
 indent-style = "space"
 docstring-code-line-length = "dynamic"
-
-[[tool.mypy.overrides]]
-module = ["*._methods.*", "*.webhook.*", "*.tools.*", "*.polling.*"]
-disable_error_code = ["misc"]
 
 [[tool.mypy.overrides]]
 module = ["*.fastapi_manager.*", "*.flask_manager.*"]
