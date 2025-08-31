@@ -3,14 +3,14 @@ from typing import TYPE_CHECKING
 from aiosend.enums import InvoiceStatus
 
 if TYPE_CHECKING:
-    import aiosend
+    from aiosend._typing import GetInvoicesProtocol
 
 
 class DeleteAllInvoices:
     """Delete all invoices."""
 
     async def delete_all_invoices(
-        self: "aiosend.CryptoPay",
+        self: "GetInvoicesProtocol",
     ) -> None:
         """
         Delete all invoices.

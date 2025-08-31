@@ -3,14 +3,14 @@ from typing import TYPE_CHECKING
 from aiosend.types import Invoice
 
 if TYPE_CHECKING:
-    import aiosend
+    from aiosend._typing import GetInvoicesProtocol
 
 
 class GetInvoice:
     """Get invoice."""
 
     async def get_invoice(
-        self: "aiosend.CryptoPay",
+        self: "GetInvoicesProtocol",
         invoice: int | Invoice,
     ) -> Invoice | None:
         """

@@ -3,14 +3,14 @@ from typing import TYPE_CHECKING
 from aiosend.types import Check
 
 if TYPE_CHECKING:
-    import aiosend
+    from aiosend._typing import GetChecksProtocol
 
 
 class GetCheck:
     """Get check."""
 
     async def get_check(
-        self: "aiosend.CryptoPay",
+        self: "GetChecksProtocol",
         check: int | Check,
     ) -> Check | None:
         """

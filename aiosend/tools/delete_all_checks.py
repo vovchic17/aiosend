@@ -3,14 +3,14 @@ from typing import TYPE_CHECKING
 from aiosend.enums import CheckStatus
 
 if TYPE_CHECKING:
-    import aiosend
+    from aiosend._typing import GetChecksProtocol
 
 
 class DeleteAllChecks:
     """Delete all checks."""
 
     async def delete_all_checks(
-        self: "aiosend.CryptoPay",
+        self: "GetChecksProtocol",
     ) -> None:
         """
         Delete all checks.

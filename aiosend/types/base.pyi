@@ -7,10 +7,6 @@ from typing_extensions import Self
 
 from aiosend import CryptoPay
 
-_CryptoPayType = TypeVar(
-    "_CryptoPayType",
-    bound=CryptoPayObject | list | bool,
-)
 _T = TypeVar("_T")
 SerList: TypeAlias = list[_T]
 
@@ -21,6 +17,11 @@ class CryptoPayObject(BaseModel, ABC):
 class Error(BaseModel):
     code: int
     name: str
+
+_CryptoPayType = TypeVar(
+    "_CryptoPayType",
+    bound=CryptoPayObject | list | bool,
+)
 
 class ItemsList(BaseModel, Generic[_CryptoPayType]):
     items: _CryptoPayType

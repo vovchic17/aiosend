@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING
 from aiosend.exceptions import CryptoPayError
 
 if TYPE_CHECKING:
-    import aiosend
+    from aiosend._typing import GetExchangeRatesProtocol
     from aiosend.enums import Asset, Fiat
 
 
@@ -11,7 +11,7 @@ class Exchange:
     """Exchange."""
 
     async def exchange(
-        self: "aiosend.CryptoPay",
+        self: "GetExchangeRatesProtocol",
         amount: float,
         source: "Asset | Fiat | str",
         target: "Asset | Fiat | str",

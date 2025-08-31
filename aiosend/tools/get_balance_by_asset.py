@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING
 from aiosend.exceptions import CryptoPayError
 
 if TYPE_CHECKING:
-    import aiosend
+    from aiosend._typing import GetBalanceProtocol
     from aiosend.enums import Asset
     from aiosend.types import Balance
 
@@ -12,7 +12,7 @@ class GetBalanceByAsset:
     """Get balance by Asset."""
 
     async def get_balance_by_asset(
-        self: "aiosend.CryptoPay",
+        self: "GetBalanceProtocol",
         asset: "Asset | str",
     ) -> "Balance":
         """
