@@ -114,7 +114,7 @@ class WebhookHandler(WebhookRouter):
                 return False
             if await self.propagate_event(
                 update.payload,
-                "invoice_paid",
+                update.update_type,
                 **self._kwargs,
             ):
                 loggers.webhook.info(
