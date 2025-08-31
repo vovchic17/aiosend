@@ -44,6 +44,7 @@
     color: var(--text_color) !important;
 }
 
+.o,
 .sa,
 .si {
     color: var(--code_color3) !important;
