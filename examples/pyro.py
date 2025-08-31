@@ -17,7 +17,7 @@ async def get_invoice(client: Client, message: Message) -> None:
     invoice.poll(message=message)
 
 
-@cp.invoice_polling()
+@cp.invoice_paid()
 async def handle_payment(
     invoice: Invoice,
     message: Message,

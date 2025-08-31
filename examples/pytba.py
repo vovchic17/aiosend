@@ -18,7 +18,7 @@ def get_invoice(message: Message) -> None:
     invoice.poll(user_id=message.from_user.id)
 
 
-@cp.invoice_polling()
+@cp.invoice_paid()
 def handle_payment(
     invoice: Invoice,
     user_id: int,

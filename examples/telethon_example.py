@@ -21,7 +21,7 @@ async def get_invoice(message: NewMessage.Event) -> None:
     invoice.poll(chat_id=message.chat_id)
 
 
-@cp.invoice_polling()
+@cp.invoice_paid()
 async def handle_payment(
     invoice: Invoice,
     chat_id: int,

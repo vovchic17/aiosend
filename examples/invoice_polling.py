@@ -6,12 +6,12 @@ from aiosend.types import Invoice
 cp = CryptoPay("TOKEN")
 
 
-@cp.invoice_polling()
+@cp.invoice_paid()
 async def payment_handler(invoice: Invoice, payload: str) -> None:
     print("Received", invoice.amount, invoice.asset, payload)
 
 
-@cp.expired_invoice_polling()
+@cp.invoice_expired()
 async def expired_invoice_handler(invoice: Invoice, payload: str) -> None:
     print("Expired invoice", invoice.invoice_id, payload)
 

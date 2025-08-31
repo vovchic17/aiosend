@@ -6,12 +6,12 @@ from aiosend.types import Check
 cp = CryptoPay("TOKEN")
 
 
-@cp.check_polling()
+@cp.check_activated()
 async def check_handler(check: Check, payload: str) -> None:
     print("Received", check.amount, check.asset, payload)
 
 
-@cp.expired_check_polling()
+@cp.check_expired()
 async def expired_check_handler(check: Check, payload: str) -> None:
     print("Expired check", check.check_id, payload)
 

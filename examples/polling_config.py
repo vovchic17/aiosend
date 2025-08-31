@@ -13,13 +13,13 @@ cp = CryptoPay(
 )
 
 
-@cp.invoice_polling()
+@cp.invoice_paid()
 async def handler(invoice: Invoice) -> None:
     print("Received", invoice.amount, invoice.asset)
 
 
 # called after timeout (600s) or when invoice status is "expired"
-@cp.expired_invoice_polling()
+@cp.invoice_expired()
 async def expired_invoice_handler(invoice: Invoice, payload: str) -> None:
     print("Expired invoice", invoice.invoice_id, payload)
 

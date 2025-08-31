@@ -14,7 +14,7 @@ async def main() -> None:
     await cp.start_polling()
 
 
-@cp.invoice_polling()
+@cp.invoice_paid()
 async def payment_handler(
     invoice: Invoice,
     var1: str,  # this one is from constructor

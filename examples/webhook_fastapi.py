@@ -14,7 +14,7 @@ cp = CryptoPay(
 )
 
 
-@cp.webhook()
+@cp.invoice_paid()
 async def handler(invoice: Invoice) -> None:
     print(f"Received {invoice.amount} {invoice.asset}")
 
