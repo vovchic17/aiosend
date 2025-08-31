@@ -6,7 +6,7 @@ from aiosend.types import AppStats
 from .base import CryptoPayMethod
 
 if TYPE_CHECKING:
-    import aiosend
+    from aiosend._typing import ClientProtocol
 
 
 class GetStats:
@@ -20,7 +20,7 @@ class GetStats:
         end_at: datetime | None
 
     async def get_stats(
-        self: "aiosend.CryptoPay",
+        self: "ClientProtocol",
         start_at: datetime | None = None,
         end_at: datetime | None = None,
     ) -> AppStats:

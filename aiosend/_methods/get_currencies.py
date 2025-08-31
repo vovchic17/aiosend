@@ -5,7 +5,7 @@ from aiosend.types import Currency
 from .base import CryptoPayMethod
 
 if TYPE_CHECKING:
-    import aiosend
+    from aiosend._typing import ClientProtocol
 
 
 class GetCurrencies:
@@ -16,7 +16,7 @@ class GetCurrencies:
         __method__ = "getCurrencies"
 
     async def get_currencies(
-        self: "aiosend.CryptoPay",
+        self: "ClientProtocol",
     ) -> list[Currency]:
         """
         getCurrencies method.

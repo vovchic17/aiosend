@@ -6,7 +6,7 @@ from aiosend.types import Check
 from .base import CryptoPayMethod
 
 if TYPE_CHECKING:
-    import aiosend
+    from aiosend._typing import ClientProtocol
 
 
 class CreateCheck:
@@ -22,7 +22,7 @@ class CreateCheck:
         pin_to_username: str | None
 
     async def create_check(
-        self: "aiosend.CryptoPay",
+        self: "ClientProtocol",
         amount: float,
         asset: Asset,
         pin_to_user_id: int | None = None,

@@ -9,7 +9,7 @@ from aiosend.types import Transfer as TransferType
 from .base import CryptoPayMethod
 
 if TYPE_CHECKING:
-    import aiosend
+    from aiosend._typing import ClientProtocol
 
 
 class Transfer:
@@ -33,7 +33,7 @@ class Transfer:
             return v or secrets.token_hex()
 
     async def transfer(
-        self: "aiosend.CryptoPay",
+        self: "ClientProtocol",
         user_id: int,
         asset: Asset,
         amount: float,

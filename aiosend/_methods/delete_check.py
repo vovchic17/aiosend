@@ -3,7 +3,7 @@ from typing import TYPE_CHECKING
 from .base import CryptoPayMethod
 
 if TYPE_CHECKING:
-    import aiosend
+    from aiosend._typing import ClientProtocol
 
 
 class DeleteCheck:
@@ -16,7 +16,7 @@ class DeleteCheck:
         check_id: int
 
     async def delete_check(
-        self: "aiosend.CryptoPay",
+        self: "ClientProtocol",
         check_id: int,
     ) -> bool:
         """

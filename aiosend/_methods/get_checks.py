@@ -8,7 +8,7 @@ from aiosend.types import Check, SerList
 from .base import CryptoPayMethod
 
 if TYPE_CHECKING:
-    import aiosend
+    from aiosend._typing import ClientProtocol
 
 
 class GetChecks:
@@ -25,7 +25,7 @@ class GetChecks:
         count: int | None = Field(None, ge=1, le=1000)
 
     async def get_checks(
-        self: "aiosend.CryptoPay",
+        self: "ClientProtocol",
         asset: Asset | None = None,
         check_ids: list[int] | None = None,
         status: CheckStatus | None = None,

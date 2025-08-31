@@ -5,7 +5,7 @@ from aiosend.types import ExchangeRate
 from .base import CryptoPayMethod
 
 if TYPE_CHECKING:
-    import aiosend
+    from aiosend._typing import ClientProtocol
 
 
 class GetExchangeRates:
@@ -16,7 +16,7 @@ class GetExchangeRates:
         __method__ = "getExchangeRates"
 
     async def get_exchange_rates(
-        self: "aiosend.CryptoPay",
+        self: "ClientProtocol",
     ) -> list[ExchangeRate]:
         """
         getExchangeRates method.

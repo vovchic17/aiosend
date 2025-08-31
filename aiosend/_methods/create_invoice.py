@@ -9,7 +9,7 @@ from aiosend.types import Invoice, SerList
 from .base import CryptoPayMethod
 
 if TYPE_CHECKING:
-    import aiosend
+    from aiosend._typing import ClientProtocol
 
 
 class CreateInvoice:
@@ -59,7 +59,7 @@ class CreateInvoice:
             return values
 
     async def create_invoice(
-        self: "aiosend.CryptoPay",
+        self: "ClientProtocol",
         amount: float,
         asset: Asset | None = None,
         *,

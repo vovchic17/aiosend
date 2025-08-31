@@ -5,7 +5,7 @@ from aiosend.types import App
 from .base import CryptoPayMethod
 
 if TYPE_CHECKING:
-    import aiosend
+    from aiosend._typing import ClientProtocol
 
 
 class GetMe:
@@ -15,7 +15,7 @@ class GetMe:
         __return_type__ = App
         __method__ = "getMe"
 
-    async def get_me(self: "aiosend.CryptoPay") -> App:
+    async def get_me(self: "ClientProtocol") -> App:
         """
         getMe method.
 

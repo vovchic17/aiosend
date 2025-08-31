@@ -5,7 +5,7 @@ from aiosend.types import Balance
 from .base import CryptoPayMethod
 
 if TYPE_CHECKING:
-    import aiosend
+    from aiosend._typing import ClientProtocol
 
 
 class GetBalance:
@@ -15,7 +15,7 @@ class GetBalance:
         __return_type__ = list[Balance]
         __method__ = "getBalance"
 
-    async def get_balance(self: "aiosend.CryptoPay") -> list[Balance]:
+    async def get_balance(self: "ClientProtocol") -> list[Balance]:
         """
         getBalance method.
 
