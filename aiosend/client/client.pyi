@@ -12,7 +12,6 @@ from typing_extensions import Self
 
 from aiosend._events import (
     BaseRouter,
-    CallbackType,
     EventObserver,
     HandlerObject,
 )
