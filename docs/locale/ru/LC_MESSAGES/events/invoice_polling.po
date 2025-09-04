@@ -43,7 +43,6 @@ msgstr ""
 "<aiosend.CryptoPay.get_invoices>`."
 
 #: ../../events/invoice_polling.rst:13
-#, fuzzy
 msgid ""
 ":class:`Polling manager <aiosend.polling.PollingManager>` has "
 ":class:`configuration <aiosend.polling.PollingConfig>` that defines the "

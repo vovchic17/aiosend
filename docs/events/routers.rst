@@ -35,7 +35,7 @@ You can attach a new event handler to event observer using a
 Polling Router
 ==============
 
-Avaliable observers for :class:`PollingRouter <aiosend.polling.PollingRouter>` are listed here.
+Available observers for :class:`PollingRouter <aiosend.polling.PollingRouter>` are listed here.
 
 Paid invoice
 ~~~~~~~~~~~~
@@ -72,7 +72,7 @@ Expired check
 Webhook Router
 ==============
 
-Avaliable observers for :class:`WebhookRouter <aiosend.webhook.WebhookRouter>` are listed here.
+Available observers for :class:`WebhookRouter <aiosend.webhook.WebhookRouter>` are listed here.
 
 Paid invoice
 ~~~~~~~~~~~~

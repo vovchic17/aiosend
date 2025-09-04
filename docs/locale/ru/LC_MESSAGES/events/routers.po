@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the aiosend package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-01 02:42+0300\n"
+"POT-Creation-Date: 2025-09-04 14:05+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../events/routers.rst:2
 msgid "Routers"
-msgstr ""
+msgstr "Роутеры"
 
 #: ../../events/routers.rst:4
 msgid ""
@@ -35,18 +34,26 @@ msgid ""
 "<aiosend._events.BaseRouter.include_router>` or :meth:`include_routers "
 "<aiosend._events.BaseRouter.include_routers>` methods."
 msgstr ""
+"Роутер - это объект для маршрутизации обновлений. Существует два типа роутеров: "
+":class:`PollingRouter <aiosend.polling.PollingRouter>` и "
+":class:`WebhookRouter <aiosend.webhook.WebhookRouter>`. :class:`CryptoPay"
+" <aiosend.CryptoPay>` является главным роутером для них обоих. Один роутер может"
+" включать другой роутер, но в конечном итоге родительский роутер должен быть "
+"включен в главный роутер с помощью метода :meth:`include_router "
+"<aiosend._events.BaseRouter.include_router>` или :meth:`include_routers "
+"<aiosend._events.BaseRouter.include_routers>`."
 
 #: ../../events/routers.rst:13
 msgid "Usage example"
-msgstr ""
+msgstr "Пример использования"
 
 #: aiosend._events.router.BaseRouter:1 of
-msgid "Base router for handling and propogate events."
-msgstr ""
+msgid "Base router for handling and propagate events."
+msgstr "Базовый роутер для обработки и распространения событий."
 
 #: aiosend._events.router.BaseRouter.include_router:1 of
 msgid "Include another router to this one."
-msgstr ""
+msgstr "Включить другой роутер в этот."
 
 #: ../../events/routers.rst
 msgid "Return type"
@@ -60,7 +67,7 @@ msgstr ""
 
 #: aiosend._events.router.BaseRouter.include_routers:1 of
 msgid "Include multiple routers to this one."
-msgstr ""
+msgstr "Включить несколько роутеров в этот."
 
 #: aiosend.polling.router.PollingRouter:1
 #: aiosend.webhook.router.WebhookRouter:1 of
@@ -69,15 +76,15 @@ msgstr ""
 
 #: aiosend.polling.router.PollingRouter:1 of
 msgid "Router for polling events."
-msgstr ""
+msgstr "Роутер для поллинг событий."
 
 #: aiosend.webhook.router.WebhookRouter:1 of
 msgid "Router for webhook updates."
-msgstr ""
+msgstr "Роутер для вебхук событий."
 
 #: ../../events/routers.rst:27
 msgid "Event observers"
-msgstr ""
+msgstr "Наблюдатели событий"
 
 #: ../../events/routers.rst:28
 msgid ""
@@ -86,18 +93,21 @@ msgid ""
 "type>(...)` decorator or a :code:`router.<event type>.register(...)` "
 "method."
 msgstr ""
+"Наблюдатель событий - это объект, который хранит обработчики событий. Вы можете прикрепить "
+"новый обработчик событий к наблюдателю событий с помощью декоратора :code:`@router.<event "
+"type>(...)` или метода :code:`router.<event type>.register(...)`."
 
 #: aiosend._events.observer.EventObserver:1 of
 msgid "Event observer for storing handlers and propagating events."
-msgstr ""
+msgstr "Наблюдатель событий для хранения обработчиков и распространения событий."
 
 #: aiosend._events.observer.EventObserver.register:1 of
 msgid "Register event handler."
-msgstr ""
+msgstr "Зарегистрировать новый обработчик."
 
 #: aiosend._events.observer.EventObserver.trigger:1 of
 msgid "Trigger event observer."
-msgstr ""
+msgstr "Вызвать наблюдатель событий."
 
 #: aiosend._events.observer.EventObserver.trigger:4 of
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`bool\\``"
@@ -105,37 +115,40 @@ msgstr ""
 
 #: ../../events/routers.rst:36
 msgid "Polling Router"
-msgstr ""
+msgstr "Поллинг-роутер"
 
 #: ../../events/routers.rst:38
 msgid ""
-"Avaliable observers for :class:`PollingRouter "
+"Available observers for :class:`PollingRouter "
 "<aiosend.polling.PollingRouter>` are listed here."
 msgstr ""
+"Здесь перечислены доступные наблюдатели для "
+":class:`PollingRouter <aiosend.polling.PollingRouter>`."
 
 #: ../../events/routers.rst:41 ../../events/routers.rst:78
 msgid "Paid invoice"
-msgstr ""
+msgstr "Оплаченный счёт"
 
 #: ../../events/routers.rst:49
 msgid "Expired invoice"
-msgstr ""
+msgstr "Просроченный счёт"
 
 #: ../../events/routers.rst:57
 msgid "Activated check"
-msgstr ""
+msgstr "Активированный чек"
 
 #: ../../events/routers.rst:65
 msgid "Expired check"
-msgstr ""
+msgstr "Просроченный чек"
 
 #: ../../events/routers.rst:73
 msgid "Webhook Router"
-msgstr ""
+msgstr "Вебхук-роутер"
 
 #: ../../events/routers.rst:75
 msgid ""
-"Avaliable observers for :class:`WebhookRouter "
+"Available observers for :class:`WebhookRouter "
 "<aiosend.webhook.WebhookRouter>` are listed here."
 msgstr ""
-
+"Здесь перечислены доступные наблюдатели для "
+"<aiosend.webhook.WebhookRouter>`."
