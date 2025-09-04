@@ -47,7 +47,7 @@ class CreateInvoice:
                 is None: 'fiat is required if currency_type is "fiat"',
                 values["currency_type"] != "fiat"
                 and values["accepted_assets"]
-                is not None: 'accepted_assets avaliable only if currency_type is "fiat"',
+                is not None: 'accepted_assets available only if currency_type is "fiat"',
                 values["paid_btn_name"] is not None
                 and values["paid_btn_url"]
                 is None: "paid_btn_url required if paid_btn_name is specified.",

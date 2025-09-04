@@ -8,7 +8,7 @@ if TYPE_CHECKING:
 
 
 class BaseRouter:
-    """Base router for handling and propogate events."""
+    """Base router for handling and propagate events."""
 
     def __init__(self, *, name: str | None = None) -> None:
         self.name = name or hex(id(self))
@@ -20,7 +20,7 @@ class BaseRouter:
         """Include another router to this one."""
         if not isinstance(self, type(router)):
             msg = (
-                f"Router {router} is not a {self.__class__.__name__} instance"
+                f"Router {router} is not a {type(self).__name__} instance"
             )
             raise TypeError(msg)
 
