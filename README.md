@@ -54,7 +54,7 @@ async def get_invoice(message):
     invoice.poll(message=message)
 
 
-@cp.invoice_polling()
+@cp.invoice_paid()
 async def handle_payment(invoice, message):
     await message.answer(f"invoice #{invoice.invoice_id} has been paid")
 
