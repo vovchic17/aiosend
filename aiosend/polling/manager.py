@@ -12,7 +12,7 @@ if TYPE_CHECKING:
     from collections.abc import Callable
     from typing import Any
 
-    from aiosend._typing import ClientWebhookManager
+    from aiosend._typing import ClientWebhookManagerProtocol
 
 
 class PollingManager(InvoicePollingManager, CheckPollingManager):
@@ -33,7 +33,7 @@ class PollingManager(InvoicePollingManager, CheckPollingManager):
         self._delay = config.delay
 
     async def start_polling(
-        self: "ClientWebhookManager",
+        self: "ClientWebhookManagerProtocol",
         parallel: "Callable[[], Any] | None" = None,
     ) -> None:
         """

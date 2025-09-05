@@ -1,6 +1,6 @@
-from .client_webhook_manager import ClientWebhookManager
 from .protocols import (
     ClientProtocol,
+    ClientWebhookManagerProtocol,
     GetBalanceProtocol,
     GetChecksProtocol,
     GetExchangeRatesProtocol,
@@ -10,7 +10,7 @@ from .protocols import (
 
 __all__ = (
     "ClientProtocol",
-    "ClientWebhookManager",
+    "ClientWebhookManagerProtocol",
     "GetBalanceProtocol",
     "GetChecksProtocol",
     "GetExchangeRatesProtocol",
