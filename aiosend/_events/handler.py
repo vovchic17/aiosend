@@ -23,10 +23,14 @@ class HandlerObject:
             check = False
             if isinstance(f, MagicFilter):
                 check = f.resolve(obj)
-            elif inspect.isawaitable(f) or inspect.iscoroutinefunction(f):
+            elif inspect.iscoroutinefunction(f):
                 check = await f(obj)
-            elif inspect.isfunction(f):
-                check = f(obj)
+            elif callable(f):
+                call_method = f.__call__  # type: ignore[operator]
+                if inspect.iscoroutinefunction(call_method):
+                    check = await f(obj)
+                else:
+                    check = f(obj)
             if not check:
                 return False, data
             if isinstance(check, dict):

@@ -20,7 +20,7 @@ class BaseRouter:
         """Include another router to this one."""
         if not isinstance(self, type(router)):
             msg = (
-                f"Router {router} is not a {type(self).__name__} instance"
+                f"Router {router} is not a {type(self).__name__!r} instance"
             )
             raise TypeError(msg)
 
