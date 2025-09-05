@@ -3,12 +3,12 @@ from typing import TYPE_CHECKING
 from .base import WebhookManager
 
 if TYPE_CHECKING:
-    from fastapi import FastAPI  # noqa: F401
+    from fastapi import APIRouter, FastAPI  # noqa: F401
 
     from .base import WebServerHandler
 
 
-class FastAPIManager(WebhookManager["FastAPI"]):
+class FastAPIManager(WebhookManager["FastAPI | APIRouter"]):
     """
     FastAPI webhook manager.
 
