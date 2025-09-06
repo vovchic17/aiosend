@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-01 02:42+0300\n"
+"POT-Creation-Date: 2025-09-06 02:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -150,7 +150,7 @@ msgstr "Менеджер вебхуков, базирующийся на :class:
 #: aiosend.webhook.fastapi_manager.FastAPIManager:1 of
 msgid ""
 "Bases: :py:class:`~aiosend.webhook.base.WebhookManager`\\ "
-"[:py:class:`FastAPI`]"
+"[:py:class:`FastAPI | APIRouter`]"
 msgstr ""
 
 #: aiosend.webhook.fastapi_manager.FastAPIManager:1 of
@@ -174,27 +174,4 @@ msgstr "Менеджер вебхуков на Flask."
 #: aiosend.webhook.flask_manager.FlaskManager:3 of
 msgid "Webhook manager based on :class:`flask.Flask`."
 msgstr "Менеджер вебхуков, базирующийся на :class:`flask.Flask`."
-
-#~ msgid "Returns"
-#~ msgstr ""
-
-#~ msgid "handler function."
-#~ msgstr "функция-обработчик."
-
-#~ msgid "Register a handler for webhook invoice updates."
-#~ msgstr "Добавление обработчика для вебхук-уведомлений."
-
-#~ msgid "Decorator for handler function."
-#~ msgstr "Декоратор для функции-обработчика."
-
-#~ msgid ""
-#~ ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~collections.abc.Callable\\`\\\\"
-#~ " "
-#~ "\\\\\\[\\\\\\[\\:py\\:class\\:\\`\\~collections.abc.Callable\\`\\\\"
-#~ " \\\\\\[\\:py\\:data\\:\\`...\\<Ellipsis\\>\\`\\, "
-#~ "\\:py\\:data\\:\\`\\~typing.Any\\`\\]\\]\\, "
-#~ "\\:py\\:class\\:\\`\\~collections.abc.Callable\\`\\\\ "
-#~ "\\\\\\[\\:py\\:data\\:\\`...\\<Ellipsis\\>\\`\\, "
-#~ "\\:py\\:data\\:\\`\\~typing.Any\\`\\]\\]`"
-#~ msgstr ""
 

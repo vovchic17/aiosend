@@ -53,7 +53,7 @@ msgstr ""
 
 #: aiosend.polling.check.CheckPollingManager.get_checks:1 of
 msgid "getchecks method."
-msgstr ""
+msgstr "метод getchecks."
 
 #: ../../events/polling_config.rst
 msgid "Return type"
@@ -67,7 +67,7 @@ msgstr ""
 
 #: aiosend.polling.invoice.InvoicePollingManager.get_invoices:1 of
 msgid "getinvoices method."
-msgstr ""
+msgstr "метод getinvoices."
 
 #: aiosend.polling.invoice.InvoicePollingManager.get_invoices:4 of
 msgid ""

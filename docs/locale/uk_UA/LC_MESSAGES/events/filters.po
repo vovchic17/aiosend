@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 09:34+0300\n"
+"POT-Creation-Date: 2025-09-06 19:53+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -31,11 +31,11 @@ msgid ""
 "the handler is suitable for the update. Once a handler with a suitable "
 "set of filters is found, searching of handler will be stopped."
 msgstr ""
-"**Фільтри** необхідні для маршрутизації оновлень до конкретного обробника."
-":class:`WebhookManager <aiosend.webhook.WebhookManager>` та "
+"**Фільтри** необхідні для маршрутизації оновлень до конкретного "
+"обробника.:class:`WebhookManager <aiosend.webhook.WebhookManager>` та "
 ":class:`PollingManager <aiosend.polling.PollingManager>` перевірятимуть "
-"Чи підходить функція-обробник для оновлення. Як тільки обробник з відповідним "
-"Знайдено пошук фільтрів, пошук обробника зупиняється."
+"Чи підходить функція-обробник для оновлення. Як тільки обробник з "
+"відповідним Знайдено пошук фільтрів, пошук обробника зупиняється."
 
 #: ../../events/filters.rst:13
 msgid "Filters can be:"
@@ -54,52 +54,84 @@ msgid "lambda function"
 msgstr "lambda функція"
 
 #: ../../events/filters.rst:17
+msgid "class with a synchronous `__call__` method"
+msgstr ""
+
+#: ../../events/filters.rst:18
+msgid "class with an asynchronous `__call__` method"
+msgstr ""
+
+#: ../../events/filters.rst:19
 msgid ""
 "instance of `MagicFilter "
 "<https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html"
 "#magic-filters>`_"
 msgstr ""
 
-#: ../../events/filters.rst:20
+#: ../../events/filters.rst:22
 msgid "Usage example"
 msgstr ""
 
-#: ../../events/filters.rst:21
+#: ../../events/filters.rst:23
 msgid "For example, you can create a couple of invoices and poll them like that"
 msgstr ""
-"примірник `MagicFilter"
-"<https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html"
+"примірник "
+"`MagicFilter<https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html"
 "#magic-filters>`_"
 
-#: ../../events/filters.rst:45
+#: ../../events/filters.rst:51
 msgid "Magic filter"
 msgstr "Магічні фільтри"
 
-#: ../../events/filters.rst:61
+#: ../../events/filters.rst:67
 msgid "Function filter"
 msgstr "Функція-фільтр"
 
-#: ../../events/filters.rst:63
-msgid "You can use either :code:`def`, :code:`async def` or :code:`lambda`"
-msgstr "Ви можете використовувати або :code:`def`, або :code:`async def`, або :code:`lambda`"
+#: ../../events/filters.rst:69
+#, fuzzy
+msgid "You can use either :code:`def`, :code:`async def` or :code:`lambda`."
+msgstr ""
+"Ви можете використовувати або :code:`def`, або :code:`async def`, або "
+":code:`lambda`"
 
-#: ../../events/filters.rst:82
+#: ../../events/filters.rst:88
+#, fuzzy
+msgid "Class filter"
+msgstr "Магічні фільтри"
+
+#: ../../events/filters.rst:90
+msgid ""
+"You can use classes that implement either a synchronous (:code:`def`) or "
+"an asynchronous (:code:`async def`) `__call__` method."
+msgstr ""
+
+#: ../../events/filters.rst:119
 msgid "Get filter result as handler argument"
 msgstr "Отримання результату фільтра як аргумент оброблювача"
 
-#: ../../events/filters.rst:84
+#: ../../events/filters.rst:121
 msgid ""
 "You can use `aiogram 3.x magic filter's "
 "<https://docs.aiogram.dev/en/dev-3.x/dispatcher/filters/magic_filters.html"
 "#get-filter-result-as-handler-argument>`_ :code:`as_` method to get "
 "filter result as handler argument"
 msgstr ""
-"Ви можете використовувати метод :code:`as_` з `магічних фільтрів aiogram 3.x"
-"<https://docs.aiogram.dev/en/dev-3.x/dispatcher/filters/magic_filters.html"
-"#get-filter-result-as-handler-argument>`_ щоб отримати "
-"результат фільтра як аргумент оброблювача"
+"Ви можете використовувати метод :code:`as_` з `магічних фільтрів aiogram "
+"3.x<https://docs.aiogram.dev/en/dev-3.x/dispatcher/filters/magic_filters.html"
+"#get-filter-result-as-handler-argument>`_ щоб отримати результат фільтра "
+"як аргумент оброблювача"
 
-#: ../../events/filters.rst:96
-msgid "You can also return context data from function filters like that"
-msgstr "Ви також можете повертати контекстні дані з фільтрів-функцій наступним чином"
+#: ../../events/filters.rst:133
+#, fuzzy
+msgid "You can also return context data from any filters like that"
+msgstr ""
+"Ви також можете повертати контекстні дані з фільтрів-функцій наступним "
+"чином"
+
+#~ msgid ""
+#~ "You can use classes that implement "
+#~ "either a synchronous (:code:`def __call__`)"
+#~ " or an asynchronous (:code:`async def "
+#~ "__call__`) method."
+#~ msgstr ""
 

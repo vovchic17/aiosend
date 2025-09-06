@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, VoVcHiC
+# This file is distributed under the same license as the aiosend package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: aiosend \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-07 01:06+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uk_UA\n"
+"Language-Team: uk_UA <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../events/payload_data.rst:3
+msgid "Payload Data"
+msgstr ""
+
+#: ../../events/payload_data.rst:5
+msgid ""
+"Payload Data is used to generate a structured payload using the pydantic "
+"model."
+msgstr ""
+"Payload Data використовується для створення структурованої корисної "
+"навантаження за допомогою моделі pydantic."
+
+#: aiosend._events.payload_data.PayloadData:1 of
+msgid "Base payload data class."
+msgstr "Базовий клас корисного навантаження."
+
+#: aiosend._events.payload_data.PayloadData.filter:1 of
+msgid "Generate a filter for payload with rule."
+msgstr "Створити фільтр для корисного навантаження з правилом."
+
+#: ../../events/payload_data.rst
+msgid "Parameters"
+msgstr ""
+
+#: aiosend._events.payload_data.PayloadData.filter:4 of
+msgid "magic rule"
+msgstr "магічне правило"
+
+#: ../../events/payload_data.rst
+msgid "Return type"
+msgstr ""
+
+#: aiosend._events.payload_data.PayloadData.filter:6 of
+msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~aiosend.\\_events.payload\\_data.PayloadDataFilter\\``"
+msgstr ""
+
+#: aiosend._events.payload_data.PayloadData.pack:1 of
+msgid "Generate payload data string."
+msgstr "Створити рядок корисного навантаження."
+
+#: aiosend._events.payload_data.PayloadData.pack:4 of
+msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`str\\``"
+msgstr ""
+
+#: aiosend._events.payload_data.PayloadData.unpack:1 of
+msgid "Parse payload data string."
+msgstr "Спарсіть рядок даних корисного навантаження."
+
+#: aiosend._events.payload_data.PayloadData.unpack:4 of
+msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`\\~typing.Self\\``"
+msgstr ""
+
+#: ../../events/payload_data.rst:12
+msgid "Usage example"
+msgstr "Приклад використання"
+
+#: ../../events/payload_data.rst:14
+msgid ""
+"Define a subclass of :class:`PayloadData <aiosend.PayloadData>`. The "
+"keyword :code:`prefix` is required to specify the prefix, and the "
+":code:`sep` argument can be provided to define the separator (default is "
+":)."
+msgstr ""
+"Визначте підклас :class:`PayloadData <aiosend.PayloadData>`. Ключове "
+"слово :code:`prefix` потрібно вказати префікс, а аргумент :code:`sep` "
+"може бути переданий для визначення роздільника."
+
+#: ../../events/payload_data.rst:24
+msgid ""
+"Now you can create an instance of this class, pack it into a string, and "
+"then pass it in the :attr:`Invoice payload "
+"<aiosend.types.Invoice.payload>`."
+msgstr ""
+"Тепер ви можете створити екземпляр цього класу, упакувати його в рядок, а"
+" потім передати в :attr:`Invoice payload <aiosend.types.Invoice.payload>`."
+
+#: ../../events/payload_data.rst:32
+msgid ""
+"To handle an invoice payment event, you need to declare a handler with a "
+"PayloadData filter. You can access an instance of your PayloadData via "
+"the handler’s named argument :code:`payload_data`."
+msgstr ""
+"Щоб обробити подію оплати рахунку, Вам потрібно оголосити обробник з "
+"фільтром PayloadData. Ви можете отримати доступ до екземпляра Вашого "
+"PayloadData за допомогою іменованого аргументу обробника :code:`payload_data`."
+
+#: ../../events/payload_data.rst:41
+msgid ""
+"Also you can filter events by specific rules using `magic filters from "
+"aiogram 3.x "
+"<https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html"
+"#magic-filters>`_."
+msgstr ""
+"Також ви можете фільтрувати події за певними правилами, використовуючи "
+"`магічні фільтри з aiogram 3.x "
+"<https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html"
+"#magic-filters>`_."

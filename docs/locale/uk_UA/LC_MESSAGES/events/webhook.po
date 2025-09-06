@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-01 02:42+0300\n"
+"POT-Creation-Date: 2025-09-06 02:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk_UA\n"
@@ -97,7 +97,7 @@ msgid ""
 "this class."
 msgstr ""
 "Якщо ви хочете створити свій власний менеджер вебхуків, ви "
-"повинніуспадковуватись від цього класу"
+"повинні успадковуватись від цього класу"
 
 #: aiosend.webhook.aiohttp_manager.AiohttpManager.register_handler:1
 #: aiosend.webhook.base.WebhookManager.register_handler:1
@@ -150,7 +150,7 @@ msgstr "Менеджер веб-хуків, що базується на :class:
 #: aiosend.webhook.fastapi_manager.FastAPIManager:1 of
 msgid ""
 "Bases: :py:class:`~aiosend.webhook.base.WebhookManager`\\ "
-"[:py:class:`FastAPI`]"
+"[:py:class:`FastAPI | APIRouter`]"
 msgstr ""
 
 #: aiosend.webhook.fastapi_manager.FastAPIManager:1 of
