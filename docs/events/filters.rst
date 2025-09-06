@@ -88,7 +88,7 @@ Class filter
 ------------
 
 You can use classes that implement either a synchronous
-(:code:`def __call__`) or an asynchronous (:code:`async def __call__`) method.
+(:code:`def`) or an asynchronous (:code:`async def`) `__call__` method.
 
 .. code-block:: python
 

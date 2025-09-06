@@ -11,7 +11,7 @@ Payload Data is used to generate a structured payload using the pydantic model.
 Usage example
 -------------
 
-Define a subclass of :class:`PayloadData <aiosend.PayloadData>`
+Define a subclass of :class:`PayloadData <aiosend.PayloadData>`.
 The keyword :code:`prefix` is required to specify the prefix, and the :code:`sep`
 argument can be provided to define the separator (default is :).
 
@@ -39,7 +39,7 @@ You can access an instance of your PayloadData via the handler’s named argumen
         print(invoice.amount, payload_data.foo)
 
 Also you can filter events by specific rules using
-`magic filters from aiogram 3.x <https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html#magic-filters>`_
+`magic filters from aiogram 3.x <https://docs.aiogram.dev/en/latest/dispatcher/filters/magic_filters.html#magic-filters>`_.
 
 .. code-block:: python
 
