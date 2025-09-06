@@ -122,7 +122,7 @@ msgid ""
 "Available observers for :class:`PollingRouter "
 "<aiosend.polling.PollingRouter>` are listed here."
 msgstr ""
-"Тут перераховані доступні рецензенти для: class:`PollingRouter "
+"Тут перераховані доступні рецензенти для :class:`PollingRouter "
 "<aiosend.polling.PollingRouter>`."
 
 #: ../../events/routers.rst:41 ../../events/routers.rst:78
@@ -150,6 +150,6 @@ msgid ""
 "Available observers for :class:`WebhookRouter "
 "<aiosend.webhook.WebhookRouter>` are listed here."
 msgstr ""
-"Тут перераховані доступні рецензенти для: class:`WebhookRouter "
+"Тут перераховані доступні рецензенти для :class:`WebhookRouter "
 "<aiosend.webhook.WebhookRouter>`."
 

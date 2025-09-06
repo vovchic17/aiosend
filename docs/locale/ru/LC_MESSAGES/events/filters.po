@@ -91,7 +91,7 @@ msgstr "Функция-фильтр"
 msgid "You can use either :code:`def`, :code:`async def` or :code:`lambda`."
 msgstr ""
 "Вы можете использовать либо :code:`def`, либо :code:`async def`, либо "
-":code:`lambda`"
+":code:`lambda`."
 
 #: ../../events/filters.rst:88
 msgid "Class filter"

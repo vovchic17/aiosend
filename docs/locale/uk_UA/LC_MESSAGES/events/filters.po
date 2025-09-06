@@ -88,14 +88,12 @@ msgid "Function filter"
 msgstr "Функція-фільтр"
 
 #: ../../events/filters.rst:69
-#, fuzzy
 msgid "You can use either :code:`def`, :code:`async def` or :code:`lambda`."
 msgstr ""
 "Ви можете використовувати або :code:`def`, або :code:`async def`, або "
-":code:`lambda`"
+":code:`lambda`."
 
 #: ../../events/filters.rst:88
-#, fuzzy
 msgid "Class filter"
 msgstr "Магічні фільтри"
 
@@ -122,16 +120,7 @@ msgstr ""
 "як аргумент оброблювача"
 
 #: ../../events/filters.rst:133
-#, fuzzy
 msgid "You can also return context data from any filters like that"
 msgstr ""
 "Ви також можете повертати контекстні дані з фільтрів-функцій наступним "
 "чином"
-
-#~ msgid ""
-#~ "You can use classes that implement "
-#~ "either a synchronous (:code:`def __call__`)"
-#~ " or an asynchronous (:code:`async def "
-#~ "__call__`) method."
-#~ msgstr ""
-

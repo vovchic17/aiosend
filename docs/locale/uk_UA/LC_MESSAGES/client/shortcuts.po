@@ -199,19 +199,3 @@ msgstr ""
 #: ../../client/shortcuts.rst:42
 msgid "Usage examples"
 msgstr "Приклад використання"
-
-#~ msgid "Returns"
-#~ msgstr ""
-
-#~ msgid ":code:`True` on success."
-#~ msgstr ":code:`True` у разі успіху"
-
-#~ msgid "check qr code url."
-#~ msgstr "URL qr коду чека."
-
-#~ msgid "invoice qr code url."
-#~ msgstr "URL qr коду рахунку."
-
-#~ msgid "check image url."
-#~ msgstr "URL зображення чека."
-

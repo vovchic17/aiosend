@@ -189,22 +189,3 @@ msgstr "Используйте этот метод для получения к�
 #: aiosend.tools.get_rates_image.GetRatesImage.get_rates_image:5 of
 msgid ":sphinx_autodoc_typehints_type:`\\:py\\:class\\:\\`str\\``"
 msgstr ""
-
-#~ msgid "Returns"
-#~ msgstr ""
-
-#~ msgid ":class:`float` on success."
-#~ msgstr ":class:`float` в случае успеха."
-
-#~ msgid ":class:`aiosend.types.Balance` on success."
-#~ msgstr ":class:`aiosend.types.Balance` в случае успеха."
-
-#~ msgid ":class:`aiosend.types.Invoice` object."
-#~ msgstr "Объект :class:`aiosend.types.Invoice`."
-
-#~ msgid ":meth:`aiosend.types.Check` object."
-#~ msgstr "Объект :meth:`aiosend.types.Check`."
-
-#~ msgid "rates image url."
-#~ msgstr "Ссылка на изображение курса."
-
