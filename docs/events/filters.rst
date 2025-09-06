@@ -52,7 +52,7 @@ Magic filter
 
 .. code-block:: python
 
-    from magic_filter import F
+    from magic_filter import F # or from aiogram import F
 
     @cp.invoice_paid(F.payload == "product1")
     async def handler1(invoice: Invoice) -> None:
@@ -124,7 +124,7 @@ You can use `aiogram 3.x magic filter's
 
 .. code-block:: python
 
-    from aiogram import F
+    from magic_filter import F # or from aiogram import F
 
     @cp.invoice_paid(F.payload.as_("payload"))
     async def handler1(invoice: Invoice, payload: str) -> None:

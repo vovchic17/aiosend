@@ -43,7 +43,7 @@ Also you can filter events by specific rules using
 
 .. code-block:: python
 
-    from aiogram import F
+    from magic_filter import F # or from aiogram import F
 
     @cp.invoice_paid(MyData.filter(F.bar == 123))
     async def handler(invoice: Invoice, payload_data: MyData) -> None:
