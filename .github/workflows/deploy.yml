@@ -57,7 +57,7 @@ jobs:
 
   github-release:
     name: >-
-      Create GitHub Release with source code
+      Create GitHub Release Draft
     needs:
     - publish
     runs-on: ubuntu-latest
@@ -77,3 +77,4 @@ jobs:
         '${{ github.ref_name }}'
         --repo '${{ github.repository }}'
         --notes "Release for version ${{ github.ref_name }}"
+        --draft
