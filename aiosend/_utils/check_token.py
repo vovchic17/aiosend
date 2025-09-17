@@ -4,7 +4,9 @@ from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
 import certifi
+from aiohttp.http import SERVER_SOFTWARE
 
+from aiosend.__meta__ import __version__
 from aiosend._methods import GetMe
 from aiosend.exceptions import APIError
 from aiosend.types import App, Response
@@ -24,6 +26,7 @@ def token_validate(client: "CryptoPay", network: "Network") -> App:
             url,
             headers={
                 "Crypto-Pay-API-Token": client._token,  # noqa: SLF001
+                "User-Agent": f"{SERVER_SOFTWARE} aiosend/{__version__}",
             },
         )
         resp = urlopen(request, context=ssl_context).read()  # noqa: S310
