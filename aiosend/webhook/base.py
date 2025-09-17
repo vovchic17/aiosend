@@ -20,7 +20,7 @@ if TYPE_CHECKING:
 _APP = TypeVar("_APP")
 
 
-class WebhookManager(Generic[_APP], ABC):
+class WebhookManager(ABC, Generic[_APP]):
     """
     Webhook manager.
 

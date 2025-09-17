@@ -6,7 +6,7 @@ from pydantic import BaseModel, ConfigDict
 from aiosend.types import _CryptoPayType
 
 
-class CryptoPayMethod(BaseModel, Generic[_CryptoPayType], ABC):
+class CryptoPayMethod(BaseModel, ABC, Generic[_CryptoPayType]):
     """Base `Crypto Pay API` method class."""
 
     model_config = ConfigDict(
