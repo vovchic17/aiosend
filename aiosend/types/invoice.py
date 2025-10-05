@@ -71,7 +71,7 @@ class Invoice(CryptoPayObject):
     """*Optional*. The asset that will be attempted to be swapped into after the user makes a payment (the swap is not guaranteed). Supported assets: "USDT", "TON", "TRX", "ETH", "SOL", "BTC", "LTC"."""
     is_swapped: bool | None = None
     """*Optional*. For invoices with the "paid" status, this flag indicates whether the swap was successful (only applicable if `swap_to` is set)."""
-    swapped_uid: int | None = None
+    swapped_uid: str | None = None
     """*Optional*. If `is_swapped` is `True`, stores the unique identifier of the swap."""
     swapped_to: Asset | None = None
     """*Optional*. If `is_swapped` is `True`, stores the asset into which the swap was made."""
