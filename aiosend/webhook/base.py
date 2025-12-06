@@ -17,7 +17,7 @@ if TYPE_CHECKING:
         Awaitable[bool],
     ]
 
-_APP = TypeVar("_APP")
+_APP = TypeVar("_APP", bound=Any)
 
 
 class WebhookManager(ABC, Generic[_APP]):

@@ -52,3 +52,22 @@ class MethodValuesError(CryptoPayError):
 
     def __init__(self, message: str) -> None:
         self.message = message
+
+    def __str__(self) -> str:
+        """Return a string representation of the exception."""
+        return f"Invalid parameters: {self.message}"
+
+
+class APITimeoutError(CryptoPayError):
+    """Exception raised when the API request times out."""
+
+    def __init__(self, method: "CryptoPayMethod", timeout: float) -> None:
+        self.method = method
+        self.timeout = timeout
+
+    def __str__(self) -> str:
+        """Return a string representation of the exception."""
+        return (
+            f"Request to /{self.method.__method__} has "
+            f"exceeded the timeout of {self.timeout} seconds"
+        )

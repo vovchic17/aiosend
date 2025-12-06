@@ -100,6 +100,7 @@ class CryptoPay:
         session: type[BaseSession] = ...,
         webhook_manager: WebhookManager[_APP] | None = None,
         polling_config: PollingConfig | None = None,
+        timeout: _float = 300,
         **kwargs: object,
     ) -> None: ...
     async def __call__(
@@ -121,8 +122,8 @@ class CryptoPay:
         paid_btn_name: PaidBtnName | LiteralPaidBtnName | _str | None = None,
         paid_btn_url: _str | None = None,
         payload: _str | None = None,
-        allow_comments: bool | None = None,
-        allow_anonymous: bool | None = None,
+        allow_comments: _bool | None = None,
+        allow_anonymous: _bool | None = None,
         expires_in: int | None = None,
     ) -> Invoice: ...
     def delete_invoice(
@@ -147,7 +148,7 @@ class CryptoPay:
         amount: _float,
         spend_id: _str | None = None,
         comment: _str | None = None,
-        disable_send_notification: bool | None = None,
+        disable_send_notification: _bool | None = None,
     ) -> Transfer: ...
     def get_invoices(
         self,

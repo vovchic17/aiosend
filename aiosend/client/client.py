@@ -16,9 +16,6 @@ if TYPE_CHECKING:
     from aiosend._methods import CryptoPayMethod
     from aiosend.client import Network
     from aiosend.types import App, _CryptoPayType
-    from aiosend.webhook import _APP, WebhookManager
-
-    from .session import BaseSession
 
 
 class CryptoPay(Methods, Tools, WebhookHandler, PollingManager):
@@ -30,6 +27,7 @@ class CryptoPay(Methods, Tools, WebhookHandler, PollingManager):
     :param session: HTTP Session
     :webhook_manager: Webhook manager (based on aiohttp, fastapi, flask etc.)
     :polling_config: Configuration for invoice and check polling
+    :timeout: HTTP request timeout in seconds
     :kwargs: Optional argumets to pass into the polling and webhook handlers
     """
 
@@ -37,17 +35,18 @@ class CryptoPay(Methods, Tools, WebhookHandler, PollingManager):
         self,
         token: str,
         network: "Network" = MAINNET,
-        session: "type[BaseSession]" = AiohttpSession,
-        webhook_manager: "WebhookManager[_APP] | None" = None,
-        polling_config: "PollingConfig | None" = None,
         **kwargs: object,
     ) -> None:
         self._token = token
-        self.session = session(network)
+        session = kwargs.pop("session", AiohttpSession)
+        self.session = session(network, kwargs.pop("timeout", 300))
         self._kwargs = {"cp": self}
         self._kwargs |= kwargs
-        WebhookHandler.__init__(self, webhook_manager)
-        PollingManager.__init__(self, polling_config or PollingConfig())
+        WebhookHandler.__init__(self, kwargs.pop("webhook_manager", None))
+        PollingManager.__init__(
+            self,
+            kwargs.pop("polling_config", PollingConfig()),
+        )
         self.__auth()
 
     async def __call__(
