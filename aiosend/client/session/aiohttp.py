@@ -50,7 +50,8 @@ class AiohttpSession(BaseSession):
                     headers={
                         "Crypto-Pay-API-Token": token,
                         "Content-Type": "application/json",
-                        "User-Agent": f"{SERVER_SOFTWARE} aiosend/{__version__}",
+                        "User-Agent": f"{SERVER_SOFTWARE} "
+                        f"aiosend/{__version__}",
                     },
                 )
             except TimeoutError as e:

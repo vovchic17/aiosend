@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aiosend \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-12 14:38+0300\n"
+"POT-Creation-Date: 2025-12-06 18:09+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -17,13 +17,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.17.0\n"
 
-#: ../../errors.rst:3
+#: ../../api/errors.rst:3
 msgid "Errors"
 msgstr "Исключения"
 
-#: aiosend.exceptions.APIError:1 aiosend.exceptions.DeserializationError:1
+#: aiosend.exceptions.APIError:1 aiosend.exceptions.APITimeoutError:1
+#: aiosend.exceptions.DeserializationError:1
 #: aiosend.exceptions.MethodValuesError:1
 #: aiosend.exceptions.WrongNetworkError:1 of
 msgid "Bases: :py:class:`~aiosend.exceptions.CryptoPayError`"
@@ -32,6 +33,10 @@ msgstr ""
 #: aiosend.exceptions.APIError:1 of
 msgid "Exception for API errors."
 msgstr "Исключение для ошибок API."
+
+#: aiosend.exceptions.APITimeoutError:1 of
+msgid "Exception raised when the API request times out."
+msgstr "Исключение, вызываемое при истечении времени ожидания запроса API."
 
 #: aiosend.exceptions.CryptoPayError:1 of
 msgid "Bases: :py:class:`Exception`"
@@ -51,4 +56,5 @@ msgstr "Исключение, вызываемое при неверном на�
 
 #: aiosend.exceptions.WrongNetworkError:1 of
 msgid "Exception raised when the token is served by different network."
-msgstr "Исключение, вызываемое когда токен принадлежит другой сети."
+msgstr "Исключение, вызываемое, когда токен принадлежит другой сети."
+
