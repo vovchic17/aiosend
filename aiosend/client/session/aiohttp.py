@@ -24,7 +24,7 @@ class AiohttpSession(BaseSession):
     This class is a wrapper of `aiohttp.ClientSession`.
     """
 
-    def __init__(self, network: "Network", timeout: float) -> None:
+    def __init__(self, network: "Network", timeout: float = 300) -> None:
         super().__init__(network, timeout)
         self._session: ClientSession | None = None
 

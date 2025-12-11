@@ -79,10 +79,10 @@ class CryptoPay(Methods, Tools, WebhookHandler, PollingManager):
             )
         except APIError:
             current_net = self.session.network
-            if current_net == MAINNET:
-                self.session = self.session.__class__(TESTNET)
-            else:
-                self.session = self.session.__class__(MAINNET)
+            self.session = self.session.__class__(
+                TESTNET if current_net == MAINNET else MAINNET,
+                self.session.timeout,
+            )
             token_validate(self, self.session.network)
             net = self.session.network
             msg = (

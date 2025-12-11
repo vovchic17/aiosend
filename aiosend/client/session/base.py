@@ -27,7 +27,7 @@ class BaseSession(ABC):
     you should inherit this class.
     """
 
-    def __init__(self, network: "Network", timeout: float) -> None:
+    def __init__(self, network: "Network", timeout: float = 300) -> None:
         self.network = network
         self.timeout = timeout
 
