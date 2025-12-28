@@ -8,13 +8,13 @@ By following these simple guidelines, you can help make **aiosend** better for e
 ## Getting Started
 
 1. Create a new branch for your changes: `git checkout -b my-feature`
-2. Install project dependencies for testing: `poetry install`
+2. Install project dependencies:
 
 ---
 
 ## Reporting Issues
 
-- If you find a bug or want to suggest a new feature, create an **issue** or write in the Telegram group: **@aiosend**
+- If you find a bug or want to suggest a new feature, create an **issue** or write in the Telegram group: **[aiosend](htps://t.m/aiosend)**
 - Try to describe the problem in detail and provide steps to reproduce it if possible
 
 ---
@@ -31,7 +31,7 @@ By following these simple guidelines, you can help make **aiosend** better for e
 ## Code Style
 
 - Follow [PEP8](https://www.python.org/dev/peps/pep-0008/)
-- Use `black` or `isort` or `mypy` or `ruff` to format code
+- Use `ruff` to format code
 - Write tests for new features or bug fixes
 
 ---
@@ -40,8 +40,8 @@ By following these simple guidelines, you can help make **aiosend** better for e
 
 To contribute to the project, you should:
 
-- Be familiar with **[CryptoPayAPI](https://help.send.tg/en/articles/10279948-crypto-pay-api)** and project [aiosend](aiosend.rtfd.io)
-- Have knowledge of the **Python programming language**
+- Be familiar with **[Crypto Pay API](https://help.send.tg/en/articles/10279948-crypto-pay-api)** and project [aiosend](aiosend.rtfd.io)
+- Have knowledge of the **[Python programming language](https://www.python.org/)**
 - Be motivated and willing to help improve the project
 
 ---

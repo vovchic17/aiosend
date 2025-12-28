@@ -13,7 +13,7 @@ identifiers:
 repository-code: 'https://github.com/vovchic17/aiosend'
 url: 'https://aiosend.rtfd.io'
 abstract: >-
-  Aiosend is a framework for working with CryptoPayAPI,
+  aiosend is a framework for working with Crypto Pay API,
   offering simplicity and speed.
 keywords:
   - python
