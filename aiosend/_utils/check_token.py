@@ -5,10 +5,11 @@ from urllib.request import Request, urlopen
 
 import certifi
 from aiohttp.http import SERVER_SOFTWARE
+from pydantic import ValidationError
 
 from aiosend.__meta__ import __version__
 from aiosend._methods import GetMe
-from aiosend.exceptions import APIError
+from aiosend.exceptions import APIError, DeserializationError
 from aiosend.types import App, Response
 
 if TYPE_CHECKING:
@@ -26,6 +27,7 @@ def token_validate(client: "CryptoPay", network: "Network") -> App:
             url,
             headers={
                 "Crypto-Pay-API-Token": client._token,  # noqa: SLF001
+                "Content-Type": "application/json",
                 "User-Agent": f"{SERVER_SOFTWARE} aiosend/{__version__}",
             },
         )
@@ -33,10 +35,16 @@ def token_validate(client: "CryptoPay", network: "Network") -> App:
     except HTTPError as e:
         resp = e.read()
 
-    response = Response[App].model_validate_json(
-        resp,
-        context={"client": client},
-    )
+    try:
+        response = Response[App].model_validate_json(
+            resp,
+            context={"client": client},
+        )
+    except ValidationError as e:
+        raise DeserializationError(
+            method,
+            "Failed to deserialize object",
+        ) from e
     if not response.ok:
         error = cast("Error", response.error)
         raise APIError(method, error)
