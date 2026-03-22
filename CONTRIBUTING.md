@@ -1,7 +1,8 @@
 # Contributing to aiosend
 
 We welcome any contributions! 💖
-By following these simple guidelines, you can help make **aiosend** better for everyone.
+By following these simple guidelines, you can help make **aiosend** better
+for everyone.
 
 ---
 
@@ -16,7 +17,8 @@ By following these simple guidelines, you can help make **aiosend** better for e
 
 - If you find a bug or want to suggest a new feature, create an **issue**
   or write to the Telegram group: **[aiosend](https://t.me/aiosend)**
-- Try to describe the problem in detail and provide steps to reproduce it if possible
+- Try to describe the problem in detail and provide steps to reproduce it
+  if possible
 
 ---
 
@@ -40,13 +42,16 @@ By following these simple guidelines, you can help make **aiosend** better for e
 
 To contribute to the project, you should:
 
-- Be familiar with **[Crypto Pay API](https://help.send.tg/en/articles/10279948-crypto-pay-api)**
-  and project [aiosend](https://aiosend.rtfd.io)
-- Have knowledge of the **[Python programming language](https://www.python.org/)**
-- Be motivated and willing to help improve the project
+- Be familiar with
+  **[Crypto Pay API](https://help.send.tg/en/articles/10279948-crypto-pay-api)**
+- Know how the [aiosend](https://aiosend.rtfd.io) library works
+- Have knowledge of **[Python](https://www.python.org/)**
+- Be motivated and willing to help improve the
+  project
 
 ---
 
 ## License
 
-By contributing, you agree that your changes will be licensed under the same license as this project.
+By contributing, you agree that your changes will be licensed under the
+same license as this project.
