@@ -37,4 +37,4 @@ It is better to discuss the problem within the community first to minimize poten
 
 Thank you for helping keep aiosend secure!
 
-The aiosend community truly appreciates your contribution ❤️
+The **aiosend** community truly appreciates your contribution ❤️
