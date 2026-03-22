@@ -14,7 +14,8 @@ By following these simple guidelines, you can help make **aiosend** better for e
 
 ## Reporting Issues
 
-- If you find a bug or want to suggest a new feature, create an **issue** or write to the Telegram group: **[aiosend](htps://t.me/aiosend)**
+- If you find a bug or want to suggest a new feature, create an **issue**
+  or write to the Telegram group: **[aiosend](https://t.me/aiosend)**
 - Try to describe the problem in detail and provide steps to reproduce it if possible
 
 ---
@@ -39,7 +40,8 @@ By following these simple guidelines, you can help make **aiosend** better for e
 
 To contribute to the project, you should:
 
-- Be familiar with **[Crypto Pay API](https://help.send.tg/en/articles/10279948-crypto-pay-api)** and project [aiosend](https://aiosend.rtfd.io)
+- Be familiar with **[Crypto Pay API](https://help.send.tg/en/articles/10279948-crypto-pay-api)**
+  and project [aiosend](https://aiosend.rtfd.io)
 - Have knowledge of the **[Python programming language](https://www.python.org/)**
 - Be motivated and willing to help improve the project
 
