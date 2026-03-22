@@ -7,7 +7,7 @@ class Balance(CryptoPayObject):
     """
     Balance object.
 
-    Source: https://help.crypt.bot/crypto-pay-api#Balance
+    Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_0593a935bb
     """
 
     currency_code: Asset | str
@@ -23,7 +23,7 @@ class Balance(CryptoPayObject):
 
         Use this method to update balance object.
 
-        Source: https://help.crypt.bot/crypto-pay-api#getBalance
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_86005049de
 
         :return:
         """

@@ -10,7 +10,7 @@ class Transfer(CryptoPayObject):
     """
     Transfer object.
 
-    Source: https://help.crypt.bot/crypto-pay-api#Transfer
+    Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_771b6213d1
     """
 
     transfer_id: int

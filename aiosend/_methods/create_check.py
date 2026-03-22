@@ -34,7 +34,7 @@ class CreateCheck:
         Use this method to create a new check.
         On success, returns an object of the created :class:`aiosend.types.Check`.
 
-        Source: https://help.crypt.bot/crypto-pay-api#createCheck
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_cef427b32c
 
         :param amount: Amount of the check in float. For example: `125.50`
         :param asset: Cryptocurrency alphabetic code. Supported assets: “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet).

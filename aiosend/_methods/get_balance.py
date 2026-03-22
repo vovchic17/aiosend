@@ -23,7 +23,7 @@ class GetBalance:
         Requires no parameters.
         Returns array of :class:`aiosend.types.Balance`.
 
-        Source: https://help.crypt.bot/crypto-pay-api#getBalance
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_86005049de
 
         :return: List of :class:`aiosend.types.Balance` objects.
         """

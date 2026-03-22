@@ -48,7 +48,7 @@ class GetInvoices:
         Use this method to get invoices created by your app.
         On success, returns array of :class:`aiosend.types.Invoice`.
 
-        Source: https://help.crypt.bot/crypto-pay-api#getInvoices
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_e4c2ccb208
 
         :param asset: *Optional*. Cryptocurrency alphabetic code. Supported assets: “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet). Defaults to all currencies.
         :param fiat: *Optional*. Fiat currency code. Supported fiat currencies: “USD”, “EUR”, “RUB”, “BYN”, “UAH”, “GBP”, “CNY”, “KZT”, “UZS”, “GEL”, “TRY”, “AMD”, “THB”, “INR”, “BRL”, “IDR”, “AZN”, “AED”, “PLN” and “ILS". Defaults to all currencies.

@@ -25,7 +25,7 @@ class GetCurrencies:
         Requires no parameters.
         Returns a list of fiat and cryptocurrency alphabetic codes.
 
-        Source: https://help.crypt.bot/crypto-pay-api#getCurrencies
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_f5cd57dd47
 
         :return: List of :class:`aiosend.types.Currency` objects.
         """

@@ -49,7 +49,7 @@ class Transfer:
         On success, returns completed :class:`aiosend.types.Transfer`.
         This method must first be enabled in the security settings of your app.
 
-        Source: https://help.crypt.bot/crypto-pay-api#transfer
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_c932ff301f
 
         :param user_id: User ID in Telegram. User must have previously used @CryptoBot (@CryptoTestnetBot for testnet).
         :param asset: Cryptocurrency alphabetic code. Supported assets: “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet).

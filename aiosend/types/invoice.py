@@ -18,7 +18,7 @@ class Invoice(CryptoPayObject):
     """
     Invoice object.
 
-    Source: https://help.crypt.bot/crypto-pay-api#Invoice
+    Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_bea6645543
     """
 
     invoice_id: int
@@ -120,7 +120,7 @@ class Invoice(CryptoPayObject):
         Use this method to delete invoice created by your app.
         Returns :code:`True` on success.
 
-        Source: https://help.crypt.bot/crypto-pay-api#hwjK
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_da2ea9f39c
 
         :return: :code:`True` on success.
         """
@@ -132,7 +132,7 @@ class Invoice(CryptoPayObject):
 
         Use this method to update invoice object.
 
-        Source: https://help.crypt.bot/crypto-pay-api#getInvoices
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_e4c2ccb208
 
         :return:
         """

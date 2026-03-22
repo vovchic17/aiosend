@@ -82,7 +82,7 @@ class CreateInvoice:
         Use this method to create a new invoice.
         On success, returns an object of the created :class:`aiosend.types.Invoice`.
 
-        Source: https://help.crypt.bot/crypto-pay-api#createInvoice
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_38468af1a6
 
         :param amount: Amount of the invoice in float. For example: `125.50`
         :param currency_type: *Optional*. Type of the price, can be “crypto” or “fiat”. Defaults to crypto.

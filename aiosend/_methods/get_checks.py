@@ -38,7 +38,7 @@ class GetChecks:
         Use this method to get checks created by your app.
         On success, returns array of :class:`aiosend.types.Check`.
 
-        Source: https://help.crypt.bot/crypto-pay-api#getChecks
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_d23dda1828
 
         :param asset: *Optional*. Cryptocurrency alphabetic code. Supported assets: “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet). Defaults to all currencies.
         :param check_ids: *Optional*. List of check IDs separated by comma.

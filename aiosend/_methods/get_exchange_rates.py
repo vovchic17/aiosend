@@ -25,7 +25,7 @@ class GetExchangeRates:
         Requires no parameters.
         Returns array of :class:`aiosend.types.ExchangeRate`.
 
-        Source: https://help.crypt.bot/crypto-pay-api#getExchangeRates
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_bc0e2dee1c
 
         :return: List of :class:`aiosend.types.ExchangeRate` objects.
         """

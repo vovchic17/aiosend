@@ -10,7 +10,7 @@ class Update(CryptoPayObject):
     """
     Update object.
 
-    Source: https://help.crypt.bot/crypto-pay-api#webhook-updates
+    Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_20aded801d
     """
 
     update_id: int

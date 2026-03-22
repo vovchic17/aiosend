@@ -23,7 +23,7 @@ class GetMe:
         Requires no parameters.
         On success, returns basic information about an app.
 
-        Source: https://help.crypt.bot/crypto-pay-api#getMe
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_f4a0fd9ca0
 
         :return: :class:`aiosend.types.App` object.
         """

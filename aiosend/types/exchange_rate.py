@@ -7,7 +7,7 @@ class ExchangeRate(CryptoPayObject):
     """
     ExchangeRate object.
 
-    Source: https://help.crypt.bot/crypto-pay-api#ExchangeRate
+    Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_532277de9c
     """
 
     is_valid: bool
@@ -29,7 +29,7 @@ class ExchangeRate(CryptoPayObject):
 
         Use this method to update ExchangeRate object.
 
-        Source: https://help.crypt.bot/crypto-pay-api#getExchangeRates
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_bc0e2dee1c
 
         :return:
         """

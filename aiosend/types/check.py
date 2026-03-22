@@ -10,7 +10,7 @@ class Check(CryptoPayObject):
     """
     Check object.
 
-    Source: https://help.crypt.bot/crypto-pay-api#Check
+    Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_2adb5a31b0
     """
 
     check_id: int
@@ -37,7 +37,7 @@ class Check(CryptoPayObject):
         Use this method to delete check created by your app.
         Returns :code:`True` on success.
 
-        Source: https://help.crypt.bot/crypto-pay-api#deleteCheck
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_b27428d56a
 
         :return: :code:`True` on success.
         """
@@ -49,7 +49,7 @@ class Check(CryptoPayObject):
 
         Use this method to update check object.
 
-        Source: https://help.crypt.bot/crypto-pay-api#getChecks
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_d23dda1828
 
         :return:
         """

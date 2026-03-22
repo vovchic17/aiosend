@@ -25,7 +25,7 @@ class DeleteCheck:
         Use this method to delete checks created by your app.
         Returns :code:`True` on success.
 
-        Source: https://help.crypt.bot/crypto-pay-api#deleteCheck
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_b27428d56a
 
         :param check_id: Check ID to be deleted.
         :return: :code:`True` on success.

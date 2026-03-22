@@ -38,7 +38,7 @@ class GetTransfers:
         Use this method to get transfers created by your app.
         On success, returns array of :class:`aiosend.types.Transfer`.
 
-        Source: https://help.crypt.bot/crypto-pay-api#getTransfers
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_a9c71eaebd
 
         :param asset: *Optional*. Cryptocurrency alphabetic code. Supported assets: “USDT”, “TON”, “BTC”, “ETH”, “LTC”, “BNB”, “TRX” and “USDC” (and “JET” for testnet). Defaults to all currencies.
         :param transfer_ids: *Optional*. List of transfer IDs separated by comma.

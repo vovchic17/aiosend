@@ -70,7 +70,7 @@ class WebhookHandler(WebhookRouter):
         """
         Verify the received update and the integrity of the received data.
 
-        Source: https://help.crypt.bot/crypto-pay-api#verifying-webhook-updates
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_f0180ed474
 
         :param body: unparsed JSON string.
         :param headers: request headers.

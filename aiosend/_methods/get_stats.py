@@ -30,7 +30,7 @@ class GetStats:
         Use this method to get app statistics.
         On success, returns :class:`aiosend.types.AppStats`.
 
-        Source: https://help.crypt.bot/crypto-pay-api#jvP3
+        Source: https://help.send.tg/en/articles/10279948-crypto-pay-api#h_1590f8f4ed
 
         :param start_at: *Optional*. Date from which start calculating statistics. Default is current date minus 24 hours.
         :param end_at: *Optional*. The date on which to finish calculating statistics. Default is current date.
