@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: aiosend
+message: 'If you use this project, please cite it as follows'
+type: software
+authors:
+  - given-names: VoVcHiC
+    email: tsvetkovvova17@gmail.com
+identifiers:
+repository-code: 'https://github.com/vovchic17/aiosend'
+url: 'https://aiosend.rtfd.io'
+abstract: aiosend is a framework for working with Crypto Pay API
+keywords:
+  - python
+  - pydantic
+  - aiohttp
+  - aiogram
+  - async
+  - cryptopay
+license: MIT
