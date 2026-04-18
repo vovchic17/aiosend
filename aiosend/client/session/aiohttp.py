@@ -26,7 +26,6 @@ class AiohttpSession(BaseSession):
 
     def __init__(self, network: "Network", timeout: float = 300) -> None:
         super().__init__(network, timeout)
-        self._session: ClientSession | None = None
 
     async def request(
         self,
@@ -36,13 +35,12 @@ class AiohttpSession(BaseSession):
     ) -> "_CryptoPayType":
         """Make http request."""
         ssl_context = ssl.create_default_context(cafile=certifi.where())
-        self._session = ClientSession(
+        async with ClientSession(
             timeout=ClientTimeout(self.timeout),
             connector=TCPConnector(
                 ssl_context=ssl_context,
             ),
-        )
-        async with self._session as session:
+        ) as session:
             try:
                 resp = await session.post(
                     url=self.network.url(method),
