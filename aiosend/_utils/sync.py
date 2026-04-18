@@ -23,7 +23,7 @@ def async_to_sync(obj: object, name: str) -> None:
     ) -> object:
         coro: Coroutine = method(*args, **kwargs)
         try:
-            loop = asyncio.get_event_loop()
+            loop = asyncio.get_running_loop()
         except RuntimeError:
             loop = asyncio.new_event_loop()
             asyncio.set_event_loop(loop)
