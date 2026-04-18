@@ -58,7 +58,7 @@ class BaseRouter:
         if observer is not None:
             is_handled = await observer.trigger(event, **kwargs)
 
-        for router in self.sub_routers:
+        for router in list(self.sub_routers):
             is_handled = await router.propagate_event(
                 event,
                 event_type,
