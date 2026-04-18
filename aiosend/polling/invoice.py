@@ -1,3 +1,4 @@
+import threading
 from abc import ABC, abstractmethod
 from typing import TYPE_CHECKING
 
@@ -20,6 +21,7 @@ class InvoicePollingManager(BasePollingManager, PollingRouter, ABC):
     def __init__(self) -> None:
         super().__init__()
         self._invoice_tasks: dict[int, PollingTask[Invoice]] = {}
+        self._invoice_lock = threading.Lock()
 
     @abstractmethod
     async def get_invoices(  # noqa: PLR0913
@@ -39,23 +41,28 @@ class InvoicePollingManager(BasePollingManager, PollingRouter, ABC):
         invoice: "Invoice",
         **kwargs: object,
     ) -> None:
-        self._invoice_tasks[invoice.invoice_id] = PollingTask(
-            invoice,
-            self._timeout,
-            kwargs,
-        )
+        with self._invoice_lock:
+            self._invoice_tasks[invoice.invoice_id] = PollingTask(
+                invoice,
+                self._timeout,
+                kwargs,
+            )
 
     async def _handle_invoice(
         self,
         invoice: "Invoice",
     ) -> None:
-        task = self._invoice_tasks[invoice.invoice_id]
-        task.timeout -= self._delay
-        if (
-            invoice.status in (InvoiceStatus.PAID, InvoiceStatus.EXPIRED)
-            or task.timeout <= 0
-        ):
-            del self._invoice_tasks[invoice.invoice_id]
+        with self._invoice_lock:
+            task = self._invoice_tasks.get(invoice.invoice_id)
+            if task is None:
+                return
+            task.timeout -= self._delay
+            if (
+                invoice.status in (InvoiceStatus.PAID, InvoiceStatus.EXPIRED)
+                or task.timeout <= 0
+            ):
+                del self._invoice_tasks[invoice.invoice_id]
+
         if task.timeout <= 0 or invoice.status == InvoiceStatus.EXPIRED:
             if await self.propagate_event(
                 invoice,
