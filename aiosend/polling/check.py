@@ -1,3 +1,4 @@
+import threading
 from abc import ABC, abstractmethod
 from typing import TYPE_CHECKING
 
@@ -18,6 +19,7 @@ class CheckPollingManager(BasePollingManager, PollingRouter, ABC):
     def __init__(self) -> None:
         super().__init__()
         self._check_tasks: dict[int, PollingTask[Check]] = {}
+        self._check_lock = threading.Lock()
 
     @abstractmethod
     async def get_checks(
@@ -31,17 +33,22 @@ class CheckPollingManager(BasePollingManager, PollingRouter, ABC):
         """getchecks method."""
 
     def _poll_check(self, check: "Check", **kwargs: object) -> None:
-        self._check_tasks[check.check_id] = PollingTask(
-            check,
-            self._timeout,
-            kwargs,
-        )
+        with self._check_lock:
+            self._check_tasks[check.check_id] = PollingTask(
+                check,
+                self._timeout,
+                kwargs,
+            )
 
     async def _handle_check(self, check: "Check") -> None:
-        task = self._check_tasks[check.check_id]
-        task.timeout -= self._delay
-        if check.status == CheckStatus.ACTIVATED or task.timeout <= 0:
-            del self._check_tasks[check.check_id]
+        with self._check_lock:
+            task = self._check_tasks.get(check.check_id)
+            if task is None:
+                return
+            task.timeout -= self._delay
+            if check.status == CheckStatus.ACTIVATED or task.timeout <= 0:
+                del self._check_tasks[check.check_id]
+
         if task.timeout <= 0:
             if await self.propagate_event(
                 check,
