@@ -40,8 +40,7 @@ class CryptoPay(Methods, Tools, WebhookHandler, PollingManager):
         self._token = token
         session = kwargs.pop("session", AiohttpSession)
         self.session = session(network, kwargs.pop("timeout", 300))
-        self._kwargs = {"cp": self}
-        self._kwargs |= kwargs
+        self._kwargs = kwargs | {"cp": self}
         WebhookHandler.__init__(self, kwargs.pop("webhook_manager", None))
         PollingManager.__init__(
             self,

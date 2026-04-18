@@ -71,7 +71,7 @@ class str(_str):  # noqa: A001, N801
 class float(_float):  # noqa: A001, N801
     def __await__(self) -> Generator[None, None, Self]: ...
 
-class NoneType(_NoneType):  # type: ignore[misc, valid-type]
+class NoneType(_NoneType):  # type: ignore[misc, valid-type, nonetype-type]
     def __await__(self) -> Generator[None]: ...
 
 class CryptoPay:
