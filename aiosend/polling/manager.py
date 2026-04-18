@@ -50,7 +50,7 @@ class PollingManager(InvoicePollingManager, CheckPollingManager):
                 stacklevel=2,
             )
         if parallel is not None:
-            loop = asyncio.get_event_loop()
+            loop = asyncio.get_running_loop()
             loop.run_in_executor(None, parallel)
         loggers.polling.info("Start polling")
         await asyncio.gather(
