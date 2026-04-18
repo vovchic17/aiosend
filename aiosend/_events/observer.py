@@ -39,7 +39,7 @@ class EventObserver:
         **kwargs: object,
     ) -> bool:
         """Trigger event observer."""
-        for handler in self.handlers:
+        for handler in list(self.handlers):
             result, data = await handler.check(event)
             if result:
                 await handler.call(event, data | kwargs)
