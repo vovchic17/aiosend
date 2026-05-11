@@ -47,6 +47,7 @@ docs = [
     "sphinxext-opengraph",
     "matplotlib",
 ]
+django = ["django>=3.1"]
 fastapi = ["fastapi[standard]"]
 flask = ["flask"]
 test = ["pytest", "pytest-asyncio"]
@@ -88,7 +89,11 @@ indent-style = "space"
 docstring-code-line-length = "dynamic"
 
 [[tool.mypy.overrides]]
-module = ["*.fastapi_manager.*", "*.flask_manager.*"]
+module = [
+    "*.django_manager.*",
+    "*.fastapi_manager.*",
+    "*.flask_manager.*",
+]
 disable_error_code = ["misc", "import-not-found"]
 
 [tool.mypy]

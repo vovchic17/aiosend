@@ -33,6 +33,17 @@ Usage example with `flask web server <https://flask.palletsprojects.com/en/3.0.x
 
 .. literalinclude:: ../../examples/webhook_flask.py
 
+Usage example with `django web server <https://docs.djangoproject.com/en/stable/intro/tutorial01/>`_
+-----------------------------------------------------------------------------------------------------
+.. tip::
+    In order to use aiosend with django you need to install extra package
+
+.. code-block:: bash
+
+    pip install aiosend[django]
+
+.. literalinclude:: ../../examples/webhook_django.py
+
 **aiosend** uses `aiohttp <https://docs.aiohttp.org/en/stable/index.html>`_ as web server by default.
 You can implement your own webhook manager by inheriting :class:`aiosend.webhook.WebhookManager`
 and overriding :attr:`aiosend.webhook.WebhookManager.register_handler`.
@@ -49,5 +60,9 @@ and overriding :attr:`aiosend.webhook.WebhookManager.register_handler`.
     :members:
 
 .. autoclass:: aiosend.webhook.FlaskManager
+    :show-inheritance:
+    :members:
+
+.. autoclass:: aiosend.webhook.DjangoManager
     :show-inheritance:
     :members:

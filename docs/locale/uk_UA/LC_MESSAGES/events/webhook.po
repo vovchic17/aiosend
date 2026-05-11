@@ -73,7 +73,21 @@ msgstr ""
 "Щоб використовувати aiosend з flask, вам потрібно встановити екстра "
 "залежність"
 
-#: ../../events/webhook.rst:36
+#: ../../events/webhook.rst:37
+msgid ""
+"Usage example with `django web server "
+"<https://docs.djangoproject.com/en/stable/intro/tutorial01/>`_"
+msgstr ""
+"Приклад використання з `django "
+"веб-сервером<https://docs.djangoproject.com/en/stable/intro/tutorial01/>`_"
+
+#: ../../events/webhook.rst:39
+msgid "In order to use aiosend with django you need to install extra package"
+msgstr ""
+"Щоб використовувати aiosend з django, вам потрібно встановити екстра "
+"залежність"
+
+#: ../../events/webhook.rst:48
 msgid ""
 "**aiosend** uses `aiohttp "
 "<https://docs.aiohttp.org/en/stable/index.html>`_ as web server by "
@@ -174,3 +188,11 @@ msgstr "Менеджер вебхуків на Flask."
 #: aiosend.webhook.flask_manager.FlaskManager:3 of
 msgid "Webhook manager based on :class:`flask.Flask`."
 msgstr "Менеджер вебхуків, що базується на :class:`flask.Flask`."
+
+#: aiosend.webhook.django_manager.DjangoManager:1 of
+msgid "Django webhook manager."
+msgstr "Менеджер вебхуків на Django."
+
+#: aiosend.webhook.django_manager.DjangoManager:3 of
+msgid "Webhook manager based on Django's URL routing."
+msgstr "Менеджер вебхуків, що базується на URL-маршрутизації Django."
