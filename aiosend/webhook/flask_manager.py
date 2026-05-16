@@ -29,7 +29,7 @@ class FlaskManager(WebhookManager["Flask"]):
         @self._app.post(self._path)
         async def handle() -> tuple[dict[str, bool], int]:
             status = await feed_update(
-                request.get_json(),
+                request.get_data(as_text=True),
                 dict(request.headers),
             )
             return {"ok": status}, 200 if status else 500
