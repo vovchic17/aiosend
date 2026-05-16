@@ -29,7 +29,7 @@ class FastAPIManager(WebhookManager["FastAPI | APIRouter"]):
         @self._app.post(self._path)
         async def handle(request: Request) -> dict:
             status = await feed_update(
-                await request.json(),
+                (await request.body()).decode(),
                 dict(request.headers),
             )
             resp = {"ok": status}
