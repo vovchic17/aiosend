@@ -28,7 +28,7 @@ class CryptoPay(Methods, Tools, WebhookHandler, PollingManager):
     :webhook_manager: Webhook manager (based on aiohttp, fastapi, flask etc.)
     :polling_config: Configuration for invoice and check polling
     :timeout: HTTP request timeout in seconds
-    :kwargs: Optional argumets to pass into the polling and webhook handlers
+    :kwargs: Optional arguments to pass into the polling and webhook handlers
     """
 
     def __init__(
